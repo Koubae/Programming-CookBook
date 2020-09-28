@@ -1,0 +1,21 @@
+{% extends 'base.html'%}
+{% from 'macros/macro.html' import flash %}
+<!-- Title -->
+{% block title %} {%endblock%}
+
+<!-- Jumbo Header -->
+{% block jumpo_title%} {% endblock%}
+
+<!-- Jumbo Text -->
+{% block jumbo_text%} 
+{% endblock %}
+
+<!-- Jumbo Subtext -->
+{% block jumbo_subtext%} 
+{% endblock%}
+
+<!-- Jumbo BTN  -->
+{% block jumbo_btn %}
+
+    {{flash()}}
+{% endblock%}

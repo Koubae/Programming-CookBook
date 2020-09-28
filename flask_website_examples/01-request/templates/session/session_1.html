@@ -1,0 +1,32 @@
+{% extends 'base.html'%}
+{% from 'macros/macro.html' import flash %}
+<!-- Title -->
+{% block title %} {%endblock%}
+
+<!-- Jumbo Header -->
+{% block jumpo_title%} <h1>Session 1 page</h1>{% endblock%}
+
+<!-- Jumbo Text -->
+{% block jumbo_text%} 
+{% endblock %}
+
+<!-- Jumbo Subtext -->
+{% block jumbo_subtext%} 
+
+    {% if session['name']%}
+        <h1>User <strong>{{name}}</strong> in session</h1>
+        {% if session['MODE']%}
+            <h2>Mode preferance: ---<strong>{{mode}}</strong>---</h2>
+        {% endif %}
+    {% else %}
+        <h1>No one logged in</h1>
+    {% endif %}
+    {% endblock%}
+
+
+
+<!-- Jumbo BTN  -->
+{% block jumbo_btn %}
+
+    {{flash()}}
+{% endblock%}

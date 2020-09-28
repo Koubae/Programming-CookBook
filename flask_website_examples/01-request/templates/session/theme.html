@@ -1,0 +1,25 @@
+{% extends 'base.html'%}
+{% from 'macros/macro.html' import flash%}
+
+<!-- Title -->
+{% block title %} {%endblock%}
+
+<!-- Jumbo Header -->
+{% block jumpo_title%} <h1>Here you can choose different Theme </h1> {% endblock%}
+
+<!-- Jumbo Text -->
+{% block jumbo_text%} 
+{% endblock %}
+
+<!-- Jumbo Subtext -->
+{% block jumbo_subtext%} 
+
+    {{flash()}}
+    <form action="/theme" method="POST">
+        <input type="submit" class="btn btn-outline-primary"  value="Light" name="light">
+        <input type="submit" class="btn btn-outline-primary"  value="Dark" name="dark">
+    </form>
+{% endblock%}
+<!-- Jumbo BTN  -->
+{% block jumbo_btn %}
+{% endblock%}

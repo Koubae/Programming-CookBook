@@ -1,0 +1,33 @@
+{% extends 'base.html'%}
+{% from 'macros/macro.html' import flash%}
+<!-- Title -->
+{% block title %} {%endblock%}
+
+<!-- Jumbo Header -->
+{% block jumpo_title%} <h1>Personal page</h1>{% endblock%}
+
+<!-- Jumbo Text -->
+{% block jumbo_text%} 
+
+{{flash()}}
+{% endblock %}
+
+<!-- Jumbo Subtext -->
+{% block jumbo_subtext%}
+
+    <h3>User: <h1>{{name|capitalize}}</h1></h3>
+    <h3>Is Logged in as: <h1>{{role}}</h1></h3>
+    <h3>He is leaving in: {{location}}</h3>
+{% endblock%}
+
+
+<!-- Jumbo BTN  -->
+{% block jumbo_btn %}
+    <form action="" method="GET">
+        <div class="col">
+            <!-- Submit -->
+            <input type="submit" class="btn btn-primary" name="submit" value="Go to Profile">
+        </div>
+    </form>
+
+{% endblock%}

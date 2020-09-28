@@ -1,0 +1,47 @@
+{% extends 'base.html'%}
+{% from 'macros/macro.html' import flash%}
+<!-- Title -->
+{% block title %} {%endblock%}
+
+<!-- Jumbo Header -->
+{% block jumpo_title%} <h1><strong>Index Page</strong></h1> {% endblock%}
+
+<!-- Jumbo Text -->
+{% block jumbo_text%} 
+{% endblock %}
+
+<!-- Jumbo Subtext -->
+{% block jumbo_subtext%} 
+    {% for type in user_list%}
+        {{type}}
+    {% endfor%}
+    {{flash()}}
+    <form action="/welcome" method="POST">
+        <div class="form-row">
+            <div class="col">
+                <!-- Name -->
+                <input type="text" class="form-control" placeholder="First name" name="name" >
+            </div>
+            <div class="col">
+                <!-- Where -->
+                <input type="text" class="form-control" placeholder="Location" name="where">
+            </div>
+            <div class="col">
+            <!-- Account type -->               
+                <select name="select" class="form-control">
+                    {% for type in user_list%}
+                    <option >{{type}}</option>
+                    {% endfor%}
+                </select>    
+            </div>
+            <div class="col">
+                <!-- Submit -->
+                <input type="submit" class="btn btn-primary" name="submit" value="submit">
+            </div>
+        </div>
+    </form>
+
+{% endblock%}
+<!-- Jumbo BTN  -->
+{% block jumbo_btn %}
+{% endblock%}

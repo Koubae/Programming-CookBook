@@ -1,0 +1,8 @@
+
+{% macro flash()%}
+
+    {% for msg in get_flashed_messages()%}
+        <h3>{{msg}}</h3>
+    {% endfor%}
+
+{% endmacro %}
