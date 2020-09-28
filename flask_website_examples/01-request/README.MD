@@ -13,7 +13,7 @@
 - Experimentation of the Search Bar
 - Using Session to login / Logout the user **Not meant to be implemented in a real project as is not secure**
 
-- Using [Bootstrap4](#https://getbootstrap.com/)
+- Using [Bootstrap4](https://getbootstrap.com/)
 
 ```
 
