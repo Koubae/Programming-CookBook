@@ -11,3 +11,9 @@ Some ready to go example of Flask implementation for Websites, Blogs, Web store,
 > **Simple Vanila Flask Landing page, not flask packages other thank Flask its self. Meant to understand basic concepts of Flask session, requests and use plain HTML.**
 
 --------------------------------------------------------------------------------------------
+
+
+- - [Food Tracker](https://github.com/Koubae/Flask_Recipies/tree/master/flask_website_examples/02%20-%20Food-Tracker)
+
+
+> **Uses Vanilla Sqlite3, sqlite schema, flask @app.teardown_appcontext**
