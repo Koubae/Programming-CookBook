@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <!-- Flash -->
+    {% for msg in get_flashed_messages()%}
+      <div class="alert alert-danger" role="alert">
+        <p>{{msg}}</p>
+      </div>
+    {% endfor %}
+    <!-- EndFlash -->
+    
+      <div class="row">
+        <div>
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Foods</h3>
+            </div>
+
+            <div class="panel-body">
+              <!-- Form -->
+              <form method="POST" action="{{ url_for('food') }}">
+                <div class="form-group">
+                  <!-- Food Name -->
+                  <label for="food-name">Food Name</label>
+                  <input type="text" class="form-control" id="food-name" name="food-name" placeholder="Food Name">
+                </div>
+                <!-- Protein -->
+                <div class="form-group">
+                  <label for="protein">Protein</label>
+                  <input type="number" class="form-control" id="protein" name="protein" placeholder="Protein">
+                </div>
+                <!-- Carbs -->
+                <div class="form-group">
+                  <label for="carbohydrates">Carbohydrates</label>
+                  <input type="number" class="form-control" id="carbohydrates" name="carbohydrates" placeholder="Carbohydrates">
+                </div>
+                <!-- Fat -->
+                <div class="form-group">
+                  <label for="fat">Fat</label>
+                  <input type="number" class="form-control" id="fat" name="fat" placeholder="Fat">
+                </div>
+                <button type="submit" class="btn btn-primary">Add</button>
+              </form>
+              
+
+              <div class="page-header"></div>
+
+              {% for food in results %}
+              <ul class="nav nav-pills" role="tablist">
+                <li class="active"><a>{{ food.name }} </a></li>
+                <li><a>Protein: <span class="badge">{{ food.protein }}</span></a></li>
+                <li><a>Carbohydrates: <span class="badge">{{ food.carbohydrates }}</span></a></li>
+                <li><a>Fat: <span class="badge">{{ food.fat }}</span></a></li>
+                <li><a>Calories: <span class="badge">{{ food.calories }}</span></a></li>
+              </ul>
+
+              <div class="page-header"></div>
+
+              {% endfor %}
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    
+{% endblock %}

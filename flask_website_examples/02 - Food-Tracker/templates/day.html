@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block jumbo_text%}
+  <!-- Flash -->
+  {% for msg in get_flashed_messages()%}
+  <div class="alert alert-danger" role="alert">
+    <p>{{msg}}</p>
+  </div>
+  {% endfor %}
+  <!-- EndFlash -->
+{% endblock %}
+
+{% block content%}
+    
+      <div class="row">
+        <div>
+            
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">{{ pretty_date }}</h3>
+              </div>
+            
+              <div class="panel-body">
+                
+              
+                <form method="POST" action="/view/{{date}}">
+                  <div class="form-group">
+                    <select class="form-control" name="select" value="add">
+                      {% for food in food_results %}
+                        <option value="{{ food.id }}">{{ food.name }}</option>
+                      {% endfor %}
+                    </select>
+                  </div>
+                  
+                
+                  <button type="submit" value="add" class="btn btn-primary">Add</button>
+                </form>
+                <div class="page-header"></div>
+          
+                <ul class="nav nav-pills" role="tablist">
+                  <li class="active"><a>Total</a></li>
+                  <li><a>Protein: <span class="badge">{{ totals.protein }}</span></a></li>
+                  <li><a>Carbohydates: <span class="badge">{{ totals.carbohydrates }}</span></a></li>
+                  <li><a>Fat: <span class="badge">{{ totals.fat }}</span></a></li>
+                  <li><a>Calories: <span class="badge">{{ totals.calories }}</span></a></li>
+                  
+                </ul>
+              </div>
+
+              {% for food in log_results %}
+              <div class="page-header">
+                <div class="panel-body">
+                  <ul class="nav nav-pills" role="tablist">
+                    <li class="active"><a>{{ food.name }}</a></li>
+                    <li><a>Protein: <span class="badge">{{ food.protein }}</span></a></li>
+                    <li><a>Carbohydates: <span class="badge">{{ food.carbohydrates }}</span></a></li>
+                    <li><a>Fat: <span class="badge">{{ food.fat }}</span></a></li>
+                    <li><a>Calories: <span class="badge">{{ food.calories }}</span></a></li>
+                  </ul>
+                </div>
+              </div>
+              {% endfor %}
+              <div class="page-header">
+                <div class="panel-body">           
+                  <form action="/delete/{{date}}" method="POST">
+                    <input type="submit" value="delete" class="btn btn-danger " name="select">
+                  </form>
+                </div> 
+              </div>
+            </div>
+        </div>
+      </div>
+
+
+{% endblock%}

@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+
+
+{% block sidebar%} 
+  <ul class="nav flex-column sticky-top ml-0 mr-0 my-4 pl-5 pr-0 py-3">
+    <form action="/" method="get">
+      <div class="form-group">
+        <li class="nav-item">
+          <button type="submit" class="btn btn-primary" value="all" name="search">All Month</button>  
+        </li>
+      </div>  
+      {% for month in all_month %}
+      <div class="form-group">         
+        <li class="nav-item">
+          <button type="submit" class="btn btn-primary" value="{{month}}" name="search">{{month}}</button>
+        </li>
+      </div>                  
+      {% endfor %}
+    </form>
+  </ul>
+
+{% endblock%}
+
+
+<!-- Header -->
+  
+    {% block jumpo_title%}
+    <div class="jumbotron">
+      <h1 class="display-4">
+        <form method="POST" action="/">
+          <div class="form-group">
+            <label for="new-day">New Day</label>
+            <input type="date" class="form-control" name="date" id="new-day">
+          </div>
+
+          <button type="submit" class="btn btn-primary">Add</button>
+        </form>
+      </h1>
+    {% endblock%}
+
+    {% block jumbo_text%}
+      <p>
+        <!-- Flash -->
+        {% for msg in get_flashed_messages()%}
+          <div class="alert alert-danger" role="alert">
+            <p>{{msg}}</p>
+          </div>
+        {% endfor %}
+        <!-- EndFlash -->
+      </p>  
+    </div>
+    {% endblock %}
+  
+  <!-- Content -->
+  {% block content%}
+    {% for r in results %}
+    <div class="panel panel-primary">
+      <!-- Panel Heading -->
+      <div class="panel-heading">
+        <h3 class="panel-title">{{ r.pretty_date }}</h3>
+      </div>
+      <!-- Panel Body -->
+      <div class="panel-body">
+        <ul class="nav nav-pills" role="tablist">
+          <li><a>Protein: <span class="badge">{{ r.protein }}</span></a></li>
+          <li><a>Carbohydates: <span class="badge">{{ r.carbohydrates }}</span></a></li>
+          <li><a>Fat: <span class="badge">{{ r.fat }}</span></a></li>
+          <li><a>Calories: <span class="badge">{{ r.calories }}</span></a></li>
+          <li><a href="{{ url_for('view', date=r.entry_date) }}" type="button" class="btn btn-link">View Detail</a></li>
+        </ul>
+      </div>
+    </div>
+    {% endfor %}
+  
+  {% endblock%}

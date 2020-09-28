@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IF=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.min.css')}}">
+	<!-- Customer style for this template -->
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='theme.css')}}">
+  <!-- Customer style for this template -->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='bootstrap-theme.min.css')}}">
+	<title>Food Tracker | Home</title>
+</head>
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="{{ url_for('index') }}">Food Tracker</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li {% block class%} {% endblock%}><a href="{{ url_for('index') }}">Home</a></li>
+              <li><a href="{{ url_for('food') }}">Add Food Item</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container theme-showcase col-sm-6 col-sm-offset-3" role="main">
+    
+        <!-- Body -->
+        <div class="row justify-content-around">
+          <!-- Side Bar -->
+          <div class="col-lg-2 ">               
+                  {% block sidebar%} {% endblock%}        
+          </div>
+          <!-- Content -->
+          <div class="col-lg-10 ">
+               
+                    {% block jumpo_title%}{% endblock%}
+                     {% block jumbo_text%}{% endblock %}</p>                                        
+             
+                  {% block content%}{% endblock %}                                                                            
+          </div>
+        </div>
+
+      </div>
+  </body>
+</html>
+
+    
+
+     
