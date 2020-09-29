@@ -1,0 +1,80 @@
+{% extends 'base.html'%} 
+<!-- Title -->
+{% block title %} Search {%endblock%}
+
+<!-- Jumbo Header -->
+{% block jumpo_title%} <h1>Search Page</h1>{% endblock%}
+
+<!-- Jumbo Text -->
+{% block jumbo_text%} 
+    <!-- Flash -->
+    {% for msg in get_flashed_messages()%}
+    <h4>{{msg}}</h4>
+    {% endfor%}
+    <!-- End Flash -->
+{% endblock %}
+
+<!-- Jumbo Subtext -->
+{% block jumbo_subtext%} 
+      <!-- Go through each Blog Post -->
+      {#Go through blog posts#}
+      
+    {% for rmd in search_query.items%}
+        {% if word_search|lower in rmd.title|lower or word_search|lower in rmd.text|lower or word_search|lower in rmd.tag|string|lower%}
+        
+            <div class="container">
+                <div class="card-body btn btn-outline-info list-group-item-action">
+                    <!-- Card Title Wrapper -->
+                    <div>
+                        <h2>
+                            <a href="{{url_for('reminder.read_reminder', reminder_id=rmd.id)}}" class="card-title">{{rmd.title}}</a>
+                            <span class="badge badge-secondary">{{rmd.tag}}</span>
+                        </h2>
+                    </div>
+                    <!-- Date Wrapper -->
+                    <p>Published on: {{rmd.reminder_date.strftime('%Y-%m-%d')}}</p>
+
+                    <!-- Blog Content -->
+                    <a href="{{url_for('reminder.read_reminder', reminder_id=rmd.id)}}" class="btn btn-primary">Read Reminder</a>
+                </div>              
+            </div>        
+        {% endif %}
+    <!-- EndFor -->
+    {% endfor %}
+{% endblock%}
+
+<!-- Jumbo BTN  -->
+{% block jumbo_btn %}
+    <!-- Pagination -->
+    <nav aria-label="Page navigation example">     
+        <ul class="pagination justify-content-center">
+
+            {% for page_num in search_query.iter_pages(left_edge=1, right_edge=3, left_current=1, right_current=2) %}
+                {% if search_query.page == page_num%}
+                    <!-- Page 1 -->
+                    <li class="page-item disabled">
+                        <a href="{{url_for('core.index', page=page_num)}}" class="page-link">{{page_num}}</a>
+                    </li>
+                {% else %}
+                    <!-- Other Pages -->
+                    <li class="page-item">
+                        <a href="{{url_for('core.index', page=page_num)}}" class="page-link">{{ page_num}}</a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>                  
+    </nav>
+{% endblock%}
+
+{% block search%} 
+  
+
+        
+            
+
+{% endblock%}
+
+
+
+
+ 

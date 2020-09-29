@@ -1,0 +1,94 @@
+{% extends 'base.html'%} 
+<!-- Title -->
+{% block title %} Index Page {%endblock%}
+
+<!-- Jumbo Header -->
+{% block jumpo_title%} <h1>Index Page</h1>{% endblock%}
+
+<!-- Jumbo Text -->
+{% block jumbo_text%} <h2>Here are all the post stored in your Database sir</h2>
+<!-- Flash -->
+{% for msg in get_flashed_messages()%}
+<h4>{{msg}}</h4>
+{% endfor%}
+<!-- End Flash -->
+
+{% endblock %}
+
+<!-- Jumbo Subtext -->
+{% block jumbo_subtext%} 
+<!-- Content Article with Posts -->
+     <!-- Go Through Each Blog Post -->
+    {# Go through each blog post #}
+   
+    {% for rmd in order_tag.items%}
+    <div class="container">       
+
+        <div class="card my-5 ">
+            <div class="card-body btn btn-outline-info list-group-item-action">
+                <!-- Card Title Wrapper -->
+                <div>
+                    <h2>
+                        <a href="{{url_for('reminder.read_reminder', reminder_id=rmd.id)}}" class="card-title">{{rmd.title}}</a>
+                        <span class="badge badge-secondary">{{rmd.tag}}</span>
+                    </h2>
+                </div>
+
+                <!-- Date Wrapper -->
+                <p>Published on: {{rmd.reminder_date.strftime('%Y-%m-%d')}}</p>
+                
+                <!-- Blog Content -->
+                <a href="{{url_for('reminder.read_reminder', reminder_id=rmd.id)}}" class="btn btn-primary">Read Reminder</a>
+               
+            </div>
+        </div>   
+    
+        
+
+    </div>
+    {% endfor %}
+    <!-- Endfor -->   
+{% endblock%}
+
+<!-- Jumbo BTN  -->
+{% block jumbo_btn %}
+    <!-- Pagination -->
+
+    <nav aria-label="Page navigation example">     
+        <ul class="pagination justify-content-center">
+
+            {% for page_num in order_tag.iter_pages(left_edge=1, right_edge=3, left_current=1, right_current=2) %}
+                {% if  order_tag.page == page_num%}
+                    <!-- Page 1 -->
+                    <li class="page-item disabled">
+                        <a href="{{url_for('core.index', page=page_num)}}" class="page-link">{{page_num}}</a>
+                    </li>
+                {% else %}
+                    <!-- Other Pages -->
+                    <li class="page-item">
+                        <a href="{{url_for('core.index', page=page_num)}}" class="page-link">{{ page_num}}</a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>                  
+    </nav>               
+
+    
+{% endblock%}
+
+{% block sidebar%}     
+
+    <!-- Tags Scroll SPy  -->
+    <ul class="nav flex-column sticky-top ml-0 mr-0 my-4 pl-5 pr-0 py-3">
+        <!-- Tags Loop -->
+        {% for tag in tag %}
+            <li class="nav-item">
+                <a href="{{tag.tag}}" class="nav-link active">
+                    {{tag.tag}}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+
+
+{% endblock%}

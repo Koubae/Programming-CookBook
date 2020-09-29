@@ -1,4 +1,4 @@
-## FOOD TRACKER MINI APP
+# FOOD TRACKER MINI APP
 =========================
 
 > **This is a exercise mini app project**
@@ -17,7 +17,7 @@ The project is taken from PrettyPrinted Udemy course found here:
 
 - [Pretty Printed Youtube Channel](https://www.youtube.com/channel/UC-QDfvrRIDB6F0bIO4I4HkQ)
 
-------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
 
 I built out the concept to have all sqlite3 queries in a separate file.
 

@@ -1,0 +1,72 @@
+{% extends 'base.html'%} 
+
+<!-- Title -->
+{% block title %} Reminder{%endblock%}
+
+<!-- Jumbo Header -->
+{% block jumpo_title%} <h1>Reminder <strong>'{{post.title}}'</strong></h1>{% endblock%}
+
+<!-- Jumbo Text -->
+{% block jumbo_text%}
+
+    <!-- Flash -->
+    <div class="container text-center">
+        {% for msg in get_flashed_messages()%}
+            <h4>{{msg}}</h4>
+        {% endfor%}
+    <!-- End Flash -->
+    {% endblock %}
+
+<!-- Jumbo Subtext -->
+{% block jumbo_subtext%} 
+        <!-- Reminder View -->
+        <p>Published on: {{post.reminder_date.strftime('%d %B, %Y')}}</p>
+        <div class="container my-5 mx-0 btn btn-outline-info ">
+            <pre><code>
+                <p class="text-left overflow-hidden">
+                    {{post.text}}
+                </p>
+            </code></pre>
+        </div>
+ {% endblock%}
+
+<!-- Jumbo BTN  -->
+{% block jumbo_btn %}
+
+        <!-- Update & Delete -->
+        <div>
+            <!-- Update -->
+            <a href="{{url_for('reminder.update_reminder', reminder_id=post.id)}}" class="btn btn-secondary">Update</a>
+            <!-- Delete -->
+            <button class="btn btn-danger" type="button" data-toggle="modal" data-target="#del_modal">Delete</button>
+        </div>
+
+        <!-- Modal Delete Button -->
+        <div class="modal" tabindex="1" role="dialog" id="del_modal">
+            <div class="modal-dialog" role="dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!-- Modal Delete Tittle -->
+                        <h5 class="modal-title">Delete This Reminder</h5>
+                        <button class="close" type="button" data-dismis="modal" aria-label="Close">
+                            <span aria-label="true">&times;</span>
+                        </button>
+                    </div>
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <p>Are you sure you want to delete this blog Post?</p>
+                    </div>
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-dismis="modal">Cancel</button>
+                        <!-- Modal Form -->
+                        <form action="{{url_for('reminder.delete_reminder', reminder_id=post.id)}}" method="POST">
+                            <input type="submit" value="Delete" class="btn btn-danger" name="delete">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+{% endblock%}
