@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% set active_page = "users" %}
+{% from "macro/show_links.html" import show_links %}
+{% from "macro/show_links.html" import flash %}
+
+{% block title %}Create users{% endblock %}
+
+{% block nav %}
+{{ show_links(user, active_page) }}
+{% endblock %}
+
+{% block body %}
+
+    <div class="page-header">
+        <h1> Create New Users</h1>
+        <h6>Then assign it a role!!!</h6>
+        {{flash()}} 
+    </div>
+        <div class="row">
+            <div class="col-lg-12">
+            <!-- Add Stuff Here -->
+                <div class="well bs-component">
+                    <form class="form-horizontal" method="POST" action="{{ url_for('new_user') }}">
+                        <fieldset>
+                            <!-- Name -->
+                            <div class="form-group">
+                                <label for="inputName" class="col-lg-2 control-label">Name</label>
+                                <div class="col-lg-10">
+                                    <!-- If error, catch error -->
+                                    {% if error %}
+                                    <div>{{ error }}</div>
+                                    {% endif %}
+                                    <input type="text" class="form-control" name="name" placeholder="Name" required>
+                                </div>
+                            </div>
+                            <!-- Role -->
+                            <div class="form-group">
+                                <div class="col-lg-10">
+                                    <select class="form-control" name="role">
+                                        <option>Member </option>
+                                        <option>Expert</option>
+                                        <option>Admin</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- Password -->
+                            <div class="form-group">
+                                <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+                                <div class="col-lg-10">
+                                    <input type="password" class="form-control" name="password" placeholder="Password" required>
+                                </div>
+                            </div>
+                            <!-- Submit -->
+                            <div class="form-group">
+                                <div class="col-lg-10 col-lg-offset-2">
+                                    <button type="submit" class="btn btn-primary">Register</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>   
+        </div><!-- /.col-lg-12 -->
+    </div>
+
+{% endblock %}

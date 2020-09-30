@@ -1,0 +1,27 @@
+
+a.admin {
+    background-color: rgb(235, 180, 0);
+    
+}
+
+a.admin h4#admin{
+    color: black;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+a.admin:hove{
+    background-color: rgb(255, 202, 29);
+}
+
+a.active.st:hover {
+    background-color: rgb(226, 138, 6);
+}
+
+.admin-btn {
+    background-color: rgb(226, 138, 0, 0);
+    color: inherit;
+    border-color: inherit;
+    margin-left: 2rem;
+    padding: 0.5rem 2rem;
+} 

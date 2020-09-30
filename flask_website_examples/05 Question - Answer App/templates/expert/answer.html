@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% from "macro/show_links.html" import show_links %}
+{% from "macro/show_links.html" import flash %}
+{% block title %}Answer{% endblock %}
+
+{% block nav %}
+{{ show_links(user) }}
+{% endblock %}
+
+{% block body %}
+      <div class="page-header">
+        <h1>{{ question['question_text'] }}</h1>
+      </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="well bs-component">
+                {{flash()}}          
+              <!-- Form -->
+              <form class="form-horizontal" action="{{ url_for('answer', question_id=question['id'], user_name=user_name) }}" method="POST">
+                <fieldset>
+                  <div class="form-group">
+                    <!-- Label -->
+                    <label for="textArea" class="col-lg-2 control-label">Answer</label>
+                    <!-- Text Area -->
+                    <div class="col-lg-10">
+                      <textarea class="form-control" rows="3" name="answer" id="textArea"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <!-- Button -->
+                    <div class="col-lg-10 col-lg-offset-2">
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                       <!-- CheckBox -->
+                      {% if user['admin'] == 1 %}     
+                        <div class="form-check form-check-inline">              
+                          <input type="checkbox" class="form-check-input" id="Check1" name="disab" value="Disab">
+                          <label class="form-check-label" for="Check1">Disable this Answer</label>
+                        </div>  
+                      {% endif %}
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+{% endblock %}

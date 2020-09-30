@@ -1,0 +1,44 @@
+{% macro show_links(user, active_page) %}
+<ul class="nav navbar-nav">
+    
+    <li {% if active_page == 'index' %} class="active" {%endif%}><a href="{{ url_for('index') }}">Home</a></li>
+
+    <!-- If not user -->
+    {% if not user %}
+    <li {% if active_page == 'login' %} class="active" {%endif%}><a href="{{ url_for('login') }}">Login</a></li>
+    <li {% if active_page == 'signup' %} class="active" {%endif%}><a href="{{ url_for('signup') }}">Register</a></li>
+    {% endif %}
+
+    <!-- If User logged -->
+    {% if user and user['admin'] == 0 and user['expert'] == 0 %}
+    <li {% if active_page == 'ask' %} class="active" {%endif%}><a href="{{ url_for('ask') }}">Ask Question</a></li>
+    {% endif %}
+
+    <!-- If Expert/Admin logged -->
+    {% if user and user['expert'] == 1 or user['admin'] == 1 %}
+    <li {% if active_page == 'unanswered' %} class="active" {%endif%}><a href="{{ url_for('unanswered') }}">Answer Questions</a></li>
+    {% endif %}
+
+    <!-- If Admin Logged -->
+    {% if user and user['admin'] == 1 %}
+    <li  {% if active_page == 'users' %} class="active" {%endif%}><a href="{{ url_for('new_user') }}">Create User</a></li>
+    <li  {% if active_page == 'users' %} class="active" {%endif%}><a href="{{ url_for('users') }}">User Setup</a></li>
+    {% endif %}
+
+    <!-- Logged -->
+    {% if user %}
+    <li><a href="{{ url_for('logout') }}">Logout</a></li>
+    {% endif %}
+
+</ul>
+{% endmacro %}
+
+{% macro flash()%}
+
+    {% for msg in get_flashed_messages()%}
+        <div class="alert alert-danger" role="alert">
+            <p>{{msg}}</p>
+        </div>
+    {% endfor%}
+
+{% endmacro %}
