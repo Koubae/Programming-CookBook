@@ -16,13 +16,13 @@ Requirements:
 ### Features
 
 
-1 Implementation of a Tag System, you can add your own Tag that can be used to separate Topics.
+* 1 Implementation of a Tag System, you can add your own Tag that can be used to separate Topics.
 
-2 Actual Search bar, will search anthing that finds in the code or tag.
+* 2 Actual Search bar, will search anthing that finds in the code or tag.
 
-3 Side by 'spy' search by tag, selecting the Tag wiil refine code view by the selected Tag.
+* 3 Side by 'spy' search by tag, selecting the Tag wiil refine code view by the selected Tag.
 
-4 The code called 'Reminders' implemented with a Classsing CRUD system using Flask-SQLAlchemy /SQLAlchemy / Sqlite3.
+* 4 The code called 'Reminders' implemented with a Classsing CRUD system using Flask-SQLAlchemy /SQLAlchemy / Sqlite3.
 
 
 

@@ -1,0 +1,53 @@
+{% extends 'base.html'%}
+<!-- MACROS Imports -->
+{% from 'macro.html' import flash %}
+
+<!-- Title -->
+{% block title %} Update Picture {%endblock%}
+
+<!-- Jumbo Header -->
+{% block jumpo_title%} 
+<h1>Check the Picture</h1>
+<!-- Flash -->
+{{flash()}}
+{% endblock%}
+
+<!-- Jumbo Text -->
+{% block jumbo_text%} 
+
+
+    <div  class="d-flex justify-content-center">
+        <div class="card" style="width: 50%;">
+            <!-- Render Pic -->
+            <img class="card-img-top" src="data:;base64,{{pic.rendered_data}}" alt="WOOW"> 
+            <div class="card-body">
+                <form method="POST" action="/update/{{pic.id}}">
+                    <!-- Location -->
+                    <div class="form-group">                        
+                        <label for="location">Location</label>
+                        <input class="form-control" type="text" name="location" value="{{pic.location}}">
+                    </div>
+                    <!-- Text -->
+                    <div class="form-group">   
+                        <label for="text">Write Text</label>
+                        <textarea class="form-control" name="text" id="text" rows="5">{{pic.text}}</textarea>
+                        <!-- <input type="text" name="text"> -->
+                    </div>
+                    <!-- Submit -->
+                    <button type="submit" class="btn btn-primary">Update</button>
+                </form>
+                   
+            </div>
+        </div>
+    </div>                  
+{% endblock %}
+
+<!-- Jumbo Subtext -->
+{% block jumbo_content%} 
+{% endblock%}
+
+<!-- Jumbo BTN  -->
+{% block jumbo_btn %}
+
+
+{% endblock%}

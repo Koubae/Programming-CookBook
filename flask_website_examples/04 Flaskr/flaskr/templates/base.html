@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+        <!-- Title Block -->
+        <title>{% block title %} {% endblock %} - Flaskr</title>
+    </head>
+    <body>
+        <!-- Nav /* -->
+        <nav>
+            <!-- TODO -->
+            <h1><a href="{{ url_for('index') }}">Flaskr</a></h1>
+            <ul>
+                <!-- If g.User -->
+                {% if g.user %}
+                    <li><span>{{ g.user['username'] }}</span></li>
+                    <!-- Log Out -->
+                    <li><a href="{{ url_for('auth.logout') }}">Logout</a></li>
+                {% else %}
+                    <!-- SingUP -->
+                    <li><a href="{{ url_for('auth.register') }}">SignUp</a></li>
+                    <!-- LogIn -->
+                    <li><a href="{{ url_for('auth.login') }}">Login</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+        <!-- */ -->
+
+        <!-- Section /* -->
+        <section class="content">
+            <!-- Header /* -->
+            <header>
+                {% block header %} {% endblock %}
+            </header>
+            <!-- */ -->
+
+            <!-- Flashed Messages /* -->
+            {% for message in get_flashed_messages() %}
+                <div class="flash">
+                    {{ message }}
+                </div>
+            {% endfor %}
+            <!-- */ -->
+
+            <!-- Block Content -->
+            {% block content%} {% endblock %}
+            <!-- */ -->
+        </section>
+        <!-- */ -->
+        
+    </body>
+</html>

@@ -1,0 +1,86 @@
+{% extends 'base.html'%}
+<!-- MACROS Imports -->
+{% from 'macro.html' import flash %}
+
+<!-- Title -->
+{% block title %} Picture View {%endblock%}
+
+<!-- Jumbo Header -->
+{% block jumpo_title%} 
+<h1>Check the Picture</h1>
+<!-- Flash -->
+{{flash()}}
+{% endblock%}
+
+<!-- Jumbo Text -->
+{% block jumbo_text%} 
+
+
+    <div  class="d-flex justify-content-center">
+        <div class="card" style="width: 50%;">
+            <!-- Render Pic -->
+            <img class="card-img-top" src="data:;base64,{{pic.rendered_data}}" alt="WOOW"> 
+            <div class="card-body">
+                <!-- Pic Name -->    
+                <h2>               
+                    <a class="card-title" href="{{url_for('pic', pic_id=pic.id)}}">{{pic.name|capitalize}}</a>
+                    <!-- Location Badge -->
+                    <span class="badge badge-secondary">{{pic.location|capitalize}}</span>
+                </h2>           
+
+                <!-- Pic Text -->
+                <p class="card-text">{{pic.text}}</p>
+                <!-- Date Wrapper -->
+                <p>Published on: {{pic.pic_date.strftime('%d-%m-%Y')}}</p>
+            </div>
+            <div class="card-body">    
+                <!--Download, Update  & Delete  -->
+                <div>
+                    <!-- Download -->
+                    <a href="{{url_for('download', pic_id=pic.id)}}" class="btn btn-outline-primary">Download</a>
+                    <!-- Update -->
+                    <a href="{{url_for('update', pic_id=pic.id)}}" class="btn btn-primary">Update</a>
+                    <!-- Delete -->
+                    <button class="btn btn-danger" type="button" data-toggle="modal" data-target="#del_modal">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>                
+    <!-- Modal Delete Button -->
+    <div class="modal" tabindex="1" role="dialog" id="del_modal">
+        <div class="modal-dialog" role="dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- Modal Delete Tittle -->
+                    <h5 class="modal-title">Delete This Reminder</h5>
+                    <button class="close" type="button" data-dismis="modal" aria-label="Close">
+                        <span aria-label="true">&times;</span>
+                    </button>
+                </div>
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <p>Are you sure you want to delete this blog Post?</p>
+                </div>
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-dismis="modal">Cancel</button>
+                    <!-- Modal Form -->
+                    <form action="{{url_for('delete', pic_id=pic.id)}}" method="POST">
+                        <input type="submit" value="Delete" class="btn btn-danger" name="delete">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+<!-- Jumbo Subtext -->
+{% block jumbo_content%} 
+{% endblock%}
+
+<!-- Jumbo BTN  -->
+{% block jumbo_btn %}
+
+
+{% endblock%}
