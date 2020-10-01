@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="" method="POST" name="form-1">
+        <div class="form-row">
+            <div class="col">
+                <!-- Name -->
+                <input type="text" class="form-control" placeholder="First name" name="name" >
+            </div>
+            <div class="col">
+                <!-- Where -->
+                <input type="text" class="form-control" placeholder="Location" name="where">
+            </div>
+            <div class="col">
+        
+            <div class="col">
+                <!-- Submit -->
+                <input type="submit" class="btn btn-primary" name="submit" value="submit">
+            </div>
+        </div>
+    </form>
+
+
+    <form action="" method="POST" name="form-2">
+        <div class="form-row">
+            <div class="col">
+                <!-- Name -->
+                <input type="text" class="form-control" placeholder="First name" name="name" >
+            </div>
+            <div class="col">
+                <!-- Where -->
+                <input type="text" class="form-control" placeholder="Location" name="where">
+            </div>
+            <div class="col">
+        
+            <div class="col">
+                <!-- Submit -->
+                <input type="submit" class="btn btn-primary" name="submit" value="submit">
+            </div>
+        </div>
+    </form>
+    
+</body>
+</html>
+
+
+
+<html>
+<head>
+    <title>Login Form</title>
+</head>
+<body>
+    <h1>Form</h1>
+    <form action="/" method="POST">
+        {{ form.csrf_token }}
+        {{ form.username.label }}
+        {{ form.username }}
+        <ul>
+            {% for error in form.username.errors %}
+                <li style="color:red;">{{ error }}</li>
+            {% endfor %}
+        </ul>
+        {{ form.password.label }}
+        {{ form.password }}
+        <ul>
+            {% for error in form.password.errors %}
+                <li style="color:red;">{{ error }}</li>
+            {% endfor %}
+        </ul>
+        {{ form.age.label }}
+        {{ form.age }}
+        <ul>
+            {% for error in form.age.errors %}
+                <li style="color:red;">{{ error }}</li>
+            {% endfor %}
+        </ul>
+        {{ form.true.label }}
+        {{ form.true }}
+    
+        </ul>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -54,7 +54,7 @@ The following global variables are available within Jinja2 templates by default
 
 ### The Jinja Context Behavior
 
-** For Macros **
+**For Macros**
 
 you explicitly pass the request to the macro as parameter, or the attribute of the request object you are interested in.
 
@@ -110,8 +110,7 @@ app.jinja_env.filters['reverse'] = reverse_filter
 
 ## Context Processors
 
-**Injects new variables/functions automatically into the context of a template, context processors exist in Flask. 
-**
+**Injects new variables/functions automatically into the context of a template, context processors exist in Flask.**
 ```
 
 @app.context_processor

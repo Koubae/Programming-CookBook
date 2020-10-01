@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% block content %}
+			<div class="jumbotron">
+			<h1>Welcome to Engage!</h1>
+				{% if message %}
+					<h3><span style="color:red;">{{ message }}</span> </h3>
+				{% endif %}
+				{{flash()}}
+				<!-- All Tweeets -->
+				{% if logged_in_user.is_authenticated %}
+					{% for tweet in all_tweets.items%}
+						<div class="row">
+							<div class="col">
+								<div class="row pad">
+									<div class="col-lg-2">
+										<!-- Tweet Pic -->
+										<img src="{{ tweet.user.image }}" class="img-circle" style="width: 60px; height: 60px;" />
+									</div>
+									<div class="col-lg-10">
+										<div>
+											<strong class="mid">{{ tweet.user.name }}</strong> 
+											<small><em><a href="{{ url_for('profile', username=tweet.user.username) }}">@{{ tweet.user.username }}</a></em></small>  
+											{{ (current_time - tweet.date_created)|time_since }}
+										</div>
+										<div class="pad">
+											{{ tweet.text }}
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					{% endfor %}
+					<!-- Pagination -->
+					<nav aria-label="Page navigation example">     
+						<ul class="pagination justify-content-center">
+				
+							{% for page_num in all_tweets.iter_pages(left_edge=1, right_edge=3, left_current=1, right_current=2) %}
+								{% if all_tweets.page == page_num%}
+									<!-- Page 1 -->
+									<li class="page-item disabled">
+										<a href="{{url_for('index', page=page_num)}}" class="page-link">{{page_num}}</a>
+									</li>
+								{% else %}
+									<!-- Other Pages -->
+									<li class="page-item">
+										<a href="{{url_for('index', page=page_num)}}" class="page-link">{{ page_num}}</a>
+									</li>
+								{% endif %}
+							{% endfor %}
+						</ul>                  
+					</nav>               
+				
+					
+				{% endif %}
+				</div>
+
+			<!-- Modal Log in Form -->
+			<div class="modal fade" id="login">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title">Log in to Eng@ge!</h4>
+						</div>
+						<div class="modal-body">
+							<div class="row">
+								<div class="col-lg-6 col-lg-offset-3">
+									<div class="text-center">
+										<h3>
+											<a href="./">ENG@GE!</a>
+										</h3>
+									</div>
+									<form method="POST" action="{{ url_for('login') }}">
+									   
+										{{ form.csrf_token }}
+										<div class="form-group">
+											{{ form.username(class='form-control', placeholder='Username') }}
+											{% for error in form.username.errors %}
+					    						<li style="color:red;">{{ error }}</li>
+					    					{% endfor %}
+										</div>
+										<div class="form-group">
+											{{ form.password(class='form-control', placeholder='Password') }}
+											{% for error in form.password.errors %}
+					    						<li style="color:red;">{{ error }}</li>
+					    					{% endfor %}
+										</div>
+										<div class="form-group">
+											<div class="checkbox-inline">
+												<label>
+													{{ form.remember }}
+													Remember Me
+												</label>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<button type="submit" class="btn btn-danger btn-block">Login</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+{% endblock %}

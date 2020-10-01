@@ -1,5 +1,5 @@
 # How to Question App
-
+=====================
 
 A very simple & small web app, created for practising and testing purposes for Vanila Flask and Vanila SQLite3.
 

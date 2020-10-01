@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+{% block timeline_active %}active{% endblock %}
+{% block content %}
+			<div class="row">
+				<div class="col-lg-12">
+					<h3 class="text-center bold">Timeline</h3>
+				</div>
+
+				<div class="col-lg-3">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<div class="row pad">
+								<div class="col-lg-12">
+									<img src="{{ current_user.image }}" class="img-responsive img-circle center-block" alt="Image" />
+								</div>
+							</div>
+							<div class="row pad">
+								<div class="col-lg-4 col-lg-offset-2 text-center">
+									<strong>
+										Tweets <br />
+										{{ total_tweets }} 
+									</strong> 
+								</div>
+								<div class="col-lg-4 text-center">
+									<a href="{{url_for('followers', username=current_user.username)}}">
+										<strong>
+										Followers <br />
+										{{ followed_by_count }} 
+										</strong>
+									</a>
+								</div>
+							</div>
+						</div>
+						<ul class="list-group">
+							<a class="list-group-item" data-toggle="modal" href="#newPost" data-backdrop="static" data-keboard="false">
+								<i class="glyphicon glyphicon-plus-sign"></i> Post New Message
+							</a>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-lg-6">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							{% for tweet in tweets %}
+								{{tweet.text}}
+								<div class="row">
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+										<div class="thumbnail">
+											<div class="caption">
+												<div class="row">
+													<div class="col-lg-10">
+														<!-- <i class="glyphicon glyphicon-user"></i>  -->
+														<img src="{{ tweet.user.image }}" style="width: 30px; height: 30px;" class="img-circle">
+														<strong>{{ tweet.user.name }}</strong> 
+														<small><em>@{{ tweet.user.username }}</em></small>
+													</div>
+													<div class="col-lg-2 text-right">
+														{{ (current_time - tweet.date_created)|time_since }}
+													</div>
+												</div>
+												<div class="row pad">
+													<div class="col-lg-12">
+														{{ tweet.text }}
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<h3>Who To Watch</h3>
+						</div>
+						<ul class="list-group">
+							{% for user in who_to_watch %}
+								<li class="list-group-item">
+									{{ user.name }}
+									<div>
+										<strong><a href="{{ url_for('profile', username=user.username) }}">@{{ user.username }}</a></strong> 
+										<span class="pull-right">
+											{{ user.followed_by.all()|length }} Followers
+										</span>
+									</div>
+								</li>
+						    {% endfor %}
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- Modal, New Post -->
+			<div class="modal fade" id="newPost">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title">Post New Message</h4>
+						</div>
+						<form action="{{ url_for('post_tweet') }}" method="POST">
+							<div class="modal-body">
+								<div class="row">
+									<div class="col-lg-8 col-lg-offset-2">
+										<div class="form-group">
+											{{ form.csrf_token }}
+											<label>Enter new Eng@ge! post</label>
+											{{ form.text(class='form-control', rows=6, required='required', placeholder='Enter your new message here.') }}
+										</div>
+										<div class="form-group">
+											By posting on our platform, you agree to our <a href="#">Terms and Conditions</a>.
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">
+									<i class="glyphicon glyphicon-ban-circle"></i> Close
+								</button>
+								<button type="submit" class="btn btn-primary">
+									<i class="glyphicon glyphicon-send"></i> Post
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+{% endblock %}

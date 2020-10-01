@@ -1,0 +1,190 @@
+{% extends "base.html" %}
+{% block profile_active %}active{% endblock %}
+{% block content %}
+
+			<div class="row">
+				<div class="col-lg-12">
+					<h3 class="text-center bold">My Profile</h3>
+				</div>
+				<div class="col-lg-4">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<div class="row pad">
+								<div class="col-lg-11">
+									<!-- Upload Pic Modal -->
+									{% if change_pic%} 								
+										<a href="#pic" data-toggle="modal" data-keyboard="false">	
+											<img src="{{ current_user.image }}" class="img-responsive img-circle center-block" alt="Image" style="height: 220px;" />
+										</a>
+									{% else %} 								
+										<img src="{{ current_user.image }}" class="img-responsive img-circle center-block" alt="Image" style="height: 220px;" />				
+									{% endif %} 
+									
+								</div>
+
+						
+							
+							</div>
+						</div>
+						<ul class="list-group">
+							<li class="list-group-item">
+								<i class="glyphicon glyphicon-user"></i> NAME: 
+								<strong class="pull-right">{{ current_user.name }}</strong>
+							</li>
+							<li class="list-group-item">
+								<i class="glyphicon glyphicon-th"></i> Handle: 
+								<strong class="pull-right"><em>@{{ current_user.username }}</em></strong>
+							</li>
+							<li class="list-group-item">
+								<i class="glyphicon glyphicon-calendar"></i> MEMBER SINCE: 
+								<strong class="pull-right">{{ current_user.join_date.strftime('%B %d, %Y') }}</strong>
+							</li>
+							<li class="list-group-item">
+								<i class="glyphicon glyphicon-th-list"></i> FOLLOWERS COUNT: 
+								<strong class="pull-right">{{ followed_by|length }}</strong>
+							</li>
+							{% if display_follow %}
+							<li class="list-group-item">
+								&nbsp; <strong class="pull-right"><a href="{{ url_for('follow', username=current_user.username) }}">FOLLOW</a></strong>
+							</li>
+							{% endif %}
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-lg-5">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<h4><strong>Activity</strong></h4>
+							<div role="tabpanel">
+								<!-- Nav tabs -->
+								<ul class="nav nav-tabs" role="tablist">
+									<li role="presentation" class="active">
+										<a href="#tweets" aria-controls="tweets" role="tab" data-toggle="tab">Tweets &amp; Replies</a>
+									</li>
+									<li role="presentation">
+										<a href="#followings" aria-controls="followings" role="tab" data-toggle="tab">Followers</a>
+									</li>
+								</ul>
+							
+								<!-- Tab panes -->
+								<div class="tab-content">
+									<div role="tabpanel" class="tab-pane active" id="tweets">
+										{% for tweet in tweets %}
+										<div class="row">
+											<div class="col-lg-12">
+												<div class="row pad">
+													<div class="col-lg-2">
+														<img src="{{ tweet.user.image }}" class="img-circle" style="width: 60px; height: 60px;" />
+													</div>
+													<div class="col-lg-10">
+														<div>
+															<strong class="mid">{{ tweet.user.name }}</strong> 
+															<small><em><a href="{{ url_for('profile', username=tweet.user.username) }}">@{{ tweet.user.username }}</a></em></small>  
+															{{ (current_time - tweet.date_created)|time_since }}
+														</div>
+														<div class="pad">
+															{{ tweet.text }}
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										{% endfor %}
+										<br><a href="{{ url_for('timeline', username=current_user.username) }}">More</a>
+									</div>
+									<div role="tabpanel" class="tab-pane" id="followings">
+										{% for follower in followed_by %}
+										<div class="row">
+											<div class="col-lg-12">
+												<div class="row pad">
+													<div class="col-lg-2">
+														<img src="{{ follower.image }}" class="img-circle" style="width: 60px; height: 60px;" />
+													</div>
+													<div class="col-lg-10">
+														<div>
+															<strong class="mid">{{ follower.name }}</strong> 
+															<small><em><a href="{{ url_for('profile', username=follower.username) }}">@{{ follower.username }}</a></em></small>
+														</div>
+														<div class="row pad">
+															<hr />
+															<div class="col-lg-12">
+																<i class="glyphicon glyphicon-th-list"></i> {{ follower.followed_by.all()|length }}
+																&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										{% endfor %}
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<h3>Who To Watch</h3>
+						</div>
+						<ul class="list-group">
+							{% for user in who_to_watch %}
+								<li class="list-group-item">
+									{{ user.name }}
+									<div>
+										<strong><a href="{{ url_for('profile', username=user.username) }}">@{{ user.username }}</a></strong> 
+										<span class="pull-right">
+											{{ user.followed_by.all()|length }} Followers
+										</span>
+									</div>
+								</li>
+						    {% endfor %}
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+		<!-- Modal Pic -->
+		<div class="modal fade" id="pic">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<!-- Header -->
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">Upload a Profile Picture! : ) </h4>
+					</div>
+					<!-- Body -->
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-lg-6 col-lg-offset-3">
+								<div class="text-center">
+									<h3>
+										<a href="./">ENG@GE!</a>
+									</h3>
+								</div>
+								<form method="POST" action="{{ url_for('update_pic') }}"  enctype="multipart/form-data">
+								   
+									{{ form.csrf_token }}
+									<div class="form-group">
+										<label for="form_pic">Profile image</label>
+										{{ form.image(class="form-control-file") }}
+										{% for error in form.image.errors %}
+												<li style="color:red;">{{ error }}</li>
+										{% endfor %}
+									  </div>
+									<!-- Submit -->
+									<div class="form-group">
+										<button type="submit" class="btn btn-danger btn-block">Login</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+{% endblock %}

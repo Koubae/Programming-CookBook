@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="col-lg-3">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <h3>Who To Watch</h3>
+            </div>
+            <ul class="list-group">
+                {% for follower in followers %}
+                    <li class="list-group-item">
+                        {{ follower.name }}
+                        <div>
+                            <strong><a href="{{ url_for('profile', username=follower.username) }}">@{{ follower.username }}</a></strong> 
+                            <span class="pull-right">
+                                {{ follower.followed_by.all()|length }} Followers
+                            </span>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+{% endblock %}

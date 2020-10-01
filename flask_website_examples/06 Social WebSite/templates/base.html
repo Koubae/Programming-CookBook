@@ -1,0 +1,130 @@
+{% from "macro/macro.html" import flash %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home | Eng@ge!</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='bs/css/united.min.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    </head>
+    <body>
+
+        <div class="container-fluid">
+            <div class="row" id="banner">
+                <div class="title col-lg-12">
+                    <p class="title">
+                        <a href="{{ url_for('index') }}">ENG@GE!</a>
+                    </p>
+                    <p class="subtitle">...the awesome social platform</p>
+                </div>
+            </div>
+        </div>
+
+        {% block nav %}
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="{{ url_for('index') }}">Eng@ge!</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        {% if logged_in_user %}                      
+                            {% if not logged_in_user.is_authenticated %}
+  
+                                <!-- Sign Up -->
+                                <li><a href="{{ url_for('register') }}">Sign Up</a></li>
+                                <!-- Log in -->
+                                <li><a href="#login" data-toggle="modal" data-keyboard="false">Login</a></li>
+
+                            {% else %}
+                                <!-- New post -->                                
+                                <li> 
+                                    <a  data-toggle="modal" href="#newPostNav" data-backdrop="static" data-keboard="false">
+                                        <i class="glyphicon glyphicon-plus-sign"></i>Post New Message
+                                    </a> 
+                                </li>
+                                <!-- Timeline -->
+                                <li class="{% block timeline_active %}{% endblock %}"><a href="{{ url_for('timeline', username=logged_in_user.username) }}">Timeline</a></li>
+                                <!-- Profile -->
+                                <li class="{% block profile_active %}{% endblock %}"><a href="{{ url_for('profile')}}">My Profile</a></li>
+                                <!-- Logout -->
+                                <li><a href="{{ url_for('logout') }}">Logout</a></li>
+
+                                <!-- Modal, New Post -->
+                                <div class="modal fade" id="newPostNav">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                <h4 class="modal-title">Post New Message</h4>
+                                            </div>
+                                            <form action="{{ url_for('post_tweet') }}" method="POST">
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <div class="col-lg-8 col-lg-offset-2">
+                                                            <div class="form-group">
+                                                                {{ form_2.csrf_token }}
+                                                                <label>Enter new Eng@ge! post</label>
+                                                                {{ form_2.text(class='form-control', rows=6, required='required', placeholder='Enter your new message here.') }}
+                                                            </div>
+                                                            <div class="form-group">
+                                                                By posting on our platform, you agree to our <a href="#">Terms and Conditions</a>.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                        <i class="glyphicon glyphicon-ban-circle"></i> Close
+                                                    </button>
+                                                    <button type="submit" class="btn btn-primary">
+                                                        <i class="glyphicon glyphicon-send"></i> Post
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endif %}
+                        {% endif %}
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </nav>
+
+        
+
+
+        {% endblock %}
+
+        <div class="container">
+
+            {% block content %}{% endblock %}
+
+            <footer>
+                <div class="row pad">
+                    <div class="col-lg-12 text-center">
+                        Copyright &copy; 2017 <strong> <a href="{{ url_for('index') }}">Eng@ge!</a></strong>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- jQuery -->
+        <script src="{{ url_for('static', filename='bs/js/jquery.min.js') }}"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="{{ url_for('static', filename='bs/js/bootstrap.min.js') }}"></script>
+    </body>
+</html>

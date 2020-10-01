@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block nav %}{% endblock %}
+{% block content %}
+		<div class="container-fluid">
+			<div class="row pad">
+				<div class="col-lg-4 col-lg-offset-4 pad">
+					<h2 class="text-center bold">Join Eng@ge! today.</h2>
+
+					<br />
+					<form action="{{ url_for('register') }}" method="POST" enctype="multipart/form-data">
+					{{ form.csrf_token }}
+
+					<div class="form-group">
+					    {{ form.name(class="form-control", placeholder="Enter your full name") }}
+					    <ul>
+					    	{% for error in form.name.errors %}
+					    		<li style="color:red;">{{ error }}</li>
+					    	{% endfor %}
+					    </ul>
+					</div>
+
+					<div class="form-group">
+						{{ form.username(class="form-control", placeholder="Enter a username") }}
+						<ul>
+					    	{% for error in form.username.errors %}
+					    		<li style="color:red;">{{ error }}</li>
+					    	{% endfor %}
+					    </ul>
+					</div>
+
+					<div class="form-group">
+						{{ form.password(class="form-control", placeholder="Enter your password") }}
+						<ul>
+					    	{% for error in form.password.errors %}
+					    		<li style="color:red;">{{ error }}</li>
+					    	{% endfor %}
+					    </ul>
+					</div>
+
+					<div class="form-group">
+    					<label for="form_pic">Profile image</label>
+    					{{ form.image(class="form-control-file") }}
+    					{% for error in form.image.errors %}
+					    		<li style="color:red;">{{ error }}</li>
+					    {% endfor %}
+  					</div>
+
+					<div class="form-group">
+						<button type="submit" class="btn btn-danger btn-block">Sign up</button>
+					</div>
+
+					</form>
+
+					<div class="form-group">
+						<a href="./"><i class="glyphicon glyphicon-arrow-left"></i> Back</a>
+					</div>
+				</div>
+			</div>
+{% endblock %}

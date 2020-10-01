@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% block timeline_active %}active{% endblock %}
+{% block content %}
+			<div class="row">
+				<div class="col-lg-12">
+					<h3 class="text-center bold">Timeline</h3>
+				</div>
+
+				<div class="col-lg-3">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<div class="row pad">
+								<div class="col-lg-12">
+									<img src="{{ current_user.image }}" class="img-responsive img-circle center-block" alt="Image" />
+								</div>
+							</div>
+							<div class="row pad">
+								<div class="col-lg-4 col-lg-offset-2 text-center">
+									<strong>
+										Tweets <br />
+										{{ total_tweets }} 
+									</strong> 
+								</div>
+								<div class="col-lg-4 text-center">
+									<a href="{{url_for('followers', username=current_user.username)}}">
+										<strong>
+										Followers <br />
+										{{ followed_by_count }} 
+										</strong>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-6">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							{% for tweet in tweets %}
+								{{tweet.text}}
+								<div class="row">
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+										<div class="thumbnail">
+											<div class="caption">
+												<div class="row">
+													<div class="col-lg-10">
+														<!-- <i class="glyphicon glyphicon-user"></i>  -->
+														<img src="{{ tweet.user.image }}" style="width: 30px; height: 30px;" class="img-circle">
+														<strong>{{ tweet.user.name }}</strong> 
+														<small><em>@{{ tweet.user.username }}</em></small>
+													</div>
+													<div class="col-lg-2 text-right">
+														{{ (current_time - tweet.date_created)|time_since }}
+													</div>
+												</div>
+												<div class="row pad">
+													<div class="col-lg-12">
+														{{ tweet.text }}
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<h3>Who To Watch</h3>
+						</div>
+						<ul class="list-group">
+							{% for user in who_to_watch %}
+								<li class="list-group-item">
+									{{ user.name }}
+									<div>
+										<strong><a href="{{ url_for('profile', username=user.username) }}">@{{ user.username }}</a></strong> 
+										<span class="pull-right">
+											{{ user.followed_by.all()|length }} Followers
+										</span>
+									</div>
+								</li>
+						    {% endfor %}
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+{% endblock %}
