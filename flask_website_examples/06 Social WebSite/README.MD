@@ -36,6 +36,8 @@ This is a revisited project created by PrettyPrinted:
 ## Flask-migrate
 ================
 
+```
+
 Terminal Commands
 
  1) CSM to env folder.
@@ -60,6 +62,7 @@ Terminal Commands
 
 >>> python app.py db upgrade
 
+```
 
 
 --------------------------------------------------------------------------------------------

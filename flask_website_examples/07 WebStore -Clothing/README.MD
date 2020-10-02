@@ -46,6 +46,8 @@ This is a revisited project created by PrettyPrinted:
 
 Terminal Commands
 
+```
+
  1) CSM to env folder.
  2) Enter (optional): >>> set FLASK_APP=app.py   #or whatever name 
  3) >>> flask db init  #initiate the database
@@ -68,6 +70,7 @@ Terminal Commands
 
 >>> python app.py db upgrade
 
+```
 
 ##### NOTE
 

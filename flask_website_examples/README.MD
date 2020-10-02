@@ -53,3 +53,9 @@ Some ready to go example of Flask implementation for Websites, Blogs, Web store,
 Uses flask_scripts & Flask Migrate plus a bunch of other Flask Extensions
 
 --------------------------------------------------------------------------------------------
+
+- 07 [WebStore Clothing](https://github.com/Koubae/Flask_Recipies/tree/master/flask_website_examples/07%20WebStore%20-Clothing)
+
+Uses flask_scripts & Flask Migrate plus a bunch of other Flask Extensions
+
+--------------------------------------------------------------------------------------------
