@@ -1,4 +1,4 @@
-# Flask Recipes CooBook
+# Flask Recipes CookBook
 =======================
 
 

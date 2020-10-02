@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+
+{% block title %}View Product | Trendy Fashion Store{% endblock %}
+
+{% block body %}
+<div class="row">
+	<div class="col-lg-12">
+		<ol class="breadcrumb">
+			<li>
+				<a href="{{ url_for('index') }}">Home</a>
+			</li>
+			<li class="active">View Product</li>
+		</ol>
+	</div>
+</div>
+
+<div class="row pad">
+	<div class="col-lg-5">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="thumbnail">
+				<img src="{{ product.image }}" alt="">
+			</div>
+		</div>
+	</div>
+
+	<div class="col-lg-7">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">Product Details</h3>
+			</div>
+			<div class="panel-body">
+				<h3>{{ product.name }} &nbsp; 
+					{% if product.stock > 0 %}
+					<small>(In Stock)</small>
+					{% else %}
+					<small style="color: red;">(Out of Stock)</small>
+					{% endif %}
+				</h3> 
+				<h4>&dollar;{{ product.price / 100 }}</h4>
+				<hr />
+				{{ product.description }}
+				<hr />
+
+				<form action="{{ url_for('add_to_cart') }}" method="POST">
+				{% if product.stock > 0 %}
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="row">
+							<div class="col-lg-12">
+								Quantity
+							</div>
+							<div class="col-lg-12">
+								{{ form.csrf_token }}
+
+								{{ form.quantity(class='form-control', type='number', min=1, max=product.stock, step=1, value=1) }}
+
+								{{ form.id(value=product.id) }}
+							</div>
+						</div>
+					</div>
+				</div>
+				{% endif %}
+			</div>
+			<div class="panel-footer">
+				{% if product.stock > 0 %}
+				<button type="submit" class="btn btn-primary">
+					<i class="glyphicon glyphicon-shopping-cart"></i> Add To Cart
+				</button>
+				{% endif %}
+			</div>
+			</form>
+		</div>
+
+		<div role="tabpanel">
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active">
+					<a href="#description" aria-controls="description" role="tab" data-toggle="tab">Product Description</a>
+				</li>
+				<li role="presentation">
+					<a href="#shipping" aria-controls="shipping" role="tab" data-toggle="tab">Shipping Details</a>
+				</li>
+			</ul>
+		
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="description">
+					<h3>Product Description</h3>
+					{{ product.description }}
+				</div>
+				<div role="tabpanel" class="tab-pane" id="shipping">
+					<h3>Shipping Details</h3>
+					$10 Flat Rate
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+{% endblock %}
