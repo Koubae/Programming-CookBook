@@ -1,7 +1,7 @@
-# Social Blog Wep Site
+# Forum Website
 =================================
 
-A simple social blog web site
+A simple Forum Web Site
 
 
 
@@ -12,10 +12,10 @@ Requirements:
 - [SQLAlchemy](https://www.sqlalchemy.org/)
 - [Flask-SQLAlchemy](https://flask-sqlalchemy.palletsprojects.com/en/2.x/)
 - [Flask-Migrate](https://flask-migrate.readthedocs.io/en/latest/)
-- [Flask-Script](https://flask-script.readthedocs.io/en/latest/)
-- [Flask-Uploads](https://pythonhosted.org/Flask-Uploads/)
-- [Flask-Login](https://flask-login.readthedocs.io/en/latest/)
+- [Flask-Security](https://pythonhosted.org/Flask-Security/)
+- [email_validator](https://pypi.org/project/email-validator/)
 - [Flask-WTF](https://flask-wtf.readthedocs.io/en/stable/)
+- [bycrypt](https://pypi.org/project/bcrypt/)
 
 --------------------------------------------------------------------------------------------
 
@@ -64,40 +64,28 @@ Terminal Commands
 
 ```
 
-
---------------------------------------------------------------------------------------------
-
-
-## Flask-Script
+## Flask-SQLAlchemy
 ================
 
-*from flask_script import Manager, Server*
 
-```
+- Use of db.Table
 
-manager.add_command('db', MigrateCommand)
-manager.add_command('runserver', Server())
+- db.relationship use of 'secondary=' and 'backref=db.backref' 
 
-```
 
->>> **python app.py runserver**
+## Flask-Security
+================
+
+- **SQLAlchemyUserDatastore(db, User, Role)**
+
+A SQLAlchemy datastore implementation for Flask-Security that assumes 
+the use of the Flask-SQLAlchemy extension.
 
 ==========================================
 
 ##### NOTE
 
-issue with Flask Uploads:
-
-https://stackoverflow.com/questions/60192172/importerror-cannot-import-name-filestorage-from-werkzeug
-
---------------------------------------------------------------------------------------------
-
-##### NOTE TODO
-
-Understand Front end imlementation
 
 
 
 --------------------------------------------------------------------------------------------
-
-

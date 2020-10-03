@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %}{% endblock %}</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='bs/css/bootstrap.min.css') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='./css/styles.css') }}" />
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-lg-offset-0">
+                    
+                    <div class="logo">
+                        <div>
+                            <a href="{{ url_for('index') }}">Forum</a> 
+                            <span class="tagline">...cool community forum</span> 
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <a href="{{ url_for('index') }}" class="m-item">Home</a> | 
+                        {% if current_user.active %}
+                        <a href="{{ url_for('profile') }}" class="m-item">Profile</a> |  
+                        <a href="{{ url_for_security('logout') }}" class="m-item">Logout</a>
+                        {% else %}
+                        <a href="{{ url_for_security('register') }}" class="m-item">Register</a> |
+                        <a href="{{ url_for_security('login') }}" class="m-item">Login</a>
+                        {% endif %}                  
+                        
+                    </div>
+
+                    {% block body %}{% endblock %}
+                            
+                    <footer>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="center">
+                                    Copyright &copy; 2017 Forum. All rights reserved.
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+
+            </div>
+        </div>
+    </div>
+
+        <!-- jQuery -->
+        <script src="{{ url_for('static', filename='bs/js/jquery.min.js') }}"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="{{ url_for('static', filename='bs/js/bootstrap.min.js') }}"></script>
+    </body>
+</html>

@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block title %}View Thread | Forum{% endblock %}
+
+{% block body %}
+<div class="pageTitle">
+    {{ thread.title }}
+</div>
+
+<div class="row">
+    <div class="col-lg-4">
+        <a href="{{ url_for('index') }}" class="btn btn-default btn-sm">
+            <i class="glyphicon glyphicon-arrow-left"></i> Back to Threads
+        </a>
+    </div>
+</div>
+
+<div class="row pad">
+    <div class="col-lg-12">
+        <div class="panel panel-primary">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="big">Thread: {{ thread.title }}</p>
+                    </div>
+                    <div class="col-lg-12">
+                        {{ thread.description }}
+                    </div>
+
+                    <div class="col-lg-12">
+                        <br />  
+                        <i class="glyphicon glyphicon-calendar"></i> 
+                        {{ thread.date_created.strftime('%d %B, %Y') }}&nbsp;
+                        <a href="#_reply"><i class="glyphicon glyphicon-comment"></i> Post Reply</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h3 class="">Replies &mdash; ({{ replies|length }} total)</h3>
+{% for reply in replies %}
+<div class="panel panel-primary reply" id="r1" style="border-radius: 10px;">
+    <div class="panel-body">
+        <div class="row reply">
+            <div class="col-lg-9">
+                <div class="reply-msg">
+                    {{ reply.message }}
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="reply-details">
+                    <i class="glyphicon glyphicon-calendar"></i> {{ reply.date_created.strftime('%d %B, %Y') }} &nbsp; <br />
+                    <i class="glyphicon glyphicon-user"></i> {{ reply.user.username }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+{% if current_user.active %}
+<div class="row pad">
+    <div class="col-lg-12 pad">
+        <div class="panel panel-primary">
+            <!-- <div class="panel-heading big">
+                <i class="glyphicon glyphicon-comment"></i> Post Reply
+            </div> -->
+            <div class="panel-body pad" id="_reply">
+                <form method="POST" role="form" id="theForm">
+                    {{ form.csrf_token }}
+                    <div class="form-group">
+                        {{ form.message(class="form-control", rows="5") }}
+                    </div>
+                
+                    <button 
+                        type="submit" 
+                        class="btn btn-primary">
+                        <i class="glyphicon glyphicon-save"></i> Submit
+                    </button> &nbsp;
+                </form>
+            </div>
+        </div>
+    </div>
+</div>   
+{% endif %}                   
+{% endblock %}

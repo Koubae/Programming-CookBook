@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %}{% endblock %}</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='bs/css/bootstrap.min.css') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}" />
+    </head>
+    <body>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-4" id="loginBlock">
+                    
+                    <div class="logo">
+                        <div>
+                            <a href="{{ url_for('index') }}">Forum</a> 
+                        </div>
+                    </div>
+
+                    {% block body %}{% endblock %}
+                            
+                    <footer>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="center">
+                                    Copyright &copy; 2017 Forum. All rights reserved.
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+
+            </div>
+        </div>
+    </div>
+
+
+        <!-- jQuery -->
+        <script src="{{ url_for('static', filename='bs/js/jquery.min.js') }}"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="{{ url_for('static', filename='bs/js/bootstrap.min.js') }}"></script>
+    </body>
+</html>

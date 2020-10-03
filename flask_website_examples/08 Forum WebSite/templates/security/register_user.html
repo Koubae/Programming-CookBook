@@ -1,0 +1,51 @@
+{% extends "security/base.html" %}
+{% from "security/_macros.html" import render_field_with_errors, render_field %}
+
+{% block title %}Register | Forum{% endblock %}
+
+{% block body %}
+{% include "security/_messages.html" %}
+<div class="pageTitle">{{ _('Register') }}</div>
+<form action="{{ url_for_security('register') }}" method="POST" name="register_user_form" role="form">
+    <div class="row pad">
+        <div class="col-lg-6">
+  {{ register_user_form.hidden_tag() }}
+  
+    <div class="form-group">
+        {{ render_field_with_errors(register_user_form.email, class="form-control", placeholder="Enter email" ) }}
+    </div>
+
+    <div class="form-group">
+        {{ render_field_with_errors(register_user_form.username, class="form-control", placeholder="Enter a username" ) }}
+    </div>
+
+        <div class="form-group">
+        {{ render_field_with_errors(register_user_form.name, class="form-control", placeholder="Enter your name" ) }}
+    </div>
+  
+    </div>
+    <div class="col-lg-6">
+        <div class="form-group">
+            {{ render_field_with_errors(register_user_form.password, class="form-control", placeholder="Enter password") }}
+        </div>
+        <div class="form-group">
+  {% if register_user_form.password_confirm %}   
+    {{ render_field_with_errors(register_user_form.password_confirm, class="form-control", placeholder="Enter password") }}
+  {% endif %}
+</div>
+  
+        </div>
+    </div>
+
+    <div class="row pad">
+        <div class="col-lg-6">
+            <div class="form-group">
+                {{ render_field(register_user_form.submit,  class="btn btn-primary") }}
+                <a href="{{ url_for_security('login') }}" class="btn btn-link pull-right">
+                    Go to Login <i class="glyphicon glyphicon-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</form>
+{% endblock %}

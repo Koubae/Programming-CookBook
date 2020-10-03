@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+
+{% block title %}Threads Listing | Forum{% endblock %}
+
+{% block body %}
+<div class="pageTitle">Thread Listing </div>
+
+
+<div class="row">
+    <div class="col-lg-3">
+        <a href="#newModal" data-toggle="modal" class="btn btn-primary" title="Add Thread">
+            <i class="glyphicon glyphicon-plus-sign"></i> Add Thread
+        </a>
+    </div>
+</div>
+
+<div class="row pad">
+    <div class="col-lg-12">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-lg-4">Name</div>
+                    <div class="col-lg-4">Description</div>
+                    <div class="col-lg-4">Last Post</div>
+                </div>
+            </div>
+            {% for thread in threads %}
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h3 class="panel-title">
+                            <a href="{{ url_for('thread', thread_id=thread.id) }}" style="font-size: 18px;" class="blue">
+                                {{ thread.title }}
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="col-lg-4">
+                        <p>
+                            <em>
+                                {{ thread.description }}
+                            </em>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <p>
+                            <i class="glyphicon glyphicon-calendar"></i> 
+                            {{ thread.last_post_date().strftime('%d %B, %Y') }} &nbsp;
+                            <a href="{{ url_for('thread', thread_id=thread.id) }}">
+                                <i class="glyphicon glyphicon-comment"></i> Reply
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="newModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Add Thread</h4>
+            </div>
+            <div class="modal-body">
+                <form method="POST" role="form">
+                    {{ form.csrf_token }}
+                    <div class="form-group">
+                        <label for="name">Thread Name</label>
+                        {{ form.title(class="form-control", placeholder="Enter thread name") }}
+                    </div>
+
+                    <div class="form-group">
+                        {{ form.description(class="form-control", placeholder="Enter thread description") }}
+                    </div>
+                
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
