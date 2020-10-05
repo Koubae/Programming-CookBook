@@ -15,6 +15,12 @@
 
 - [From Flask ---> DOCS](https://flask.palletsprojects.com/en/1.1.x/errorhandling/)
 
+- [Black](https://black.readthedocs.io/en/stable/)
+
+- [pre-commit](https://pre-commit.com/)
+
+- [Coverage.py](https://coverage.readthedocs.io/en/coverage-5.3/)
+
 > #### [Logging](https://docs.python.org/3/library/logging.html#module-logging)
 
 
@@ -149,4 +155,102 @@ def utility_processor():
 
 ```
 
+-----------------------------------------------------------------------------------------------------
+
+## Custom Error Pages
+
+- [DOCS](https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/)
+
+-----------------------------------------------------------------------------------------------------
+
+### Common Error Codes
+
+- *404 Not Found*
+The good old “chap, you made a mistake typing that URL” message. So common that even novices to the internet know that 404 means: damn, the thing I was looking for is not there. It’s a very good idea to make sure there is actually something useful on a 404 page, at least a link back to the index.
+
+- *403 Forbidden*
+If you have some kind of access control on your website, you will have to send a 403 code for disallowed resources. So make sure the user is not lost when they try to access a forbidden resource.
+
+- *410 Gone*
+Did you know that there the “404 Not Found” has a brother named “410 Gone”? Few people actually implement that, but the idea is that resources that previously existed and got deleted answer with 410 instead of 404. If you are not deleting documents permanently from the database but just mark them as deleted, do the user a favour and use the 410 code instead and display a message that what they were looking for was deleted for all eternity.
+
+- *500 Internal Server Error*
+Usually happens on programming errors or if the server is overloaded. A terribly good idea is to have a nice page there, because your application will fail sooner or later (see also: Application Errors).
+
+----------------------------------
+
+- [HTTPException](https://werkzeug.palletsprojects.com/en/1.0.x/exceptions/#werkzeug.exceptions.HTTPException)
+- [errorhandler](https://flask.palletsprojects.com/en/1.1.x/api/#flask.Flask.errorhandler)
+- [register_error_handler](https://flask.palletsprojects.com/en/1.1.x/api/#flask.Flask.register_error_handler)
+
+-----------------------------------------------------------------------------------------------------
+
+## Deployment Options
+
+- [DOCS](https://flask.palletsprojects.com/en/1.1.x/deploying/)
+
+-----------------------------------------------------------------------------------------------------
+
+## Security Headers
+
+- [Flask-Talisman](https://github.com/GoogleCloudPlatform/flask-talisman)
+
+-----------------------------------------------------------------------------------------------------
+
+## Set-Cookie 
+
+- [DOCS](https://flask.palletsprojects.com/en/1.1.x/security/#set-cookie-options)
+
+**Use itsdangerous.TimedSerializer to sign and validate other cookie values (or any values that need secure signatures).**
+
+- *Secure:* limits cookies to HTTPS traffic only.
+
+- *HttpOnly:* protects the contents of cookies from being read with JavaScript.
+
+- *SameSite:* restricts how cookies are sent with requests from external sites. Can be set to 'Lax' (recommended) or 'Strict'. Lax prevents sending cookies with CSRF-prone requests from external sites, such as submitting a form. Strict prevents sending cookies with all external requests, including following regular links.
+
+```
+
+app.config.update(
+    SESSION_COOKIE_SECURE=True,
+    SESSION_COOKIE_HTTPONLY=True,
+    SESSION_COOKIE_SAMESITE='Lax',
+)
+
+response.set_cookie('username', 'flask', secure=True, httponly=True, samesite='Lax')
+
+
+```
+
+```
+# cookie expires after 10 minutes
+response.set_cookie('snakes', '3', max_age=600)
+```
+
+For the session cookie, if session.permanent is set, then PERMANENT_SESSION_LIFETIME is used to set the expiration. Flask’s default cookie implementation validates that the cryptographic signature is not older than this value. Lowering this value may help mitigate replay attacks, where intercepted cookies can be sent at a later time.
+
+```
+app.config.update(
+    PERMANENT_SESSION_LIFETIME=600
+)
+
+@app.route('/login', methods=['POST'])
+def login():
+    ...
+    session.clear()
+    session['user_id'] = user.id
+    session.permanent = True
+    ...
+
+```
+
+
+-----------------------------------------------------------------------------------------------------
+
+
+#### Notes
+- [The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets (No Excuses!)](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/)
+
+- [Discord](https://discord.gg/t6rrQZH)
+- [How to create a Minimal, Reproducible Example](https://stackoverflow.com/help/minimal-reproducible-example)
 -----------------------------------------------------------------------------------------------------
