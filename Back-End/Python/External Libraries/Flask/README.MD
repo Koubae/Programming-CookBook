@@ -2,6 +2,26 @@
 =======================
 
 
+## Main COmponenst
+
+- [Flask](https://palletsprojects.com/p/flask/)
+- [Werkzeug](https://palletsprojects.com/p/werkzeug/)
+- [Jinja2](https://palletsprojects.com/p/jinja/)
+- [Markupsafe](https://palletsprojects.com/p/markupsafe/)
+- [itsDangerous](https://palletsprojects.com/p/itsdangerous/)
+- [Click](https://palletsprojects.com/p/click/)
+
+-------------------------
+
+- [WTForms](https://wtforms.readthedocs.io/en/2.3.x/)
+- [Blinker](https://pythonhosted.org/blinker/)
+- [SimpleJSON](https://simplejson.readthedocs.io/en/latest/)
+- [PythonDotenv](PythonDotenv)
+- [WatchDog](https://pythonhosted.org/watchdog/)
+
+
+
+
 ### Features
 
 
