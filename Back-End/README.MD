@@ -21,5 +21,7 @@
 
 - **Function Annotations** [PEP 3107](https://www.python.org/dev/peps/pep-3107/)
 
+- **Decorators for Functions and Methods* [PEP 318](https://www.python.org/dev/peps/pep-0318/)
+
 
 -----------------------------------------------------------------------------------------------------
