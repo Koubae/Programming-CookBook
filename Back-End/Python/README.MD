@@ -8,6 +8,7 @@
 
 ## Features
 
+- [The Python 2.3 Method Resolution Order](https://www.python.org/download/releases/2.3/mro/)
 
 ## PEP -- Most notorious ones.
 
@@ -36,5 +37,9 @@
 - **Docstring Conventions** [PEP 257](https://www.python.org/dev/peps/pep-0257/)
 
 
+
+### NOTES
+
+- [What's New in Python 2.4](https://docs.python.org/2.4/whatsnew/contents.html)
 
 -----------------------------------------------------------------------------------------------------
