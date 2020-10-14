@@ -23,10 +23,16 @@
 
 - **Style Guide for Python Code** [PEP 8](https://www.python.org/dev/peps/pep-0008/)
 
+- **New Import Hooks** [PEP 302](https://www.python.org/dev/peps/pep-0302/)
+
+- **Implicit Namespace Packages** [PEP 420](https://www.python.org/dev/peps/pep-0420/)
+
 
 ### FUNCTIONS
 
 - **Keyword-Only Arguments** [PEP 3102](https://www.python.org/dev/peps/pep-3102/)
+
+- **Literal String Interpolation** [PEP498](https://www.python.org/dev/peps/pep-0498/)
 
 ### DECORATORS
 
@@ -48,5 +54,7 @@
 ### NOTES
 
 - [What's New in Python 2.4](https://docs.python.org/2.4/whatsnew/contents.html)
+- [Planet Python](https://planetpython.org/)
+- PyCon videos – GvR - Raymond Hettinger - Alex Martelli
 
 -----------------------------------------------------------------------------------------------------
