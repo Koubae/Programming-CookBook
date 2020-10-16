@@ -6,6 +6,7 @@
 
 ## Learning Material
 
+- [Python Developer’s Guide](https://devguide.python.org)
 - [Python Tips](https://book.pythontips.com/en/latest/index.html)
 - [Python Reference (The Right Way)](https://python-reference.readthedocs.io/en/latest/index.html)
 - [Python 3 Patterns, Recipes and Idioms](https://python-3-patterns-idioms-test.readthedocs.io/en/latest/index.html)
