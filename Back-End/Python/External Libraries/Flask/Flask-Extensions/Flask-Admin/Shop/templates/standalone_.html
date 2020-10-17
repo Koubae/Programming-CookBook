@@ -1,0 +1,10 @@
+{% extends 'admin/master.html' %}
+{% block body %}
+  <p>Here I'm going to display some data.</p>
+
+  <h1>z</h1>
+
+  {% for item in check_list %}
+   <h1>{{item}}</h1>
+  {% endfor %}
+{% endblock %}
