@@ -2,7 +2,7 @@
 =======================
 
 
-## Main COmponenst
+## Main Components
 
 - [Flask](https://palletsprojects.com/p/flask/)
 - [Werkzeug](https://palletsprojects.com/p/werkzeug/)
