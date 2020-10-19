@@ -58,4 +58,21 @@
 - [Planet Python](https://planetpython.org/)
 - PyCon videos – GvR - Raymond Hettinger - Alex Martelli
 
+
+#### Python Version:
+```
+#!/usr/bin/python3
+#!python2
+
+```
+
+
+#### Run Python Modules with exec()
+
+```
+exec(open('filename.py').read())
+```
+
+*exec does not require module reloads after file changes—it skips the normal module import logic.*
+
 -----------------------------------------------------------------------------------------------------
