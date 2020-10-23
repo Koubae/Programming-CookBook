@@ -118,3 +118,33 @@ def fib(n):
     return 1 if n < 3 else fib(n-1) + fib(n-2)
 
 print(fib(10))
+
+
+
+
+class Fib:
+    def __init__(self, n):
+        self._n = n
+
+    def __len__(self):
+        return self._n
+
+    def __getitem__(self, s):
+        if isinstance(s, int):  # Gets single item
+            if s < 0:
+                s = self._n + s
+            if s < 0 or s > self._n -1:
+                raise IndexError  # => Raise index error, handles out of range
+            return self.fib(s)
+        else: # Get by Index
+            idx = s.indices(self._n) # slice(*).indices()
+            rng = range(idx[0], idx[1], idx[2])
+            return [self.fib(n) for n in rng]
+
+    @staticmethod
+    @lru_cache(2*32) # =>  maxsize at its default value of 128
+    def fib(n):
+        if n < 2:
+            return 1
+        else:
+            return Fib.fib(n-1) + Fib.fib(n-2)

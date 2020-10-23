@@ -3,7 +3,7 @@
 
 
 - []()
------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
 
 ## Features
 
@@ -19,6 +19,65 @@
 - l.reverse() *does an in-place reversal of elements of s*
 - l.copy() *returns a shallow copy*
 
+----------------------------------------------------------------------------------------------
+
+## Sequence Type
+
+**Sequence Type are Iterables**
+
+#### They Should Implement:
+
+
+- **__len__**
+- **__getitem__** => Takes one single Int, + choose to handle slice
+
+*Should return an elemenot for a valid index [0, length-1]*
+*Negative indices i < 0 -> i = length > i*
+**sclicing**
+
+```
+list_[0]
+list_.__getitem__(0)
+list_[100] => Ok
+list_.__getitem__(100) => Error #out of index
+
+```
+
+* concatenation (+)
+    - **__add__**
+    - **__radd__**
+
+* in-place concatenation (+=)
+    - **__iadd__**
+
+* repetition (*)
+    - **__mul__**
+    - **__rmul__**
+
+* in-place repetition (*=)
+    - **__imul__**
+
+* index assignment (seq[i]=val)
+    - **__getitem__**
+
+* slice assignment (seq[i:j]=iter and seq[i:j:k]=iter)
+    - **__getitem__**
+
+* append, extend, in, del, pop
+    - **__contains__** => in
+    - **__delitem__** => del
+
+----------------------------------------------------------------------------------------------
+
+## Sequence Type
+
+Transformations [i:j:k], k < 0
+
+[i:j:k] = {x = i + n * k | 0 <= n < (j-i)/k}
+
+----------------------------------------------------------------------------------------------
+
+
 ### NOTES
 
 Homogeneous vs Heterogeneous Sequences
@@ -29,6 +88,8 @@ Homogeneous vs Heterogeneous Sequences
 
 - Introduction to Algorithms, 3rd Edition (Book)
 
+
+- slice => [itertools.islice()](https://docs.python.org/3.8/library/itertools.html#itertools.islice)
 
 
 - [Dynamic array](https://en.wikipedia.org/wiki/Dynamic_array)
@@ -41,4 +102,4 @@ Constant folding and constant propagation are related compiler optimizations use
 
 Constant folding is an optimization technique that eliminates expressions that calculate a value that can already be determined before code execution. These are typically calculations that only reference constant values or expressions that reference variables whose values are constant.
 
------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
