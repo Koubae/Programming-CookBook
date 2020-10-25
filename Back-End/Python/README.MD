@@ -35,6 +35,9 @@
 
 - **Literal String Interpolation** [PEP498](https://www.python.org/dev/peps/pep-0498/)
 
+- **A Function for testing approximate equality** [PEP 485](https://www.python.org/dev/peps/pep-0485/)
+
+
 ### DECORATORS
 
 - **Class Decorators** [PEP 3129](https://www.python.org/dev/peps/pep-3129/)

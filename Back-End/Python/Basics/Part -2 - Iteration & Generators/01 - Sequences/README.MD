@@ -77,6 +77,22 @@ Transformations [i:j:k], k < 0
 
 ----------------------------------------------------------------------------------------------
 
+## Sorted
+
+* Makes a copy of the iterable.
+* Returns the sorted elements in a list.
+* Uses a sort Alogrithm called [TimSort](https://en.wikipedia.org/wiki/Timsort)
+* Stable Sort
+
+## Sort()
+
+* Same TimSort Alogithm.
+* Same Keyword-only arg:key.
+* Same Keyword-only arg:reverse(default is False).
+
+
+----------------------------------------------------------------------------------------------
+
 
 ### NOTES
 

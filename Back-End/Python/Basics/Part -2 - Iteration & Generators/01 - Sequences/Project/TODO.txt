@@ -1,0 +1,50 @@
+#TODO SEQUENCE PROJECT
+======================
+√
+
+## Pre Proj
+-----------
+
+- 1 Create Project Layout with Diagram.net  √
+
+- 2 Study Polygons and Geometry Basics. √
+
+	A: max efficiency polygon: returns the Polygon with the highest area : perimeter ratio
+
+- 3 Add info to Repo [Sequence folders, Math Folder, Turtle Folder init] √
+
+=====================
+
+
+## Project Script - polygon-seq
+-----------------
+
+- 1 Create Base Class -> Polygon. √
+
+- 2 Implement Polygon Functions & Attr. √
+
+- 3 Create Base Class -> Polygons   √
+
+- 4 Implement Polygons Functions & Attr.  √
+
+
+## Turtle
+---------
+
+- 1 Study Turle Basics
+
+- 2 Search for Turtles example-
+
+- 3 Add Examples to Repo-
+
+- 4 Implement the Same Project 'polygon-seq' -> into Turtle.
+
+
+
+# Web Calculators 
+=================================================================
+
+- https://www.calculatorsoup.com/calculators/geometry-plane/polygon.php
+- https://www.omnicalculator.com/math/regular-polygon
+- https://www.analyzemath.com/Geometry_calculators/polygon_calculator.html
+- http://www.cleavebooks.co.uk/scol/calpolyg.htm
