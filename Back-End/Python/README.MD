@@ -12,6 +12,10 @@
 - [Python 3 Patterns, Recipes and Idioms](https://python-3-patterns-idioms-test.readthedocs.io/en/latest/index.html)
 - [PYTHON RECIPES](https://code.activestate.com/recipes/langs/python/)
 
+## Interesting Repo & Projects
+
+- [python-patterns](https://github.com/faif/python-patterns)
+
 -----------------------------------------------------------------------------------------------------
 
 ## Features
@@ -27,6 +31,8 @@
 - **New Import Hooks** [PEP 302](https://www.python.org/dev/peps/pep-0302/)
 
 - **Implicit Namespace Packages** [PEP 420](https://www.python.org/dev/peps/pep-0420/)
+
+- **Iterators** [PEP 234](https://www.python.org/dev/peps/pep-0234/)
 
 
 ### FUNCTIONS
