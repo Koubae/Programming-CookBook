@@ -43,6 +43,8 @@
 
 - **A Function for testing approximate equality** [PEP 485](https://www.python.org/dev/peps/pep-0485/)
 
+- **Simple Generators** [PEP 255](https://www.python.org/dev/peps/pep-0255/)
+
 
 ### DECORATORS
 
