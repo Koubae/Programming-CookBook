@@ -2,7 +2,7 @@ import math
 
 
 class Factorial:
-    def __init(self, length):
+    def __init__(self, length):
         self.length = length
 
     def __iter__(self):

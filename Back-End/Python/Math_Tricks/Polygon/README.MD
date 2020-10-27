@@ -10,6 +10,12 @@
 - [PEP 485](https://www.python.org/dev/peps/pep-0485/)
 
 
+## Other Learning
+
+- [Similar Triangles](https://www.mathsisfun.com/geometry/triangles-similar.html)
+- [Trigonometry - Word Problems](https://mathbitsnotebook.com/Geometry/Trigonometry/TGElevDepress.html)
+
+
 -----------------------------------------------------------------------------------------------------
 
 ## Features

@@ -77,7 +77,7 @@ class Polygon:
         return f'Polygon(edges={self._sides}, circumradius={self.circumradius})'
 
     def __eq__(self, other):  # Based on #edges & Circumradius
-        if isinstance(other, Polygon):
+        if isinstance(other, self.__class__):
             if self.edges == other.edges and self.circumradius == other.circumradius:
                 return True
             else:

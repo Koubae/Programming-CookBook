@@ -28,6 +28,25 @@
 - 4 Implement Polygons Functions & Attr.  √
 
 
+Project 2
+=============================================
+
+## Goal 1
+
+- 1 Refactor Polygon Class All properties => Lazy Properties √
+
+
+## Goal 2 
+
+- 1 Refactor Polygons Class from Sequence to ITERABLE.
+
+- 2 Implements Iterator Protocol, lazy loading.
+
+- 3 Implement both Iterable and Iterator.
+
+
+
+
 ## Turtle
 ---------
 
