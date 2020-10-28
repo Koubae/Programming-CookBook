@@ -38,13 +38,38 @@ Project 2
 
 ## Goal 2 
 
-- 1 Refactor Polygons Class from Sequence to ITERABLE.
+- 1 Refactor Polygons Class from Sequence to ITERABLE. √
 
-- 2 Implements Iterator Protocol, lazy loading.
-
-- 3 Implement both Iterable and Iterator.
+- 2 Implements Iterator Protocol, lazy loading. √
 
 
+- 3 Implement both Iterable and Iterator. √ 
+
+
+Project 3
+=============================================
+
+
+## Goal 1
+
+- 1 Create a lazy iterator => namedtuple for data_row_csv v
+
+
+- 2. Data type in namedtuple is (int,float, real, etc) √
+
+
+Data Row Sample:
+
+'4006478550,VAD7274,VA,PAS,10/5/2016,5,4D,BMW,BUS LANE VIOLATION'
+0 = int
+1 = str
+2 = str
+3 = str 
+4 = datatime object
+5 = int
+6 = int (or complex)
+7 = str
+8 = str
 
 
 ## Turtle

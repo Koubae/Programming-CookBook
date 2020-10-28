@@ -9,6 +9,10 @@
 
 - [RECIPE LANGUAGES](https://code.activestate.com/recipes/langs/)
 
+### DATA SCIENCE
+
+- [Kaggle](https://www.kaggle.com/)
+
 ### NOTES & THINGS TO KNOW
 
 - [Backus–Naur form](https://en.wikipedia.org/wiki/Backus–Naur_form)
