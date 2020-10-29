@@ -9,7 +9,9 @@
 ## Features
 
 
-### 
+### Learning Links
+
+- [SQL Tutorial - w3resource](https://www.w3resource.com/sql/tutorials.php)
 
 
 -----------------------------------------------------------------------------------------------------
