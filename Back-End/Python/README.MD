@@ -45,6 +45,8 @@
 
 - **Simple Generators** [PEP 255](https://www.python.org/dev/peps/pep-0255/)
 
+- **The "with" Statement** [PEP 343](https://www.python.org/dev/peps/pep-0343/)
+
 
 ### DECORATORS
 

@@ -72,6 +72,49 @@ Data Row Sample:
 8 = str
 
 
+Project 4
+=============================================
+
+personal_info.csv ssn[0]
+vehicles.csv [0]
+employment.csv ssn[-1]
+update_status.csv ssn[0]
+
+each file contains a common key that uni
+
+## Goal 1
+
+-1 Create lazy iterator for search of the four file
+
+-2 => Returns named tuples  v
+
+.3 => Correct Data tyoes  √
+
+.4 => 4 iterators indipendent
+
+
+
+## Goal 2
+
+Create a single Iterator that combines all colomns from all iterators
+
+.1 Yields Named Tuples Containing all the columns
+
+-2 SSN accros files match. and not repeated 4 times
+
+
+## Goal 3
+
+- > state records = Itendify records (updated < 3/1/2017).
+
+.1 Create Iterator current records = (updated >= 3/1/2017)
+
+Basd on the last_updated field in status_update
+
+## Goal 4
+
+Find the largest group of car makes for each gender.
+
 ## Turtle
 ---------
 
