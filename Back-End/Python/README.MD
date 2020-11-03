@@ -34,6 +34,8 @@
 
 - **Iterators** [PEP 234](https://www.python.org/dev/peps/pep-0234/)
 
+- **Key-sharing Dictionaries** [PEP 412](https://www.python.org/dev/peps/pep-0412/)
+
 
 ### FUNCTIONS
 
