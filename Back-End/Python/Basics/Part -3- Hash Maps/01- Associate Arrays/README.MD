@@ -36,7 +36,7 @@
 ### Hash Maps (aka hash table)
 
 
-- **collision**
+- **collision** & **hash collision**
 
 - [How do HashTables deal with collisions?](https://stackoverflow.com/questions/4980757/how-do-hashtables-deal-with-collisions)
 - [Handling Collisions]()
