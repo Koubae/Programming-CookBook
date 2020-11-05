@@ -8,6 +8,7 @@
 ## Learning Material
 
 - [RECIPE LANGUAGES](https://code.activestate.com/recipes/langs/)
+- [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)
 
 ### DATA SCIENCE
 
@@ -19,5 +20,10 @@
 - [The History of the ALGOL Effort](https://heerdebeer.org/ALGOL/The_History_of_ALGOL.pdf)
 - [Design Pattern](https://refactoring.guru/design-patterns)
 - [Python Design Patterns Tutorial](https://www.tutorialspoint.com/python_design_patterns/index.htm)
+
+
+#### JSON
+
+- [Introducing JSON](https://www.json.org/json-en.html)
 
 -----------------------------------------------------------------------------------------------------
