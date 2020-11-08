@@ -1,4 +1,4 @@
-# Python - Tutorial - 
+# 3 Single Inheritance
 =======================
 
 - [DOCS]()

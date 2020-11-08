@@ -1,4 +1,4 @@
-# Python - Tutorial - 
+# 4 Descriptors
 =======================
 
 - [DOCS]()

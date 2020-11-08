@@ -1,4 +1,4 @@
-# Python - Tutorial - 
+# 6 Exceptions
 =======================
 
 - [DOCS]()
