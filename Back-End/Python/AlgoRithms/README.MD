@@ -9,7 +9,11 @@
 ## Features
 
 
-### 
+## Algorythims
+
+- **Round-robin scheduling**[WIKI](https://en.wikipedia.org/wiki/Round-robin_scheduling)
+
+
 
 
 -----------------------------------------------------------------------------------------------------

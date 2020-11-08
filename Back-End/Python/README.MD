@@ -17,6 +17,7 @@
 - [python-patterns](https://github.com/faif/python-patterns)
 - [singledispatchmethod](https://github.com/ikalnytskyi/singledispatchmethod)
 - [singledispatchmethod --DOCS--](https://github.com/python/cpython/blob/77f0a23e7a9fb247101b9b14a060c4ba1c4b87a5/Lib/functools.py#L891)
+- [codetools: code analysis and execution tools](https://github.com/enthought/codetools)
 -----------------------------------------------------------------------------------------------------
 
 ## Features
