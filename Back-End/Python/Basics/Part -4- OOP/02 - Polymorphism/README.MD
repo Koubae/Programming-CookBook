@@ -13,6 +13,14 @@
 * __init__
 
 
+##### Itedentity
+
+* __class__
+
+* __name__
+
+* __dict__ -> Memory Overhead, Instance Dictionary
+
 
 ##### Str() & repr()
 
@@ -104,6 +112,11 @@ User **context manager** to clean up
 ##### Format 
 
 * __format__
+
+
+##### Pre-Determined Attributes
+
+* __slots__
 
 ##### Others
 
