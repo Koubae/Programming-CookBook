@@ -1,5 +1,10 @@
 
 
+## General Math
+
+* [Dot product](https://en.wikipedia.org/wiki/Dot_product)
+
+-----------------------------------------------------------------------------------------------------
 
 ## Algorythims
 

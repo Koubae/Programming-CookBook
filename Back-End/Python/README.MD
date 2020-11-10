@@ -24,6 +24,12 @@
 
 
 - [Requests](https://requests.readthedocs.io/en/master/)
+- [3to2 1.1.1 ](https://pypi.org/project/3to2/)
+
+### TESTING
+
+- [PythonTestingToolsTaxonomy](https://wiki.python.org/moin/PythonTestingToolsTaxonomy)
+- [Python Unit Testing Framework](http://pyunit.sourceforge.net/pyunit.html), [ Unit testing framework](https://docs.python.org/3/library/unittest.html)
 
 -----------------------------------------------------------------------------------------------------
 

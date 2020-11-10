@@ -9,22 +9,6 @@
 ## Features
 
 
-### Methods
-
-__self__ -> the instance the method is bound to
-
-__func__ -> he original function (defined in the class)
-
-
-
-__dict__
-
-__self__
-
-__new__
-
-__init__
-
 
 
 -----------------------------------------------------------------------------------------------------
