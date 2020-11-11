@@ -1,6 +1,16 @@
 from math import pi
 from numbers import Real
 
+
+class Person:
+    def __init__(self, name):
+        self.name = name
+        
+class Student(Person):
+    def __init__(self, name, student_number):
+        super().__init__(name)
+        self.student_number = student_number
+
 class Circle:
     def __init__(self, r):
         self._set_radius(r)
