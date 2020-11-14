@@ -22,6 +22,10 @@ Use code to modify the behavior of another piece of code
 
 use code to essentially modify the behavior of the dot (.) operator
 
+
+#### Attribute Read Accessor
+
+#### Attribute Write Accessor
 -----------------------------------------------------------------------------------------------------
 
 ### NOTES
@@ -43,6 +47,8 @@ use code to essentially modify the behavior of the dot (.) operator
 if raise a AttributeError then call:
 
 * __getattr__  ---> Re-raise AttributeError
+
+* __setattr__
 
 * [types.MethodType](https://docs.python.org/3/library/types.html#types.MethodType)
 - [Advantages of Using MethodType in Python
