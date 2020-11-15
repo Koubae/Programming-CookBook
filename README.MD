@@ -25,6 +25,11 @@
 - [String interning -WIKI- ](https://en.wikipedia.org/wiki/String_interning), [public String intern() -Java-](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html#intern%28%29)
 
 
+#### Date / Time
+
+- [List of UTC time offsets --WIKI--](https://en.wikipedia.org/wiki/List_of_UTC_time_offsets)
+> **offsets are technically bounded between -12:00 and 14:00**
+
 #### JSON Serialization and De-serialisaziont
 
 - [Introducing JSON](https://www.json.org/json-en.html)

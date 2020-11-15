@@ -4,6 +4,9 @@
 
 * [Dot product](https://en.wikipedia.org/wiki/Dot_product)
 
+* [Modular arithmetic --WIKI--](https://en.wikipedia.org/wiki/Modular_arithmetic#)
+    * [Modular arithmetic --khanacademy--](https://www.khanacademy.org/computing/computer-science/cryptography#modarithmetic)
+
 -----------------------------------------------------------------------------------------------------
 
 ## Algorythims
@@ -26,3 +29,11 @@
 ### Sets
 
 - **Multiset** [WIKI](https://en.wikipedia.org/wiki/Multiset)
+
+
+
+### Study Resources:
+
+
+- [COMPUTER SCIENCE --khanacademy--](https://www.khanacademy.org/computing/computer-science)
+- [COMPUTING --khanacademy--](https://www.khanacademy.org/computing)

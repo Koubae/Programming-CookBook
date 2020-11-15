@@ -1,0 +1,64 @@
+
+.vscode:
+
+{
+    "python.pythonPath": "c:\\Users\\fredb\\Desktop\\_Project_06_2020\\flask_test\\venv\\Scripts\\python.exe",
+    "python.linting.pylintArgs": ["--load-plugins", "pylint-flask", 
+    "--init-hook", "pylint_flask_sqlalchemy"] 
+}
+
+
+-----------------------
+sqlite3 data.sqlite.db
+
+Create table with sqlite3 vanilla
+
+sqlite3.exe DB.db ".read db.sql"
+
+-----> sqlite3 db.db ".read db.sql" <--------------
+
+.tables
+.exit
+
+
+
+-----------------------
+python
+
+Create Table with SQLAlchemy
+from app import db
+db.create_all()
+exit()
+
+db.drop_all()
+
+
+sqlite3 data.sqlite.db
+
+.tables
+
+
+
+================================== 
+    ---> FLASK MIGRATE <---
+==================================
+
+1) CMD wind in the envirorments folder:
+
+2) Enter (optional): set FLASK_APP=      BasicModelApp.py
+
+3) flask db init ///(initiate and create a folde in the work  directory)
+
+4) flask db migrate -m "migration_01"   ///(create puppy table) (create migration file)
+
+5) flask db upgrade //(perform migration)
+
+
+
+-----------------------
+
+export FLASK_APP=app.py
+
+export FLASK_DEBUG=1
+
+flask run 

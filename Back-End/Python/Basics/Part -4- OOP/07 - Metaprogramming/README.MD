@@ -1,8 +1,8 @@
 # 7 Metaprogramming
 =======================
 
-- [DOCS]()
-
+- [Metaprogramming --WIKI--](https://en.wikipedia.org/wiki/Metaprogramming)
+- [Template metaprogramming --WIKI--](https://en.wikipedia.org/wiki/Template_metaprogramming)
 
 -----------------------------------------------------------------------------------------------------
 
