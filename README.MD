@@ -33,6 +33,10 @@
 #### JSON Serialization and De-serialisaziont
 
 - [Introducing JSON](https://www.json.org/json-en.html)
+- [{JSON} Placeholder](https://jsonplaceholder.typicode.com/)
+**JSONPlaceholder is a free online REST API that you can use whenever you need some fake data. It can be in a README on GitHub, for a demo on CodeSandbox, in code examples on Stack Overflow, ...or simply to test things locally.**
+
+
 - [JavaScript Object Notation (JSON)](https://tools.ietf.org/html/rfc4627)
 - [JSON Schema](https://json-schema.org/)
 - **[jsonschema --Github Project](https://github.com/Julian/jsonschema)**

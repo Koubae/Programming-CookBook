@@ -37,3 +37,6 @@
 
 - [COMPUTER SCIENCE --khanacademy--](https://www.khanacademy.org/computing/computer-science)
 - [COMPUTING --khanacademy--](https://www.khanacademy.org/computing)
+
+
+- [Cartesian Plane - Distance Formula](https://www.coursera.org/lecture/datasciencemathskills/cartesian-plane-distance-formula-ZKypI)

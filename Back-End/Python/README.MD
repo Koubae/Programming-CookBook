@@ -18,8 +18,19 @@
 - [singledispatchmethod](https://github.com/ikalnytskyi/singledispatchmethod)
 - [singledispatchmethod --DOCS--](https://github.com/python/cpython/blob/77f0a23e7a9fb247101b9b14a060c4ba1c4b87a5/Lib/functools.py#L891)
 - [codetools: code analysis and execution tools](https://github.com/enthought/codetools)
+
+### Date / Time
+
 - [pendulum](https://github.com/sdispater/pendulum)
 
+### Parsing
+
+- [Python-Html-Parser](https://github.com/Kodak1234/Python-Html-Parser)
+- [python-htmlement](https://github.com/willforde/python-htmlement)
+- [ultrajson](https://github.com/ultrajson/ultrajson)
+UltraJSON is an ultra fast JSON encoder and decoder written in pure C with bindings for Python 3.6+.
+
+- [Python json.JSONEncoder.default() Examples ](https://www.programcreek.com/python/example/98492/json.JSONEncoder.default)
 
 ## Python Modules 
 
