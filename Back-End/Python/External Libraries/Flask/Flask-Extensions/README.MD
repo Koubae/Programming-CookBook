@@ -67,6 +67,7 @@ awesome-flask](https://github.com/humiaozuzu/awesome-flask)
 ## Data Validation
 
 - [Flask-WTF](https://github.com/lepture/flask-wtf) - Simple integration of Flask and WTForms, including CSRF, file upload and Recaptcha integration.
+- [Flask JsonTools](https://github.com/kolypto/py-flask-jsontools)
 
 ## Email
 

@@ -22,6 +22,7 @@
 - [The History of the ALGOL Effort](https://heerdebeer.org/ALGOL/The_History_of_ALGOL.pdf)
 - [Design Pattern](https://refactoring.guru/design-patterns)
 - [Python Design Patterns Tutorial](https://www.tutorialspoint.com/python_design_patterns/index.htm)
+- [Prototype Design Pattern in Python](https://medium.com/design-patterns-in-python/prototype-design-pattern-in-python-45f8d3f15583)
 - [String interning -WIKI- ](https://en.wikipedia.org/wiki/String_interning), [public String intern() -Java-](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html#intern%28%29)
 
 
@@ -30,8 +31,13 @@
 - [List of UTC time offsets --WIKI--](https://en.wikipedia.org/wiki/List_of_UTC_time_offsets)
 > **offsets are technically bounded between -12:00 and 14:00**
 
+- [python-dateutil](https://pypi.org/project/python-dateutil/)
+**dateutil - powerful extensions to datetime for Python**
+
 #### JSON Serialization and De-serialisaziont
 
+- [JSON Validator](https://jslint.com/)
+- [JSON Validator](https://jsonformatter.curiousconcept.com/#)
 - [Introducing JSON](https://www.json.org/json-en.html)
 - [{JSON} Placeholder](https://jsonplaceholder.typicode.com/)
 **JSONPlaceholder is a free online REST API that you can use whenever you need some fake data. It can be in a README on GitHub, for a demo on CodeSandbox, in code examples on Stack Overflow, ...or simply to test things locally.**

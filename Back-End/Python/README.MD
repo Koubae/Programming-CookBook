@@ -21,6 +21,9 @@
 
 ### Date / Time
 
+- [python-dateutil](https://pypi.org/project/python-dateutil/)
+**dateutil - powerful extensions to datetime for Python**
+
 - [pendulum](https://github.com/sdispater/pendulum)
 
 ### Parsing

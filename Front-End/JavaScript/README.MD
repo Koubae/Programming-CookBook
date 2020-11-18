@@ -7,7 +7,13 @@
 
 ## Features
 
+### Debug Mode.
 
+In Browser Console:
+```
+debug;
+```
+> **Press SHITF+Enter**
 ### 
 
 
