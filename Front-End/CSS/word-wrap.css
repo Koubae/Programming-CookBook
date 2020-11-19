@@ -1,0 +1,7 @@
+div.a {
+    word-wrap: normal;
+}
+  
+  div.b {
+    word-wrap: break-word;
+}
