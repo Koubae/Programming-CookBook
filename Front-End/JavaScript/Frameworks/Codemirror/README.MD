@@ -8,6 +8,124 @@
 ## Features
 
 
+## object:
+
+addModeClass: false
+​​
+allowDropFileTypes: null
+​​
+autoCloseTags: true
+​​
+autocapitalize: false
+​​
+autocorrect: false
+​​
+autofocus: false
+​​
+configureMouse: null
+​​
+coverGutterNextToScrollbar: false
+​​
+cursorBlinkRate: 530
+​​
+cursorHeight: 1
+​​
+cursorScrollMargin: 0
+​​
+direction: "ltr"
+​​
+disableInput: false
+​​
+dragDrop: true
+​​
+electricChars: true
+​​
+extraKeys: null
+​​
+finishInit: function finishInit(cm)
+​​
+firstLineNumber: 1
+​​
+fixedGutter: true
+​​
+flattenSpans: true
+​​
+gutters: Array []
+​​
+historyEventDelay: 1250
+​​
+indentUnit: 2
+​​
+indentWithTabs: false
+​​
+inputStyle: "textarea"
+​​
+keyMap: "default"
+​​
+lineNumberFormatter: function defineOptions(integer)
+​​
+lineNumbers: true
+​​
+lineSeparator: null
+​​
+lineWiseCopyCut: true
+​​
+lineWrapping: false
+​​
+maxHighlightLength: 10000
+​​
+mode: "python"
+​​
+moveInputWithCursor: true
+​​
+pasteLinesPerSelection: true
+​​
+phrases: null
+​​
+pollInterval: 100
+​​
+readOnly: false
+​​
+resetSelectionOnContextMenu: true
+​​
+rtlMoveVisually: false
+​​
+screenReaderLabel: null
+​​
+scrollbarStyle: "native"
+​​
+selectionsMayTouch: false
+​​
+showCursorWhenSelecting: false
+​​
+singleCursorHeightPerLine: true
+​​
+smartIndent: true
+​​
+specialCharPlaceholder: function defaultSpecialCharPlaceholder(ch)​​
+specialChars: /[\u0000-\u001f\u007f-\u009f\u00ad\u061c\u200b-\u200c\u200e\u200f\u2028\u2029\ufeff\ufff9-\ufffc]/g
+​​
+spellcheck: false
+​​
+tabSize: 2
+​​
+tabindex: null
+​​
+theme: "darcula"
+​​
+undoDepth: 200
+​​
+value: "\n                        "
+​​
+viewportMargin: 10
+​​
+wholeLineUpdateBefore: true
+​​
+workDelay: 100
+​​
+workTime: 100
+
+
 ```
 <!-- Codemirror from https://cdnjs.com/libraries/codemirror -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.min.css" integrity="sha256-vZ3SaLOjnKO/gGvcUWegySoDU6ff33CS5i9ot8J9Czk=" crossorigin="anonymous" />
