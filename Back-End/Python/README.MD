@@ -118,6 +118,30 @@ UltraJSON is an ultra fast JSON encoder and decoder written in pure C with bindi
 exec(open('filename.py').read())
 ```
 
-*exec does not require module reloads after file changes—it skips the normal module import logic.*
+#### Run PyDoc 
 
+
+```
+python -m pydoc -b
+
+py −3 -m pydoc -b
+
+C:\python33\python -m pydoc -b
+
+```
+
+```
+py −3 -m pydoc timeit
+
+py −3
+>>> help("timeit")
+```
+
+##### Gui
+
+```
+c:\python32\python -m pydoc -g # Explicit Python path
+py −3.2 -m pydoc -g
+
+```
 -----------------------------------------------------------------------------------------------------
