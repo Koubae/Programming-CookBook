@@ -5,6 +5,51 @@
 - []()
 -----------------------------------------------------------------------------------------------------
 
+
+### Page Loading
+
+**There are 3 ways a JavaScript File is rendered**
+
+* Right Away loading.
+
+* Asynchronous loading.
+
+* Deferred loading.
+
+------------------------
+
+* Right Away loading.
+
+    - HTML Parsing.
+        - Js Download.
+            - JS Excecution.
+                - HTML Parsing.
+
+```
+<script src="script.js"></script>
+```
+
+* Asynchronous loading.
+
+    - HTML Parsing.
+    - Js Download.
+        - JS Excecution.
+             - HTML Parsing.
+
+```
+<script src="script.js async"></script>
+```
+
+* Deferred loading.
+
+    - HTML Parsing.
+        - Js Download.
+            - JS Excecution.
+
+```
+<script src="script.js defer"></script>
+```
+
 ## Features
 
 - [Code Mirror Framework --Manual--](https://codemirror.net/doc/manual.html)
@@ -29,7 +74,11 @@ In Browser Console:
 debug;
 ```
 > **Press SHITF+Enter**
-### 
 
+
+### Interesting Links
+
+- [JSBin --Online Editor-- ](https://jsbin.com/?html,output)
+- [Glitch](https://glitch.com)
 
 -----------------------------------------------------------------------------------------------------
