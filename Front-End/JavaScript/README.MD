@@ -81,4 +81,14 @@ debug;
 - [JSBin --Online Editor-- ](https://jsbin.com/?html,output)
 - [Glitch](https://glitch.com)
 
+
+## Projects and Git Repos
+
+ - [beginner-js-projects --GITHUB--](https://github.com/strongdan/beginner-js-projects)
+
+ - [vanillawebprojects --GITHUB--](https://github.com/bradtraversy/vanillawebprojects)
+
+
+
+
 -----------------------------------------------------------------------------------------------------

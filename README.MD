@@ -25,6 +25,8 @@
 - [Python Design Patterns Tutorial](https://www.tutorialspoint.com/python_design_patterns/index.htm)
 - [Prototype Design Pattern in Python](https://medium.com/design-patterns-in-python/prototype-design-pattern-in-python-45f8d3f15583)
 - [String interning -WIKI- ](https://en.wikipedia.org/wiki/String_interning), [public String intern() -Java-](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html#intern%28%29)
+- [Matrix --Mozilla--](https://wiki.mozilla.org/Matrix#New_to_Matrix.2C_new_to_Mozilla.3F)
+
 
 
 #### Date / Time
