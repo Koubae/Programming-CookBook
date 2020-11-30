@@ -4,20 +4,38 @@
 
 -----------------------------------------------------------------------------------------------------
 
-## Learning Material
 
-- [Python Developer’s Guide](https://devguide.python.org)
-- [Python Tips](https://book.pythontips.com/en/latest/index.html)
-- [Python Reference (The Right Way)](https://python-reference.readthedocs.io/en/latest/index.html)
-- [Python 3 Patterns, Recipes and Idioms](https://python-3-patterns-idioms-test.readthedocs.io/en/latest/index.html)
-- [PYTHON RECIPES](https://code.activestate.com/recipes/langs/python/)
+## Python Modules 
 
-## Interesting Repo & Projects
 
-- [python-patterns](https://github.com/faif/python-patterns)
-- [singledispatchmethod](https://github.com/ikalnytskyi/singledispatchmethod)
-- [singledispatchmethod --DOCS--](https://github.com/python/cpython/blob/77f0a23e7a9fb247101b9b14a060c4ba1c4b87a5/Lib/functools.py#L891)
-- [codetools: code analysis and execution tools](https://github.com/enthought/codetools)
+- [Requests](https://requests.readthedocs.io/en/master/)
+- [3to2 1.1.1 ](https://pypi.org/project/3to2/)
+
+### TESTING
+
+- [PythonTestingToolsTaxonomy](https://wiki.python.org/moin/PythonTestingToolsTaxonomy)
+- [Python Unit Testing Framework](http://pyunit.sourceforge.net/pyunit.html), [ Unit testing framework](https://docs.python.org/3/library/unittest.html)
+
+
+## AI & Machine learning
+
+- [PythonRobotics’s --GITHUB--](https://github.com/AtsushiSakai/PythonRobotics?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more)
+- [PythonRobotics’s --DOCS--](https://pythonrobotics.readthedocs.io/en/latest/)
+
+## Web Scraping
+
+- [Rebound --GITHUB--](https://github.com/shobrook/rebound?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more)
+
+- [google-images-download --GITHUB--](https://github.com/hardikvasa/google-images-download?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more)
+- [https://google-images-download.readthedocs.io/en/latest/index.html --DOCS--](https://google-images-download.readthedocs.io/en/latest/index.html)
+
+
+## For tkinter, turtle and other
+
+- [Projects --GITHUB--](https://github.com/wynand1004/Projects)
+- [Missile_Command --GITHUB--](https://github.com/wynand1004/Missile_Command)
+
+- [manim -GITHUB--](https://github.com/3b1b/manCim?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more)
 
 ### Date / Time
 
@@ -35,16 +53,22 @@ UltraJSON is an ultra fast JSON encoder and decoder written in pure C with bindi
 
 - [Python json.JSONEncoder.default() Examples ](https://www.programcreek.com/python/example/98492/json.JSONEncoder.default)
 
-## Python Modules 
+
+## Interesting Repo & Projects
+
+- [python-patterns](https://github.com/faif/python-patterns)
+- [singledispatchmethod](https://github.com/ikalnytskyi/singledispatchmethod)
+- [singledispatchmethod --DOCS--](https://github.com/python/cpython/blob/77f0a23e7a9fb247101b9b14a060c4ba1c4b87a5/Lib/functools.py#L891)
+- [codetools: code analysis and execution tools](https://github.com/enthought/codetools)
 
 
-- [Requests](https://requests.readthedocs.io/en/master/)
-- [3to2 1.1.1 ](https://pypi.org/project/3to2/)
+## Learning Material
 
-### TESTING
-
-- [PythonTestingToolsTaxonomy](https://wiki.python.org/moin/PythonTestingToolsTaxonomy)
-- [Python Unit Testing Framework](http://pyunit.sourceforge.net/pyunit.html), [ Unit testing framework](https://docs.python.org/3/library/unittest.html)
+- [Python Developer’s Guide](https://devguide.python.org)
+- [Python Tips](https://book.pythontips.com/en/latest/index.html)
+- [Python Reference (The Right Way)](https://python-reference.readthedocs.io/en/latest/index.html)
+- [Python 3 Patterns, Recipes and Idioms](https://python-3-patterns-idioms-test.readthedocs.io/en/latest/index.html)
+- [PYTHON RECIPES](https://code.activestate.com/recipes/langs/python/)
 
 -----------------------------------------------------------------------------------------------------
 
