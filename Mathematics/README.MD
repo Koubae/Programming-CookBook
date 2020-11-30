@@ -7,6 +7,9 @@
 * [Modular arithmetic --WIKI--](https://en.wikipedia.org/wiki/Modular_arithmetic#)
     * [Modular arithmetic --khanacademy--](https://www.khanacademy.org/computing/computer-science/cryptography#modarithmetic)
 
+
+* [Logistic map Chaotic recurrence relation --WIKI--](https://en.wikipedia.org/wiki/Logistic_map)
+
 -----------------------------------------------------------------------------------------------------
 
 ## Algorythims
