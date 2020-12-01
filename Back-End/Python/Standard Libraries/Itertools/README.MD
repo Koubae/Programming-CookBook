@@ -3,6 +3,10 @@
 
 
 - [DOCS](https://docs.python.org/3/library/itertools.html)
+
+- [IterTools Recipes --DOCS--](https://docs.python.org/3/library/itertools.html#itertools-recipes)
+
+- [More Itertools --GITHUB--](https://github.com/more-itertools/more-itertools)
 -----------------------------------------------------------------------------------------------------
 
 ## Infinite iterators.
@@ -42,6 +46,15 @@ chain.from_iterables, takes one iterable as argument, it iterates through each o
 iterable (usefule to use instead of multiple nested for loops).
 
 
+- **islice(iterable, stop) / islice(iterable, start, stop, [step])**
+
+Make an iterator that returns selected elements from the iterable.
+If specified only the iterable and the stop, the values returned are only up 
+untill the stop argument value.
+
+**If start is non-zero, then elements from the iterable are skipped until start is reached.**
+**Unlike regular slicing, islice() does not support negative values for start, stop, or step**
+
 
 
 ## Filtering | Selecting
@@ -63,7 +76,36 @@ Returns an iterator that will start iterating and yielding items once pred(item)
 
 Returns an iterator that will yield items while pred(item) is Truthy => iterator exhausted.
 
-### 
+
+- **filterfalse(predicate, iterable)**
+
+Retains elements where the predicate evaluates to False (opposite than filter)
+
+## Grouping
+
+- **starmap(function, iterable)**
+
+Unpack a group of iterable as argument for each function call, works similarly to the normal map function, equivalen to func(a, b): ... func(c*): ...
+
+- **groupby(iterable, key=None)**
+
+Make an iterator that returns consecutive keys and groups from the iterable. The key is a function computing a key value for each element. 
+
+Better if iterable is already sorted.
+
+- **tee(iterable, n=2)**
+
+Return n independent iterators from a single iterable.
+(iter1, iter2, iter3)
+
+**Warning** => Not threadsafe / require significant auxiliary storage
+Check the docs for more information.
+
+
+- **zip_longest(*iterables, fillvalue=None)**
+
+Compared to the normal zip function, zip_longest keeps the values if are None, and stop till the longest iterable, generate an Iterator.
+
 
 
 -----------------------------------------------------------------------------------------------------

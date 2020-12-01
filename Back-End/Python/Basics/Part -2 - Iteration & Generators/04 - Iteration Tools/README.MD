@@ -167,7 +167,7 @@ sum(iterable)
 
 - **combinations** [WIKI](https://en.wikipedia.org/wiki/Combination)
 
-- **Cartesian product** [WIKI](Cartesian product)
+- **Cartesian product** [WIKI](https://en.wikipedia.org/wiki/Cartesian_product#:~:text=In%20mathematics%2C%20specifically%20set%20theory,and%20a%20set%20of%20columns.)
 
 - [Cross Join in SQL](https://www.w3resource.com/sql/joins/cross-join.php)
 
