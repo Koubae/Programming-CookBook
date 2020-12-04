@@ -11,23 +11,45 @@
 - [Requests](https://requests.readthedocs.io/en/master/)
 - [3to2 1.1.1 ](https://pypi.org/project/3to2/)
 
+-----------------------------------------------------------------------------------------------------
+
 ### TESTING
 
 - [PythonTestingToolsTaxonomy](https://wiki.python.org/moin/PythonTestingToolsTaxonomy)
 - [Python Unit Testing Framework](http://pyunit.sourceforge.net/pyunit.html), [ Unit testing framework](https://docs.python.org/3/library/unittest.html)
 
+-----------------------------------------------------------------------------------------------------
 
 ## AI & Machine learning
 
 - [PythonRobotics’s --GITHUB--](https://github.com/AtsushiSakai/PythonRobotics?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more)
 - [PythonRobotics’s --DOCS--](https://pythonrobotics.readthedocs.io/en/latest/)
 
+-----------------------------------------------------------------------------------------------------
+
 ## Web Scraping
 
 - [Rebound --GITHUB--](https://github.com/shobrook/rebound?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more)
 
+#### Picture Downloader
+
+- [simple_image_download  --GITHUB--](https://github.com/RiddlerQ/simple_image_download)
+
+- [GoogleImagesDownloader --GITHUB--](https://github.com/WuLC/GoogleImagesDownloader)
+
+================ < google-images-download > =========================
+
 - [google-images-download --GITHUB--](https://github.com/hardikvasa/google-images-download?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more)
 - [https://google-images-download.readthedocs.io/en/latest/index.html --DOCS--](https://google-images-download.readthedocs.io/en/latest/index.html)
+
+- [google-images-download --GITHUB-- FIXED 2](https://github.com/voins/google-images-download/blob/patch-1/google_images_download/google_images_download.py)
+
+- [google-images-download --GITHUB-- FIXED glenn-jocher 1](https://github.com/ultralytics/google-images-download)
+- [flickr_scraper --GITHUB-- FIXED glenn-jocher 2](https://github.com/ultralytics/flickr_scraper)
+
+==============================================================
+
+-----------------------------------------------------------------------------------------------------
 
 
 ## For tkinter, turtle and other
@@ -37,12 +59,16 @@
 
 - [manim -GITHUB--](https://github.com/3b1b/manCim?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more)
 
+-----------------------------------------------------------------------------------------------------
+
 ### Date / Time
 
 - [python-dateutil](https://pypi.org/project/python-dateutil/)
 **dateutil - powerful extensions to datetime for Python**
 
 - [pendulum](https://github.com/sdispater/pendulum)
+
+-----------------------------------------------------------------------------------------------------
 
 ### Parsing
 
@@ -53,6 +79,7 @@ UltraJSON is an ultra fast JSON encoder and decoder written in pure C with bindi
 
 - [Python json.JSONEncoder.default() Examples ](https://www.programcreek.com/python/example/98492/json.JSONEncoder.default)
 
+-----------------------------------------------------------------------------------------------------
 
 ## Interesting Repo & Projects
 
@@ -61,6 +88,7 @@ UltraJSON is an ultra fast JSON encoder and decoder written in pure C with bindi
 - [singledispatchmethod --DOCS--](https://github.com/python/cpython/blob/77f0a23e7a9fb247101b9b14a060c4ba1c4b87a5/Lib/functools.py#L891)
 - [codetools: code analysis and execution tools](https://github.com/enthought/codetools)
 
+-----------------------------------------------------------------------------------------------------
 
 ## Learning Material
 
@@ -90,6 +118,7 @@ UltraJSON is an ultra fast JSON encoder and decoder written in pure C with bindi
 
 - **Key-sharing Dictionaries** [PEP 412](https://www.python.org/dev/peps/pep-0412/)
 
+-----------------------------------------------------------------------------------------------------
 
 ### FUNCTIONS
 
@@ -103,6 +132,7 @@ UltraJSON is an ultra fast JSON encoder and decoder written in pure C with bindi
 
 - **The "with" Statement** [PEP 343](https://www.python.org/dev/peps/pep-0343/)
 
+-----------------------------------------------------------------------------------------------------
 
 ### DECORATORS
 
@@ -110,6 +140,8 @@ UltraJSON is an ultra fast JSON encoder and decoder written in pure C with bindi
 
 - **Decorators for Functions and Methods** [PEP 318](https://www.python.org/dev/peps/pep-0318/)
 
+
+-----------------------------------------------------------------------------------------------------
 
 ### HITS, ANNOTATIONS, DOCSTRINGS
 
@@ -119,13 +151,14 @@ UltraJSON is an ultra fast JSON encoder and decoder written in pure C with bindi
 
 - **Docstring Conventions** [PEP 257](https://www.python.org/dev/peps/pep-0257/)
 
-
+-----------------------------------------------------------------------------------------------------
 
 ### NOTES
 
 - [What's New in Python 2.4](https://docs.python.org/2.4/whatsnew/contents.html)
 - [Planet Python](https://planetpython.org/)
 - PyCon videos – GvR - Raymond Hettinger - Alex Martelli
+
 
 
 #### Python Version:
