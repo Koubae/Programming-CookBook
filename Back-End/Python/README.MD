@@ -98,6 +98,10 @@ UltraJSON is an ultra fast JSON encoder and decoder written in pure C with bindi
 - [Python 3 Patterns, Recipes and Idioms](https://python-3-patterns-idioms-test.readthedocs.io/en/latest/index.html)
 - [PYTHON RECIPES](https://code.activestate.com/recipes/langs/python/)
 
+- [Python Programmin.net](https://www.pythonprogramming.net/)
+
+- [Progress Bars](https://towardsdatascience.com/a-complete-guide-to-using-progress-bars-in-python-aa7f4130cda8)
+
 -----------------------------------------------------------------------------------------------------
 
 ## Features
