@@ -55,4 +55,8 @@
 - [serpy: ridiculously fast object serialization](https://serpy.readthedocs.io/en/latest/)
 
 
+
+## Repos & Projects
+
+- [Web Scraping Reference: Cheat Sheet for Web Scraping using R --GITHUB--](https://github.com/ChaitanyaBaweja/r-web-scraping-cheat-sheet)
 -----------------------------------------------------------------------------------------------------
