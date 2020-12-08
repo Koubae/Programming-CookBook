@@ -27,3 +27,33 @@
 - Natural language processing
 
 -  heap queue algorithm / priority queue algorithm.
+
+
+# User Agent
+============
+
+##  [HTTP/1.1 Semantics and Content](http://tools.ietf.org/html/rfc7231#section-5.5.3)
+
+* Mail User Agent
+
+*  Session Initiation Protocol (SIP)
+
+*  Webmaster
+
+*  RFC 1945
+
+* **Robots exclusion standard**
+
+- [Content negotiation](https://en.wikipedia.org/wiki/Content_negotiation)
+
+* Referer
+
+* [HTTP referer](https://en.wikipedia.org/wiki/HTTP_referer)
+
+## Types
+
+* automated agents (bots)
+* User agent spoofing
+* User agent sniffing
+* Encryption strength notations
+* Deprecation of User-Agent header

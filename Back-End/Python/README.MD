@@ -10,6 +10,7 @@
 
 - [Requests](https://requests.readthedocs.io/en/master/)
 - [3to2 1.1.1 ](https://pypi.org/project/3to2/)
+- [cookiecutter --GITHUB-](https://github.com/cookiecutter/cookiecutter)
 
 -----------------------------------------------------------------------------------------------------
 
@@ -198,7 +199,7 @@ py −3
 >>> help("timeit")
 ```
 
-##### Gui
+##### GUI
 
 ```
 c:\python32\python -m pydoc -g # Explicit Python path
