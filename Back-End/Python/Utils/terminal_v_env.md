@@ -13,6 +13,12 @@
 
 --> pip freeze  ===> Create a requirements.txt
 
+```
+pip3freeze > requirements.txt
+pip freeze >> requirements.txt
+
+```
+
 --> rmdir [name of directory]  /s  ======> delete the directory (the /s is for the folder if is empty + deletes subfolders)
 
 

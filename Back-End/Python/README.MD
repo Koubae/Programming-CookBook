@@ -4,6 +4,10 @@
 
 -----------------------------------------------------------------------------------------------------
 
+## Python Essential
+
+- [virtaal setup --GITHUB-](https://github.com/translate/virtaal/blob/master/setup.py)
+
 
 ## Python Modules 
 
