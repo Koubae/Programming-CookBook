@@ -33,6 +33,8 @@ HTTPS protocols. It is normally not used directly — the module urllib.request
 
 7. **multiprocessing — Process-based parallelism** [DOCS](https://docs.python.org/3/library/multiprocessing.html)
 
+7. **argparse — Parser for command-line options, arguments and sub-commands** [DOCS](https://docs.python.org/3/library/argparse.html)
+
 ### Third party package
 
 1. **user_agent** This module is for generating random, valid web user agents:

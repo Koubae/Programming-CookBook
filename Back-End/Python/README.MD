@@ -9,6 +9,13 @@
 - [virtaal setup --GITHUB-](https://github.com/translate/virtaal/blob/master/setup.py)
 
 
+```
+print('==='*15 + ' < ' + f'MESSAGE{}' + ' > ' + '==='*15)
+
+# ============================ < MESSAGE > ============================ #
+```
+
+
 ## Python Modules 
 
 
@@ -106,6 +113,8 @@ UltraJSON is an ultra fast JSON encoder and decoder written in pure C with bindi
 - [Python Programmin.net](https://www.pythonprogramming.net/)
 
 - [Progress Bars](https://towardsdatascience.com/a-complete-guide-to-using-progress-bars-in-python-aa7f4130cda8)
+
+- [youtube_tutorials DOCS](https://github.com/vprusso/youtube_tutorials)
 
 -----------------------------------------------------------------------------------------------------
 

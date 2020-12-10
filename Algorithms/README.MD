@@ -19,6 +19,8 @@
 
 - **Tail Recursion [StackOverflow](https://stackoverflow.com/questions/33923/what-is-tail-recursion)
 
+- Monte Carlo method
+
 
 
 -----------------------------------------------------------------------------------------------------

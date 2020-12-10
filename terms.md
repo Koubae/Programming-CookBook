@@ -57,3 +57,39 @@
 * User agent sniffing
 * Encryption strength notations
 * Deprecation of User-Agent header
+
+
+# Python multiprocessing
+============
+
+* **multiprocessing** |  **hreading**  | **asyncio**
+
+* Global Interpreter Lock (GIL)
+
+* Concurrency and parallelism
+
+* embarrassinbly parallel / perfectly parallel computations: 
+
+    * Monte Carlo analysis
+    * numerical integration
+    * rendering of computer graphics
+    * brute force searches in cryptography
+    * genetic algorithms
+
+
+* Process vs thread
+
+* children & Zombies
+
+* Process
+
+* Pool 
+
+* Daemon Processes
+
+* Data Buffer
+
+* FIFO QUEUE | LIFO QUEUE   
+
+* Lock [Lock (computer science) --WIKI--](https://en.wikipedia.org/wiki/Lock_(computer_science))
+
