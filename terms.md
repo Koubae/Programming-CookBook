@@ -1,5 +1,7 @@
 * DRY - > Don't Repeat Yourself
 
+* KISS - > Keep it simple stupid
+
 - solution in search of a problem" syndrome!
 
 
@@ -27,6 +29,18 @@
 - Natural language processing
 
 -  heap queue algorithm / priority queue algorithm.
+
+### Programming Types.
+
+* Procedural
+
+* Functional
+
+* Object Oriented
+
+- nested function scope closures a.k.a. factory functions)
+
+- declarative language
 
 
 # User Agent
@@ -93,3 +107,49 @@
 
 * Lock [Lock (computer science) --WIKI--](https://en.wikipedia.org/wiki/Lock_(computer_science))
 
+
+# Front-end
+============
+UI/UX UI design 
+
+
+
+
+# Databases | SQL | NoSQL
+============
+
+* [ database management system (DBMS)](https://en.wikipedia.org/wiki/Database#Database_management_system)
+
+* [one-to-many relationship](https://www.lifewire.com/one-to-many-relationships-1019756)
+
+* [Database Design](https://www.lifewire.com/common-database-mistakes-4140757)
+
+*  [First Normal Form (1NF)](https://www.lifewire.com/normalizing-your-database-first-1019733)
+*  [Second Normal Form (2NF)](https://www.lifewire.com/normalizing-your-database-second-1019725)
+*  [Third Normal Form (3NF)](https://www.lifewire.com/normalizing-your-database-third-1019726)
+
+* [Foreign Key](https://www.lifewire.com/foreign-key-definition-1019255)
+
+* [SQL Injection Attacks](https://realpython.com/prevent-python-sql-injection/#setting-up-a-database)
+
+* Flat Files | CSV files
+
+*  I/O overhead 
+
+* Index
+
+### SQLite
+
+* SQLite is a transactional database that all changes and queries are atomic, consistent, isolated and durable:  ***ACID***
+
+* ACID-compliant
+
+* truncate optimization
+
+* FTS5 
+
+* SQLite full-text search
+
+* primitive data types = > storage classes
+
+* Index | B-tree = balanced tree

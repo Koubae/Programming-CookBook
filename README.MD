@@ -59,4 +59,12 @@
 ## Repos & Projects
 
 - [Web Scraping Reference: Cheat Sheet for Web Scraping using R --GITHUB--](https://github.com/ChaitanyaBaweja/r-web-scraping-cheat-sheet)
+
+### GOJS
+
+Interactive JavaScript Diagrams for the Web
+
+- [GOJS](https://gojs.net/latest/index.html)
+- [GOJS --GITHUB--](https://github.com/NorthwoodsSoftware/GoJS)
+
 -----------------------------------------------------------------------------------------------------

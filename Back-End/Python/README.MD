@@ -22,6 +22,9 @@ print('==='*15 + ' < ' + f'MESSAGE{}' + ' > ' + '==='*15)
 - [Requests](https://requests.readthedocs.io/en/master/)
 - [3to2 1.1.1 ](https://pypi.org/project/3to2/)
 - [cookiecutter --GITHUB-](https://github.com/cookiecutter/cookiecutter)
+- [python-dotenv](https://pypi.org/project/python-dotenv/)
+
+- [Python Frameworks](https://www.educba.com/python-frameworks/)
 
 -----------------------------------------------------------------------------------------------------
 
@@ -90,6 +93,12 @@ print('==='*15 + ' < ' + f'MESSAGE{}' + ' > ' + '==='*15)
 UltraJSON is an ultra fast JSON encoder and decoder written in pure C with bindings for Python 3.6+.
 
 - [Python json.JSONEncoder.default() Examples ](https://www.programcreek.com/python/example/98492/json.JSONEncoder.default)
+
+-----------------------------------------------------------------------------------------------------
+
+### Data Science
+
+- [treelib](https://treelib.readthedocs.io/en/latest/)
 
 -----------------------------------------------------------------------------------------------------
 
