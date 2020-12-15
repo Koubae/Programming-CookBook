@@ -2,6 +2,8 @@ Python SQLite API
 =======================
 
 
+- **Python Database API Specification v2.0**[PEP 249](https://www.python.org/dev/peps/pep-0249/)
+
 My Repo References
 ------------------
 
@@ -34,6 +36,43 @@ Python sqlite3 module provides a function to take a backup of the SQLite databas
 ```
 connection.backup(target, *, pages=0, progress=None, name="main", sleep=0.250)
 ```
+
+## SQLite Database Exceptions
+
+
+### sqlite3.Warning
+
+A subclass of Exception. And you can ignore it if you want it doesn’t stop the execution.
+
+### sqlite3.Error
+
+The base class of the other exceptions in the sqlite3 module. It is a subclass of Exception.
+
+### sqlite3.DatabaseError
+
+Exception raised for errors that are related to the database.
+
+Examples: If you try and open a file as a sqlite3 database that is NOT a database file, you will get sqlite3.DatabaseError: file is encrypted or is not a database
+
+### sqlite3.IntegrityError
+
+Subclass of a DatabaseError.  You will get this Exception when the relational integrity of the database is affected, e.g., a foreign key check fails.
+
+### sqlite3.ProgrammingError
+
+It is also a subclass of DatabaseError. This exception raised because of programming errors, e.g., creating a table with the same which already exists, syntax error in the SQL queries.
+
+### sqlite3.OperationalError
+
+It is also a subclass of DatabaseError. This error is not in our control. This exception raised for errors that are related to the database’s operation.
+
+Examples: an accidental disconnect, server down, a timeout occurs, the data source issues. server down
+
+### sqlite3.NotSupportedError
+
+You will get an exception raised when database API was used which is not supported by the database.
+
+Example: calling the rollback() method on a connection that does not support the transaction. Calling commit after creating table command.
 
 
 -----------------------------------------------------------------------------------------------------

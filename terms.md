@@ -4,7 +4,7 @@
 
 - solution in search of a problem" syndrome!
 
-
+- EIBTI - > Explicit is better than implicit.
 
 “Metaclasses are deeper magic than 99% of users should ever worry about. If you wonder whether you need them, you don’t (the people who actually need them know with certainty that they need them, and don’t need an explanation about why).”—Tim Peters
 
@@ -72,6 +72,19 @@
 * Encryption strength notations
 * Deprecation of User-Agent header
 
+# Google Login
+============== 
+
+* [OAuth 2](https://tools.ietf.org/html/rfc6749)
+* [OpenID](https://openid.net/specs/openid-connect-core-1_0.html)
+
+
+* handshake
+* flow
+* dance
+* provider configuration
+* userinfo endpoint
+* standardized fields.
 
 # Python multiprocessing
 ============
