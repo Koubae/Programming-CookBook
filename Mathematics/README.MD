@@ -10,6 +10,12 @@
 
 * [Logistic map Chaotic recurrence relation --WIKI--](https://en.wikipedia.org/wiki/Logistic_map)
 
+* [Function (mathematics)](https://en.wikipedia.org/wiki/Function_(mathematics)#Real-valued_functions)
+
+* [linear programming](https://en.wikipedia.org/wiki/Linear_programming)
+
+* [Logarithm](https://en.wikipedia.org/wiki/Logarithm)
+
 -----------------------------------------------------------------------------------------------------
 
 ## Algorythims

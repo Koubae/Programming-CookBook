@@ -30,6 +30,8 @@
 
 -  heap queue algorithm / priority queue algorithm.
 
+- [Bottleneck (software)](https://en.wikipedia.org/wiki/Bottleneck_(software))
+
 ### Programming Types.
 
 * Procedural
@@ -42,6 +44,7 @@
 
 - declarative language
 
+- [Dynamic programming](https://en.wikipedia.org/wiki/Dynamic_programming)
 
 # User Agent
 ============
@@ -85,6 +88,20 @@
 * provider configuration
 * userinfo endpoint
 * standardized fields.
+
+Requests & HTTP
+---------------
+
+- "Accept-Encoding": "gzip, deflate"
+- [RFC 7230](https://tools.ietf.org/html/rfc7230#section-3.2)
+
+-  HTTP keep-alive /  HTTP connection reuse / [HTTP persistent connection](https://en.wikipedia.org/wiki/HTTP_persistent_connection)
+
+- chunked transfer encoding
+
+- CA Certificates
+
+- Digest Authentication
 
 # Python multiprocessing
 ============

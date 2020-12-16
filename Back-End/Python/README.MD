@@ -8,6 +8,10 @@
 
 - [virtaal setup --GITHUB-](https://github.com/translate/virtaal/blob/master/setup.py)
 
+- **C Extensions distutils — Building and installing Python modules**[DOCS](https://docs.python.org/3/library/distutils.html)
+
+- [Wheel vs Egg](https://packaging.python.org/discussions/wheel-vs-egg/)
+- [PythonEggs](http://peak.telecommunity.com/DevCenter/PythonEggs)
 
 ```
 print('==='*15 + ' < ' + f'MESSAGE{}' + ' > ' + '==='*15)
@@ -32,6 +36,11 @@ print('==='*15 + ' < ' + f'MESSAGE{}' + ' > ' + '==='*15)
 
 - [PythonTestingToolsTaxonomy](https://wiki.python.org/moin/PythonTestingToolsTaxonomy)
 - [Python Unit Testing Framework](http://pyunit.sourceforge.net/pyunit.html), [ Unit testing framework](https://docs.python.org/3/library/unittest.html)
+
+#### BenchMark
+
+- [speed.python.org](https://speed.python.org/)
+- [speed.pypy.org](https://speed.pypy.org/)
 
 -----------------------------------------------------------------------------------------------------
 
