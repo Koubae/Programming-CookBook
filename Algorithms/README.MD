@@ -12,37 +12,9 @@ Graph Search Algorythims
 
 ### Dijkstra
 
-Find Path between 2 vertices | nodes in a Graph with minimum Edges's weights sum cost.
-
-Dijkstra Algorithm finds shortest paths between nodes in a graph for a given source node in the graph, the results is based on the relative point of the source path.
-
-Dijkstra Algorithm is based on the principle of **Relaxation** an approximation to the correct distance is gradually replaced by more accurate values till the shortes distance path is found. 
-
-It uses a **priotity queue** to greedily select the closest vertex that hasn't been processed, then performs the relaxation process on all of its neighbors. 
-
-- [Single-Source Shortest Paths – Dijkstra’s Algorithm](https://www.techiedelight.com/single-source-shortest-paths-dijkstras-algorithm/)
-- [algorithm.pdf](http://www.cse.unt.edu/~tarau/teaching/AnAlgo/Dijkstra's%20algorithm.pdf)
-- [Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
-- [Shortest-path tree](https://en.wikipedia.org/wiki/Shortest-path_tree)
-- [Shortest path problem](https://en.wikipedia.org/wiki/Shortest_path_problem)
-- [Spanning tree](https://en.wikipedia.org/wiki/Spanning_tree)
-
-#### KeyWords
-
-- Graph = Map = G ; 
-- Vertex = Intersections = V 
-- Vertex = u
-- Edge = Roads | Path = E
-- Edge's Length = Weight = W
-- Path = P = ( v 1 , v 2 , … , v n ) ∈ V × V × ⋯ × V 
-- Spanning Tree = T 
-- Source = Root Node
-
 ------------------------------------------
 
 ### A* algorithm 
-
-he A* algorithm is a generalization of Dijkstra's algorithm that cuts down on the size of the subgraph that must be explored,
 
 
 ------------------------------------------
@@ -61,7 +33,6 @@ he A* algorithm is a generalization of Dijkstra's algorithm that cuts down on th
 
 ### Bellman–Ford algorithm
 
-Unlike Dijkstra's algorithm, the Bellman–Ford algorithm can be used on graphs with negative edge weights, as long as the graph contains no [negative cycle](https://en.wikipedia.org/wiki/Negative_cycle) reachable from the source vertex s.
 
 ------------------------------------------
 
@@ -79,6 +50,7 @@ Unlike Dijkstra's algorithm, the Bellman–Ford algorithm can be used on graphs 
 ### Fast marching method 
 
 - [Source](https://en.wikipedia.org/wiki/Fast_marching_method)
+
 ------------------------------------------
 
 ### Other

@@ -38,13 +38,20 @@
 
 * Functional
 
-* Object Oriented
+* Object Oriented Programming
+
+* Design Pattern
 
 - nested function scope closures a.k.a. factory functions)
 
 - declarative language
 
 - [Dynamic programming](https://en.wikipedia.org/wiki/Dynamic_programming)
+
+- Metaprogramming | Metaprogram
+
+- introspection
+
 
 # User Agent
 ============
