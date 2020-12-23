@@ -32,7 +32,12 @@
 
 - [Bottleneck (software)](https://en.wikipedia.org/wiki/Bottleneck_(software))
 
-### Programming Types.
+* Rich Internet application (RIA)
+
+- [Amortized analysis](https://en.wikipedia.org/wiki/Amortized_analysis)
+
+Programming Types
+------------------
 
 * Procedural
 
@@ -52,11 +57,37 @@
 
 - introspection
 
+* incremental prototyping
 
-# User Agent
-============
 
-##  [HTTP/1.1 Semantics and Content](http://tools.ietf.org/html/rfc7231#section-5.5.3)
+### Object Oriented Programming | OOP
+
+* *state information* —descriptive data saved on an object for later use.
+
+* object factory
+
+* encapsulation
+
+* attributes | Property
+
+* pseudoprivate class attributes (__attr or __attr__)
+
+* Python's object persistence
+
+* abstract superclass
+
+
+
+Programming Methods
+-------------------
+
+- operator overloading
+
+
+ User Agent
+-----------
+
+####  [HTTP/1.1 Semantics and Content](http://tools.ietf.org/html/rfc7231#section-5.5.3)
 
 * Mail User Agent
 
@@ -74,7 +105,7 @@
 
 * [HTTP referer](https://en.wikipedia.org/wiki/HTTP_referer)
 
-## Types
+### Types
 
 * automated agents (bots)
 * User agent spoofing
@@ -82,8 +113,8 @@
 * Encryption strength notations
 * Deprecation of User-Agent header
 
-# Google Login
-============== 
+Google Login
+------------
 
 * [OAuth 2](https://tools.ietf.org/html/rfc6749)
 * [OpenID](https://openid.net/specs/openid-connect-core-1_0.html)
@@ -110,8 +141,8 @@ Requests & HTTP
 
 - Digest Authentication
 
-# Python multiprocessing
-============
+Python multiprocessing
+----------------------
 
 * **multiprocessing** |  **hreading**  | **asyncio**
 
@@ -145,15 +176,15 @@ Requests & HTTP
 * Lock [Lock (computer science) --WIKI--](https://en.wikipedia.org/wiki/Lock_(computer_science))
 
 
-# Front-end
-============
+Front-end
+------------
 UI/UX UI design 
 
 
 
 
-# Databases | SQL | NoSQL
-============
+Databases | SQL | NoSQL
+-----------------------
 
 * [ database management system (DBMS)](https://en.wikipedia.org/wiki/Database#Database_management_system)
 
@@ -174,6 +205,10 @@ UI/UX UI design
 *  I/O overhead 
 
 * Index
+
+* *shelve* object-oriented database.
+
+* Object-relational mappers (ORMs)
 
 ### SQLite
 

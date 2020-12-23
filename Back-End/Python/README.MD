@@ -19,6 +19,18 @@ print('==='*15 + ' < ' + f'MESSAGE{}' + ' > ' + '==='*15)
 # ============================ < MESSAGE > ============================ #
 ```
 
+### Object persistence
+
+Object persistence is implemented by three standard library modules:
+
+- [pickle](https://docs.python.org/3/library/pickle.html)
+Serializes arbitrary Python objects to and from a string of bytes.
+
+- [dbm](https://docs.python.org/3/library/dbm.html) 
+(named anydbm in Python 2.X) Implements an access-by-key filesystem for storing strings
+
+- [shelve](https://docs.python.org/3/library/shelve.html)
+Uses the other two modules to store Python objects on a file by key
 
 ## Python Modules 
 

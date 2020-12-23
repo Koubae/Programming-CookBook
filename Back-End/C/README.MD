@@ -10,6 +10,13 @@ Keywords & Terms
 
 - function invocation
 
+- [Keywords in C](https://www.programiz.com/c-programming/list-all-keywords-c-language)
+- **C Dynamic Memory Allocation**
+  ### <stdlib.h>
+    > malloc()
+    > calloc()
+    > realloc() 
+    > free()
 
 ## Features
 
@@ -34,10 +41,15 @@ The char type is commonly used to store letters of the ASCII chart, but it can b
 
 Guaranteed that short is not longer than int. And we're guaranteed long is not shorter than int.
 
-    unsigned char will range from 0 to at least 255
-    unsigned int will range from 0 to at least 65,535
-    unsigned short will range from 0 to at least 65,535
-    unsigned long will range from 0 to at least 4,294,967,295
+  unsigned **char** will range from 0 to at least 255
+  unsigned **int** will range from 0 to at least 65,535
+  unsigned **short** will range from 0 to at least 65,535
+  unsigned **long** will range from 0 to at least 4,294,967,295
+
+
+
+Documentation
+--------------
 
 
 #### Floating Points
@@ -231,6 +243,20 @@ do {
 
 ```
 
+
+- goto statement
+
+The goto statement allows us to transfer control of the program to the specified label.
+
+```
+goto label;
+... .. ...
+... .. ...
+label: 
+statement;
+
+```
+
 #### Arrays
 
 Every value in the array, in C, must have the same type. This means you will have arrays of int values, arrays of double values, and more.
@@ -279,7 +305,7 @@ printf("%s", name);
 
 "Federi" is 6 chars long, but I defined an array of length 7, This is because the last character in a string must be a  0 value, the string terminator, and we must make space for it.
 
-##### #include <string.h>, have access to:
+#### #include <string.h>, have access to:
 
 - **strcpy(**) to copy a string over another string
 - **strcat()** to append a string to another string
@@ -292,8 +318,33 @@ printf("%s", name);
 
 A pointer is the address of a block of memory that contains a variable.
 
+* is called the **dereference operator** (when working with pointers). It operates on a pointer and gives the value stored in that pointer.
+
+> This is equivalent to
 
 ```
+int *p = &c;
+
+```
+> THIS
+
+```
+int *p:
+p = &c;
+// or
+int* p = &c;
+```
+
+```
+
+//Syntax
+int* var;
+
+int *var;
+
+int * var;
+
+int* var1, var2;  /var2 is NOT a pointer but a normal var 
 
 int age = 37;
 printf("%p", &age); /* 0x7ffeef7dcb9c */
@@ -304,9 +355,11 @@ int *address = &age;
 
 // use the pointer operator * to get the value of the variable an address is pointing to
 
-int age = 37;
-int *address = &age;
-printf("%u", *address); /* 37 */
+int* pc, c;
+c = 5;
+pc = &c;
+printf("%d", *pc);   // Output: 5
+
 
 
 // use a pointer to initialize the value
@@ -323,6 +376,7 @@ printf("%u", *prices); /* 5 */
 
 //  we can get the second item by adding 1 to the prices pointer 
 printf("%u", *(prices + 1)); /* 4 */
+
 
 ```
 
@@ -354,10 +408,41 @@ int doSomething(int value1, int value2) {
 
 ```
 
+##### Function prototype
+
+
+```
+// Syntax 
+returnType functionName(type1 argument1, type2 argument2, ...);
+
+#include <stdio.h>
+int addNumbers(int a, int b);         // function prototype
+
+int main()
+{
+    int n1,n2,sum;
+
+    printf("Enters two numbers: ");
+    scanf("%d %d",&n1,&n2);
+
+    sum = addNumbers(n1, n2);        // function call
+    printf("sum = %d",sum);
+
+    return 0;
+}
+
+int addNumbers(int a, int b)         // function definition   
+{
+    int result;
+    result = a+b;
+    return result;                  // return statement
+}
+```
+
 #### Input and output
 
 
-##### #include <stdio.h>, have access to:
+#### #include <stdio.h>, have access to:
 
 - printf()
 - fprintf()
@@ -391,10 +476,22 @@ scanf("%s", name);
 ##### String Interpolation
 
 
-- %c for a char
-- %s for a char
-- %f for floating point numbers
-- %p for pointers
+- %c for a `char`
+- %s for a `char`
+
+- %hd short `int`
+- %d for a `int`
+- %u `unsigned int`
+- %li `long int`
+- %lii `long long int`
+- %lu `unisigned long int`
+- %llu `unisigned long long int`
+
+- %f for `float`
+- %lf `double`
+- %LF `long double`
+
+- %p pointers `&var` 
 
 #### Variable scope
 
@@ -444,6 +541,48 @@ int incrementAge() {
 }
 
 
+```
+
+##### register keyword
+
+
+The register keyword is used to declare register variables. Register variables were supposed to be faster than local variables.
+
+However, modern compilers are very good at code optimization, and there is a rare chance that using register variables will make your program faster.
+
+Unless you are working on embedded systems where you know how to optimize code for the given application, there is no use of register variables.
+
+Register is a storage class, and C doesn’t allow multiple storage class specifiers for a variable. So, register can not be used with static . Try below program.
+
+Register can only be used within a block (local), it can not be used in the global scope (outside main).
+
+```
+
+#include<stdio.h> 
+  
+int main() 
+{ 
+    int i = 10; 
+    register int* a = &i; 
+    printf("%d", *a); 
+    getchar(); 
+    return 0; 
+} 
+
+```
+
+##### static variable
+
+- [What are the default values of static variables in C?](https://www.geeksforgeeks.org/g-fact-53/)
+
+The value of a static variable persists until the end of the program.
+Static variables (like global variables) are initialized as 0 if not initialized explicitly. 
+
+```
+Syntax
+static [data_type] [var_name] = [var_value]; 
+
+static int i;
 ```
 
 #### Type definitions | enum 
@@ -526,6 +665,12 @@ A structure is a collection of values of different types. Arrays in C are limite
 
 
 It's important to note that structures are **passed by copy**, unless of course you pass a pointer to a struct, in which case it's passed by reference.
+
+
+There are two types of operators used for accessing members of a structure.
+
+1. `.` - Member operator
+2. `->` - Structure pointer operator (will be discussed in the next tutorial)
 
 
 syntax 

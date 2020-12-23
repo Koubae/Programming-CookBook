@@ -16,6 +16,8 @@
 
 * [Logarithm](https://en.wikipedia.org/wiki/Logarithm)
 
+* [Polish notation](https://en.wikipedia.org/wiki/Polish_notation)
+
 -----------------------------------------------------------------------------------------------------
 
 ## Algorythims
