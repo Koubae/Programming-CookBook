@@ -1,7 +1,11 @@
 # C
 =======================
 
+# [INDEX](https://pubs.opengroup.org/onlinepubs/009695399/idx/index.html)
 
+# [HEADERS](https://pubs.opengroup.org/onlinepubs/009695399/idx/headers.html)
+
+- [Standard Library](https://www.programiz.com/c-programming/library-function)
 
 -----------------------------------------------------------------------------------------------------
 
@@ -34,6 +38,22 @@ Keywords & Terms
 - #ifndev #iddef
 - Preprocessor 
 - Preprocessor Predefined symbolic constants
+- Struct
+  - [Bit Fields --WIKI--](https://en.wikipedia.org/wiki/Bit_field)
+  - [Bit Fields tutorialspoint.com](https://www.tutorialspoint.com/cprogramming/c_bit_fields.htm)
+
+- EOF (End of File)
+
+- [Type Casting](https://www.tutorialspoint.com/cprogramming/c_type_casting.htm)  | type-conversion
+
+Documentation
+--------------
+
+### Data type
+
+- [tutorialspoint.com](https://www.tutorialspoint.com/cprogramming/c_data_types.htm)
+
+
 
 The char type is commonly used to store letters of the ASCII chart, but it can be used to hold small integers from -128 to 127. It takes at least 1 byte.
 
@@ -46,10 +66,6 @@ Guaranteed that short is not longer than int. And we're guaranteed long is not s
   unsigned **short** will range from 0 to at least 65,535
   unsigned **long** will range from 0 to at least 4,294,967,295
 
-
-
-Documentation
---------------
 
 
 #### Floating Points
@@ -78,6 +94,30 @@ const int AGE = 37;
 
 ```
 
+#### Storage Classes
+
+
+- auto
+- register
+- static
+- extern
+
+**auto**
+
+The auto storage class is the default storage class for all local variables.
+
+**register**
+
+
+The register should only be used for variables that require quick access such as counters. It should also be noted that defining 'register' does not mean that the variable will be stored in a register. It means that it MIGHT be stored in a register depending on hardware and implementation restrictions.
+
+**static**
+
+In C programming, when static is used on a global variable, it causes only one copy of that member to be shared by all the objects of its class.
+
+**extern**
+
+The extern storage class is used to give a reference of a global variable that is visible to ALL the program files.
 #### Operators
 
 
@@ -318,6 +358,8 @@ printf("%s", name);
 
 A pointer is the address of a block of memory that contains a variable.
 
+- [Concept & Description ](https://www.tutorialspoint.com/cprogramming/c_pointers.htm)
+
 * is called the **dereference operator** (when working with pointers). It operates on a pointer and gives the value stored in that pointer.
 
 > This is equivalent to
@@ -473,8 +515,9 @@ scanf("%s", name);
 - stderr (standard error)
 
 
-##### String Interpolation
+#### String Interpolation
 
+- [cppreference](https://en.cppreference.com/w/c/io/fprintf)
 
 - %c for a `char`
 - %s for a `char`
@@ -491,7 +534,20 @@ scanf("%s", name);
 - %lf `double`
 - %LF `long double`
 
+- %G --> converts **floating-point** number to **decimal or decimal exponent** notation depending on the value and the precision. converts floating-point number to decimal or decimal exponent notation depending on the value and the precision. 
+
 - %p pointers `&var` 
+
+##### Integers
+
+
+- **x** prints an unsigned number in hexadecimal.
+- **o** prints an unsigned number in octal.
+- **u** prints an unsigned number in decimal.
+- **d** prints a signed number in decimal.
+- **i** prints a signed number in decimal.
+
+
 
 #### Variable scope
 
@@ -658,7 +714,7 @@ int main(void) {
 
 ```
 
-#### Structures
+#### Structures  | struct
 
 Using the struct keyword we can create complex data structures using basic C types.
 A structure is a collection of values of different types. Arrays in C are limited to a type, so structures can prove to be very interesting in a lot of use cases.
@@ -753,6 +809,15 @@ PERSON fede = { 37, "Flavio" };
 
 ```
 
+##### typedef vs #define
+
+#define is a C-directive which is also used to define the aliases for various data types similar to typedef but with the following differences −
+
+> **typedef** is limited to giving symbolic names to types only where as **#define** can be used to define alias for values as well, q., you can define 1 as ONE etc.
+
+> **typedef** interpretation is performed by the *compiler* whereas **#define** statements are processed by the *pre-processor.*
+
+
 #### Command line parameters
 
 ```
@@ -835,7 +900,8 @@ int main(void) {
 
 
 
-#### The preprocessor
+The preprocessor CPP
+----------------
 
 The preprocessor is a tool that helps us a lot when programming with C. It is part of the C Standard, just like the language, the compiler, and the standard library.
 
@@ -845,8 +911,35 @@ it looks up all the **header files** you include with the #include directive.
 
 It also looks at **every constant** defined using #define and substitutes it with its actual value.
 
+- [Header Files](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html#Header-Files)
+- [Macros](https://gcc.gnu.org/onlinedocs/cpp/Macros.html#Macros)
+- [Pragmas](https://gcc.gnu.org/onlinedocs/cpp/Pragmas.html#Pragmas)
 
-##### Conditionals
+
+- [tutorialspoint.com](https://www.tutorialspoint.com/cprogramming/c_preprocessors.htm)
+
+This is useful if you pass the ```-DDEBUG flag``` to the gcc compiler at the time of compilation.
+
+```
+#ifdef DEBUG
+   /* Your debugging statements here */
+#endif
+```
+
+ ### Common uses of C preprocessor are:
+
+
+- Including Header Files: #include   
+
+- Symbolic constants
+
+- Macros
+
+- Conditional Compilation
+
+- Predefined Macros
+
+## Conditionals
 
 ```
 
@@ -864,39 +957,10 @@ int main(void) {
 
 ```
 
-##### Symbolic constants
+### If defined  #iddef
 
-Symbolic constants are very useful because we can give names to values without creating variables at compilation time.
-
-We can define a symbolic constant:
-
-
-```
-
-#define VALUE 1
-#define PI 3.14
-#define NAME "Programmer"
-
-```
-
-##### Macros
-
-With #define we can also define a macro. The difference between a macro and a symbolic constant is that a macro can accept an argument and typically contains code, while a symbolic constant is a value
-
-
-The big difference with functions is that macros do not specify the type of their arguments or return values, which might be handy in some cases.
-
-
-```
-
-//  use it in our code like this
-#define POWER(x) ((x) * (x))
-printf("%u\n", POWER(4)); //16
-
-```
-
-##### If defined  #iddef
-#ifndev #iddef
+#ifndev 
+#iddef
 
 ```
 
@@ -935,6 +999,40 @@ common to wrap some block of code into a block
 
 
 ```
+
+
+##### Symbolic constants
+
+Symbolic constants are very useful because we can give names to values without creating variables at compilation time.
+
+We can define a symbolic constant:
+
+
+```
+
+#define VALUE 1
+#define PI 3.14
+#define NAME "Programmer"
+
+```
+
+##### Macros
+
+With #define we can also define a macro. The difference between a macro and a symbolic constant is that a macro can accept an argument and typically contains code, while a symbolic constant is a value
+
+
+The big difference with functions is that macros do not specify the type of their arguments or return values, which might be handy in some cases.
+
+
+```
+
+//  use it in our code like this
+#define POWER(x) ((x) * (x))
+printf("%u\n", POWER(4)); //16
+
+```
+
+
 
 ##### Predefined symbolic constants you can use
 

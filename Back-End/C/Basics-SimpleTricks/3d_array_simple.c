@@ -1,3 +1,38 @@
+// ====== < Accessing Array Elements > ====== //
+
+#include <stdio.h>
+
+int main()
+{
+    int my_array[10]; /* Array with 10 Slots */
+    int i, j;
+
+
+    /* Init elements of my_array n to 0*/
+    for (i=0; i<100; i++) {
+        my_array[i] = i + 100; 
+    }
+
+    /* Print nums from my_array*/
+    for (j=0; j<10; j++) {
+        printf("Element[%d] = %d\n", j, my_array[j]);
+    }
+
+    return 0;
+}
+
+// Element[0] = 100
+// Element[1] = 101
+// Element[2] = 102
+// Element[3] = 103
+// Element[4] = 104
+// Element[5] = 105
+// Element[6] = 106
+// Element[7] = 107
+// Element[8] = 108
+// Element[9] = 109
+
+
 // C Program to store and print 12 values entered by the user
 
 #include <stdio.h>

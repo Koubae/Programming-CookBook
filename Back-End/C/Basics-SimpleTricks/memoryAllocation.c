@@ -11,9 +11,120 @@
 // ptr = (castType*)calloc(n, size);
 // ptr = (float*) calloc(25, sizeof(float));
 
-// freee
+// free
 // SYNTAX
 free(ptr);
+
+// ======== < malloc > ======== //
+/*  void *malloc(int num); */
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+int main() 
+{
+   char name[100];  /* Create var name with 100 slots*/
+   char *description; /*Create a pointer */
+
+   strcpy(name, "Federico B");  /*Add name to name var*/
+
+   description = malloc(200 * sizeof(char));  /* Add Size dynamically */
+
+   if (description == NULL) 
+      fprintf(stderr, "Error -- unable to allocate required memory\n");
+   else
+      strcpy(description, "Federico B is the best programmer : )");
+
+   printf("Name = %s\n", name);
+   printf("Description = %s\n", description);
+
+   return 0;
+
+
+}
+
+
+// ======== < calloc > ======== //
+/* void *calloc(int num, int size); */
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+int main() 
+{
+   char name[100];  /* Create var name with 100 slots*/
+   char *description; /*Create a pointer */
+
+   strcpy(name, "Federico B");  /*Add name to name var*/
+
+   description = calloc(200, sizeof(char));  /* Add Size dynamically */
+
+   if (description == NULL) 
+      fprintf(stderr, "Error -- unable to allocate required memory\n");
+   else
+      strcpy(description, "Federico B is the best programmer : )");
+
+   printf("Name = %s\n", name);
+   printf("Description = %s\n", description);
+
+   return 0;
+
+
+}
+
+
+// ======== < realloc +  free> ======== //
+/* void *realloc(void *address, int newsize); */
+/* void free(void *address); */
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{
+
+   char name[100]; 
+   char * description;
+
+   strcpy(name , "Fede b");
+
+   /*Allocate Memory to Pointer dynamically */
+   description = malloc(30*sizeof(char));
+
+   if (description == NULL) 
+      fprintf(stderr, "Error -- unable to allocate required memory\n");
+   else
+      strcpy(description, "Fede is the best programmer ;)");
+
+
+   /* Change allocated memory on run time*/
+   description = realloc(description, 100*sizeof(char));
+
+   if (description == NULL)
+      fprintf(stderr, "Error -- unable to allocate required memory\n");
+   else 
+      strcat(description, "Still the best!!!");
+
+   printf("NAME = %s\n", name);
+   printf("DESCRIPTION = %s\n", description);
+
+   /* Memory free up*/
+   free(description);
+
+   return 0;
+}
+
+// NAME = Fede b
+// DESCRIPTION = Fede is the best programmer ;)Still the best!!!
 
 // Program to calculate the sum of n numbers entered by the user
 
