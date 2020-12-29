@@ -36,6 +36,10 @@
 
 - [Amortized analysis](https://en.wikipedia.org/wiki/Amortized_analysis)
 
+- [Unary operation](https://en.wikipedia.org/wiki/Unary_operation)
+
+- [Buffer overflow](https://en.wikipedia.org/wiki/Buffer_overflow)
+
 Programming Types
 ------------------
 
@@ -58,6 +62,8 @@ Programming Types
 - introspection
 
 * incremental prototyping
+
+- [Reverse engineering](https://en.wikipedia.org/wiki/Reverse_engineering)
 
 
 ### Object Oriented Programming | OOP

@@ -49,6 +49,13 @@ Uses the other two modules to store Python objects on a file by key
 - [PythonTestingToolsTaxonomy](https://wiki.python.org/moin/PythonTestingToolsTaxonomy)
 - [Python Unit Testing Framework](http://pyunit.sourceforge.net/pyunit.html), [ Unit testing framework](https://docs.python.org/3/library/unittest.html)
 
+#### PreProcessor & Directives
+
+- [pypreprocessor 0.7.7 ](https://pypi.org/project/pypreprocessor/)
+- [pypreprocessor --GITHUB--](https://github.com/interpreters/pypreprocessor)
+- The directive statement [PEP 244 ](https://www.python.org/dev/peps/pep-0244/)
+- Defining Python Source Code Encodings [PEP 263 ](https://www.python.org/dev/peps/pep-0263/)
+
 #### BenchMark
 
 - [speed.python.org](https://speed.python.org/)

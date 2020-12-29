@@ -95,6 +95,7 @@
 * **command &** => Execute a command in the background.
 * **./executable** => Run an executable in the current directory that is not in your PATH.
 * **bash script.sh** => Run a Bash script (executable with the header #!/bin/bash).
+* **echo $?** => To see the exit status of the last program you ran
 
 
 ### Redirection 

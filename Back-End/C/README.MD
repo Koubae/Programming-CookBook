@@ -38,6 +38,7 @@ Keywords & Terms
 - #ifndev #iddef
 - Preprocessor 
 - Preprocessor Predefined symbolic constants
+- [Directive (programming)](https://en.wikipedia.org/wiki/Directive_(programming))
 - Struct
   - [Bit Fields --WIKI--](https://en.wikipedia.org/wiki/Bit_field)
   - [Bit Fields tutorialspoint.com](https://www.tutorialspoint.com/cprogramming/c_bit_fields.htm)
@@ -45,6 +46,10 @@ Keywords & Terms
 - EOF (End of File)
 
 - [Type Casting](https://www.tutorialspoint.com/cprogramming/c_type_casting.htm)  | type-conversion
+
+- array subscript operator.
+- array | subscript.
+
 
 Documentation
 --------------
@@ -92,6 +97,21 @@ const int AGE = 37;
 
 #define AGE 37
 
+```
+
+#### Unary expressions
+
+```
+
+Operator     Meaning
+========     =======
+   &         Address-of; value is the location of the operand
+   *         Contents-of; value is what is stored at the location
+   -         Negation
+   +         Value-of operator
+   !         Logical negation ( (!E) is equivalent to (0==E) )
+   ~         Bit-wise complement
+   
 ```
 
 #### Storage Classes

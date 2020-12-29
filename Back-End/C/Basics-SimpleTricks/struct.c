@@ -299,3 +299,12 @@ int main( ) {
 // Sizeof( Age ) : 4
 // Age.age : 7
 // Age.age : 0
+
+
+// ====== < Linked List Simple > ====== \\ 
+
+struct restaurant_order {
+    char description[100];
+    double price;
+    struct restaurant_order *next_order;
+};

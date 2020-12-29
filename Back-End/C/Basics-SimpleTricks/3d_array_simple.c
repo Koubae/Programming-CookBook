@@ -106,3 +106,15 @@ void displayNumbers(int num[2][2])
 // 3
 // 4
 // 5
+
+
+//  find the number of elements in an array
+int ix;
+short anArray[]= { 3, 6, 9, 12, 15 };
+
+/*
+for (ix=0; ix< (sizeof(anArray)/sizeof(short)); ++ix) {
+  DoSomethingWith("%d", anArray[ix] );
+}
+
+*/

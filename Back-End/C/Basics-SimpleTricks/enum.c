@@ -69,3 +69,36 @@ int main() {
 
 	return 0;
 }
+
+
+// ======= < switch-case statements > =======//
+
+enum weather {
+    sunny,
+    windy,
+    cloudy,
+    rain,
+} weather_outside;
+
+// ...
+
+
+void myFunc(void) 
+{
+    
+        switch (weather_outside) {
+    case sunny:
+        wear_sunglasses();
+        break;
+    case windy:
+        wear_windbreaker();
+        break;
+    case cloudy:
+        get_umbrella();
+        break;
+    case rain:
+        get_umbrella();
+        wear_raincoat();
+        break;
+    }
+}

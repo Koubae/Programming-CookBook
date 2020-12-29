@@ -17,6 +17,8 @@ Windows
 
 ### MinGW
 
+- [GCC, the GNU Compiler Collection](https://gcc.gnu.org/)
+
 1. Go to [sourceforge.net](https://sourceforge.net/projects/mingw/) download and & this to your hard drive.
 
 2. Once the download is finished, open it and follow the instructions
