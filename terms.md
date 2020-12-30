@@ -40,6 +40,10 @@
 
 - [Buffer overflow](https://en.wikipedia.org/wiki/Buffer_overflow)
 
+- [Circular buffer](https://en.wikipedia.org/wiki/Circular_buffer) circular buffer, circular queue, cyclic buffer or ring buffer
+
+- [Multiple buffering](https://en.wikipedia.org/wiki/Multiple_buffering#Double_buffering_in_computer_graphics)
+
 Programming Types
 ------------------
 
@@ -64,6 +68,8 @@ Programming Types
 * incremental prototyping
 
 - [Reverse engineering](https://en.wikipedia.org/wiki/Reverse_engineering)
+
+- [Design by contract](https://en.wikipedia.org/wiki/Design_by_contract)
 
 
 ### Object Oriented Programming | OOP

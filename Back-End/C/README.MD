@@ -58,6 +58,7 @@ Documentation
 
 - [tutorialspoint.com](https://www.tutorialspoint.com/cprogramming/c_data_types.htm)
 
+- [Member access operators](https://en.cppreference.com/w/c/language/operator_member_access)
 
 
 The char type is commonly used to store letters of the ASCII chart, but it can be used to hold small integers from -128 to 127. It takes at least 1 byte.
@@ -71,6 +72,17 @@ Guaranteed that short is not longer than int. And we're guaranteed long is not s
   unsigned **short** will range from 0 to at least 65,535
   unsigned **long** will range from 0 to at least 4,294,967,295
 
+**OTHER C TYPES**
+
+- uint8_t
+- uint16_t
+- uint32_t
+- uint64_t
+
+- [C - Type - What are uint8_t, uint16_t, uint32_t and uint64_t? ](https://www.badprog.com/c-type-what-are-uint8-t-uint16-t-uint32-t-and-uint64-t)
+
+- size_t
+- [What is size_t in C?](https://stackoverflow.com/a/2550799/13903942)
 
 
 #### Floating Points

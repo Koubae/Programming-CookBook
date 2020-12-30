@@ -160,3 +160,25 @@ int main() {
     printf("Average = %.2f", avg);
     return 0;
 }
+
+
+
+
+// ====== <  function pointers + typedef > ====== //
+// https://stackoverflow.com/a/3674225/13903942
+
+// This code shows that the typedefs without the asterisk are not function pointers 
+
+static int function(void)
+{
+    return 0;
+}
+
+typedef int   fc_name1 (void);
+typedef int  (fc_name2)(void);
+typedef int (*fc_name3)(void);
+
+// fc_name1 x = function;
+// fc_name2 y = function;
+// fc_name3 z = function;
+

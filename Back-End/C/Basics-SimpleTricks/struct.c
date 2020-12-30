@@ -37,6 +37,8 @@ struct Person
 
 
 
+
+
 // Program to add two distances (feet-inch)
 #include <stdio.h>
 struct Distance
@@ -81,6 +83,26 @@ int main()
 // ====== < typedef > ====== //
 
 // We use the typedef keyword to create an alias name for data types. It is commonly used with structures to simplify the syntax of declaring variables.
+// WARNING https://www.kernel.org/doc/Documentation/CodingStyle
+/*
+SOO https://stackoverflow.com/a/32405369/13903942
+
+Please don't use things like "vps_t". It's a mistake to use typedef for structures and pointers. When you see a
+
+vps_t a;
+
+in the source, what does it mean? In contrast, if it says
+
+ struct virtual_container *a;
+
+you can actually tell what "a" is.
+
+*/
+
+// anonymous struct definitions
+typedef struct {
+    int x, y, z;
+} vector3;
 
 struct Distance{
     int feet;
@@ -101,6 +123,42 @@ int main() {
     distances d1, d2;
 }
 
+// forward declaring the struct, typedefing it, then defining the struct using the typedefd type for next
+
+struct _queue_item;                           // 4
+
+typedef struct _queue_item queue_item_t;      // 5
+
+struct _queue_item {                          // 6
+  vpoint_t void_item;
+  queue_item_t* next;                         // 7
+}
+
+// opaque type  structure
+// https://stackoverflow.com/a/252810/13903942
+
+/*          
+typedef struct Point Point;
+
+typedef Point * point_new(int x, int y);
+
+struct Point
+{
+  int x, y;
+};
+
+Point * point_new(int x, int y)
+{
+  Point *p;
+  if((p = malloc(sizeof *p)) != NULL)
+  {
+    p->x = x;
+    p->y = y;
+  }
+  return p;
+}
+
+*/
 
 // ====== < Nested Struct > ====== //
 
@@ -308,3 +366,39 @@ struct restaurant_order {
     double price;
     struct restaurant_order *next_order;
 };
+
+// ====== <  partial declaration of the String class > ====== \\ 
+// https://stackoverflow.com/a/840703/13903942
+
+typedef struct String_Struct* String;
+
+struct String_Struct
+{
+    char* (*get)(const void* self);
+    void (*set)(const void* self, char* value);
+    int (*length)(const void* self);
+};
+
+char* getString(const void* self);
+void setString(const void* self, char* value);
+int lengthString(const void* self);
+
+String newString();
+
+String newString()
+{
+    String self = (String)malloc(sizeof(struct String_Struct));
+
+    self->get = &getString;
+    self->set = &setString;
+    self->length = &lengthString;
+
+    self->set(self, "");
+
+    return self;
+}
+
+char* getString(const void* self_obj)
+{
+    return ((String)self_obj);//->internal->value;
+}
