@@ -547,7 +547,7 @@ scanf("%s", name);
 - stderr (standard error)
 
 
-#### String Interpolation
+#### String Interpolationk
 
 - [cppreference](https://en.cppreference.com/w/c/io/fprintf)
 
@@ -754,6 +754,7 @@ A structure is a collection of values of different types. Arrays in C are limite
 
 It's important to note that structures are **passed by copy**, unless of course you pass a pointer to a struct, in which case it's passed by reference.
 
+- [Opaque C structs: various ways to declare them](https://stackoverflow.com/questions/3965279/opaque-c-structs-various-ways-to-declare-them)
 
 There are two types of operators used for accessing members of a structure.
 

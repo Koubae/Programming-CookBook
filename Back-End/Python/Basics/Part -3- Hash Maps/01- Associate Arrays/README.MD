@@ -53,4 +53,23 @@
 
 - **Split-table Dictionary**
 
+
+### See also:
+
+
+- -- Add a private version to dict [PEP 509](https://www.python.org/dev/peps/pep-0509/)
+
+- -- Preserving the order of `**kwargs` in a function. [PEP 468](https://www.python.org/dev/peps/pep-0468/)
+
+- -- Preserving Class Attribute Definition Order [PEP 520](https://www.python.org/dev/peps/pep-0520/)
+
+- - Brandon Rhodes [PyCon 2010: The Might Dictionary](https://www.youtube.com/watch?v=C4Kc8xzcA68)
+
+- - Brandon Rhodes [PyCon 2017: The Dictionary Even Mightier](https://www.youtube.com/watch?v=66P5FMkWoVU)
+
+ - - Raymond Hettinger [PyCon 2017: Modern Python Dictionaries A confluence of a dozen great ideas](https://www.youtube.com/watch?v=npw4s1QTmPg)
+
+- - CPython's actual dict implementation in C. [dictobject.c](https://github.com/python/cpython/blob/master/Objects/dictobject.c)
+ 
+
 -----------------------------------------------------------------------------------------------------

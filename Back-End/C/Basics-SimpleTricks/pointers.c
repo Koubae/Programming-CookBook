@@ -182,3 +182,87 @@ typedef int (*fc_name3)(void);
 // fc_name2 y = function;
 // fc_name3 z = function;
 
+
+// ====== <  Some Pointers > ====== //
+
+#include <stdio.h>
+
+int main(void)
+{
+    int *pointer;
+    int my_var;
+
+    my_var = 'A';
+
+    pointer = &my_var;
+
+    printf("Pointer is at addrr %p\n", &pointer);
+    printf("Value in pointer = %c\n\n", *pointer);
+    /*
+    Pointer is at addrr 0061FF1C
+    Value in pointer = A */
+
+    // Arrays 
+    char my_array[5] = {'a', 'A', 'b', 'z', 'M'};
+    char *ptr_array = my_array;
+    char **ptr_of_ptr = &ptr_array;
+
+    printf("array[3] = %c, addr = %p\n", my_array[3], &my_array[3]);
+    printf("ptr_array[3] = %c, addr = %p\n", ptr_array[3], &ptr_array[3]);
+    printf("**Pointer of Poniter[3] = %c, addr = %p\n", (*ptr_of_ptr[3], &(*ptr_of_ptr[3])));
+    /*
+    array[3] = z, addr = 0061FF12
+    ptr_array[3] = z, addr = 0061FF12
+    **Pointer of Poniter[3] = A, addr = 0061FF12
+    */
+    printf("================================================\n");
+
+    // ---- string 
+    printf("Stings Array = %s, addr = %p\n", my_array, &my_array);
+    printf("Acces through Pointer = %s, Addr = %p\n", ptr_array, &ptr_array);
+    printf("Pointer of Pointer to Array = %s, Addr = %p\n", (*ptr_of_ptr, &(*ptr_of_ptr)));
+    /*
+    
+    Stings Array = aAbzMA, addr = 0061FF0F
+    Acces through Pointer = aAbzMA, Addr = 0061FF08
+    Pointer of Pointer to Array = ☼ a, Addr = 0061FF08
+    */
+
+    printf("================================================\n");
+
+    // ------------ ARRAY OF POINTERS
+
+    char *ptr_array_[2];
+    char *ptr1 = NULL, *ptr2 = NULL;
+    char char_elements[2] = {'H', 'i'};
+
+    ptr1 = &char_elements[1];
+    ptr2 = char_elements;
+
+    ptr_array_[0] = ptr2;
+    ptr_array_[1] = ptr1;
+
+    printf("**ptr_array_ = %c\n", **ptr_array_);
+
+    printf("addr at **ptr_array = %p\n", &(**ptr_array_));
+    printf("addr at **ptr_array[0] = %p\n\n", &(*ptr_array_[0]));
+    
+    printf("*ptr_array[1] = %c\n", *ptr_array_[1]);
+    printf("addr at *ptr_array[0] = %p\n", &(**ptr_array_));
+    printf("addr at *ptr_array[0] = %p\n", &(**ptr_array_));
+    printf("addr at *ptr_array[1] = %p\n", &(*ptr_array_[1]));
+
+    /*
+    
+    **ptr_array_ = H
+    addr at **ptr_array = 0061FEF6
+    addr at **ptr_array[0] = 0061FEF6
+
+    *ptr_array[1] = i
+    addr at *ptr_array[0] = 0061FEF6
+    addr at *ptr_array[0] = 0061FEF6
+    addr at *ptr_array[1] = 0061FEF7
+    */
+
+    return 0;
+}
