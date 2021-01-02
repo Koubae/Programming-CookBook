@@ -9,6 +9,9 @@ GCC-Compiler
 Commands
 --------
 
+You can use the gcc compiler in linux to link two c file in one output. Suppose you have two c files one is 'main.c' and another is 'support.c'. So the command to link these two is
+
+```gcc main.c support.c -o main.out```
 
 - o
 
@@ -21,5 +24,9 @@ indicates that gcc should warn about many types of suspicious code that are like
 - g 
 
 generate debugging information for gdb
+
+- -nostartfiles 
+
+Here, -nostartfiles gcc flag prevents the compiler from using standard startup files when linking
 
 -----------------------------------------------------------------------------------------------------

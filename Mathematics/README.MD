@@ -18,6 +18,8 @@
 
 * [Polish notation](https://en.wikipedia.org/wiki/Polish_notation)
 
+* [Truth table](https://en.wikipedia.org/wiki/Truth_table)
+
 -----------------------------------------------------------------------------------------------------
 
 ## Algorythims

@@ -54,12 +54,16 @@ Keywords & Terms
 Documentation
 --------------
 
+- [The Standard iso-9899.info](http://www.iso-9899.info/wiki/The_Standard)
+
 ### Data type
 
 - [tutorialspoint.com](https://www.tutorialspoint.com/cprogramming/c_data_types.htm)
 
 - [Member access operators](https://en.cppreference.com/w/c/language/operator_member_access)
 
+- [Implicit conversions](https://en.cppreference.com/w/cpp/language/implicit_conversion)
+- [Explicit type conversion](https://en.cppreference.com/w/cpp/language/explicit_cast)
 
 The char type is commonly used to store letters of the ASCII chart, but it can be used to hold small integers from -128 to 127. It takes at least 1 byte.
 
@@ -547,7 +551,7 @@ scanf("%s", name);
 - stderr (standard error)
 
 
-#### String Interpolationk
+#### String Interpolation
 
 - [cppreference](https://en.cppreference.com/w/c/io/fprintf)
 
@@ -1082,4 +1086,6 @@ The preprocessor also defines a number of symbolic constants you can use, identi
 ### NOTES & Interesting Codes
 
 - [Python operator.attrgetter  | Source Code |](https://github.com/python/cpython/blob/3.8/Modules/_operator.c#L1138-L1480)
+
+
 -----------------------------------------------------------------------------------------------------

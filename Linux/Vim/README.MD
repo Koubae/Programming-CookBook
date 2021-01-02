@@ -12,6 +12,24 @@ How to exit Vim
 3. Type `q` then Enter.
 
 
+Commands Common
+---------------
+
+
+- Syntax `:syntax on`
+
+- Number `:set number`
+
+- quit : `:q`  quite & save `:wq`
+
+
+Configuration File
+------------------
+
+1. Create a configuration file:
+
+`vim .vimrc`
+
 
 
 -----------------------------------------------------------------------------------------------------
