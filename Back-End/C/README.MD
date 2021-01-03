@@ -760,6 +760,13 @@ It's important to note that structures are **passed by copy**, unless of course 
 
 - [Opaque C structs: various ways to declare them](https://stackoverflow.com/questions/3965279/opaque-c-structs-various-ways-to-declare-them)
 
+**Designated Initializers**
+- [Designated Initializers GNU.org](https://gcc.gnu.org/onlinedocs/gcc/Designated-Inits.html)
+- [How to initialize a struct in accordance with C programming language standards SOO](https://stackoverflow.com/questions/330793/how-to-initialize-a-struct-in-accordance-with-c-programming-language-standards)
+- []()
+- []()
+
+
 There are two types of operators used for accessing members of a structure.
 
 1. `.` - Member operator
@@ -1086,6 +1093,11 @@ The preprocessor also defines a number of symbolic constants you can use, identi
 ### NOTES & Interesting Codes
 
 - [Python operator.attrgetter  | Source Code |](https://github.com/python/cpython/blob/3.8/Modules/_operator.c#L1138-L1480)
+
+
+#### Stack Overflow
+
+- [What should main() return in C and C++?](https://stackoverflow.com/questions/204476/what-should-main-return-in-c-and-c)
 
 
 -----------------------------------------------------------------------------------------------------
