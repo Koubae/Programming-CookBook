@@ -1,3 +1,9 @@
+// ======== < DOCUMENTATION > ======== //
+// variable argument lists 
+//         https://linux.die.net/man/3/stdarg
+
+// https://www.cprogramming.com/tutorial/c/lesson17.html
+
 // ======== < Calc Average> ======== //
 
 

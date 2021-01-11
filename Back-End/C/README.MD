@@ -7,6 +7,8 @@
 
 - [Standard Library](https://www.programiz.com/c-programming/library-function)
 
+- [Good Reference of main feature | javatpoint.com](https://www.javatpoint.com/c-programming-language-tutorial)
+
 -----------------------------------------------------------------------------------------------------
 
 Keywords & Terms

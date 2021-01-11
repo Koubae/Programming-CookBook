@@ -1,0 +1,65 @@
+.row {
+    max-width: 95rem;
+    margin: 0 auto; 
+  }
+  .row:not(:last-child) {
+    margin-bottom: 4rem; 
+  }
+  /* @media (max-width: 56.25em) {
+    .row:not(:last-child) {
+      margin-bottom: 0;
+      background-color: red; 
+    } 
+  } */
+  /* @media (max-width: 990px) {
+    .row {
+      max-width: 75%; 
+    } 
+  } */
+  
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; 
+  }
+  .row [class^="col-"] {
+    float: left; 
+  }
+  
+  .row [class^="col-"]:not(:last-child) {
+    margin-right: 3rem; 
+  }
+  
+  @media (max-width: 990px) {
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 3rem; 
+    } 
+  }
+  
+  @media (max-width: 990px) {
+    .row [class^="col-"] {
+      width: 100% !important; 
+      max-width: 75%; 
+    } }
+  
+  .row .col-1-of-1 {
+    width: 75%; 
+    margin: 0 15rem;
+    margin-bottom: 10rem;
+  }
+  .row .col-1-of-2 {
+    width: calc((100% - 5rem) / 2); }
+  
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 5rem) / 3); }
+  /* .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 5rem) / 3) + 5rem); } */
+  
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 5rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 5rem) / 4) + 5rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * ((100% - 3 * 5rem) / 4) + 2 * 5rem); }
+  

@@ -44,6 +44,12 @@
 
 - [Multiple buffering](https://en.wikipedia.org/wiki/Multiple_buffering#Double_buffering_in_computer_graphics)
 
+- [One-way function](https://en.wikipedia.org/wiki/One-way_function)
+
+- [Avalanche effect](https://en.wikipedia.org/wiki/Avalanche_effect)
+
+- [Identity function](https://en.wikipedia.org/wiki/Identity_function)
+
 Programming Types
 ------------------
 
@@ -70,6 +76,8 @@ Programming Types
 - [Reverse engineering](https://en.wikipedia.org/wiki/Reverse_engineering)
 
 - [Design by contract](https://en.wikipedia.org/wiki/Design_by_contract)
+
+- [Ackermann function](https://en.wikipedia.org/wiki/Ackermann_function)
 
 
 ### Object Oriented Programming | OOP

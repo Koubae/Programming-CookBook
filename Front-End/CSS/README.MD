@@ -18,6 +18,7 @@
 
 ## Icons
 
+- [devicon.dev](https://devicon.dev/)
 - [icons8](https://icons8.com/)
 
 ## ::before ::after
