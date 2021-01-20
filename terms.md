@@ -50,6 +50,25 @@
 
 - [Identity function](https://en.wikipedia.org/wiki/Identity_function)
 
+
+Computer Sciences Keywords
+------------------
+
+- Abstract data type  | ADT
+- data abstraction
+- encapsulation 
+- information hiding
+
+- implementation-independent 
+- order of magnitude
+
+- [Difference between Linear and Non-linear Data Structures](https://www.geeksforgeeks.org/difference-between-linear-and-non-linear-data-structures/)
+- Linear Structures
+- abstract data types stack | queue | deque | list
+- ADTs stack
+- prefix | infix | postfix | Infix, Prefix, and Postfix Expressions
+
+
 Programming Types
 ------------------
 
