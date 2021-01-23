@@ -22,4 +22,4 @@ print((sys.getrefcount(my_var)))
 
 #The sys.getrefcount() function takes my_var as an argument,
 #this means it receives (and stores) a reference to my_var's memory address also - hence the count is off by 1. ' \
-#'So we will use from_address() instead.
+#'So use use from_address() instead.

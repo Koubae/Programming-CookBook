@@ -1,13 +1,9 @@
-# Sequences
+Sequences
 =======================
-
-
-- []()
-----------------------------------------------------------------------------------------------
 
 ## Features
 
-### Some methods supported by mutable sequence types such as lists
+#### Some methods supported by mutable sequence types such as lists
 
 
 - l.clear()  *Removes all itesm from l*

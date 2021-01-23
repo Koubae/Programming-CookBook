@@ -1,9 +1,6 @@
-# Functions Parameters
+Functions Parameters
 =======================
 
-
-- []()
------------------------------------------------------------------------------------------------------
 
 ## Features
 
@@ -49,7 +46,7 @@ Behind the scenes, each recursive call adds a **stack frame** (containing its ex
 ![img](rec_stack.webp)
 
 ------------------------------------------
-### each recursive call has its own **execution context**
+### Each recursive call has its own **execution context**
 
 * Thread the state through each recursive call so that the current state is part of the current call’s execution context.
 

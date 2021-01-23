@@ -1,14 +1,11 @@
-# Decorators
+Decorators
 =======================
 
 
-
------------------------------------------------------------------------------------------------------
-
 ## Memoization
 
--[ Memoization](https://en.wikipedia.org/wiki/Memoization#:~:text=In%20computing%2C%20memoization%20or%20memoisation,the%20same%20inputs%20occur%20again)
-- **A powerful caching library for Python**[memoization](https://pypi.org/project/memoization/)
+- [Memoization](https://en.wikipedia.org/wiki/Memoization#:~:text=In%20computing%2C%20memoization%20or%20memoisation,the%20same%20inputs%20occur%20again)
+- **A powerful caching library for Python** [memoization](https://pypi.org/project/memoization/)
 
 
 This concept of improving the efficiency of our code by caching pre-calculated values so they do not need to be re-calcualted every time, is called "memoization"

@@ -1,4 +1,4 @@
-# SCOPES, CLOSURES AND DECORATORS
+SCOPES, CLOSURES AND DECORATORS
 =================================
 
 
@@ -8,7 +8,7 @@ Names refer to objects. Names are introduced by name binding operations. Each oc
 
 - [DOCS](https://docs.python.org/3.3/reference/executionmodel.html)
 
-### BLOCKS:
+## BLOCKS:
 
 - *Module*
 - *Function*
@@ -67,7 +67,7 @@ The actual object the variable references could be different each time the funct
 
 -----------------------------------------------------------------------------------------------------
 
-# Non Local Scope
+## Non Local Scope
 
 Whenever Python is told that a variable is nonlocal. it will look for it in the enclosing local scopes chain until it first encounters the specified variable
 name.
