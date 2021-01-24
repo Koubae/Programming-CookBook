@@ -1,4 +1,17 @@
 
+HTML
+=====
+
+
+HTML Character Sets
+-------------------
+
+- [Character Sets w3schools.com](https://www.w3schools.com/charsets/default.asp)
+
+Meta Tags
+---------
+
+
 ## Basic HTML Meta Tags
 
 ``` html

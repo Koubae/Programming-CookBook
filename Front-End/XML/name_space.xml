@@ -1,0 +1,75 @@
+
+<!-- Note: The namespace URI is not used by the parser to look up information.
+The purpose of using an URI is to give the namespace a unique name.
+However, companies often use the namespace as a pointer to a web page containing namespace information. -->
+
+<h:table>
+    <h:tr>
+        <h:td>Apples</h:td>
+        <h:td>Bananas</h:td>
+    </h:tr>
+</h:table>
+
+<f:table>
+    <f:name>African Coffee Table</f:name>
+    <f:width>80</f:width>
+    <f:length>120</f:length>
+</f:table> 
+
+
+<!-- ========================= < The xmlns Attribute > ========================= -->
+
+<root>
+
+<h:table xmlns:h="http://www.w3.org/TR/html4/">
+    <h:tr>
+        <h:td>Apples</h:td>
+        <h:td>Bananas</h:td>
+    </h:tr>
+</h:table>
+
+<f:table xmlns:f="https://www.w3schools.com/furniture">
+    <f:name>African Coffee Table</f:name>
+    <f:width>80</f:width>
+    <f:length>120</f:length>
+</f:table>
+
+</root> 
+
+<!-- ========================= < Namespace at Root Element > ========================= -->
+
+<root xmlns:h="http://www.w3.org/TR/html4/"
+xmlns:f="https://www.w3schools.com/furniture">
+
+<h:table>
+    <h:tr>
+        <h:td>Apples</h:td>
+        <h:td>Bananas</h:td>
+    </h:tr>
+</h:table>
+
+<f:table>
+    <f:name>African Coffee Table</f:name>
+    <f:width>80</f:width>
+    <f:length>120</f:length>
+</f:table>
+
+</root> 
+
+
+<!-- ========================= < Default Namespaces > ========================= -->
+
+
+<table xmlns="http://www.w3.org/TR/html4/">
+    <tr>
+        <td>Apples</td>
+        <td>Bananas</td>
+    </tr>
+</table> 
+
+
+<table xmlns="https://www.w3schools.com/furniture">
+    <name>African Coffee Table</name>
+    <width>80</width>
+    <length>120</length>
+</table> 

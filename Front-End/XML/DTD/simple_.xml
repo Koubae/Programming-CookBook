@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE note [
+<!ENTITY nbsp "&#xA0;">
+<!ENTITY writer "Writer: Donald Duck.">
+<!ENTITY copyright "Copyright: W3Schools.">
+]>
+
+<note>
+<to>Tove</to>
+<from>Jani</from>
+<heading>Reminder</heading>
+<body>Don't forget me this weekend!</body>
+<footer>&writer;&nbsp;&copyright;</footer>
+</note> 
+
+<!--  An entity has three parts: it starts with an ampersand (&), then comes the entity name, and it ends with a semicolon (;). -->

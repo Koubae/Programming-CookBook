@@ -1,0 +1,37 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<homepages xmlns:xlink="http://www.w3.org/1999/xlink">
+    <homepage xlink:type="simple" xlink:href="https://www.w3schools.com">Visit W3Schools</homepage>
+    <homepage xlink:type="simple" xlink:href="http://www.w3.org">Visit W3C</homepage>
+</homepages> 
+
+
+<!-- ========================= < Example > ========================= -->
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bookstore xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <book title="Harry Potter">
+        <description
+        xlink:type="simple"
+        xlink:href="/images/HPotter.gif"
+        xlink:show="new">
+            As his fifth year at Hogwarts School of Witchcraft and
+            Wizardry approaches, 15-year-old Harry Potter is.......
+        </description>
+    </book>
+
+    <book title="XQuery Kick Start">
+        <description
+        xlink:type="simple"
+        xlink:href="/images/XQuery.gif"
+        xlink:show="new">
+            XQuery Kick Start delivers a concise introduction
+            to the XQuery standard.......
+        </description>
+    </book>
+
+</bookstore> 
