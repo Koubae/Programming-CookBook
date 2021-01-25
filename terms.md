@@ -187,6 +187,10 @@ Python multiprocessing
 
 * Global Interpreter Lock (GIL)
 
+* mutual-exclusion lock (mutex)
+
+* deadlock
+
 * Concurrency and parallelism
 
 * embarrassinbly parallel / perfectly parallel computations: 
@@ -214,6 +218,7 @@ Python multiprocessing
 
 * Lock [Lock (computer science) --WIKI--](https://en.wikipedia.org/wiki/Lock_(computer_science))
 
+* mutual-exclusion locks (mutexes)
 
 Front-end
 ------------

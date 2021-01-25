@@ -1,0 +1,248 @@
+<!-- <schema> Element -->
+<!-- 
+The <schema> element may contain some attributes. A schema declaration often looks something like this:
+
+    This
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+
+    indicates that the elements and data types used in the schema come from the "http://www.w3.org/2001/XMLSchema" namespace. It also specifies that the elements and data types that come from the "http://www.w3.org/2001/XMLSchema" namespace should be prefixed with xs:
+
+
+    This fragment:
+    targetNamespace="https://www.mydomain.com"
+    indicates that the elements defined by this schema (note, to, from, heading, body.) come from the "https://www.w3schools.com" namespace.
+    
+    this fragment:
+    xmlns="https://www.mydomain.com"
+    indicates that the default namespace is https://www.mydomain.com
+
+    this fragment:    
+    elementFormDefault="qualified"
+
+    indicates that any elements used by the XML instance document which were declared in this schema must be namespace qualified.
+
+-->
+
+
+<?xml version="1.0"?>
+
+    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="https://www.mydomain.com"
+    xmlns="https://www.mydomain.com"
+    elementFormDefault="qualified">
+
+</xs:schema> 
+
+<!-- ========== < Restrictions/Facets > ========== -->
+
+<!-- Restrictions on Values -->
+
+<xs:element name="age">
+    <xs:simpleType>
+        <xs:restriction base="xs:integer">
+        <xs:minInclusive value="0"/>
+        <xs:maxInclusive value="120"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:element> 
+
+<!-- Restrictions on a Set of Values -->
+
+
+<xs:element name="car">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Audi"/>
+      <xs:enumeration value="Golf"/>
+      <xs:enumeration value="BMW"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element> 
+
+<!-- Also written as -->
+
+<xs:element name="car" type="carType"/>
+
+<xs:simpleType name="carType">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Audi"/>
+    <xs:enumeration value="Golf"/>
+    <xs:enumeration value="BMW"/>
+  </xs:restriction>
+</xs:simpleType> 
+
+
+<!-- Restrictions on a Series of Values -->
+
+<!-- The only acceptable value is ONE of the LOWERCASE letters from a to z -->
+<xs:element name="letter">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[a-z]"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element> 
+
+<!--  The only acceptable value is THREE of the UPPERCASE letters from a to z: -->
+<xs:element name="initials">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-Z][A-Z][A-Z]"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element> 
+
+
+<!-- The only acceptable value is THREE of the LOWERCASE OR UPPERCASE letters from a to z -->
+
+<xs:element name="initials">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[a-zA-Z][a-zA-Z][a-zA-Z]"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element> 
+
+
+<!-- The only acceptable value is ONE of the following letters: x, y, OR z -->
+
+<xs:element name="choice">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[xyz]"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element> 
+
+
+<!-- The only acceptable value is FIVE digits in a sequence, and each digit must be in a range from 0 to 9 -->
+
+
+<xs:element name="prodid">
+  <xs:simpleType>
+    <xs:restriction base="xs:integer">
+      <xs:pattern value="[0-9][0-9][0-9][0-9][0-9]"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element> 
+
+<!-- he acceptable value is zero or more occurrences of lowercase letters from a to z -->
+
+
+<xs:element name="letter">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="([a-z])*"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element> 
+
+
+
+
+<!-- 
+
+    The acceptable value is one or more pairs of letters, each pair consisting of a lower case letter followed by an upper case letter. For example, "sToP" will be validated by this pattern, but not "Stop" or "STOP" or "stop"
+-->
+
+
+<xs:element name="letter">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="([a-z][A-Z])+"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element> 
+
+
+<!-- The only acceptable value is male OR female -->
+
+
+
+<xs:element name="gender">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="male|female"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element> 
+
+
+<!-- 
+
+There must be exactly eight characters in a row and those characters must be lowercase or uppercase letters from a to z, or a number from 0 to 9
+
+-->
+
+<xs:element name="password">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[a-zA-Z0-9]{8}"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element> 
+
+
+<!-- =============== < WHITESPACES =============== -->
+
+
+<xs:element name="address">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:whiteSpace value="preserve"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element> 
+
+<!-- 
+    The whiteSpace constraint is set to "replace", which means that the XML processor WILL REPLACE all white space characters (line feeds, tabs, spaces, and carriage returns) with spaces
+-->
+
+
+<xs:element name="address">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:whiteSpace value="replace"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element> 
+
+<!-- 
+    This example also defines an element called "address" with a restriction. The whiteSpace constraint is set to "collapse", which means that the XML processor WILL REMOVE all white space characters (line feeds, tabs, spaces, carriage returns are replaced with spaces, leading and trailing spaces are removed, and multiple spaces are reduced to a single space)
+-->
+
+
+<xs:element name="address">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:whiteSpace value="collapse"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element> 
+
+
+
+<!-- =============== < Length =============== -->
+
+<!-- This example defines an element called "password" with a restriction. The value must be exactly eight characters -->
+
+
+<xs:element name="password">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:length value="8"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element> 
+
+<!-- The value must be minimum five characters and maximum eight characters -->
+
+
+<xs:element name="password">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="5"/>
+      <xs:maxLength value="8"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element> 
