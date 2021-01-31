@@ -19,6 +19,26 @@ print('==='*15 + ' < ' + f'MESSAGE{}' + ' > ' + '==='*15)
 # ============================ < MESSAGE > ============================ #
 ```
 
+### Python File Variables & Encoding declarations
+
+If a comment in the first or second line of the Python script matches the regular expression coding[=:]\s*([-\w.]+), this comment is processed as an encoding declaration; the first group of this expression names the encoding of the source code file. The encoding declaration must appear on a line of its own. If it is the second line, the first line must also be a comment-only line. The recommended forms of an encoding expression are:
+
+```
+# -*- coding: <encoding-name> -*-
+```
+
+- [Python DOCS | Encoding declarations](https://docs.python.org/3/reference/lexical_analysis.html#encoding-declarations)
+- **Defining Python Source Code Encodings**[PEP 263](https://www.python.org/dev/peps/pep-0263/)
+
+- [Vim DoC](http://vimdoc.sourceforge.net/htmldoc/usr_21.html#21.6)
+- [Encoding | scintilla.org](https://www.scintilla.org/SciTEDoc.html#Encodings)
+- [Specifying File Variables | gnu.org](https://www.gnu.org/software/emacs/manual/html_node/emacs/Specifying-File-Variables.html)
+- [STACKOVERFLOW | Where does this come from: -*- coding: utf-8 -*-](https://stackoverflow.com/questions/4872007/where-does-this-come-from-coding-utf-8)
+- [STACKOVERFLOW | Should I use encoding declaration in Python 3?](https://stackoverflow.com/questions/14083111/should-i-use-encoding-declaration-in-python-3)
+
+-------------------------------
+
+
 ### Object persistence
 
 Object persistence is implemented by three standard library modules:

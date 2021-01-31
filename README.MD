@@ -1,9 +1,13 @@
 # Programming CookBook
 =======================
 
+Programmer & Developer Cook-Book | Covers Programming Languages, Databases, Linux Commands and more. 
 
-- []()
 -----------------------------------------------------------------------------------------------------
+
+## General Knowledge
+
+- [CitingCode | libguides.com](https://uark.libguides.com/CSCE/CitingCode)
 
 ## Learning Material
 
