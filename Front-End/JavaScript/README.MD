@@ -1,10 +1,23 @@
-# JavaScript
+# JavaScript |  ECMAScript
 =======================
 
 
-- []()
+Frameworks | Extensions | Modules | 3rd party Libraries
+-------------------------------------------------------
+
+### Code Mirror
+
+- [Code Mirror Framework --Manual--](https://codemirror.net/doc/manual.html)
+- [SOO](https://stackoverflow.com/questions/21085170/codemirror-how-to-install)
+- [GITHUB -Gist- ](https://gist.github.com/junhui/6680112)
+- [Code Mirror Tutorial](https://thecodebarbarian.com/building-a-code-editor-with-codemirror.html)
+
+
 -----------------------------------------------------------------------------------------------------
 
+
+Learning 
+--------
 
 ### Page Loading
 
@@ -50,15 +63,13 @@
 <script src="script.js defer"></script>
 ```
 
-## Features
 
-- [Code Mirror Framework --Manual--](https://codemirror.net/doc/manual.html)
-- [SOO](https://stackoverflow.com/questions/21085170/codemirror-how-to-install)
-- [GITHUB -Gist- ](https://gist.github.com/junhui/6680112)
-- [Code Mirror Tutorial](https://thecodebarbarian.com/building-a-code-editor-with-codemirror.html)
+-----------------------------------------------------------------------------------------------------
 
 
-### Flask & Python
+Flask & Python
+--------------
+
 
 - [talking-between-python-and-js  --GITHUB--](https://github.com/healeycodes/talking-between-python-and-js)
 
@@ -67,22 +78,36 @@
 **This project is aimed to provide comprehensive side-by-side comparison of Python and JavaScript syntax and language features.**
 
 
-### Debug Mode.
+-----------------------------------------------------------------------------------------------------
+
+
+Debuggin
+--------
 
 In Browser Console:
+
 ```
 debug;
 ```
 > **Press SHITF+Enter**
 
 
-### Interesting Links
+-----------------------------------------------------------------------------------------------------
+
+
+Interesting Links
+-----------------
+
 
 - [JSBin --Online Editor-- ](https://jsbin.com/?html,output)
 - [Glitch](https://glitch.com)
 
 
-## Projects and Git Repos
+-----------------------------------------------------------------------------------------------------
+
+
+Projects & Repos
+-----------------------
 
  - [beginner-js-projects --GITHUB--](https://github.com/strongdan/beginner-js-projects)
 
