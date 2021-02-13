@@ -2,10 +2,8 @@
 =======================
 
 
-- []()
------------------------------------------------------------------------------------------------------
-
-## Language Building Bricks and particular Featues.
+Language Building Bricks and particular Featues
+-----------------------------------------------
 
 #### Conditional (ternary) operator
 
@@ -30,7 +28,7 @@ The conditional (ternary) operator is the only JavaScript operator that takes th
 * HTML escaping: the ability to transform a string so that it is safe to include in HTML.
 
 
-## Learning Links
-
+Learning Links
+---------------
 
 -----------------------------------------------------------------------------------------------------

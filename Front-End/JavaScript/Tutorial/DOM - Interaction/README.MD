@@ -1,8 +1,9 @@
-# DOM Interacion Document Object Model
+DOM Interacion Document Object Model
 =======================
 
-## Features
 
+Learning
+--------
 
 ### The Separarion of Concerns: Structure, Style, Behaviour.
 
