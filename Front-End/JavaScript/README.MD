@@ -2,22 +2,34 @@ JavaScript |  ECMAScript
 =======================
 
 
-Frameworks | Extensions | Modules | 3rd party Libraries
--------------------------------------------------------
-
-### Code Mirror
-
-- [Code Mirror Framework --Manual--](https://codemirror.net/doc/manual.html)
-- [SOO](https://stackoverflow.com/questions/21085170/codemirror-how-to-install)
-- [GITHUB -Gist- ](https://gist.github.com/junhui/6680112)
-- [Code Mirror Tutorial](https://thecodebarbarian.com/building-a-code-editor-with-codemirror.html)
-
-
------------------------------------------------------------------------------------------------------
-
-
 Learning 
 --------
+
+### Asynchronous JavaScript
+
+- [Asynchronous JavaScript | MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous)
+
+* [asynchronous JavaScript  | MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing)
+* [Callback Hell](http://callbackhell.com/)
+
+**Books**:
+
+* [Asynchronous Programming](https://eloquentjavascript.net/11_async.html)
+* [Eloquent JavaScript](https://eloquentjavascript.net/)
+
+#### Promise
+* Promise
+* [Graceful asynchronous programming with Promises  | MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises)
+
+#### Web Workers
+
+* [Web Workers API  | MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API)
+
+    * [Worker Playground!  | MDN Web Docs](https://worker-playground.glitch.me/)
+
+
+------------------------
+
 
 ### Page Loading
 
@@ -62,6 +74,28 @@ Learning
 ```
 <script src="script.js defer"></script>
 ```
+
+
+-----------------------------------------------------------------------------------------------------
+
+
+Frameworks | Extensions | Modules | 3rd party Libraries
+-------------------------------------------------------
+
+- [Search the Largest API Directory on the Web](https://www.programmableweb.com/category/all/apis)
+
+### Canvas API
+
+The Canvas API provides a means for drawing graphics via JavaScript and the HTML <canvas> element. Among other things, it can be used for animation, game graphics, data visualization, photo manipulation, and real-time video processing.
+
+- [Canvas API | MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
+
+### Code Mirror
+
+- [Code Mirror Framework --Manual--](https://codemirror.net/doc/manual.html)
+- [SOO](https://stackoverflow.com/questions/21085170/codemirror-how-to-install)
+- [GITHUB -Gist- ](https://gist.github.com/junhui/6680112)
+- [Code Mirror Tutorial](https://thecodebarbarian.com/building-a-code-editor-with-codemirror.html)
 
 
 -----------------------------------------------------------------------------------------------------
