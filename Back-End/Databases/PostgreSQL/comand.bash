@@ -4,6 +4,11 @@
 
 # --------------- >  Admin
 
+# PostgreSQL interactive terminal
+# DOCS => https://www.postgresql.org/docs/13/app-psql.html
+
+psql -U [user_name] -d [db_name]
+
 EXIT
 
 # current version of PostgreSQL
