@@ -98,6 +98,13 @@ The Canvas API provides a means for drawing graphics via JavaScript and the HTML
 - [Code Mirror Tutorial](https://thecodebarbarian.com/building-a-code-editor-with-codemirror.html)
 
 
+### STELLAR.JS
+
+*Parallax Effect*
+
+- [stellar.js](https://markdalgleish.com/projects/stellar.js/)
+
+
 -----------------------------------------------------------------------------------------------------
 
 
