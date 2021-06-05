@@ -17,13 +17,19 @@
 JavaScript Frameworks and Libraries Modules 
 -------------------------------------------
 
-## Popper
+### Popper
 
 - [Main Popper](https://popper.js.org/)
 
-## CKEditor
+### CKEditor
 
 - [HCL Text Editor Widget](https://help.hcltechsw.com/commerce/8.0.0/management-center/concepts/cpzwidrich.html)
+
+### imagesLoaded
+
+***Detect when images have been loaded.***
+
+- [imagesLoaded](https://imagesloaded.desandro.com)
 
 
 Fron-End Code Generators
