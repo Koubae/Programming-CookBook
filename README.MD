@@ -8,6 +8,7 @@ Programmer & Developer Cook-Book | Covers Programming Languages, Databases, Linu
 ## General Knowledge
 
 - [CitingCode | libguides.com](https://uark.libguides.com/CSCE/CitingCode)
+- [Change user in github](https://stackoverflow.com/a/62149990/13903942)
 
 ## Learning Material
 
