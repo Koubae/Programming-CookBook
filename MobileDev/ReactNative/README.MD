@@ -25,6 +25,7 @@ Documentation
 --------------
 
 - [Atomic Design with React](https://cheesecakelabs.com/blog/atomic-design-react/)
+- [color-keywords](https://reactnative.dev/docs/colors#color-keywords)
 
 ### HOOKS
 
@@ -34,6 +35,10 @@ Documentation
 - [Making Sense of React Hooks](https://medium.com/@dan_abramov/making-sense-of-react-hooks-fdbde8803889)
 - [useHooks](https://usehooks.com)
 
+Tools
+-----
+
+- [yogalayout playground](https://yogalayout.com/playground/)
 
 Other
 -----
@@ -50,6 +55,10 @@ Other
 - [JEST](https://jestjs.io)
 - [Detox --GITHUB--](https://github.com/wix/detox/)
 - [Appium](http://appium.io)
+
+### UTILS
+
+- [Making React Native apps accessible](https://engineering.fb.com/2015/11/23/android/making-react-native-apps-accessible/)
 
 
 
