@@ -337,7 +337,7 @@ export default App;
 Shared Styles
 ------------
 
-``
+
 .
 ├── src
 │   ├── styles
@@ -347,7 +347,7 @@ Shared Styles
 │   │  ├── spacing.js      // Paddings, margins and scale
 │   │  ├── typography.js   // Fonts types and sizes
 
-`` 
+
 
 
 
