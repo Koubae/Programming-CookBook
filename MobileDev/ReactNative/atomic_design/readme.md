@@ -15,7 +15,7 @@ Structure the Project
 
 
 
-``
+```
 .
 ├── src
 │   ├── assets
@@ -31,21 +31,20 @@ Structure the Project
 │   ├── utils
 │   ├── index.js
 
-``
+```
 
 ### configure directory aliases
 
-
-``
+```
 $ yarn add -D eslint-import-resolver-babel-module@^5.1.0
 eslint-plugin-import@^2.18.2 babel-plugin-module-resolver@^3.2.0
 
-``
+```
 ### Configure .babelrc
 
 
 
-``
+```
 {
   "plugins": [
     [
@@ -71,13 +70,13 @@ eslint-plugin-import@^2.18.2 babel-plugin-module-resolver@^3.2.0
   ]
 }
 
-``
+```
 
 ### Edit the .eslintrc.j
 
 * [Babel Plugin Module Resolver](https://github.com/tleunen/babel-plugin-module-resolver#getting-started)
 
-``
+```
 module.exports = {
         root: true,
         extends: '@react-native-community',
@@ -102,13 +101,13 @@ module.exports = {
             },
         },
         };
-``
+```
 
 # Enable editors to alias autocompletion
 
 Create  jsconfig.json
 
-
+```
 {
   "compilerOptions": {
     "baseUrl": ".",
@@ -126,11 +125,11 @@ Create  jsconfig.json
     }
   }
 }
-``
+```
 
 # src/index.js` / adding a test component
 
-`` 
+```
 import React from 'react';
 import {View,Text} from 'react-native';
 
@@ -142,7 +141,7 @@ const App = () => (
 
 export default App;
 
-``
+```
 
 #  index.js
 
@@ -162,37 +161,38 @@ Atomic Design with React.
 ### src/atoms/hello-world.js
 
 
-`` 
+```
 import React from 'react';
 import {Text} from 'react-native';
 
 const HelloWorld = ({name}) => <Text>Hello World {name}!</Text>;
 
 export default HelloWorld;
-``
+```
 
 ### src/atoms/index.js
 
 
-`` export {default as HelloWorld} from './hello-world';
-`` 
+```
+export {default as HelloWorld} from './hello-world';
+``` 
 
 ### src/index.js
 
-`` 
+```
 import React from 'react';
 import {HelloWorld} from '_atoms';
 
 const App = () => <HelloWorld name="Helder Burato Berto" />;
 export default App;
-`` 
+```
 **Note: The App.js in the project root can be removed, it will no longer be used.**
 
 
 Our Scenes
 ----------
 
-`` 
+```
 .
 ├── src
 │   ├── scenes
@@ -202,11 +202,12 @@ Our Scenes
 │   │  │	 ├── index.js // HomeScreen
 │   │  ├── about
 │   │  │	 ├── index.js // AboutScreen
-`` 
+
+```
 
 ### Login 
 
-`` 
+```
 import React from 'react';
 import {SafeAreaView, Text, TouchableHighlight} from 'react-native';
 
@@ -221,32 +222,34 @@ const LoginScreen = ({navigation}) => (
 );
 
 export default LoginScreen;
-`` 
+```
 
 
 * Add dependency
 
-`` 
+```
 $ yarn add react-navigation@^4.0.0 react-navigation-stack@^1.5.3
 react-navigation-tabs@^2.4.0 react-native-gesture-handler@^1.4.1
 react-native-reanimated@^1.2.0
-`` 
+```
 
 
 ### In src/navigations
 
-`` 
+```
+
 .
 ├── src
 │   ├── navigations
 │   │  ├── index.js            // RootNavigator
 │   │  ├── auth-navigator.js   // AuthNavigator
 │   │  ├── app-navigator.js    // AppNavigator
-`` 
+
+```
 
 ### auth-navigator.js 
 
-``
+```
 import {createStackNavigator} from 'react-navigation-stack';
 
 import LoginScreen from '_scenes/login';
@@ -265,11 +268,10 @@ const AuthNavigator = createStackNavigator(RouteConfigs, AuthNavigatorConfig);
 
 export default AuthNavigator;
 
-`` 
-
+```
 ## app-navigator.js
 
-`` 
+```
 import {createBottomTabNavigator} from 'react-navigation-tabs';
 
 import HomeScreen from '_scenes/home';
@@ -294,11 +296,11 @@ const AppNavigator = createBottomTabNavigator(RouteConfigs, TabNavigatorConfig);
 
 export default AppNavigator;
 
-`` 
+```
 
 ## index.js / RootNavigator merging the auth and app navigators
 
-`` 
+``` 
 
 import {createAppContainer, createSwitchNavigator} from 'react-navigation';
 
@@ -317,12 +319,12 @@ const RootNavigator = createSwitchNavigator(
 
 export default createAppContainer(RootNavigator);
 
-`` 
+```
 
 ##  import the Navigator object into your src/index.js
 
 
-`` 
+```
 
 import React from 'react';
 
@@ -332,13 +334,13 @@ const App = () => <Navigator />;
 
 export default App;
 
-`` 
+```
 
 Shared Styles
 ------------
 
+```
 
-.
 ├── src
 │   ├── styles
 │   │  ├── index.js        // Export all
@@ -347,23 +349,23 @@ Shared Styles
 │   │  ├── spacing.js      // Paddings, margins and scale
 │   │  ├── typography.js   // Fonts types and sizes
 
-
+```
 
 
 
 ### index.js
-`` 
+```
 import * as Colors from './colors';
 import * as Spacing from './spacing';
 import * as Typography from './typography';
 import * as Mixins from './mixins';
 
 export { Typography, Spacing, Colors, Mixins };
-`` 
+```
 
 ### color.js
 
-`` 
+```
 
 export const PRIMARY = '#1779ba';
 export const SECONDARY = '#767676';
@@ -379,12 +381,10 @@ export const ALERT = '#cc4b37';
 export const GRAY_LIGHT = '#e6e6e6';
 export const GRAY_MEDIUM = '#cacaca';
 export const GRAY_DARK = '#8a8a8a';
-
-`` 
+```
 
 ## mixins.js
-
-`` 
+```
 import {Dimensions,PixelRatio} from 'react-native';
 const WINDOW_WIDTH = Dimensions.get('window').width;
 const guidelineBaseWidth = 375;
@@ -422,23 +422,23 @@ export function boxShadow(color, offset = {height:2,width:2},
     elevation: radius,
   };
 }
-`` 
+``` 
 
 
 ### spacing.js
 
-``
+```
 import {scaleSize} from './mixins';
 
 export const SCALE_18 = scaleSize(18);
 export const SCALE_16 = scaleSize(16);
 export const SCALE_12 = scaleSize(12);
 export const SCALE_8 = scaleSize(8);
-``
+```
 
 ### typography.js
 
-``
+```
 import { scaleFont } from './mixins';
 
 // FONT FAMILY
@@ -470,12 +470,12 @@ export const FONT_BOLD = {
   fontWeight: FONT_WEIGHT_BOLD,
 };
 
-``
+```
 
 ** react-native.config.js in the project root and set the directory where your .ttf files are as follows:**
 
-`` 
+```
 module.exports = {
   assets:['./src/assets/fonts/'],
 };
-`` 
+```
