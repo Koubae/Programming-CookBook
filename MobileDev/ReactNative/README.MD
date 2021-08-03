@@ -40,6 +40,18 @@ Tools
 
 - [yogalayout playground](https://yogalayout.com/playground/)
 
+### DataStorage
+
+- [Redux](https://redux.js.org/tutorials/fundamentals/part-1-overview)
+- [Redux-persist](https://github.com/rt2zz/redux-persist)
+- [🚧 AsyncStorage  --Deprecated-- 🚧](https://reactnative.dev/docs/asyncstorage)
+- [What are my options for storing data when using React Native? (iOS and Android) [closed] -- STACKOVERFLOW](https://stackoverflow.com/questions/44376002/what-are-my-options-for-storing-data-when-using-react-native-ios-and-android)
+- [Best Data Storage Option for React Native Apps.](https://dev.to/ammarahmed/best-data-storage-option-for-react-native-apps-42k)
+
+- [MMKV for Android](https://github.com/Tencent/MMKV)
+- [react-native-fast-storage](https://github.com/FidMe/react-native-fast-storage)
+- [react-native-mmkv-storage](https://github.com/ammarahm-ed/react-native-mmkv-storage)
+
 ### Linting
 
 - [ESLint](https://eslint.org)
