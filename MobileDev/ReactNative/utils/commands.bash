@@ -35,3 +35,27 @@ adb shell "date `date +%m%d%H%M%Y.%S%3N`"
 # LOGS
 npx react-native log-ios
 npx react-native log-android
+
+
+
+
+
+
+
+# ======================== < NODE PACKAGES UTILS > ======================== #
+
+# Install react-native Navigation
+# 1 Main Package
+npm install @react-navigation/native
+# 2 Main dependencie
+npm install react-native-screens react-native-safe-area-context
+# 3 Addittional Package (Stack)
+npm install @react-navigation/native-stack react-native-gesture-handler
+
+# 4 Additional Dependency:
+npm install @react-navigation/stack react-native-gesture-handler
+
+
+## ------- React Linter Plugin for Hooks  -> https://www.npmjs.com/package/eslint-plugin-react-hooks
+npm install eslint-plugin-react-hooks --save-dev
+

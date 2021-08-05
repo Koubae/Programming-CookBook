@@ -35,6 +35,14 @@ Documentation
 - [Making Sense of React Hooks](https://medium.com/@dan_abramov/making-sense-of-react-hooks-fdbde8803889)
 - [useHooks](https://usehooks.com)
 
+**CLOSURE & useReducer**
+
+- [Hooks, State, Closures, and useReducer](https://adamrackis.dev/state-and-use-reducer/)
+
+**DATA FETCHING WITH HOOKS**
+- [Small Demo](https://codesandbox.io/s/jvvkoo8pq3)
+- [How to fetch data with React Hooks?](https://www.robinwieruch.de/react-hooks-fetch-data)
+
 Tools
 -----
 

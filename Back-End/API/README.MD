@@ -9,6 +9,7 @@ Public APIs
 -------------
 
 - [Public APIs | --GITHUB--](https://github.com/public-apis/public-apis)
+- [Any  API](https://any-api.com)
 
 
 ### BoredAPI
