@@ -58,4 +58,6 @@ npm install @react-navigation/stack react-native-gesture-handler
 
 ## ------- React Linter Plugin for Hooks  -> https://www.npmjs.com/package/eslint-plugin-react-hooks
 npm install eslint-plugin-react-hooks --save-dev
+# exhaustive-deps --> https://github.com/facebook/react/issues/14920
+# (rule  "react-hooks/exhaustive-deps": 'warn' // <--- THIS IS THE NEW RULE)
 
