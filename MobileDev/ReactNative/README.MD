@@ -10,6 +10,8 @@ Exernal Library
 
 ***Set of React-Native Libraries / Packages & Frameworks***
 
+- [React Native Paper](https://reactnativepaper.com)
+
 - [React Native Directory](https://reactnative.directory)
 
 - [npm registry](https://www.npmjs.com)
@@ -45,6 +47,12 @@ Documentation
 
 Tools
 -----
+
+### Styles & Layouts
+
+- [react-native-shadow-generator](https://ethercreative.github.io/react-native-shadow-generator/)
+- [ColorBox](https://lyft-colorbox.herokuapp.com)
+- [Material design guidelines.](https://material.io/design/color/dark-theme.html#ui-application)
 
 - [yogalayout playground](https://yogalayout.com/playground/)
 
