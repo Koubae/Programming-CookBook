@@ -6,6 +6,17 @@ Android
 Documentation
 --------------
 
+### Genrate Certificate SHA1
+
+1. Go to
+`
+cd android && ./gradlew signingReport
+
+`
+2. copy the SHA1 from the debug key. (This generates two variant keys)
+3. You can copy the 'SHA1' that belongs to the debugAndroidTest variant key option
+
+
 ### INSTALLATION
 
 1. [https://developer.android.com/studio/run/oem-usb](https://developer.android.com/studio/run/oem-usb)

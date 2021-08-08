@@ -48,6 +48,12 @@ Documentation
 Tools
 -----
 
+### Project
+
+- [React Native Clean Project](https://github.com/pmadruga/react-native-clean-project)
+
+`npx react-native-clean-project`
+
 ### Styles & Layouts
 
 - [react-native-shadow-generator](https://ethercreative.github.io/react-native-shadow-generator/)
