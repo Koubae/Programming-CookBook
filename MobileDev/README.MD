@@ -20,4 +20,12 @@ Documentation
 
 - []()
 
+
+Tools
+=====
+
+### Privacy Policy
+
+- [Free Private Policy Generator](https://app-privacy-policy-generator.nisrulz.com)
+- [Free Private Policy Generator --GITHUB--](https://github.com/nisrulz/app-privacy-policy-generator)
 -----------------------------------------------------------------------------------------------------

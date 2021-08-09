@@ -1,6 +1,8 @@
 # INIT APP
 npx react-native init [appName]
 
+react-native init MyApp --package=[com.organization.project.app]
+
 # init template --- typescript
 npx react-native init MyApp --template react-native-template-typescript
 
@@ -61,3 +63,4 @@ npm install eslint-plugin-react-hooks --save-dev
 # exhaustive-deps --> https://github.com/facebook/react/issues/14920
 # (rule  "react-hooks/exhaustive-deps": 'warn' // <--- THIS IS THE NEW RULE)
 
+npm install @react-navigation/native react-native-screens react-native-safe-area-context @react-navigation/native-stack react-native-gesture-handler @react-navigation/stack react-native-gesture-handler react-native-mmkv-storage @react-native-firebase/app @react-native-firebase/admob
