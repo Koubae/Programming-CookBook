@@ -14,7 +14,7 @@ Documentation
 
 - [Obtaining Consent with the User Messaging Platform](https://developers.google.com/admob/ump/android/quick-start)
 - [Introduction to Funding Choices](https://support.google.com/fundingchoices/answer/9180084)
-
+- [Android package (APK) submission form](https://support.google.com/admob/contact/android_APK_submission?hl=en)
 
 ### Config (App)
 
