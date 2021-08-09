@@ -22,3 +22,22 @@ export function useOrientation() {
 
     return orientation;
 }
+
+
+
+// USAGE
+
+import React from 'react';
+import { View  } from 'react-native';
+import { useOrientation } from '../themes/Orientation';
+const Container = ({ children }) => { 
+    console.log("useOrientation", useOrientation)
+
+    const orientation = useOrientation();
+return(
+    <View style={ containerStyles.container }>
+    {
+        children
+    }
+    </View>
+)};
