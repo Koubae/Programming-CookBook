@@ -8,9 +8,9 @@ Tools
 
 - [ColorBox](https://lyft-colorbox.herokuapp.com)
 - [Material design guidelines.](https://material.io/design/color/dark-theme.html#ui-application)
+- [Figma | Very cool for building Design](https://www.figma.com)
 
 -----------------------------------------------------------------------------------------------------
-
 
 ## Features
 

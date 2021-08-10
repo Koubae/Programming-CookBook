@@ -12,6 +12,8 @@ Exernal Library
 
 - [React Native Paper](https://reactnativepaper.com)
 
+- [Material Design | React Native](https://callstack.github.io/react-native-paper/index.html)
+
 - [React Native Directory](https://reactnative.directory)
 
 - [npm registry](https://www.npmjs.com)

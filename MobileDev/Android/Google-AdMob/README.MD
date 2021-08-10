@@ -30,15 +30,7 @@ Documentation
 
 - [What are the steps to getting paid?](https://support.google.com/admob/answer/6173689?hl=en)
 - [Steps to getting paid](https://support.google.com/admob/checklist/2998383)
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
+
 
 Utils
 -----
