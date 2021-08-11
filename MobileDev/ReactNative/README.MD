@@ -7,6 +7,8 @@ React Native
 Exernal Library
 ---------------
 
+- [Finding Libraries](https://reactnative.dev/docs/libraries#finding-libraries)
+
 
 ***Set of React-Native Libraries / Packages & Frameworks***
 
