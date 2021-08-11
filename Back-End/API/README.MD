@@ -10,7 +10,8 @@ Public APIs
 
 - [Public APIs | --GITHUB--](https://github.com/public-apis/public-apis)
 - [Any  API](https://any-api.com)
-
+- [SWAPI](https://swapi.dev)
+- [Twilio](https://www.twilio.com)
 
 ### BoredAPI
 

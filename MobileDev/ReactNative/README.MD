@@ -9,14 +9,13 @@ Exernal Library
 
 - [Finding Libraries](https://reactnative.dev/docs/libraries#finding-libraries)
 
+- [React Native Directory](https://reactnative.directory)
 
 ***Set of React-Native Libraries / Packages & Frameworks***
 
 - [React Native Paper](https://reactnativepaper.com)
 
 - [Material Design | React Native](https://callstack.github.io/react-native-paper/index.html)
-
-- [React Native Directory](https://reactnative.directory)
 
 - [npm registry](https://www.npmjs.com)
 

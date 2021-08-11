@@ -5,6 +5,14 @@ JavaScript |  ECMAScript
 Learning 
 --------
 
+### Conventions and Style Guide
+
+- [Airbnb JavaScript Style Guide --GITHUB--](https://github.com/airbnb/javascript)
+- [JavaScript Style Guide](https://airbnb.io/projects/javascript/)
+- [Airbnb React/JSX Style Guide](https://airbnb.io/javascript/react/)
+
+
+
 ### Asynchronous JavaScript
 
 - [Asynchronous JavaScript | MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous)
@@ -84,8 +92,13 @@ Frameworks | Extensions | Modules | 3rd party Libraries
 
 - [Search the Largest API Directory on the Web](https://www.programmableweb.com/category/all/apis)
 
-### Canvas API
+### Autonomation & Utils
 
+- [webpack | Module Bundler](https://webpack.js.org)
+- [GulpJs](https://gulpjs.com)
+
+### Canvas API
+s
 The Canvas API provides a means for drawing graphics via JavaScript and the HTML <canvas> element. Among other things, it can be used for animation, game graphics, data visualization, photo manipulation, and real-time video processing.
 
 - [Canvas API | MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
@@ -104,6 +117,12 @@ The Canvas API provides a means for drawing graphics via JavaScript and the HTML
 
 - [stellar.js](https://markdalgleish.com/projects/stellar.js/)
 
+
+
+### TypeCheck & linting
+
+- [EsLint](https://eslint.org)
+- [jslint](https://www.jslint.com)
 
 -----------------------------------------------------------------------------------------------------
 

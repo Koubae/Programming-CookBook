@@ -19,6 +19,10 @@ Libraries
 Documentation
 -------------
 
+**Conventions and Style Guide**
+
+- [Airbnb React/JSX Style Guide](https://airbnb.io/javascript/react/)
+
 **DATA FETCHING WITH HOOKS**
 - [Small Demo + Many React Links and exmaple](https://codesandbox.io/s/jvvkoo8pq3)
 - [How to fetch data with React Hooks?](https://www.robinwieruch.de/react-hooks-fetch-data)
