@@ -94,7 +94,7 @@ Projects
 
 ### Github
 
-- [React Native Apps](https://github.com/ReactNativeNews/React-Native-Apps)  https://github.com/ReactNativeNews/React-Native-Apps
+- [React Native Apps](https://github.com/ReactNativeNews/React-Native-Apps)  
 
 Other
 -----

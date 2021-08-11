@@ -8,6 +8,10 @@ Libraries
 
 - [use-immer](https://www.npmjs.com/package/use-immer) **A hook to use immer as a React hook to manipulate state.**
 
+### Auth
+
+- [Fake Auth](https://github.com/gragland/fake-auth)
+
 Documentation
 -------------
 
