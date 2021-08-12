@@ -8,6 +8,11 @@ Libraries
 
 - [TypeScript](https://www.npmjs.com/package/typescript)
 
+### Testting 
+
+- [https://docs.cypress.io/guides/overview/why-cypress#In-a-nutshell](https://docs.cypress.io/guides/overview/why-cypress#In-a-nutshell)
+
+
 
 Documentation
 -------------
