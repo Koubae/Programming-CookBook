@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Component | Parallax</title>
+    <!-- MAIN  -->
+    <link rel="stylesheet" type="text/css" href="../../../../static/css/main.css" >
+    <link rel="stylesheet" type="text/css" href="../static/css/parallax_study_2.css">
+</head>
+<body>
+
+    <div class="debug">
+        <label><input type="checkbox"> Debug</label>
+    </div>
+
+    <div class="demo__info">
+        Pure CSS parallax scroll totally inspired by Keith Clark. Please read the <a href="https://keithclark.co.uk/articles/pure-css-parallax-websites/" target="_blank">blog post</a> for more information.
+    </div>
+    
+    <!-- NAVBAR --> 
+    <!-- TODO: Check Bug with Window Event Listener -->
+    <nav class="nav-main nav-scroll-down">       
+
+        <div class="navbar">     
+            <a class="nav-brand navbar-item" href="../../../../templates/index.html">
+                <span>Federico Baú</span>
+            </a>
+            <a class="navbar-item" href="beginner/beginner_1.html">
+                <span>Beginner 1</span>
+            </a>           
+            <a class="navbar-item" href="page_1.html">
+                <span>Page 1</span>
+            </a>                     
+                
+            <img id="logoHyper" class="navbar-item nav-logo-logo" src="../../../../static/img/logo/javascript-original.svg" alt="Logo...">
+        
+            <a class="navbar-item" href="#">
+                <span>NavBar 3</span>
+            </a> 
+
+
+            <a class="navbar-item" href="#">
+                <span>NavBar 4</span>
+            </a>  
+            
+            <span class="navbar-item navbar-item-last dropdown" href="#">
+                <span class="dropdown-title">Web Components</span>                       
+                <div class="dropdown-wrapper">
+                    <div class="dropdown-wrapped">
+                        <a class="dropdown-item" href="index.html" >Parallax Main</a>
+                    </div> 
+                </div>
+            </span>            
+        </div>          
+    </nav>
+
+
+    <div class="parallax">
+
+        <div class="parallax__group parallax__group--1">     
+            <!-- TODO: Make Backgrounds here -->
+
+            <div class="parallax__layer parallax__layer--base">       
+                <div class="title">
+                    <h1>BASE LAYER Group 1 </h1>
+                </div>    
+            </div>  
+
+            <div class="parallax__layer parallax__layer--back">               
+            </div>
+        </div>
+
+
+        <div class="parallax__group parallax__group--2">
+            <div class="parallax__layer parallax__layer--back">
+                <div class="title">
+                    <h1>BACKGROUND Group 2</h1>
+                </div>
+            </div>
+
+            <div class="parallax__layer parallax__layer--fore">
+                <div class="title">
+                    <h1>Foreground Group 2</h1>
+                </div>
+            </div>
+
+            <div class="parallax__layer parallax__layer--base">           
+                <div class="title">
+                    <h1>BASE LAYER Group 2</h1>
+                </div>
+            </div>
+
+            <div class="parallax__layer parallax__layer--deep">
+                <div class="title">
+                    <h1>This is the Deeeep Group 2</h1>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="parallax__group parallax__group--3">
+            <div class="parallax__layer parallax__layer--back">
+                <div class="title">
+                    <h1>BACKGROUND Group 3</h1>
+                </div>
+            </div>
+
+            <div class="parallax__layer parallax__layer--fore">
+                <div class="title">
+                    <h1>Foreground Group 3</h1>
+                </div>
+            </div>
+
+            <div class="parallax__layer parallax__layer--base">           
+                <div class="title">
+                    <h1>BASE LAYER Group 3</h1>
+                </div>
+            </div>
+
+            <div class="parallax__layer parallax__layer--deep">
+                <div class="title">
+                    <h1>This is the Deeeep Group 3</h1>
+                </div>
+            </div>
+            
+        </div>
+
+
+        <div class="parallax__group parallax__group--4">
+            <div class="parallax__layer parallax__layer--back">
+                <div class="title">
+                    <h1>BACKGROUND Group 4</h1>
+                </div>
+            </div>
+
+            <div class="parallax__layer parallax__layer--fore">
+                <div class="title">
+                    <h1>Foreground Group 4</h1>
+                </div>
+            </div>
+
+            <div class="parallax__layer parallax__layer--base">           
+                <div class="title">
+                    <h1>BASE LAYER Group 4</h1>
+                </div>
+            </div>
+
+            <div class="parallax__layer parallax__layer--deep">
+                <div class="title">
+                    <h1>This is the Deeeep Group 4</h1>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="parallax__group parallax__group--5">        
+            <div class="parallax__layer parallax__layer--back">
+                <div class="title">
+                    <h1>BACKGROUND Group 5</h1>
+                </div>
+            </div>
+
+            <div class="parallax__layer parallax__layer--fore">
+                <div class="title">
+                    <h1>Foreground Group 5</h1>
+                </div>
+            </div>
+
+            <div class="parallax__layer parallax__layer--base">           
+                <div class="title">
+                    <h1>BASE LAYER Group 5<</h1>
+                </div>
+            </div>           
+        </div>
+
+        <div class="parallax__group parallax__group--6">        
+            <div class="parallax__layer parallax__layer--back">
+                <div class="title">
+                    <h1>BACKGROUND Group 6</h1>
+                </div>
+            </div>
+
+            <div class="parallax__layer parallax__layer--fore">
+                <div class="title">
+                    <h1>Foreground Group 6</h1>
+                </div>
+            </div>
+
+            <div class="parallax__layer parallax__layer--base">           
+                <div class="title">
+                    <h1>BASE LAYER 6</h1>
+                </div>
+            </div>          
+        </div>
+
+        <div class="parallax__group parallax__group--7">        
+            <div class="parallax__layer parallax__layer--base">           
+                <div class="title">
+                    <h1>Footer</h1>
+                </div>
+            </div>            
+        </div>
+
+    </div>
+
+    <script>
+        var debugInput = document.querySelector("input");
+        const body = document.body;
+        const DOM_ROOT$ = document.getElementById("DOM_ROOT$");
+        function updateDebugState() {            
+            let targetEl; 
+            if (body !== undefined) targetEl = body;
+            else if (DOM_ROOT$ !== undefined) targetEl = body;
+            else {
+                return;  
+            } 
+            targetEl.classList.toggle('debug-on', debugInput.checked);            
+        }
+        debugInput.addEventListener("click", updateDebugState);
+        updateDebugState();
+    </script>
+
+
+</body>
+
+<!-- MAIN  -->
+<script src="../../../../static/js/main.js" type="text/javascript"></script>
+<script src="../static/js/main.js" type="text/javascript"></script>
+</html>

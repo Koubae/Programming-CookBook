@@ -1,0 +1,355 @@
+@import "../../../css/main.css"
+
+html, 
+body {
+    height: 100%;
+    padding: 0;
+}
+
+.div__body {
+    overflow: scroll;
+}
+
+/* ========================= < COMPONENTS > ========================= */
+
+/* ----- HEADINGS */
+.parallax__heading--h1 {
+    color: white;
+    font-size: 8rem;
+    font-weight: 800;
+    letter-spacing: 1.5rem;
+    text-transform: uppercase;
+}
+
+.parallax__heading--h3 {
+    color: white;
+    font-size: 6rem;
+    font-weight: 600;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+}
+
+.parallax_heading--title {
+    width: 55%;
+    padding: 8%;
+    border-radius: 50px;
+    background: rgba(240,230,220, .7);
+    box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+.parallax_heading--title h1,
+.parallax_heading--title h2,
+.parallax_heading--title h3,
+.parallax_heading--title h4,
+.parallax_heading--title h5,
+.parallax_heading--title h6 {    
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 6.2rem;
+    font-weight: 700;
+    letter-spacing: 12px;
+    white-space: nowrap;
+}
+
+
+.banner {
+    background-color: rgb(220, 220, 220);
+    padding: 10rem;
+    
+}
+
+.banner__two {   
+    text-align: center;
+    font-size: 175%;
+    color: #fff;
+    text-shadow: 0 2px 2px #000;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+.banner--blue {
+    background-color: var(--color-pastel--blue-green);
+}
+
+.blur--5 {
+    filter: blur(5px);
+}
+
+.parallax__hyperlink--big {
+    font-size: 5rem;
+    font-weight: 700;
+
+    -moz-transition: 250ms ease;
+    -o-transition: 250ms ease;
+    -webkit-transition: 250ms ease;
+    transition: 250ms ease;
+}
+
+.parallax__hyperlink--big:hover,
+.parallax__hyperlink--big:focus,
+.parallax__hyperlink--big:active {
+    filter: brightness(185%);
+}
+
+
+/* ----- IMGS Card */
+
+.card {
+    width: 320px;
+    height: 240px;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(240,230,220, .7);
+    box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+/* ------------------------ > Parallax Static */
+.parallax__one {
+    /* Parallax Effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    overflow: hidden;
+}
+
+.background--one {
+    background-image: url("https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+    height: 150vh;
+}
+
+.background--two {
+    background-image: url("https://source.unsplash.com/1600x900/");
+    height: 75vh;
+    top: -30rem;
+
+}
+
+
+/* ------------------------ > Parallax Static 2 */
+/*Credits: https://stackoverflow.com/a/44844703/13903942*/
+.parrallax-static {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#parallaxStaticTwo article:nth-child(1) {
+    height: 800px;
+    background-image: url('https://picsum.photos/1600/900?random=3');
+}
+
+#parallaxStaticTwo article:nth-child(2) {
+    height: 400px;
+    background-image: url('https://picsum.photos/1600/900?random=4');    
+}
+
+#parallaxStaticTwo article:nth-child(3) {
+    height: 800px;
+    background-image: url('https://picsum.photos/1600/900?random=3');    
+}
+
+#parallaxStaticTwo article:nth-child(4) {
+    height: 800px;
+    background-image: url('https://picsum.photos/1600/900?random=5');    
+}
+
+#parallaxStaticTwo article:nth-child(5) {
+    height: 400px;
+    background-image: url('https://picsum.photos/1600/900?random=6');    
+}
+
+#parallaxStaticTwo article:nth-child(6) {
+    height: 800px;
+    background-image: url('https://picsum.photos/1600/900?random=5');    
+}
+
+
+/* ------------------------ > Parallax Scroll Event */
+
+.parallax__scroll-event {
+    opacity: 1; 
+    overflow: hidden;
+    color: var(--main-text-black);
+    position: relative;
+    height: 100vh;
+
+}
+
+.banner__scroll {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, 0);
+    width: auto;
+    z-index: 100;
+    white-space: nowrap;
+}
+
+.banner__scroll--bottom {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 20%);
+    width: auto;
+    z-index: 100;
+    white-space: nowrap;
+    
+}
+
+.element__centered-special {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.parallax_two {
+    /* Parallax Effect */
+    background-attachment: local;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+
+    position: relative;
+    opacity: .90;
+    
+
+    min-height: 300%;  /* Need to Duplicate the Size in order to have the background Visible */
+    z-index: 0;
+}
+
+.background-three {
+    background-image: url("https://picsum.photos/1600/900?random=1");
+}
+
+.background-four {
+    background-image: url("https://picsum.photos/1600/900?random=2");
+    /* height: 75vh; */
+}
+
+/* ------------------------------------ < PARALLAX CSS | THE PROPER WAY > ------------------------------------ */
+
+/* ------------------------ > PARALLAX CSS |  One :before-as-background  */
+
+.parallax__css--before-as-background {
+    /* height: 100%;
+    -webkit-overflow-scrolling: touch;
+   
+    perspective: 20px;
+    transform-style: preserve-3d;  */
+    /* min-height: auto; */
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    max-height: auto;
+    
+
+}
+
+
+
+.parallax__background {
+    /* position: relative; */
+    padding: 25vh 10%;
+    /* width: 100vw; */
+    padding: 100vh 0;
+
+    /* transform-style: inherit;     */
+
+    /* width: 100%; */
+    height: 100%;
+    min-height: 100vh;
+  
+    /* overflow-x: hidden; */
+    /* overflow-y: scroll; */
+    /* overflow-y: auto; */
+    perspective: 1px;
+    /* perspective-origin: 0 0; */
+    /* transform-origin: 0 0; */
+
+
+}
+
+/* Here is Where the Background is set and gives and extra background */
+.parallax__background:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.parallax__background, .parallax__background:before {
+    background: 50% 50% / cover;  
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+}
+
+.parallax__background:before {
+    z-index: -1000;
+}
+
+.parallax__background.banner__two:first-child {
+    background-image: url("https://lorempixel.com/640/480/abstract/6/");
+    z-index: 2;
+}
+
+
+.parallax__container {
+    position: relative;
+    z-index: 1000;
+}
+.parallax__background.banner__two h1:not(.header--footer) {
+    transform: translateZ(.50px) scale(.5);
+    /* transform-origin: 50% 100%; */
+}
+
+.parallax__background:nth-child(2n) .parallax_heading--title {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.parallax__background:nth-child(2n+1) .parallax_heading--title {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+
+.parallax__background--slide1:before {
+    background-image: url("https://lorempixel.com/640/480/abstract/4/");
+    /* transform: translateZ(-1px) scale(2); */
+}
+
+.parallax__background--slide2 {
+    background-image: url("https://lorempixel.com/640/480/abstract/3/");
+    z-index:2;
+}
+
+.parallax__background--slide3:before {
+    background-image: url("https://lorempixel.com/640/480/abstract/5/");
+    /* transform: translateZ(-1px) scale(2); */
+}
+
+.parallax__background--footer {
+    background: #222;
+}
+
+.card__parallax {
+    position: absolute;
+    top: 70%;
+    left: 35%;
+}
+
+.card__parallax:first-of-type {
+    transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+}
+
+.card__parallax:nth-child(2n) {
+    transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+}
+
+.card__parallax:last-of-type {
+    transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+}

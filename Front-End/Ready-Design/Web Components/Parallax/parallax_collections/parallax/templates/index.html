@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Component | Parallax</title>
+    <!-- MAIN  -->
+    <link rel="stylesheet" type="text/css" href="../../../css/main.css" >
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+</head>
+<body>
+    
+    <!-- NAVBAR --> 
+    <!-- TODO: Check Bug with Window Event Listener -->
+    <nav class="nav-main nav-scroll-down">       
+
+        <div class="navbar">     
+            <a class="nav-brand navbar-item" href="../../../../templates/index.html">
+                <span>Federico Baú</span>
+            </a>
+            <a class="navbar-item" href="beginner/beginner_1.html">
+                <span>Beginner 1</span>
+            </a>           
+            <a class="navbar-item" href="page_1.html">
+                <span>Page 1</span>
+            </a>                     
+                
+            <img id="logoHyper" class="navbar-item nav-logo-logo" src="../../../../static/img/logo/javascript-original.svg" alt="Logo...">
+        
+            <a class="navbar-item" href="#">
+                <span>NavBar 3</span>
+            </a> 
+
+
+            <a class="navbar-item" href="#">
+                <span>NavBar 4</span>
+            </a>  
+            
+            <span class="navbar-item navbar-item-last dropdown" href="#">
+                <span class="dropdown-title">Web Components</span>                       
+                <div class="dropdown-wrapper">
+                    <div class="dropdown-wrapped">
+                        <a class="dropdown-item" href="parallax_study_1.html" >Parallax Study 1</a>
+                        <a class="dropdown-item" href="parallax_study_2.html" >Parallax Study 2</a>
+                    </div> 
+                </div>
+            </span>            
+        </div>          
+    </nav>
+
+    <main>
+        <!-- PARALLAX STATIC -->
+        <article class="parallax-multi-main">
+            <div class="parallax__one background--one">
+                <div class="container element__centered-middle">
+                    <h1 class="parallax__heading--h1">Parralax Static</h1>
+                </div>
+            </div>
+    
+            <section class="banner">
+                <div class="container">
+                    <h1 class="parallax__heading--h1 color--black">Static</h1>
+                </div>
+            </section>
+    
+            <div class="parallax__one background--two"></div>             
+        </article>
+
+
+        <section class="banner banner--blue">
+            <div class="container">
+                <h1 class="parallax__heading--h1">Parallax Static 2</h1>
+            </div>
+        </section>
+        
+        <!-- PARALLAX STATIC 2 Idea Credit: https://stackoverflow.com/a/44844703/13903942*/ -->
+        <div id="parallaxStaticTwo"> 
+            <article class="parrallax-static"></article>
+            <article class="parrallax-static"></article>
+            <article class="parrallax-static"></article>
+            <article class="parrallax-static"></article>
+            <article class="parrallax-static"></article>
+            <article class="parrallax-static"></article>
+
+        </div>      
+            
+        <section class="banner banner--blue">
+            <div class="container">
+                <h1 class="parallax__heading--h1">Parallax JS Scroll Events</h1>
+            </div>
+        </section>
+
+
+
+        <!-- PARALLAX JS SCROLL EVENT -->
+        <article class="parallax-multi-main parallax__scroll-event">
+
+            <section class=" banner__scroll">
+                <div class="container">
+                    <h1 class="parallax__heading--h1 color--black">Parralax Scroll Event</h1>
+                </div>
+            </section>
+
+            <div class="parallax_two background-three blur--5">
+            </div>   
+
+            <section class="banner__scroll--bottom blur--5">
+                <div class="container">
+                    <h3 class="parallax__heading--h3 ">Cool</h3>
+                </div>
+            </section>
+            
+
+        </article>
+
+        <article class="parallax-multi-main parallax__scroll-event">
+            <section class=" banner__scroll">
+                <div class="container">
+                    <h1 class="parallax__heading--h1 color--black">Another Parralax</h1>
+                </div>
+            </section>
+            <div class="parallax_two background-four blur--5">               
+            </div>  
+            
+            
+            <section class="banner__scroll--bottom blur--5">
+                <div class="container">
+                    <h3 class="parallax__heading--h3 ">Nice</h3>
+                </div>
+            </section>
+
+        </article>
+
+        <section class="banner banner--blue">
+            <div class="container">
+                <h1 class="parallax__heading--h1"><a  class="parallax__hyperlink--big" href="parallax_cool.html" target="_blank">Parallax Cool --> Go</a></h1>
+            </div>
+        </section>
+
+
+        <!-- ======================= < PARALLAX CSS | THE PROPER WAY > ======================= -->
+
+        <!-- PARALLAX CSS |  One :before-as-background -->
+        <article id="css1" class="parallax-multi-main parallax__css--before-as-background">  <!-- Parent Containng the perspective and transform style props. May be the body -->
+            
+      
+            <div class="banner__two parallax__background">      
+                <h1>Pure CSS Parallax</h1>
+                <h1>CREDIT: 
+                    <ul>
+                        <li><a class="parallax__hyperlink--big" href="https://stackoverflow.com/a/23280573/13903942" target="_blank">KitKat StackOverflow</a></li>
+                        <li><a class="parallax__hyperlink--big" href="https://codepen.io/keithclark/pen/JycFw" target="_blank">Code Pen</a></li>
+                    </ul>
+                    
+                </h1>
+            
+            </div>
+
+            <div class="parallax__background parallax__background--slide1">
+                <div class="parallax_heading--title">
+                    <h1>Slide One</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti assumenda similique aliquam itaque ea inventore dolor ducimus nobis nostrum placeat. Laborum enim fugit inventore officia, voluptas, neque, consectetur praesentium repellat a dolorem fugiat quibusdam? Facere ab, a harum saepe, repellendus vitae quidem architecto nulla odio quisquam repudiandae itaque consequatur tenetur!</p>
+                </div>
+
+                <img class="card card__parallax" src="https://lorempixel.com/640/480/abstract/8/" alt="card">
+                <img class="card card__parallax" src="https://lorempixel.com/640/480/abstract/9/" alt="card">
+                <img class="card card__parallax" src="https://lorempixel.com/640/480/abstract/10/" alt="card">
+            </div>
+
+            <div class="parallax__background parallax__background--slide2">
+                <div class="parallax_heading--title">
+                    <h1>Slide Two</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti assumenda similique aliquam itaque ea inventore dolor ducimus nobis nostrum placeat. Laborum enim fugit inventore officia, voluptas, neque, consectetur praesentium repellat a dolorem fugiat quibusdam? Facere ab, a harum saepe, repellendus vitae quidem architecto nulla odio quisquam repudiandae itaque consequatur tenetur!</p>
+                </div>
+            </div>
+
+            <div class="parallax__background parallax__background--slide3">
+                <div class="parallax_heading--title">
+                    <h1>Slide Three</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti assumenda similique aliquam itaque ea inventore dolor ducimus nobis nostrum placeat. Laborum enim fugit inventore officia, voluptas, neque, consectetur praesentium repellat a dolorem fugiat quibusdam? Facere ab, a harum saepe, repellendus vitae quidem architecto nulla odio quisquam repudiandae itaque consequatur tenetur!</p>
+                </div>
+            </div>
+
+            <div class="banner__two parallax__background parallax__background--footer">
+                <h1 class="header--footer">Footer</h1>
+
+            </div>
+
+
+
+        </article>
+
+
+    </main>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officiis labore! Perspiciatis vero et quae voluptas optio nihil earum at temporibus quos. Blanditiis adipisci, est ex laudantium ad ea modi! optio  obcaecati expedita eaque nobis pariatur placeat harum iusto quam. Odio dolore accusantium reprehenderit sed aspernatur at officia exercitationem molestiae maiores, eum quibusdam voluptates saepe optio!</p>
+
+
+
+</body>
+
+<!-- MAIN  -->
+<script src="../../js/main.js" type="text/javascript"></script>
+<script src="../static/js/main.js" type="text/javascript"></script>
+</html>

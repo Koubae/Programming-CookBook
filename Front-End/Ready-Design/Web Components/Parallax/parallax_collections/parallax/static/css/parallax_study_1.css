@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, 
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+html {
+    color: white;
+}
+
+ /* background: 50% 50% / cover; 
+    background-image: url("https://images.unsplash.com/photo-1622439668459-7d5ed7d7b46f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=633&q=80");
+    min-height: 300vh; */
+
+.parallax {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 1px;
+    perspective: 1px;
+    font-size: 200%;
+    
+
+}
+.parallax__layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+     /* add some padding to force scrollbars */
+    padding: 100vh 0;
+}
+/* scale factor can be calculated with 1 + (translateZ * -1) / perspective */
+
+.parallax__layer--base {
+    transform: translateZ(0);
+}
+
+.parallax__layer--back {
+    transform: translateZ(-1px) scale(2);
+}
+
+.parallax__layer--deep {
+    transform: translateZ(-2px) scale(6);
+}
+
+/* centre the content in the parallax layers */
+.title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
