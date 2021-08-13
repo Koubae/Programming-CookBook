@@ -1,7 +1,17 @@
 # ========================= < COLLECTION OF GITHUB COMMANDS > ========================= #
 
 
+# ------------------------------ < BRANCH > ------------------------------ #
 
+# Create Branch 
+git branch <branch-name>
+# Switch Branch
+git checkout <branch-name>
+# Create and Swith Branch
+git checkout -b <branch-name>
+
+
+# ------------------------------ < CONFIGS > ------------------------------ #
 # 1. System level (applied to every user on the system and all their repositories)
 
 # to view (may need sudo)
@@ -47,4 +57,5 @@ git config user.email your@email.com
 
 git config --global user.name "Your Name Here"
 git config --global user.email your@email.com
+
 
