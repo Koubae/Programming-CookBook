@@ -5,9 +5,12 @@ Programmer & Developer Cook-Book | Covers Programming Languages, Databases, Linu
 
 -----------------------------------------------------------------------------------------------------
 
+
 ## General Knowledge
 
 - [CitingCode | libguides.com](https://uark.libguides.com/CSCE/CitingCode)
+- [Change user in github](https://stackoverflow.com/a/62149990/13903942)
+- [jankfree.org](http://jankfree.org)
 
 ## Learning Material
 
@@ -65,6 +68,7 @@ Programmer & Developer Cook-Book | Covers Programming Languages, Databases, Linu
 ## Repos & Projects
 
 - [Web Scraping Reference: Cheat Sheet for Web Scraping using R --GITHUB--](https://github.com/ChaitanyaBaweja/r-web-scraping-cheat-sheet)
+- [johnsmilga.com ---projects](https://www.johnsmilga.com/projects)
 
 ### GOJS
 
