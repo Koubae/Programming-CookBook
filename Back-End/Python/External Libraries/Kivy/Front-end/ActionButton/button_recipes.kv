@@ -1,0 +1,26 @@
+#:kivy 2.0.0
+
+
+<RootWidget>:
+
+    canvas.before:
+        Color:
+            rgb: 1, .6, .6
+        Rectangle:
+            size: self.size
+            source: 'data/background.png'
+    ActionBar:
+        pos_hint: { 'top': 1 }
+        ActionView:
+            use_separator: False
+            ActionPrevious:
+                title: 'Federico Bau'
+                with_previous: False
+                app_icon: ''
+            ActionOverflow:
+            ActionButton:
+                text: 'Settings'
+                on_press: app.open_settings()
+            ActionButton:
+                text: 'Quit'
+                on_press: app.get_running_app().stop()
