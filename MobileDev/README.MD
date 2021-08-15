@@ -16,16 +16,26 @@ Exernal Library
 Documentation
 --------------
 
+
 - [Atomic Design with React](https://cheesecakelabs.com/blog/atomic-design-react/)
 
-- []()
+- [Human Interface Guidelines --Apple--](https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/)
 
 
 Tools
 =====
 
+### Style -- Colors
+
+- [Color Hunt](https://colorhunt.co)
+- [Flat UI Color](https://flatuicolors.com)
+- [Material Palette](https://www.materialpalette.com)
+
 ### Privacy Policy
 
 - [Free Private Policy Generator](https://app-privacy-policy-generator.nisrulz.com)
 - [Free Private Policy Generator --GITHUB--](https://github.com/nisrulz/app-privacy-policy-generator)
+
+
+
 -----------------------------------------------------------------------------------------------------

@@ -58,6 +58,20 @@ https://developer.android.com/distribute/best-practices
 - [Developer Program Policies](https://play.google.com/about/developer-content-policy/)
 
 
+Tools
+-----
+
+### Design 
+
+- [UX Pin](https://www.uxpin.com/)
+
+### Icon
+
+- [Icon Store](https://iconstore.co)
+
+### Images
+
+- [unsplash](https://unsplash.com/wallpapers/android/pixel)
 
 
 
