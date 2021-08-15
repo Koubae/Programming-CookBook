@@ -18,7 +18,7 @@ cd android && ./gradlew signingReport
 
 
 ### INSTALLATION
-
+https://developer.android.com/distribute/best-practices
 1. [https://developer.android.com/studio/run/oem-usb](https://developer.android.com/studio/run/oem-usb)
 2. [Run apps on a hardware device](https://developer.android.com/studio/run/device#setting-up)
 3. [Running On Device ( React Native)](https://reactnative.dev/docs/running-on-device)
@@ -28,6 +28,12 @@ cd android && ./gradlew signingReport
 
 - [App Manifest Overview](https://developer.android.com/guide/topics/manifest/manifest-intro)
 
+
+#### General Guides / Practices / Models
+
+- [Best Practices](https://developer.android.com/distribute/best-practices)
+- [Guide to app architecture](https://developer.android.com/jetpack/guide)
+- [Material Design for Android](https://developer.android.com/guide/topics/ui/look-and-feel)
 
 ### PUBLISH
 
@@ -51,5 +57,9 @@ cd android && ./gradlew signingReport
 #### Policy
 
 - [Developer Program Policies](https://play.google.com/about/developer-content-policy/)
+
+
+
+
 
 -----------------------------------------------------------------------------------------------------
