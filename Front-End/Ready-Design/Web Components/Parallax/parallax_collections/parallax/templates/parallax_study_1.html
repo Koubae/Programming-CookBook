@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Component | Parallax</title>
+    <!-- MAIN  -->
+    <link rel="stylesheet" type="text/css" href="../../../css/main.css" >
+    <link rel="stylesheet" type="text/css" href="../static/css/parallax_study_1.css">
+</head>
+<body>
+    
+    <!-- NAVBAR --> 
+    <!-- TODO: Check Bug with Window Event Listener -->
+    <nav class="nav-main nav-scroll-down">       
+
+        <div class="navbar">     
+            <a class="nav-brand navbar-item" href="../../../../templates/index.html">
+                <span>Federico Baú</span>
+            </a>
+            <a class="navbar-item" href="beginner/beginner_1.html">
+                <span>Beginner 1</span>
+            </a>           
+            <a class="navbar-item" href="page_1.html">
+                <span>Page 1</span>
+            </a>                     
+                
+            <img id="logoHyper" class="navbar-item nav-logo-logo" src="../../../../static/img/logo/javascript-original.svg" alt="Logo...">
+        
+            <a class="navbar-item" href="#">
+                <span>NavBar 3</span>
+            </a> 
+
+
+            <a class="navbar-item" href="#">
+                <span>NavBar 4</span>
+            </a>  
+            
+            <span class="navbar-item navbar-item-last dropdown" href="#">
+                <span class="dropdown-title">Web Components</span>                       
+                <div class="dropdown-wrapper">
+                    <div class="dropdown-wrapped">
+                        <a class="dropdown-item" href="index.html" >Parallax Main</a>
+                    </div> 
+                </div>
+            </span>            
+        </div>          
+    </nav>
+
+
+    <div class="parallax">
+
+       
+
+        <div class="parallax__layer parallax__layer--back">
+            <div class="title">
+                <h1>BACKGROUND</h1>
+            </div>
+        </div>
+        <div class="parallax__layer parallax__layer--base">
+           
+
+            <div class="title">
+                <h1>FOREGROUND</h1>
+            </div>
+        </div>
+
+
+        <div class="parallax__layer parallax__layer--deep">
+            <div class="title">
+                <h1>This is the Deeeep</h1>
+            </div>
+          </div>
+
+    </div>
+
+
+</body>
+
+<!-- MAIN  -->
+<script src=".../../js/main.js" type="text/javascript"></script>
+<script src="../static/js/main.js" type="text/javascript"></script>
+</html>
