@@ -12,6 +12,7 @@ Public APIs
 - [Any  API](https://any-api.com)
 - [SWAPI](https://swapi.dev)
 - [Twilio](https://www.twilio.com)
+- Free Huge Database for Trivia questions [Trivia Database](https://opentdb.com)
 
 ### BoredAPI
 
