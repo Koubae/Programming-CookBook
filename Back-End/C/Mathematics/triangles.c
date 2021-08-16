@@ -20,10 +20,8 @@ int main() {
 // * * * *
 // * * * * *
 
-
 // Half Pyramid of Numbers
 #include <stdio.h>
-
 
 int main()
 {
@@ -48,6 +46,7 @@ int main()
 
 //Half Pyramid of Alphabet
 #include <stdio.h>
+
 int main()
 {
    int i, j;
@@ -70,7 +69,6 @@ int main()
 //D D D D
 //E E E E E
 //F F F F F F
-
 
 //  Inverted half pyramid of *
 #include <stdio.h>
@@ -96,7 +94,6 @@ int main ()
 //* *
 //*
 
-
 // Inverted half pyramid of numbers
 #include <stdio.h>
 
@@ -120,7 +117,6 @@ int main ()
 //1 2 3
 //1 2
 //1
-
 
 // Full Pyramid of *
 #include <stdio.h>
@@ -152,6 +148,7 @@ int main ()
 
 //Full Pyramid of Numbers
 #include <stdio.h>
+
 int main() {
    int i, space, rows, k = 0, count = 0, count1 = 0;
    printf("Enter the number of rows: ");
@@ -183,8 +180,9 @@ int main() {
 //   4 5 6 7 6 5 4
 // 5 6 7 8 9 8 7 6 5
 
-
+// Inverted full pyramid of *
 #include <stdio.h>
+
 int main() {
    int rows, i, j, space;
    printf("Enter the number of rows: ");
@@ -206,10 +204,7 @@ int main() {
 //     * * * * *
 //       * * *
 //         *
-
-
-
-// Inverted full pyramid of *
+ 
 #include <stdio.h>
 
 int main () {
@@ -232,7 +227,6 @@ int main () {
     }
     return 0;
 }
-
 
 //            1
 //          1   1
