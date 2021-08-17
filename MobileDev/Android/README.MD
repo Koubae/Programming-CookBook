@@ -32,7 +32,14 @@ https://developer.android.com/distribute/best-practices
 
 - [Best Practices](https://developer.android.com/distribute/best-practices)
 - [Guide to app architecture](https://developer.android.com/jetpack/guide)
+
+
+##### Design & Style
+
+- [Design for Android](https://developer.android.com/design)
+- [Product icons](https://material.io/design/iconography/product-icons.html#design-principles)
 - [Material Design for Android](https://developer.android.com/guide/topics/ui/look-and-feel)
+
 
 ### PUBLISH
 
@@ -56,10 +63,19 @@ https://developer.android.com/distribute/best-practices
 #### Policy
 
 - [Developer Program Policies](https://play.google.com/about/developer-content-policy/)
+- [Payments](https://support.google.com/googleplay/android-developer/answer/9858738)
 
+#### Data / User Data
+
+- [Best practices for working with Android identifiers](https://developer.android.com/training/articles/user-data-ids)
+- [Handle user data](https://developer.android.com/training/articles/security-tips#UserData)
 
 Tools
 -----
+
+### Style -- Colors
+
+- [Material Design’s Color Tool](https://material.io/resources/color/#!/?view.left=1&view.right=0)
 
 ### Design 
 
