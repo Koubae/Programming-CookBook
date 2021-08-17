@@ -70,6 +70,12 @@ https://developer.android.com/distribute/best-practices
 - [Best practices for working with Android identifiers](https://developer.android.com/training/articles/user-data-ids)
 - [Handle user data](https://developer.android.com/training/articles/security-tips#UserData)
 
+
+#### Security
+
+- [BiometricPrompt](https://developer.android.com/reference/androidx/biometric/BiometricPrompt)
+- [SafetyNet Attestation API](https://developer.android.com/training/safetynet/attestation) *The SafetyNet Attestation API is an anti-abuse API that allows app developers to assess the Android device their app is running on.*
+
 Tools
 -----
 

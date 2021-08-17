@@ -14,6 +14,13 @@ Exernal Library
 - [react-native-document-picker](https://github.com/rnmods/react-native-document-picker)
 
 
+Resources
+---------------
+
+### Images / Backgrounds / Icons
+
+- [Google Fonts - Material](https://fonts.google.com/icons?selected=Material+Icons)
+
 -----------------------------------------------------------------------------------------------------
 
 
@@ -33,6 +40,8 @@ Documentation
 - [10 tips to optimize app engagement](https://medium.com/googleplaydev/10-tips-to-optimize-app-engagement-b9d7dba52fe)
 - [5 principles for apps to survive and thrive](https://medium.com/googleplaydev/5-principles-for-apps-to-survive-and-thrive-46e16741fc75)
 - [googleplay_how_apps_can_survive_and_thrive.pdf](https://services.google.com/fh/files/blogs/googleplay_how_apps_can_survive_and_thrive.pdf)
+- [Improving comprehension through intuitive actions](https://medium.com/google-design/improving-comprehension-through-intuitive-actions-f7e6336e12e6)
+- [Google Design | floating-action-button | Pretty Pretty Cool...](https://design.google/library/floating-action-button/)
 
 #### Google Training 
 
@@ -56,6 +65,14 @@ Documentation
 - [Reduce your app size with Android App Bundles](https://playacademy.exceedlms.com/uploads/resource_courses/targets/69030/original/index.html?_courseId=13016#/page/5ccb5d3e5f13055bdf94a4ce)
 - [App quality overview](https://playacademy.exceedlms.com/uploads/resource_courses/targets/69140/original/index.html?_courseId=19749#/page/5d9de1421bf6a0079f0bba38)
 
+#### [Security by design](https://playacademy.exceedlms.com/student/collection/260724/path/345740)
+
+
+- [Introduction to the Security Development Lifecycle](https://playacademy.exceedlms.com/uploads/resource_courses/targets/751127/original/index.html?_courseId=69287#/page/608c8f1244f4b726601fde04)
+- [Introduction to Threat Modeling](https://playacademy.exceedlms.com/uploads/resource_courses/targets/751111/original/index.html?_courseId=200760#/page/608c8de644f4b726601fdd80)
+- [Introduction to app security best practices](https://playacademy.exceedlms.com/uploads/resource_courses/targets/751121/original/index.html?_courseId=63551#/page/608c8eb844f4b726601fddd8)
+
+------------------------------------------------------------------------------------
 
 #### Testing 
 

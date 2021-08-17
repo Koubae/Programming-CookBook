@@ -4,7 +4,7 @@ function myFunction() {
     if (x.innerHTML === "Hello") {
       x.innerHTML = "Swapped text!";
     } else {
-      x.innerHTML = "Hello";
+        x.innerHTML = "Hello";
     }
   }
 
