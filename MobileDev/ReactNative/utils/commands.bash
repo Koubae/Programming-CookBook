@@ -46,7 +46,7 @@ npx react-native log-android
 
 # ======================== < NODE PACKAGES UTILS > ======================== #
 
-# Install react-native Navigation
+# ------------------- Install react-native Navigation
 # 1 Main Package
 npm install @react-navigation/native
 # 2 Main dependencie
@@ -57,10 +57,17 @@ npm install @react-navigation/native-stack react-native-gesture-handler
 # 4 Additional Dependency:
 npm install @react-navigation/stack react-native-gesture-handler
 
+# ALL
+npm install @react-navigation/native react-native-screens react-native-safe-area-context @react-navigation/native-stack react-native-gesture-handler @react-navigation/stack 
+
+
 
 ## ------- React Linter Plugin for Hooks  -> https://www.npmjs.com/package/eslint-plugin-react-hooks
 npm install eslint-plugin-react-hooks --save-dev
 # exhaustive-deps --> https://github.com/facebook/react/issues/14920
 # (rule  "react-hooks/exhaustive-deps": 'warn' // <--- THIS IS THE NEW RULE)
+
+
+# react-navitagion / react-firebase / mmkv-storage
 
 npm install @react-navigation/native react-native-screens react-native-safe-area-context @react-navigation/native-stack react-native-gesture-handler @react-navigation/stack react-native-gesture-handler react-native-mmkv-storage @react-native-firebase/app @react-native-firebase/admob

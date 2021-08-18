@@ -43,7 +43,15 @@ Documentation
 - [Improving comprehension through intuitive actions](https://medium.com/google-design/improving-comprehension-through-intuitive-actions-f7e6336e12e6)
 - [Google Design | floating-action-button | Pretty Pretty Cool...](https://design.google/library/floating-action-button/)
 
-#### Google Training 
+##### Families
+
+- [Families | Play COnsole help](https://support.google.com/googleplay/android-developer/topic/9877766)
+- [Ads and Monetization (Families)](https://support.google.com/googleplay/android-developer/answer/9898834)
+- [Families Ads Program](https://support.google.com/googleplay/android-developer/answer/9900633)
+
+#### Google Training / Google Play Academy
+
+- [Design](https://playacademy.exceedlms.com/student/collection/260724)
 
 - [Overview of optimizing for app engagement](https://playacademy.exceedlms.com/uploads/resource_courses/targets/790067/original/index.html?_courseId=21747#/page/60c1600a5f42143bea98733f)
 - [Create a compelling first time user experience](https://playacademy.exceedlms.com/uploads/resource_courses/targets/548477/original/index.html?_courseId=21745#/page/5dbb9f4271ede84d1a31d6a7)
@@ -71,6 +79,15 @@ Documentation
 - [Introduction to the Security Development Lifecycle](https://playacademy.exceedlms.com/uploads/resource_courses/targets/751127/original/index.html?_courseId=69287#/page/608c8f1244f4b726601fde04)
 - [Introduction to Threat Modeling](https://playacademy.exceedlms.com/uploads/resource_courses/targets/751111/original/index.html?_courseId=200760#/page/608c8de644f4b726601fdd80)
 - [Introduction to app security best practices](https://playacademy.exceedlms.com/uploads/resource_courses/targets/751121/original/index.html?_courseId=63551#/page/608c8eb844f4b726601fddd8)
+
+
+#### [Design high-quality apps for kids](https://playacademy.exceedlms.com/student/collection/260724/path/345742)
+
+- [Build teacher-approved apps for Google Play](https://playacademy.exceedlms.com/uploads/resource_courses/targets/92736/original/index.html?_courseId=22153#/page/5e1c4d8bca9beb13035b38b5)
+- [Best practices for designing high-quality apps for kids](https://playacademy.exceedlms.com/uploads/resource_courses/targets/92738/original/index.html?_courseId=22154#/page/5e1c4c1bca9beb13035b3838)
+- [Understand content appropriateness standards for Teacher Approved apps](https://playacademy.exceedlms.com/uploads/resource_courses/targets/725335/original/index.html?_courseId=23136#/page/6061f47b0c2e7307a0459238)
+- [Best practices for ads, cross-promotions, and in-app purchases for Teacher Approved apps](https://playacademy.exceedlms.com/uploads/resource_courses/targets/330243/original/index.html?_courseId=23135#/page/5e31c268ca9beb13035b4835)
+- [Comply with Families policies](https://playacademy.exceedlms.com/uploads/resource_courses/targets/792681/original/index.html?_courseId=14639#/page/60c90b5713a3200db6414783)
 
 ------------------------------------------------------------------------------------
 

@@ -48,6 +48,7 @@ https://developer.android.com/distribute/best-practices
 - [Publish your app  -- ANDROID DOCS --](https://developer.android.com/studio/publish)
 - [Launch checklist / Google Play  -- ANDROID DOCS --](https://developer.android.com/distribute/best-practices/launch/launch-checklist)
 - [Publish to Google Play Store -- React Native -- ](https://reactnative.dev/docs/signed-apk-android)
+- [Manage target audience and app content settings](https://support.google.com/googleplay/android-developer/answer/9867159?visit_id=637648602174235573-2915779392&rd=1)
 
 #### ICON
 
