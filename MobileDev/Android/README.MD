@@ -40,6 +40,13 @@ https://developer.android.com/distribute/best-practices
 - [Product icons](https://material.io/design/iconography/product-icons.html#design-principles)
 - [Material Design for Android](https://developer.android.com/guide/topics/ui/look-and-feel)
 
+##### Quality
+
+- [Quality for Android](https://developer.android.com/quality)
+- [Core App Quality](https://developer.android.com/docs/quality-guidelines/core-app-quality)
+- [Get started with large screens](https://developer.android.com/guide/topics/ui/responsive-layout-overview)
+- [Build for billions](https://developer.android.com/docs/quality-guidelines/build-for-billions)
+- [Build a high-quality app or game](https://play.google.com/console/about/build-a-high-quality-app-or-game/)
 
 ### PUBLISH
 
@@ -97,6 +104,10 @@ Tools
 ### Images
 
 - [unsplash](https://unsplash.com/wallpapers/android/pixel)
+
+### Google
+
+- [Android Newsletter](https://developer.android.com/newsletter)
 
 
 
