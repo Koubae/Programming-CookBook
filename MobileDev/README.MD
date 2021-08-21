@@ -113,7 +113,13 @@ Tools
 - [Material Palette](https://www.materialpalette.com)
 
 
+### Logos / SVG Tools
 
+
+- [the-best-free-adobe-illustrator-alternatives](https://www.techradar.com/news/the-best-free-adobe-illustrator-alternatives)
+- [vecteezy](https://www.vecteezy.com/editor/random)
+- [vectr](https://vectr.com/lessons/getting_started?page=2)
+- [boxy-svg](https://boxy-svg.com)
 
 ### Privacy Policy
 
