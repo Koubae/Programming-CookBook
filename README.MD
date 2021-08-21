@@ -89,6 +89,7 @@ Hosting
 
 - [netlify.com](https://www.netlify.com)
 - [Hostinger](https://www.hostinger.co.uk)
+- [Litespeed](https://www.litespeedtech.com)
 
 
 
