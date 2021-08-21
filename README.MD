@@ -77,4 +77,20 @@ Interactive JavaScript Diagrams for the Web
 - [GOJS](https://gojs.net/latest/index.html)
 - [GOJS --GITHUB--](https://github.com/NorthwoodsSoftware/GoJS)
 
+
+Tools
+=====
+
+
+Hosting
+-------
+
+### Hosting Solution
+
+- [netlify.com](https://www.netlify.com)
+- [Hostinger](https://www.hostinger.co.uk)
+
+
+
+
 -----------------------------------------------------------------------------------------------------

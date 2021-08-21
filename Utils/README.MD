@@ -2,13 +2,7 @@
 =======================
 
 
-Hosting
--------
 
-### Hosting Solution
-
-- [netlify.com](https://www.netlify.com)
-- [Hostinger](https://www.hostinger.co.uk)
 
 GitHub
 ---------
