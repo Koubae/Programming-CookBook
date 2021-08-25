@@ -87,3 +87,13 @@ pg_restore -W -c -i -U postgres -d client03 -v "/tmp/client03.tar";
 SELECT table_schema,table_name
 FROM information_schema.tables
 ORDER BY table_schema,[table_name];
+
+
+# ---------------> DATABASE SIZE
+
+SELECT pg_database_size('databaseName');
+
+
+# Pretty formated https://www.postgresonline.com/journal/archives/233-How-big-is-my-database-and-my-other-stuff.html
+SELECT pg_size_pretty( pg_database_size( current_database() ) ) As human_size
+, pg_database_size( current_database() ) As raw_size;
