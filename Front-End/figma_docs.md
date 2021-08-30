@@ -2,6 +2,13 @@ Figma Docs
 ==========
 
 
+PlugIns
+-------
+
+
+- [Autoflow](https://www.figma.com/community/plugin/733902567457592893/Autoflow)  **Fantastic Flow / Diagram Tool**
+
+
 
 
 Documentation

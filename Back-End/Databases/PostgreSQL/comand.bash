@@ -97,3 +97,25 @@ SELECT pg_database_size('databaseName');
 # Pretty formated https://www.postgresonline.com/journal/archives/233-How-big-is-my-database-and-my-other-stuff.html
 SELECT pg_size_pretty( pg_database_size( current_database() ) ) As human_size
 , pg_database_size( current_database() ) As raw_size;
+
+
+# ---------------> Combine JOINS + COUNT
+
+SELECT table_a.id, COUNT(t_b.id) 
+FROM table_a as t_a
+LEFT JOIN table_b as t_b ON
+    t_b.rel = t_a.id
+GROUP BY t_a.id
+ORDER BY COUNT(t_b.id) DESC;
+
+# ---------------> Combine JOINS + COUNT + HAVING
+
+
+SELECT partner.id, COUNT(res.id) as ResCount
+FROM res_partner as partner
+LEFT JOIN guest_experience as res ON
+    res.partner_id = partner.id
+GROUP BY partner.id
+HAVING
+	COUNT (res.id) >= 2
+ORDER BY COUNT(res.id);
