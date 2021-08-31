@@ -119,3 +119,38 @@ GROUP BY partner.id
 HAVING
 	COUNT (res.id) >= 2
 ORDER BY COUNT(res.id);
+
+
+# ---------------> Unify Array subquery to JSON
+
+
+SELECT (SELECT jsonb_agg(re.reservations))
+FROM
+    (
+        SELECT unnest(array_agg(res.id)) as reservations
+        FROM res_partner as partner
+        LEFT JOIN guest_experience as res ON
+            res.partner_id = partner.id
+        GROUP BY partner.id
+        HAVING
+            COUNT (res.id) >= 2
+
+    ) re
+;
+
+
+# ---------------> Count all array subquery
+
+SELECT (SELECT COUNT(re.res_count))
+FROM
+    (
+        SELECT array_agg(res.id) as reservations, COUNT(res.id) as res_count
+        FROM res_partner as partner
+        LEFT JOIN guest_experience as res ON
+            res.partner_id = partner.id
+        GROUP BY partner.id
+        HAVING
+            COUNT (res.id) >= 2
+
+    ) re
+;
