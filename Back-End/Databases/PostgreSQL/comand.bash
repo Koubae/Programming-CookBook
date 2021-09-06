@@ -154,3 +154,52 @@ FROM
 
     ) re
 ;
+
+
+# ---------------> ARRAY_AGG Unify 2 columns of the same Table
+
+SELEFT ARRAY_AGG(id), res_id  FROM ir_property
+WHERE name = 'standard_price'
+GROUP BY res_id
+HAVING COUNT(res_id) > 1;
+
+# ---------------> ARRAY_AGG leave out Null values in ARRAY_AGG
+SELECT ARRAY_AGG(prop.id), prop.res_id , ARRAY_AGG(DISTINCT product.id)
+FROM ir_property AS prop
+LEFT JOIN product_product AS product ON
+    split_part(prop.res_id, ',', 2) = product.id::varchar(255)
+WHERE name = 'standard_price'
+GROUP BY res_id
+HAVING COUNT(res_id) > 1 AND  TRUE = ANY (SELECT unnest(ARRAY_AGG(product.id)) IS NOT NULL);
+
+# ---------------> ARRAY_AGG ANY Null values in ARRAY_AGG
+
+SELECT ARRAY_AGG(prop.id), prop.res_id , ARRAY_AGG(DISTINCT product.id)
+FROM ir_property AS prop
+LEFT JOIN product_product AS product ON
+    split_part(prop.res_id, ',', 2) = product.id::varchar(255)
+WHERE name = 'standard_price'
+GROUP BY res_id
+HAVING COUNT(res_id) > 1 AND  TRUE = ANY (SELECT unnest(ARRAY_AGG(product.id)) IS  NULL);
+
+
+SELECT  ARRAY_AGG(prop.id), prop.res_id ,  ARRAY_AGG(DISTINCT product.id)
+FROM ir_property AS prop
+LEFT JOIN product_product AS product ON
+    split_part(prop.res_id, ',', 2) = product.id::varchar(255)
+WHERE name = 'standard_price'
+GROUP BY res_id
+HAVING COUNT(res_id) > 1 AND  TRUE <> ALL (SELECT unnest(ARRAY_AGG(product.id)) IS NULL); # Variation, using <> ALL is like NOT 
+
+
+# ----- DELETING
+
+DELETE FROM ir_property WHERE id IN (
+    SELECT  unnest(ARRAY_AGG(prop.id ORDER by prop.id)) AS property_array
+    FROM ir_property AS prop
+    LEFT JOIN product_product AS product ON
+        split_part(prop.res_id, ',', 2) = product.id::varchar(255)
+    WHERE name = 'standard_price'
+    GROUP BY res_id
+    HAVING TRUE = ANY (SELECT unnest(ARRAY_AGG(product.id)) IS NULL)
+)
