@@ -39,3 +39,22 @@ adb start-server
 # <ANDROID_SDK_HOME>\platform-tools>adb devices
 # List of devices attached
 # 4df798d76f98cf6d        device
+
+
+
+# ------------------------------- < ANDROID AVD MANAGER / VIRTUAL DEVICES / SDK> ------------------------------- #
+
+# Run AVD Emulator without Android Studio 
+# https://stackoverflow.com/questions/42718973/run-avd-emulator-without-android-studio
+# https://stackoverflow.com/a/42845150/13903942
+
+cd C:\Users\fb\AppData\Local\Android\Sdk\tools && emulator -list-avds
+
+# Pixel_3a_API_30_x86
+# Pixel_4_API_29
+emulator -avd Pixel_4_API_29
+
+
+# /!\ ERROR "PANIC: Missing emulator engine program for 'x86' CPU.". Try using:
+cd C:\Users\fb\AppData\Local\Android\Sdk\emulator && emulator -avd Pixel_4_API_29
+
