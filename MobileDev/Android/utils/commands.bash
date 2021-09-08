@@ -53,8 +53,11 @@ cd C:\Users\fb\AppData\Local\Android\Sdk\tools && emulator -list-avds
 # Pixel_3a_API_30_x86
 # Pixel_4_API_29
 emulator -avd Pixel_4_API_29
-
+# Or
+./emulator -avd Pixel_4_API_29
 
 # /!\ ERROR "PANIC: Missing emulator engine program for 'x86' CPU.". Try using:
 cd C:\Users\fb\AppData\Local\Android\Sdk\emulator && emulator -avd Pixel_4_API_29
+# or
+cd C:\Users\fb\AppData\Local\Android\Sdk\emulator && ./emulator -avd Pixel_4_API_29
 
