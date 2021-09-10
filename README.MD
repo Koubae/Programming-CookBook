@@ -97,4 +97,16 @@ SSL & Certificates
 
 - [Online SSL Checker](https://www.ssllabs.com/ssltest/)
 
+```
+# Read certificate local
+
+openssl x509 -text -noout -in certificate.crt 
+
+# Read certificate remote
+
+ openssl s_client -showcerts -connect www.itundra.com:443
+
+openssl x509 -in certificate.crt -text
+```
+
 -----------------------------------------------------------------------------------------------------
