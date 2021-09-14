@@ -203,3 +203,17 @@ DELETE FROM ir_property WHERE id IN (
     GROUP BY res_id
     HAVING TRUE = ANY (SELECT unnest(ARRAY_AGG(product.id)) IS NULL)
 )
+
+
+
+# ----- Index size of all Tables in DB
+
+
+# https://stackoverflow.com/a/67727882/13903942
+SELECT
+    relname  as table_name,
+    pg_size_pretty(pg_total_relation_size(relid)) As "Total Size",
+    pg_size_pretty(pg_total_relation_size(relid) - pg_relation_size(relid)) as "Index Size",
+    pg_size_pretty(pg_relation_size(relid)) as "Actual Size"
+    FROM pg_catalog.pg_statio_user_tables
+ORDER BY pg_total_relation_size(relid) DESC;
