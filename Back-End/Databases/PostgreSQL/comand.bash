@@ -217,3 +217,27 @@ SELECT
     pg_size_pretty(pg_relation_size(relid)) as "Actual Size"
     FROM pg_catalog.pg_statio_user_tables
 ORDER BY pg_total_relation_size(relid) DESC;
+
+# -------- Show all constraints of a given Table
+
+SELECT *
+FROM information_schema.constraint_table_usage
+WHERE table_name = 'your_table'
+
+# Using  pg_constraint
+SELECT n.nspname AS schema_name,
+    t.relname AS table_name,
+    c.conname AS constraint_name
+FRPM pg_constraint c
+    JOIN pg_class t ON c.conrelid = t.oid
+    JOIN pg_namespace n ON t.relnamespace = n.oid
+WHERE t.relname = 'your_table_name';
+
+
+# ------- ALTER Consraints Drop constraint
+ALTER TABLE your_table DROP CONSTRAINT constraint_name;
+
+# ---- Complete Alter Statements
+SELECT 'ALTER TABLE '||table_name||' DROP CONSTRAINT '||constraint_name||';'
+FROM information_schema.constraint_table_usage
+WHERE table_name in ('your_table', 'other_table')
