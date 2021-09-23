@@ -14,6 +14,15 @@ Pint is a Python package to define, operate and manipulate physical quantities.
 
 - [Decorator](https://github.com/micheles/decorator) 
 
+### HTTP / Webservices
+
+Async & Multithreading / Multiprocessing 
+
+- [requests-threads 🎭](https://github.com/requests/requests-threads)
+- [GRequests: Asynchronous Requests](https://github.com/spyoungtech/grequests)
+- [Asynchronous Python HTTP Requests for Humans](https://github.com/ross/requests-futures)
+- [httpx](https://github.com/encode/httpx)
+
 HTTTP & WEB
 -----------
 
