@@ -20,18 +20,20 @@ So you have PHP 7 running under xampp, you want to add an older PHP version to i
 
 Step 2: Configure php.ini
 
-Open the file c:\xampp\php56\php.ini in notepad. If the file does not exist, copy php.ini-development to php.ini and open it in notepad. Then uncomment the following line:
-
+Open the file ```c:\xampp\php56\php.ini``` in notepad. If the file does not exist, copy ```php.ini-development``` to ```php.ini``` and open it in notepad. Then uncomment the following line:
+```
 extension_dir = "ext"
+
+```
 Also if the following line exists
 
-SetEnv PHPRC "\\path\\to\\xampp\\php"
+```SetEnv PHPRC "\\path\\to\\xampp\\php"```
 comment it out with with a leading # (hash character).
 
 Step 3: Configure apache
 
 Open xampp control panel, click the config button for apache, and click Apache (httpd-xampp.conf). A text file will open. Put the following settings at the bottom of the file:
-
+```
 ScriptAlias /php56 "C:/xampp/php56"
 Action application/x-httpd-php56-cgi /php56/php-cgi.exe
 <Directory "C:/xampp/php56">
@@ -42,12 +44,14 @@ Action application/x-httpd-php56-cgi /php56/php-cgi.exe
         Require all granted
     </Files>
 </Directory>
+
+```
 Note: You can add more versions of PHP to your xampp installation following step 1 to 3 if you want.
 
 Step 4 (option 1): [Add Directories to run a specific PHP version]
 
 Now you can set directories that will run in PHP 5.6. Just add the following at the bottom of the config file (httpd-xampp.conf from Step 3) to set directories.
-
+```
 <Directory "C:\xampp\htdocs\my_old_project1">
     <FilesMatch "\.php$">
         SetHandler application/x-httpd-php56-cgi
@@ -59,20 +63,25 @@ Now you can set directories that will run in PHP 5.6. Just add the following at 
         SetHandler application/x-httpd-php56-cgi
     </FilesMatch>
 </Directory>
+
+```
 Step 4 (option 2): [Run an older PHP version on a separate port]
 
 Now to to set PHP v5.6 on port 8056, add the following code to the bottom of the config file (httpd-xampp.conf from Step 3).
 
+```
 Listen 8056
 <VirtualHost *:8056>
     <FilesMatch "\.php$">
         SetHandler application/x-httpd-php56-cgi
     </FilesMatch>
 </VirtualHost>
+
+```
 Step 4 (option 3): [Run an older PHP version on a virtualhost]
 
 To create a virtualhost (localhost56) on a directory (htdocs56) to use PHP v5.6 on http://localhost56, create directory htdocs56 at your desired location and add localhost56 to your hosts file (see how), then add the following code to the bottom of the config file (httpd-xampp.conf from Step 3).
-
+```
 <VirtualHost localhost56:80>
     DocumentRoot "C:\xampp\htdocs56"
     ServerName localhost56
@@ -83,6 +92,7 @@ To create a virtualhost (localhost56) on a directory (htdocs56) to use PHP v5.6 
         SetHandler application/x-httpd-php56-cgi
     </FilesMatch>
 </VirtualHost>
+```
 Finish: Save and Restart Apache
 
 Save and close the config file. Restart apache from the xampp control panel. If you went for option 2, you can see the additional port(8056) listed in your xampp control panel.
