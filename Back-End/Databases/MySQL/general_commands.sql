@@ -11,3 +11,5 @@ mysql -u adminusername -p
 CREATE USER "admin" IDENTIFIED BY "pass";
 GRANT ALL PRIVILEGES ON database_name.* TO "admin";
 
+-- flush
+FLUSH PRIVILEGES;
