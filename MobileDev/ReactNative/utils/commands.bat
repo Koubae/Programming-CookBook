@@ -67,6 +67,9 @@ npm install eslint-plugin-react-hooks --save-dev
 # exhaustive-deps --> https://github.com/facebook/react/issues/14920
 # (rule  "react-hooks/exhaustive-deps": 'warn' // <--- THIS IS THE NEW RULE)
 
+## ------- React eslint
+npm install eslint --save-dev
+npm install --save-dev eslint-plugin-react
 
 # react-navitagion / react-firebase / mmkv-storage
 
