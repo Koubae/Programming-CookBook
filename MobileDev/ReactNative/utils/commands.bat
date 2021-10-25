@@ -71,3 +71,33 @@ npm install eslint-plugin-react-hooks --save-dev
 # react-navitagion / react-firebase / mmkv-storage
 
 npm install @react-navigation/native react-native-screens react-native-safe-area-context @react-navigation/native-stack react-native-gesture-handler @react-navigation/stack react-native-gesture-handler react-native-mmkv-storage @react-native-firebase/app @react-native-firebase/admob
+
+
+# ------------------ < Install Navigation Dependency
+
+npm install @react-navigation/native react-native-screens react-native-safe-area-context @react-navigation/native-stack react-native-gesture-handler @react-navigation/stack 
+
+# ------------------ < Install React-Native Papar
+
+npm install react-native-paper
+npm install react-native-vector-icons
+npx react-native link react-native-vector-icons
+
+# Add this to bable.config.js
+
+module.exports = {
+  presets: ['module:metro-react-native-babel-preset'],
+  env: {
+    production: {
+      plugins: ['react-native-paper/babel'],
+    },
+  },
+};
+
+# Flow
+If you're using Flow for typechecking your code, you need to add the following under the [options] section in your .flowconfig:
+
+module.file_ext=.js
+module.file_ext=.native.js
+module.file_ext=.android.js
+module.file_ext=.ios.js
