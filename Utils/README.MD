@@ -5,6 +5,7 @@
 Markdown
 --------
 
+- [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 - [How to Write a Good Markdown, realypython.com](https://realpython.com/jobs/tutorial-editor/editing-sample/)
 
 
