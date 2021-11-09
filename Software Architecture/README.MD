@@ -56,4 +56,5 @@ Guide & Areas of Study
     * [OAuth](https://en.wikipedia.org/wiki/OAuth#:~:text=OAuth%20(Open%20Authorization)%20is%20an,without%20giving%20them%20the%20passwords.)
 * [JSON Web Token JWT](https://en.wikipedia.org/wiki/JSON_Web_Token)
 
+
 -----------------------------------------------------------------------------------------------------
