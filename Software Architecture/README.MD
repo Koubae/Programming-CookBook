@@ -32,8 +32,67 @@ Load balancers ensure reliability and availability by monitoring the "health" of
 To learn more on load balancing, visit DevCentral.
 
 
+-----------------------------------------------------------------------------------------------------
 
+Testing
+--------
 
+* Unit tests
+* API validation tests
+* Functional tests
+* Functional tests
+* Load testing
+* Runtime error detection tests: Monitoring APIs, Execution errors, Resource leaks, Resource leaks
+
+Security / Authorization
+------------------------
+
+*  [OAuth IETF OAuth Working Group](https://tools.ietf.org/wg/oauth/)
+* Cross-site scripting (XSS) 
+    * Reflected XSS
+    * Stored XSS
+    * DOM XSS
+* [WordPress REST API Bug Could Be Used in Stored XSS Attacks](https://threatpost.com/wordpress-rest-api-bug-could-be-used-in-stored-xss-attacks/124294/)
+* DOM XSS
+* Cross-site request forgery
+* Denial-of-service (DoS)
+    * Flood attacks
+    * buffer overflow
+    * Smurf attacks
+    * ping floods
+    *  ping of death 
+
+* Distributed denial of service (DDoS)
+* Injection attacks
+    * Code injection/OS command injection
+    * CRLF injection
+    * Email (Mail command/SMTP) injection
+    * Host header injection
+    * LDAP injection
+    * SQL injection
+    * XPath injection
+* IDOR vulnerability
+* Man-in-the-middle attacks MITM
+    * Sniffing
+    * Packet injection
+    * Packet injection
+    * Email hijacking
+    * Wi-Fi eavesdropping
+    * Session hijacking
+    * Protection measures:  
+        * Secure/Multipurpose Internet Mail Extensions (S/MIME)
+        * Public key infrastructure (PKI)
+        * SSL/TLS certificates
+        * System and server configurations
+        * HTTP Strict Transport Security (HSTS)
+
+* Replay attacks and spoofing
+    * Protection measures:  
+        * time-to-live (TTL)
+        * MAC implementation onthe client side
+        * Kerberos protocol prevention
+        * secure routing
+        * challenge-handshake authentication protocol (CHAP)
 
 
 -----------------------------------------------------------------------------------------------------
@@ -55,6 +114,9 @@ Guide & Areas of Study
     * [Security Assertion Markup Language SAML](https://en.wikipedia.org/wiki/Security_Assertion_Markup_Language)
     * [OAuth](https://en.wikipedia.org/wiki/OAuth#:~:text=OAuth%20(Open%20Authorization)%20is%20an,without%20giving%20them%20the%20passwords.)
 * [JSON Web Token JWT](https://en.wikipedia.org/wiki/JSON_Web_Token)
+* [CI/CD](https://en.wikipedia.org/wiki/CI/CD) | [what-is-cicd](https://www.synopsys.com/glossary/what-is-cicd.html)
 
+* **software layers**: user interface (UI),  Presentation layer, business logic layer, middleware, middleware
+* 
 
 -----------------------------------------------------------------------------------------------------
