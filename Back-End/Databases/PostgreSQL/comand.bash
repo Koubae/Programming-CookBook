@@ -82,3 +82,6 @@ pg_restore -W -c -i -U postgres -d client03 -v "/tmp/client03.tar";
 "$$"   # the location of the files to import in tmp to get around permission issues
 -W     # to force asking for the password to the user (postgres)
 
+# Drop table
+
+DROP TABLE IF EXISTS  [name]  CASCADE;
