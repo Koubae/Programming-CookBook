@@ -53,7 +53,11 @@ SELECT datname FROM pg_database
 WHERE datistemplate = false;
 
 
-#
+# Restore database from dump
+
+# in psql session 
+
+\i file_to_dump.slq 
 
 
 # --------------- > Table
