@@ -67,7 +67,7 @@ Computer Sciences Keywords
 - abstract data types stack | queue | deque | list
 - ADTs stack
 - prefix | infix | postfix | Infix, Prefix, and Postfix Expressions
-
+- *[Hydrate an Object](https://stackoverflow.com/questions/6991135/what-does-it-mean-to-hydrate-an-object/20787106#20787106)*
 
 Programming Types
 ------------------
