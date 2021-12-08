@@ -80,3 +80,14 @@ HTTP/3 - the next version of HTTP, currently under development. It is expected t
 In short you should use HTTP/1.1 over HTTPS, should consider HTTP/2 as well if easy to implement (not always possible as not quite ubiquitous yet - but getting there) and in future you might be using HTTP/3.
 
 I suggest you get a firm understanding of all of these technologies (except maybe HTTP/3 just yet) if you want to do web development. It will stand you in good stead.
+
+
+* **What are the MEAN, MERN, and MEVN stacks? **
+
+MEAN, MERN, and MEVN are technology stacks that help people create websites and mobile applications. All three include MongoDB, Express.js (hence why each begins with “ME”), and NodeJS. The primary difference between the MEAN, MERN, and MEVN stacks can be found in the third letter of each acronym. MEAN is a JavaScript stack that relies on the use of Angular for its front-end JavaScript framework, meanwhile, the MERN stack relies on React and its ecosystem. Finally, MEVN relies on Vue.js and its ecosystem. Here’s a more in-depth picture of the elements that make up these stacks: 
+
+MongoDB – A “NoSQL” database used for storing data for a back-end JavaScript application. If your application has users, MongoDB is an example of a database where your user information will be kept.
+Express.js – A light backend framework for serving content to the web. If your backend application needs to send information across the Internet, Express provides tools for accomplishing that.
+Angular/React/Vue.js – Front-end JavaScript framework
+NodeJS –  A JavaScript “runtime environment” used to run JavaScript outside of a browser, such as on a backend server in the cloud.
+A big similarity between MERN, MEVN, and MEAN is that they’re all composed of open-source technologies. They also offer protection against Cross-Site Scripting (XSS) attacks, active support and helpful documentation, and user-interface components for building reusable bits of a web app. MEAN, MEVN, and MERN stacks are not complete without a testing suite, for ensuring everything works as intended, as well as support for MVC architecture (or similar)—which is a great way to produce a well-organized codebase. 

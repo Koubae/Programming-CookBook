@@ -31,3 +31,8 @@ Node Secondary Principles & Structure
 * Node Buffer
 * Node Streams
 * Node WebAssembly
+
+Node Peculiarities
+-------------------
+
+* [Backpressuring in Streams](https://nodejs.org/es/docs/guides/backpressuring-in-streams/)

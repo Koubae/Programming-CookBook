@@ -9,6 +9,14 @@ http.createServer((request, response) => {
     }
 }).listen(8080);
 
+// Using Pipe
+https.get('https://www.google.com/', (res) => {
+  res.pipe(process.stdout);
+}).on('error', (e) => {
+  console.error(e);
+});
+
+
 
 // Add some error handlers
 const http = require('http');
