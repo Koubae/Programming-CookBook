@@ -16,9 +16,9 @@ Learning
 ### Asynchronous JavaScript
 
 - [Asynchronous JavaScript | MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous)
-
 * [asynchronous JavaScript  | MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing)
 * [Callback Hell](http://callbackhell.com/)
+- [async vs defer attributes](https://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html)
 
 **Books**:
 
