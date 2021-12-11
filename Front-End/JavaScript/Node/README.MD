@@ -22,6 +22,7 @@ Web
 - [concat-stream](https://www.npmjs.com/package/concat-stream)
 - [BODY](https://www.npmjs.com/package/body)
 - [router](https://www.npmjs.com/package/router)
+- [List of Node + Connect/Express Libraries (or plug in)](https://github.com/senchalabs/connect#middleware)
 
 
 
