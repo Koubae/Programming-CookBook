@@ -73,3 +73,33 @@ CodePen: https://codepen.io/dcode-software/pen/vYKVepQ
 }
 
 
+/*Variant Animatin*/
+@keyframes loading-spinner {
+    0% {
+        opacity: .2;
+        transform: scale(.10);
+        background: var(--error-border);
+
+    }
+    25% {
+         opacity: .25;
+        transform: scale(.25);
+        background: var(--error-text);
+    }
+    50% {
+          opacity: .75;
+            transform: scale(.50);
+           background: var(--secondary-color-dark);
+    }
+    75% {
+        opacity: 1;
+        transform: scale(1);
+        background: var(--secondary-color);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(2);
+        background: var(--secondary-color-light);
+    }
+
+}
