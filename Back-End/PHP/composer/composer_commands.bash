@@ -7,3 +7,13 @@ php -r "unlink('composer-setup.php');"
 # Install Packages
 
 composer install 
+
+# C:\wamp\bin
+# C:\wamp\bin\php
+# Create a file (use notepad) composer.bat in the same folder and add this line to it:
+
+@php C:\wamp\bin\php\php5.4.12\composer.phar %*
+# Close and try to run composer from anywhere:
+
+cd\
+composer --version
