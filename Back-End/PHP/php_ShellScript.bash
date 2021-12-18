@@ -50,6 +50,33 @@ php artisan down --redirect=/
 #To disable maintenance mode
 php artisan up
 
+# review the available commands of Class build (make)
+php artisan list make
+
+# ----------------- Eloquent
+
+php artisan make:model [ModelName]
+
+# Make Model , Factory, Migration, Seeder, Reqyestm Controller, Policy
+php artisane make:model [ModelName] --all
+
+# Create Model , DB Migrations , Controller
+php artisan make:model [ModelName] -mc
+
+# ----------------- Route
+# Lists all Route
+php artisan route:list
+
+# ----------------- Controller
+php artisan make controller [controllerName]
+
+
+# ----------------- Database
+# connect to db
+php artisan db
+php artisan db mysql
+
+
 # Make Laravel Migration 
 php artisan make:migration [table_name]
 
@@ -59,6 +86,13 @@ php artisan migrate
 # Add a new column to existing table
 # More on StackOverflow --> https://stackoverflow.com/a/16791988/13903942
 php artisan make:migration add_[column_name]_to_[table_name]_table --table=[table_name]
+
+
+# ----------------- Components
+php artisan make:component Alert
+# Will create an Input component in the App\View\Components\Forms directory 
+# and the view will be placed in the resources/views/components/forms directory.
+php artisan make:component Forms/Input
 
 
 # ===========================================
