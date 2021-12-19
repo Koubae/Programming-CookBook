@@ -26,6 +26,8 @@ php artisan
 # Run PHP Server
 php artisan serve
 
+# Auth
+php artisan make:auth
 
 # To enable maintenance mode, execute the down Artisan command:
 php artisan down
