@@ -1,4 +1,17 @@
 # ===========================================
+#       MISC
+# ===========================================
+
+# ------------------ Show Apache logs in terminal 
+# install UnxUtils  https://sourceforge.net/projects/unxutils/
+# install BareTail  # install UnxUtils  https://sourceforge.net/projects/unxutils/
+# Linux
+tail -f your_log_file
+# Windows
+Get-Content path_of_file_log -Wait -Tail 30
+
+
+# ===========================================
 #       LARAVEL
 # ===========================================
 # Global install with Composer
