@@ -2,21 +2,36 @@ PHP
 =======================
 
 
+- [21 Essential PHP Interview Questions](https://www.toptal.com/php/interview-questions)
+
 Principles & Components
 ----------------------
 
-- [PSR-11](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-11-container.md)
+- [A Guide to UTF-8 Encoding in PHP and MySQL](https://www.toptal.com/php/a-utf-8-primer-for-php-and-mysql)
 
+
+- [FastCGI Process Manager (FPM)](https://www.php.net/manual/en/install.fpm.php)
 - [PHP Lavarel Auth Issue](https://stackoverflow.com/a/45603627/13903942)
+
 
 ### Best Practices
 
-- [PSR-12: Extended Coding Style ](https://www.php-fig.org/psr/psr-12/)
 - [PHP AutoLoad Best Practices](http://ditio.net/2008/11/13/php-autoload-best-practices/)
 - [How to use mysqli properly](https://phpdelusions.net/mysqli)
 - [How to connect properly using mysqli](https://phpdelusions.net/mysqli/mysqli_connect#error_handling)
 
-**Some Guides**
+- [Buggy PHP Code: The 10 Most Common Mistakes PHP Developers Make](https://www.toptal.com/php/10-most-common-mistakes-php-programmers-make)
+
+#### **PSR**
+
+- [PHP-FIG](https://www.php-fig.org)
+- [PSR-1: Basic Coding Standard](https://www.php-fig.org/psr/psr-1/)
+- [PSR-3: Logger Interface](https://www.php-fig.org/psr/psr-3/)
+- [PSR-4: Autoloader](https://www.php-fig.org/psr/psr-4/)
+- [PSR-11: Container interface](https://www.php-fig.org/psr/psr-11/)
+- [PSR-12: Extended Coding Style ](https://www.php-fig.org/psr/psr-12/)
+
+#### **Some Guides**
 
 - [Wordpress](https://codex.wordpress.org/WordPress_Coding_Standards)
 - [PHP Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/)
