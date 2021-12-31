@@ -21,12 +21,16 @@ Principles & Components
 - [Wordpress](https://codex.wordpress.org/WordPress_Coding_Standards)
 - [PHP Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/)
 - [Zend Framework](https://framework.zend.com/manual/1.12/en/manual.html)
+- [Zend Framework Coding Standard for PHP](https://framework.zend.com/manual/1.12/en/coding-standard.html)
 - [PHP The Right Way](https://phptherightway.com)
 - [PHP Best PracticesA short, practical guide for common and confusing PHP tasks](https://phpbestpractices.org)
 - [pear](https://pear.php.net/manual/en/standards.bestpractices.php)
+- [PHP_CodeSniffer](https://pear.php.net/package/PHP_CodeSniffer)
 - [PHP Best Practices: Good Semantic Expressions for Your Code](https://scientya.com/php-best-practices-good-semantic-expressions-for-your-code-91914202ddcf)
 - [Classes, interfaces, dependency injection & OOP best practices, by Ryan Weaver](https://netgen.io/learn/php-workshops/best-practices-in-php)
 - [Which Coding convention to follow for PHP? [closed]](https://stackoverflow.com/q/139427/13903942)
+- [CakePHP Conventions](https://book.cakephp.org/4/en/intro/conventions.html)
+- [flow Coding Guidelines](https://flowframework.readthedocs.io/en/stable/TheDefinitiveGuide/PartV/CodingGuideLines/index.html)
 
 
 Test & Debug
