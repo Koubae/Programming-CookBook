@@ -4,23 +4,48 @@ PHP
 
 - [21 Essential PHP Interview Questions](https://www.toptal.com/php/interview-questions)
 
+Frameworks & Packages
+---------------------
+
+- [HTML Purifier](http://htmlpurifier.org)
+
+
 Principles & Components
 ----------------------
+
+- **[PHP Cheatsheets](https://phpcheatsheets.com)**
 
 - [A Guide to UTF-8 Encoding in PHP and MySQL](https://www.toptal.com/php/a-utf-8-primer-for-php-and-mysql)
 
 
 - [FastCGI Process Manager (FPM)](https://www.php.net/manual/en/install.fpm.php)
 - [PHP Lavarel Auth Issue](https://stackoverflow.com/a/45603627/13903942)
+- [How To Safely Store A Password](https://codahale.com/how-to-safely-store-a-password/)
+- [Functional Programming in PHP](https://phptherightway.com/pages/Functional-Programming.html)
+- [Namespaces](https://www.php.net/language.namespaces)
+- [Standard PHP Library (SPL)](https://www.php.net/book.spl)
+
+
+#### Meta Programming
+
+- [Magic Methods ](https://www.php.net/language.oop5.magic)
+- [Reflection](https://www.php.net/intro.reflection)
+- [Overloading](https://www.php.net/language.oop5.overloading)
+
 
 
 ### Best Practices
 
+- [DesignPatternsPHP](https://designpatternsphp.readthedocs.io/en/latest/README.html)
+- [PHPThe Right Way The | Basics](https://phptherightway.com/pages/The-Basics.html)
 - [PHP AutoLoad Best Practices](http://ditio.net/2008/11/13/php-autoload-best-practices/)
 - [How to use mysqli properly](https://phpdelusions.net/mysqli)
 - [How to connect properly using mysqli](https://phpdelusions.net/mysqli/mysqli_connect#error_handling)
 
 - [Buggy PHP Code: The 10 Most Common Mistakes PHP Developers Make](https://www.toptal.com/php/10-most-common-mistakes-php-programmers-make)
+- [The 2018 Guide to Building Secure PHP Software](https://paragonie.com/blog/2017/12/2018-guide-building-secure-php-software)
+- [A Gentle Introduction to Application Security](https://paragonie.com/blog/2015/08/gentle-introduction-application-security)
+
 
 #### **PSR**
 
@@ -58,6 +83,8 @@ Test & Debug
 Projects
 ----------------------
 
+
+- [no-framework-tutorial](https://github.com/PatrickLouys/no-framework-tutorial)
 - [GITHUB PHP projects examples](https://github.com/topics/php-project-example)
 - [CarAtYourService.com - GITHUB](https://github.com/Hritik21/CarAtYourService.com)
 - [PHP Projects](https://code-projects.org/c/languages/project/phpprojects/)
@@ -67,6 +94,7 @@ Projects
 Books
 -----
 
+- [Professional PHP](https://patricklouys.com/professional-php/)
 - [PHP in Action](https://www.manning.com/books/php-in-action)
 
 -----------------------------------------------------------------------------------------------------
