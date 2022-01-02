@@ -2,6 +2,10 @@
 #       MISC
 # ===========================================
 
+# Run build-in server
+php -S localhost:8000
+# Starting with a specific document root directory
+php -S localhost:8080 -t public/
 # ------------------ Show Apache logs in terminal 
 # install UnxUtils  https://sourceforge.net/projects/unxutils/
 # install BareTail  # install UnxUtils  https://sourceforge.net/projects/unxutils/
@@ -10,6 +14,42 @@ tail -f your_log_file
 # Windows
 Get-Content path_of_file_log -Wait -Tail 30
 
+# ------- Type checking
+# Check error in project
+composer require --dev squizlabs/php_codesniffer
+composer require --dev peridot-php/peridot
+composer require --dev peridot-php/leo
+composer require --dev eloquent/phony-peridot
+
+# check if any code syntax is wrong
+./vendor/bin/phpcs — standard=psr2 App/
+# in case you have only white-spaces errors
+./vendor/bin/phpcbf — standard=psr2 App/
+# ----------------
+
+# ===========================================
+#       COMPOSER
+# ===========================================
+# Start composert and create composer.json
+composer init 
+# add package to composer.json + add package to ./vendor
+composer require [package_name]
+
+# Update autoload this below has to be added to composer.json
+# "autoload": {
+#   "psr-4": {
+#     "App\\": "App/"
+#    }
+# },
+composer dump-autoload
+
+# Run composer scripts
+# "scripts": {
+#    "test": ["./vendor/bin/phpcs --standard=psr2 App/"]
+# },
+composer run-script test
+# even shorter with 
+composer test
 
 # ===========================================
 #       LARAVEL

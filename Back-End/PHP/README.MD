@@ -3,12 +3,25 @@ PHP
 
 
 - [21 Essential PHP Interview Questions](https://www.toptal.com/php/interview-questions)
+- [A Beginner's Guide To MVC For The Web](https://blog.ircmaxell.com/2014/11/a-beginners-guide-to-mvc-for-web.html)
 
 Frameworks & Packages
 ---------------------
 
 - [HTML Purifier](http://htmlpurifier.org)
-
+- [PHP-DI 6The dependency injection container for humans](https://php-di.org)
+- [FastRoute - Fast request router for PHP](https://github.com/nikic/FastRoute)
+- [middlewares/fast-route](https://github.com/middlewares/fast-route)
+- [Relay](https://github.com/relayphp/Relay.Relay)
+- [laminas-diactoros](https://docs.laminas.dev/laminas-diactoros/)
+- [Http Response Emitter](https://github.com/narrowspark/http-emitter)
+- [whoops](https://github.com/filp/whoops)
+- [PHP Error](https://github.com/JosephLenton/PHP-Error)
+- [Http Component](https://github.com/PatrickLouys/http)
+- [HttpFoundation Component](https://github.com/symfony/http-foundation)
+- [Nette HTTP Component](https://github.com/nette/http)
+- [Aura.Web](https://github.com/auraphp/Aura.Web)
+- [sabre/http](https://github.com/sabre-io/http)
 
 Principles & Components
 ----------------------
@@ -24,7 +37,7 @@ Principles & Components
 - [Functional Programming in PHP](https://phptherightway.com/pages/Functional-Programming.html)
 - [Namespaces](https://www.php.net/language.namespaces)
 - [Standard PHP Library (SPL)](https://www.php.net/book.spl)
-
+- [Understanding Dependency Injection](https://php-di.org/doc/understanding-di.html)
 
 #### Meta Programming
 
@@ -71,7 +84,7 @@ Principles & Components
 - [Which Coding convention to follow for PHP? [closed]](https://stackoverflow.com/q/139427/13903942)
 - [CakePHP Conventions](https://book.cakephp.org/4/en/intro/conventions.html)
 - [flow Coding Guidelines](https://flowframework.readthedocs.io/en/stable/TheDefinitiveGuide/PartV/CodingGuideLines/index.html)
-
+- [PSR-7 By Example](https://mwop.net/blog/2015-01-26-psr-7-by-example.html)
 
 Test & Debug
 ----------------------
@@ -91,10 +104,16 @@ Projects
 - [PHP Projects](https://www.phptpoint.com/projects/erp-system-project-in-php-free-download/)
 - [More Projects](https://download.code-projects.org/details/97b61777-5089-4b4f-841f-10e10be5859e)
 
+#### PHP without Frameworks
+
+- Just for the basic, be careful for the coding standard aren't amazing[Write modern PHP without a framework](https://codeburst.io/write-modern-php-without-framework-d244d8ca2b50)
+- [Modern PHP Without a Framework](https://kevinsmith.io/modern-php-without-a-framework/)
+- This goes with **Modern PHP Without a Framework** [Example App: Modern PHP Without a Framework](https://github.com/kevinsmith/no-framework)
+
 Books
 -----
 
 - [Professional PHP](https://patricklouys.com/professional-php/)
 - [PHP in Action](https://www.manning.com/books/php-in-action)
-
+- [Modernizing Legacy Applications In PHP](https://leanpub.com/mlaphp)
 -----------------------------------------------------------------------------------------------------

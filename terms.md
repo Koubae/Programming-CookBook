@@ -50,6 +50,9 @@
 
 - [Identity function](https://en.wikipedia.org/wiki/Identity_function)
 
+- [Not invented here](https://en.wikipedia.org/wiki/Not_invented_here)
+- [Clean room design](https://en.wikipedia.org/wiki/Clean_room_design)
+
 
 Computer Sciences Keywords
 ------------------
@@ -68,6 +71,10 @@ Computer Sciences Keywords
 - ADTs stack
 - prefix | infix | postfix | Infix, Prefix, and Postfix Expressions
 - *[Hydrate an Object](https://stackoverflow.com/questions/6991135/what-does-it-mean-to-hydrate-an-object/20787106#20787106)*
+
+- [Inversion of control](https://en.wikipedia.org/wiki/Inversion_of_control)
+- [Adapter pattern](https://en.wikipedia.org/wiki/Adapter_pattern)
+
 
 Web Development keywords
 ------------------
