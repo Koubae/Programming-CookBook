@@ -6,6 +6,8 @@
 php -S localhost:8000
 # Starting with a specific document root directory
 php -S localhost:8080 -t public/
+# Add config php.inif
+php -c /path/to/php.ini -S localhost:8080
 # ------------------ Show Apache logs in terminal 
 # install UnxUtils  https://sourceforge.net/projects/unxutils/
 # install BareTail  # install UnxUtils  https://sourceforge.net/projects/unxutils/

@@ -85,6 +85,8 @@ Principles & Components
 - [CakePHP Conventions](https://book.cakephp.org/4/en/intro/conventions.html)
 - [flow Coding Guidelines](https://flowframework.readthedocs.io/en/stable/TheDefinitiveGuide/PartV/CodingGuideLines/index.html)
 - [PSR-7 By Example](https://mwop.net/blog/2015-01-26-psr-7-by-example.html)
+- [Organize Your Next PHP Project the Right Way](https://code.tutsplus.com/tutorials/organize-your-next-php-project-the-right-way--net-5873)
+
 
 Test & Debug
 ----------------------

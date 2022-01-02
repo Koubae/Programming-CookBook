@@ -74,7 +74,7 @@ Computer Sciences Keywords
 
 - [Inversion of control](https://en.wikipedia.org/wiki/Inversion_of_control)
 - [Adapter pattern](https://en.wikipedia.org/wiki/Adapter_pattern)
-
+- [Virtual method table](https://en.wikipedia.org/wiki/Virtual_method_table)
 
 Web Development keywords
 ------------------
