@@ -13,15 +13,14 @@ mysql -u adminusername -p
 # Type 'help;' or '\h' for help. Type '\c' to clear the buffer.
 
 CREATE DATABASE databasename;
-# Query OK, 1 row affected (0.00 sec)
 
 GRANT ALL PRIVILEGES ON databasename.* TO "wordpressusername"@"hostname"
-# -> IDENTIFIED BY "password";
-# Query OK, 0 rows affected (0.00 sec)
 
 FLUSH PRIVILEGES;
-# Query OK, 0 rows affected (0.01 sec) 
 
 EXIT
 # Bye
 # $ 
+# Character Set and Collation
+CREATE DATABASE my_first_db DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+
