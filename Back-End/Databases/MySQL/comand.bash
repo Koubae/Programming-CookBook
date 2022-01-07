@@ -24,3 +24,8 @@ EXIT
 # Character Set and Collation
 CREATE DATABASE my_first_db DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 
+
+# load SQL commands or SQL Database dumps into SQL
+MariaDB [(none)]> source [absolute_path_to_sql_file]
+# Show database 
+show databases;
