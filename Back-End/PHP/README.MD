@@ -38,6 +38,7 @@ Principles & Components
 - [Namespaces](https://www.php.net/language.namespaces)
 - [Standard PHP Library (SPL)](https://www.php.net/book.spl)
 - [Understanding Dependency Injection](https://php-di.org/doc/understanding-di.html)
+- [PHP Configuration](https://docs.php.earth/security/configuration/)
 
 #### Meta Programming
 

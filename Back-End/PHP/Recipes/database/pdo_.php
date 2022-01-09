@@ -1,4 +1,7 @@
 <?php 
+// CHECK https://stackoverflow.com/a/10455228/13903942
+// For the ATTR_EMULATE_PREPARES
+
 // Example with MySQL and SQLite
 // PDO + MySQL
 $pdo = new PDO('mysql:host=example.com;dbname=database', 'user', 'password');
