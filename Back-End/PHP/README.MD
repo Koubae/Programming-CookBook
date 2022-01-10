@@ -4,6 +4,7 @@ PHP
 
 - [21 Essential PHP Interview Questions](https://www.toptal.com/php/interview-questions)
 - [A Beginner's Guide To MVC For The Web](https://blog.ircmaxell.com/2014/11/a-beginners-guide-to-mvc-for-web.html)
+- [HTTP (HyperText Transfer Protocol)](https://www3.ntu.edu.sg/home/ehchua/programming/webprogramming/HTTP_Basics.html)
 
 Frameworks & Packages
 ---------------------
@@ -39,6 +40,7 @@ Principles & Components
 - [Standard PHP Library (SPL)](https://www.php.net/book.spl)
 - [Understanding Dependency Injection](https://php-di.org/doc/understanding-di.html)
 - [PHP Configuration](https://docs.php.earth/security/configuration/)
+- [The Simplest PHP Router](https://www.taniarascia.com/the-simplest-php-router/)
 
 #### Meta Programming
 
@@ -106,6 +108,7 @@ Projects
 - [PHP Projects](https://code-projects.org/c/languages/project/phpprojects/)
 - [PHP Projects](https://www.phptpoint.com/projects/erp-system-project-in-php-free-download/)
 - [More Projects](https://download.code-projects.org/details/97b61777-5089-4b4f-841f-10e10be5859e)
+- [simplePHPRouter](https://github.com/steampixel/simplePHPRouter/blob/master/src/Steampixel/Route.php)
 
 #### PHP without Frameworks
 

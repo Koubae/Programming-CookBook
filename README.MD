@@ -12,6 +12,7 @@ Programmer & Developer Cook-Book | Covers Programming Languages, Databases, Linu
 - [Change user in github](https://stackoverflow.com/a/62149990/13903942)
 - [jankfree.org](http://jankfree.org)
 - [Upstart Intro, Cookbook and Best Practices.](https://upstart.ubuntu.com/cookbook/#environment-variables)
+- [HTTP (HyperText Transfer Protocol)](https://www3.ntu.edu.sg/home/ehchua/programming/webprogramming/HTTP_Basics.html)
 
 ## Learning Material
 
