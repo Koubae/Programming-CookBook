@@ -29,3 +29,5 @@ CREATE DATABASE my_first_db DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 MariaDB [(none)]> source [absolute_path_to_sql_file]
 # Show database 
 show databases;
+
+x

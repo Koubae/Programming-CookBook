@@ -26,3 +26,11 @@ if($date < $later){
 $difference = $date->diff($later);
  
 print('The 2nd date is ' . $difference->days . ' later than 1st date.');
+
+
+// Take tomorrow date
+$today = date('Y-m-d');
+date('Y-m-d', strtotime('+1 day', strtotime($today)));
+
+// Next week 
+$nextWeek = date('Y-m-d', strtotime('+7 day', strtotime($today)));
