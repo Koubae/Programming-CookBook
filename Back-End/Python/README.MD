@@ -4,6 +4,12 @@
 
 -----------------------------------------------------------------------------------------------------
 
+Articles and news
+-----------------
+
+- [Pycoders](https://pycoders.com)
+
+
 ## Python Essential
 
 - [virtaal setup --GITHUB-](https://github.com/translate/virtaal/blob/master/setup.py)
