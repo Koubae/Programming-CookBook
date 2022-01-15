@@ -1,0 +1,49 @@
+/* Creadit https://stackoverflow.com/a/7354648/13903942 */
+@media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+
+
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+
+/* Answer --> https://stackoverflow.com/a/20350990/13903942
+
+Don't target specific devices or sizes!
+The general wisdom is not to target specific devices or sizes, but to reframe the term 'breakpoint':
+
+develop the site for mobile first using percentages or ems, not pixels,
+then try it in a larger viewport and note where it begins to fail,
+redesign the layout and add a CSS media query just to handle the broken parts,
+repeat the process until you reach the next breakpoint.
+You can use responsivepx.com to find the 'natural' breakpoints, as in 'breakpoints are dead' by Marc Drummond.
+
+Use natural breakpoints
+The 'breakpoints' then become the actual point at which your mobile design begins to 'break' i.e. 
+cease to be usable or visually pleasing. Once you have a good working mobile site, without media queries,
+ you can stop being concerned about specific sizes and simply add media queries that handle successively larger viewports.
+
+If you're not trying to pin design to exact screen size, this approach works by removing the need to 
+target specific devices. The integrity of the design itself at each breakpoint ensures that it will 
+hold up at any size. In other words, if a menu/content section/whatever stops being usable at a certain size, 
+design a breakpoint for that size, not for a specific device size.
+
+See Lyza Gardner's post on behavioral breakpoints, and also Zeldman's post about Ethan Marcotte and 
+how responsive web design evolved from the initial idea.
+
+Use semantic markup
+Further, the simpler and more semantic the DOM structure with nav, header, main, section, footer etc. 
+(avoiding abominations like div class="header" with nested inner div tags) the easier it will be to 
+engineer responsiveness, especially avoiding floats by using CSS Grid Layout (Sarah Drasner's grid generator
+ is a great tool for this) and flexbox for arranging and re-ordering according to your RWD design plan.
+
+ */
