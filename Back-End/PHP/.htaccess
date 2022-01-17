@@ -1,3 +1,5 @@
+# Basic .htaccess for re writing 
+
 RewriteEngine On
 RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-d
