@@ -30,8 +30,8 @@ Principles & Components
 - **[PHP Cheatsheets](https://phpcheatsheets.com)**
 
 - [A Guide to UTF-8 Encoding in PHP and MySQL](https://www.toptal.com/php/a-utf-8-primer-for-php-and-mysql)
-
-
+- [PHP DocBlock | PHPDOC](https://docs.phpdoc.org/3.0/guide/getting-started/what-is-a-docblock.html)
+- [Hash PHP | Main Page](http://wiki.hashphp.org/Main_Page)
 - [FastCGI Process Manager (FPM)](https://www.php.net/manual/en/install.fpm.php)
 - [PHP Lavarel Auth Issue](https://stackoverflow.com/a/45603627/13903942)
 - [How To Safely Store A Password](https://codahale.com/how-to-safely-store-a-password/)
