@@ -22,3 +22,21 @@ FLUSH PRIVILEGES;
 --don't worry... You can very easily change the storage engine using the following query:
 
 ALTER TABLE your_table_name ENGINE = innodb;
+
+
+--- Drop ALl Tables 
+-- CRedit -> https://stackoverflow.com/a/3476803/13903942
+
+SET FOREIGN_KEY_CHECKS = 0;
+drop table if exists customers;
+drop table if exists orders;
+drop table if exists order_details;
+SET FOREIGN_KEY_CHECKS = 1;
+
+-- Also note the following :
+
+-- If you use MySQL Workbench, you can avoid having to type all the table names by
+-- selecting all tables in the left column, right-clicking, then 'drop tables' option.
+
+-- IT will generate the SQL which you can copy and paste between the SET FOREGIN_KEY_CHECKS 
+-- statement's - probably similar in other GUI's as well. 
