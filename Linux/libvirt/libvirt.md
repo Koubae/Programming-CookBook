@@ -9,12 +9,26 @@ Documentation
 - [Ubuntu libvirt](https://ubuntu.com/server/docs/virtualization-libvirt)
 - [kvm](https://wiki.ubuntu.com/kvm)  | [kvm installation Ubuntu](https://help.ubuntu.com/community/KVM/Installation)
 - [How to get started with libvirt on Linux](https://rabexc.org/posts/how-to-get-started-with-libvirt-on)
+- [QEMU/KVM/HVF hypervisor driver](https://libvirt.org/drvqemu.html#xmlconfig)
 - [Linux Hypervisor Setup (libvirt/qemu/kvm)](https://octetz.com/docs/2020/2020-05-06-linux-hypervisor-setup/)
+- [20.21. EXAMPLE DOMAIN XML CONFIGURATION](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/virtualization_administration_guide/section-libvirt-dom-xml-example)
+- [14.9.3. MANIPULATING THE LIBVIRT-GUESTS CONFIGURATION SETTINGS](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/virtualization_administration_guide/sub-sect-shutting_down_rebooting_and_force_shutdown_of_a_guest_virtual_machine-manipulating_the_libvirt_guests_configuration_settings)
+
+- https://docs.fedoraproject.org/en-US/Fedora/18/html/Virtualization_Administration_Guide/form-Virtualization-Managing_guests_with_virsh-Creating_a_virtual_machine_XML_dump_configuration_file.html
+- https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/virtualization_deployment_and_administration_guide/sect-domain_commands-creating_a_virtual_machine_xml_dump_configuration_file
 
 -----------------------------------------------------------------------------------------------------
 
 Guide & Areas of Study
 -----------------------
+
+- [host port forward with qemu through libvirt in user-mode networking](https://serverfault.com/questions/890520/host-port-forward-with-qemu-through-libvirt-in-user-mode-networking)
+- [port forwarding with libvirt](https://serverfault.com/questions/720153/port-forwarding-with-libvirt)
+- [Running QEMU with port redirection through libvirt](https://snippets.webaware.com.au/howto/running-qemu-with-port-redirection-through-libvirt/)
+- [Tip: Find the IP address of a virtual machine](https://rwmj.wordpress.com/2010/10/26/tip-find-the-ip-address-of-a-virtual-machine/)
+- [Managing KVM virtual machines part II – the libvirt toolkit](https://leftasexercise.com/2020/05/18/managing-kvm-virtual-machines-part-ii-the-libvirt-toolkit/)
+- [Managing KVM virtual machines part III – using libvirt with Ansible](https://leftasexercise.com/2020/05/22/managing-kvm-virtual-machines-part-iii-using-libvirt-with-ansible/)
+- [Managing KVM virtual machines part I – Vagrant and libvirt](https://leftasexercise.com/2020/05/15/managing-kvm-virtual-machines-part-i-vagrant-and-libvirt/)
 
 
 These are the key tools/services/features that enable vitalization.
