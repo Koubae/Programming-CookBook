@@ -2,9 +2,10 @@ Ansible
 ========
 
 - [ansible.com](https://www.ansible.com/)
+- [Ansible Documentation](https://docs.ansible.com/)
 - [Getting Started](https://www.ansible.com/resources/get-started?hsLang=en-us)
 - [ansible-examples](https://github.com/ansible/ansible-examples)
-
+- [A system administrator's guide to getting started with Ansible - FAST!](https://www.redhat.com/en/blog/system-administrators-guide-getting-started-ansible-fast)
 
 Documentation
 -------------
@@ -19,7 +20,9 @@ Documentation
 
 - [Templating (Jinja2)](https://docs.ansible.com/ansible/latest/user_guide/playbooks_templating.html#playbooks-templating)
 
+### Deploy
 
+- [deploy-flask-the-easy-way-with-gunicorn-and-nginx-jgc](https://dev.to/brandonwallace/deploy-flask-the-easy-way-with-gunicorn-and-nginx-jgc)
 ### VM | Virtual Machine 
 
 - [Deploy a virtual machine from a template](https://docs.ansible.com/ansible/2.6/vmware/scenario_clone_template.html)
@@ -54,7 +57,17 @@ Guide & Areas of Study
 ### Connection and SSH
 
 - [Connection methods and details](https://docs.ansible.com/ansible/latest/user_guide/connection_details.html)
+- [ssh-add program - Usage, ssh-agent, SSH keys](https://www.ssh.com/academy/ssh/add)
+- [About ssh-agent and ssh-add in Unix](https://kb.iu.edu/d/aeww)
 
+
+### Docker
+
+- [django example](https://docs.docker.com/samples/django/)
+- [Running Ansible Through Docker](https://faun.pub/running-ansible-through-docker-b26399788e3e)
+- [docker-openssh-server](https://github.com/linuxserver/docker-openssh-server)
+- [dorowu/qemu-iso](https://hub.docker.com/r/dorowu/qemu-iso)
+- [awesome-compose](https://github.com/docker/awesome-compose)
 -----------------------------------------------------------------------------------------------------
 
 Terms & Keywords
@@ -72,6 +85,18 @@ Terms & Keywords
 
 
 -----------------------------------------------------------------------------------------------------
+
+Projects & Repos
+----------------
+
+
+- [flask-ansible-example](https://github.com/brennv/flask-ansible-example)
+- [openstack / kolla-ansible](https://opendev.org/openstack/kolla-ansible/src/branch/master)
+- []()
+- []()
+
+-----------------------------------------------------------------------------------------------------
+
 
 References
 ----------

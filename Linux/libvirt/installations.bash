@@ -105,7 +105,7 @@ sudo virsh net-list
 
 # check IP addresses allocated to each machine
 sudo virsh net-dhcp-leases default
-
+virsh net-dhcp-leases default
 
 # Inspect / Change config network
 virsh -c qemu:///system net-dumpxml default
