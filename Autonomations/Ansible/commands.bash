@@ -5,7 +5,7 @@ sudo apt update
 # depen
 sudo apt install software-properties-common
 # install ansible repo
-sudo apt-add-repository --yes --update ppa:ansible/ansible
+sudo apt-add-repository --yes --update ppa:ansiblcd e/ansible
 # install ansible 
 sudo apt install ansible 
 
@@ -56,3 +56,24 @@ ansible all --list-hosts
 ansible <group_name> --list-hosts
 # ping the hosts 
 ansible all -m ping
+
+
+
+# docker 
+docker-compose down
+docker-compose up -d --no-deps --build
+
+
+docker-compose up -d --no-deps --build --no-cache
+docker-compose down
+docker-compose up -d --no-deps --build
+docker-compose build --no-cache
+docker-compose up -d
+
+
+
+#docker build -t flask_app ../../
+# 1 Build Dockerfile and name it
+# 2 Get the final image hash
+# 3 Run the container and remove it at exist
+docker run --rm -it --entrypoint bash  $(docker build -t flask_app -q .)
