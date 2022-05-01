@@ -1,6 +1,8 @@
 SOLID 
 ========
 
+For an example check out : 
+
 Principles
 ----------
 
