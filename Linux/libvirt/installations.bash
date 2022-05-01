@@ -162,3 +162,21 @@ vim /etc/sysconfig/libvirt-guests
 # Copy config file to .config + Add owner to current user
 sudo cp -rv /etc/libvirt/libvirt.conf ~/.config/libvirt/ &&\
 sudo chown $USER ~/.config/libvirt/libvirt.conf
+
+
+- name: Install Python Virtual Envirorment
+  pip:
+    requirements: "{{py_requirements}}"
+    virtualenv: "{{py_env}}"
+    virtualenv_python: python{{py_version}}
+  become: yes
+  become_user: root
+
+
+
+python3 -m virtualenv virtualenv_name   
+
+or
+
+python -m virtualenv virtualenv_name
+
