@@ -30,7 +30,7 @@ sudo apt-get install --no-install-recommends \
     cuda-11-2 \
     libcudnn8=8.1.0.77-1+cuda11.2  \
     libcudnn8-dev=8.1.0.77-1+cuda11.2 \
-    libnvinfer8=8.2.4-1+cuda11.4 \
+    libnvinfer8=8.2.4-1+cuda11.4 \e
     libnvinfer-dev=8.2.4-1+cuda11.4 \
     libnvinfer-plugin8=8.2.4-1+cuda11.4 \
     libnvinfer-plugin-dev=8.2.4-1+cuda11.4
