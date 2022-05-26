@@ -23,3 +23,5 @@ func main() {
 	fmt.Printf("%b\n", roles)
 	fmt.Printf("Is Admin? %v\n", isAdmin&roles == isAdmin)
 	fmt.Printf("Is HQ? %v\n", isHeadQuarters&roles == isHeadQuarters)
+
+}
