@@ -67,6 +67,8 @@ Terms & Keywords
 * [Exported names](https://go.dev/tour/basics/3)
 * [INit function](https://go.dev/doc/effective_go#init)
 * [The blank identifier](https://go.dev/doc/effective_go#blank)
+* [context](https://pkg.go.dev/context)
+* Zero values
 ### Datatype | Types | Components
 
 * boolean
