@@ -69,6 +69,8 @@ Terms & Keywords
 * [The blank identifier](https://go.dev/doc/effective_go#blank)
 * [context](https://pkg.go.dev/context)
 * Zero values
+* Defer | Defer functions
+* [Stacking defers](https://go.dev/blog/defer-panic-and-recover)
 ### Datatype | Types | Components
 
 * boolean
