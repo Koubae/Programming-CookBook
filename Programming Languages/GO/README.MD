@@ -14,6 +14,25 @@ Repos & Projects
 
 * [willvelida/learn-go-on-azure](https://github.com/willvelida/learn-go-on-azure)
 
+
+### Game Dev
+
+* [Game Development in the Go Programming Language](https://www.youtube.com/watch?v=AwffASO9Ik8)
+
+* [go-rpg-cgm](https://github.com/steelx/go-rpg-cgm)
+* [GoLang Game Programming (2D RPG Game in GO - pixelgl)](https://www.youtube.com/watch?v=XBQ6jMGGk_Y)
+* [State Machine for game development in GoLang](https://dev.to/ajinkyax/state-machine-in-go-for-a-2d-game-198l)
+* [Pixel](https://github.com/faiface/pixel)
+
+
+Frameworks
+----------
+
+### Web Development
+
+* [Gin Web Framework](https://gin-gonic.com/docs/)
+
+
 -----------------------------------------------------------------------------------------------------
 
 Guide & Areas of Study
