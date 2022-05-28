@@ -71,6 +71,18 @@ Terms & Keywords
 * Zero values
 * Defer | Defer functions
 * [Stacking defers](https://go.dev/blog/defer-panic-and-recover)
+* Function values
+* Methods
+* receivers
+* Pointer receivers
+* readers | i/o
+* Goroutines
+* Goroutines: range, close, select
+* sync.Mutex | mutual exclusion
+* [Generics](https://go.dev/doc/tutorial/generics)
+* Interface : type constraint
+* fuzzing | [Go fuzzing glossary](https://go.dev/doc/fuzz/#glossary)
+* [Function literals](https://go.dev/ref/spec#Function_literals)
 ### Datatype | Types | Components
 
 * boolean
