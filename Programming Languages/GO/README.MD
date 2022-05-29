@@ -28,9 +28,18 @@ Repos & Projects
 Frameworks
 ----------
 
+
+### GUI / Desktop development
+
+* [GUI](https://golangr.com/gui/)
+* [AllenDang/giu](https://github.com/AllenDang/giu)
+* [goki/g](https://github.com/goki/gi)
 ### Web Development
 
 * [Gin Web Framework](https://gin-gonic.com/docs/)
+* [httpRouter](https://pkg.go.dev/github.com/julienschmidt/httprouter#section-readme)
+* [gorilla/handlers](https://github.com/gorilla/handlers)
+* [Writing HTTP Middleware in Go](https://justinas.org/writing-http-middleware-in-go)
 
 
 -----------------------------------------------------------------------------------------------------

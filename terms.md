@@ -52,7 +52,8 @@
 
 - [Not invented here](https://en.wikipedia.org/wiki/Not_invented_here)
 - [Clean room design](https://en.wikipedia.org/wiki/Clean_room_design)
-
+- [Trie](https://en.wikipedia.org/wiki/Trie)
+- [Radix tree](https://en.wikipedia.org/wiki/Radix_tree)
 
 Computer Sciences Keywords
 ------------------
