@@ -4,6 +4,8 @@
 
 
 - [Big O notation](https://en.wikipedia.org/wiki/Big_O_notation)
+- [SuperStudy Guide | Types of algorithms](https://superstudy.guide/algorithms-data-structures/foundations/algorithmic-concepts/#types-of-algorithms)
+- [SuperStudy Guide](https://superstudy.guide)
 
 -----------------------------------------------------------------------------------------------------
 
