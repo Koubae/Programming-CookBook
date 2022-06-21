@@ -1,6 +1,9 @@
 # css 3
 =======================
 
+
+* [CSS Hexagon Tutorial by James Tauber](https://jtauber.github.io/articles/css-hexagon.html)
+
 Packages
 -----
 
