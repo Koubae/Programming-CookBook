@@ -99,6 +99,9 @@ Documentations
 
 * [Welcome back to C++ - Modern C++](https://docs.microsoft.com/en-us/cpp/cpp/welcome-back-to-cpp-modern-cpp?view=msvc-170)
 * [Using the Visual Studio IDE for C++ Desktop Development](https://docs.microsoft.com/en-us/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development?view=msvc-170)
+* [C++ Language Reference](https://assets.ctfassets.net/9pcn2syx7zns/41G6GBcYuIvsds5OG3H2OQ/f222a11333041e193e9de8b393b71653/language_refreence.pdf)
+* [C++ Quick Language Reference](http://kali.azc.uam.mx/clc/03_docencia/licenciatura/i_programacion/Libro_C++.pdf)
+* [C++ Standard Library Containers](https://docs.microsoft.com/en-us/cpp/standard-library/stl-containers?view=msvc-170)
 
 ### Linux
 
@@ -121,3 +124,56 @@ Repos
 
 * [christopher-siewert/cpp-calculator(https://github.com/christopher-siewert/cpp-calculator)
 * [microsoft/calculator](https://github.com/microsoft/calculator)
+
+
+Tutorials
+---------
+
+### Microsoft 
+
+* [Get started with C++ and C](https://docs.microsoft.com/en-us/cpp/?view=msvc-170)
+* [C++ language documentation](https://docs.microsoft.com/en-us/cpp/cpp/?view=msvc-170)
+* [C++ Language Reference](https://docs.microsoft.com/en-us/cpp/cpp/cpp-language-reference?view=msvc-170)
+* [C++ Standard Library Overview](https://docs.microsoft.com/en-us/cpp/standard-library/cpp-standard-library-overview?view=msvc-170)
+* [Linux development with C++ | Create and debug applications for Linux](https://docs.microsoft.com/en-us/cpp/linux/?view=msvc-170)
+* [Linux development with C++ in Visual Studio](Linux development with C++ in Visual Studio)
+
+### Cool 
+
+* [isocpp.org](https://isocpp.org/get-started)
+* []()
+* []()
+
+### Misc
+
+* [Best C++ Documentation](https://obiztools.com/best-c-documentation/)
+
+Terms & Keywords
+-----------------
+
+### Basic structs
+
+* array
+* map
+* vector
+* set
+* multimap
+* multiset
+* unordered_multimap
+* unordered_multiset
+* [C++ Standard Library Containers](https://docs.microsoft.com/en-us/cpp/standard-library/stl-containers?view=msvc-170)
+* deque
+* list
+* forward_list 
+
+* queue
+* priority_queue
+* stack 
+
+* [Range-based for Statement (C++)](https://docs.microsoft.com/en-us/cpp/cpp/range-based-for-statement-cpp?view=msvc-170)
+
+### Mist
+
+
+
+* *resource acquisition is initialization **(RAII)***
