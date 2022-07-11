@@ -3,7 +3,7 @@ C ++
 
 
 * [isocpp.org](https://isocpp.org/get-started)
-
+* [A Tour of C++](https://isocpp.org/tour)
 
 Installation
 ------------
