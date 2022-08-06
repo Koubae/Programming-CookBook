@@ -24,9 +24,13 @@ Run a Programm
 Documentations
 --------------
 
+
+The Java 'Standar Lyibrary' is known as the "Application Programming Interface", or "API" for short. -> https://docs.oracle.com/en/java/javase/11/docs/api/index.html
+
 ### Oracle
 
-* [The Java™ Tutorials](https://docs.oracle.com/javase/tutorial/getStarted/index.html)
+* [The Java™ Tutorials | Getting Started](https://docs.oracle.com/javase/tutorial/getStarted/index.html)
+* [The Java™ Tutorials](https://docs.oracle.com/javase/tutorial/tutorialLearningPaths.html)
 * [Java Documentation | Oracle](https://docs.oracle.com/en/java/)
 * [JDK 18 Documentation](https://docs.oracle.com/en/java/javase/18/)
 
@@ -35,6 +39,9 @@ Documentations
 * [Get started with Java  | IBM](https://developer.ibm.com/learningpaths/java-get-started/)
 * [Getting Started with Java  | dev.java](https://dev.java/learn/getting-started-with-java/)
 * [Getting Started with Java  | Docker docs using Spring Boot + Maven](https://docs.docker.com/language/java/)
+
+Frameworks & Libraries
+--------
 
 Projects
 --------
