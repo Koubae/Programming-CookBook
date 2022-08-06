@@ -24,6 +24,10 @@ export JAVA_HOME="$(jrunscript -e 'java.lang.System.out.println(java.lang.System
 #            RUN / BUILD                 #
 ##########################################
 
-# Build
+# ----------------
+#   Compile
+# ----------------
+javac file_name.java 
 
 # Run
+java file_name.java 
