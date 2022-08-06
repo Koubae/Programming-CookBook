@@ -43,6 +43,10 @@ The Java 'Standar Lyibrary' is known as the "Application Programming Interface",
 Frameworks & Libraries
 --------
 
+### Gaming & Graphics
+
+* [Lightweight Java Game Library](https://www.lwjgl.org/)
+
 Projects
 --------
 
@@ -57,3 +61,6 @@ Tutorials
 
 Terms & Keywords
 -----------------
+
+
+* varargs

@@ -24,6 +24,15 @@ class Array {
     public static void main(String[] args) {
         // declares an array of integers
         int[] anArray;
+        // declare arrays of other types:
+        byte[] anArrayOfBytes;
+        short[] anArrayOfShorts;
+        long[] anArrayOfLongs;
+        float[] anArrayOfFloats;
+        double[] anArrayOfDoubles;
+        boolean[] anArrayOfBooleans;
+        char[] anArrayOfChars;
+        String[] anArrayOfStrings;
 
         // allocates memory for 10 integers
         anArray = new int[10];
@@ -62,5 +71,45 @@ class Array {
                             + anArray[8]);
         System.out.println("Element at index 9: "
                             + anArray[9]);
+
+
+        //shortcut syntax to create and initialize an array:
+        System.out.println("----------------- Array initalized with values ");
+        int[] anotherArray = { 
+            100, 200, 300,
+            400, 500, 600, 
+            700, 800, 900, 1000
+        };
+
+        for (int i: anotherArray)  {
+            System.out.print(i + " ");   
+        }
+        System.out.println("\n---------------------------------- ");
+        // Multi-dimension array 
+        String[][] names = {
+            {"Mr. ", "Mrs. ", "Ms. "},
+            {"Smith", "Jones"}
+        };
+        // Mr. Smith
+        System.out.println(names[0][0] + names[1][0]);
+        // Ms. Jones
+        System.out.println(names[0][2] + names[1][1]);
+
+        // Get len-size of array 
+        System.out.println(anotherArray.length);
+        // Coping an array
+        String[] copyFrom = {
+            "Affogato", "Americano", "Cappuccino", "Corretto", "Cortado",   
+            "Doppio", "Espresso", "Frappucino", "Freddo", "Lungo", "Macchiato",      
+            "Marocchino", "Ristretto" 
+        };
+        String[] copyTo = new String[7];
+        System.arraycopy(copyFrom, 2, copyTo, 0, 7);
+        System.out.println("----------------- Array Copy: ");
+        for (String coffee : copyTo) {
+            System.out.print(coffee + " ");           
+        }
+
+
     }
 } 
