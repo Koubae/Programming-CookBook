@@ -1,4 +1,4 @@
-PHP | Core Principles & Structure
+C++ | Core Principles & Structure
 =======================
 
 

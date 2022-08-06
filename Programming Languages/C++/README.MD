@@ -4,6 +4,9 @@ C ++
 
 * [isocpp.org](https://isocpp.org/get-started)
 * [A Tour of C++](https://isocpp.org/tour)
+* [C++ Team Blog](https://devblogs.microsoft.com/cppblog/)
+
+
 
 Installation
 ------------
@@ -118,12 +121,18 @@ Documentations
 -g tells the compiler to store symbol table information in the executable. Among other things, this includes:
 ```
 
+Projects
+--------
+
+* [CMake](https://cmake.org/)
+* [CMake projects in Visual Studio](https://docs.microsoft.com/en-us/cpp/build/cmake-projects-in-visual-studio?view=msvc-170)
 
 Repos
 --------------
 
 * [christopher-siewert/cpp-calculator(https://github.com/christopher-siewert/cpp-calculator)
 * [microsoft/calculator](https://github.com/microsoft/calculator)
+
 
 
 Tutorials
