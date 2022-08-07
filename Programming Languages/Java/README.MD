@@ -47,6 +47,11 @@ Frameworks & Libraries
 
 * [Lightweight Java Game Library](https://www.lwjgl.org/)
 
+
+### Tools 
+
+* [The Checker Framework](https://checkerframework.org/)
+
 Projects
 --------
 
@@ -58,9 +63,22 @@ Repos
 Tutorials
 ---------
 
+* [Method References](https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html)
+* [What is the use of <T> in public static <T> T addAndReturn(T element, Collection<T> collection)](https://stackoverflow.com/questions/1668408/what-is-the-use-of-t-in-public-static-t-t-addandreturnt-element-collection#:~:text=T%20allows%20you%20to%20place,specified%20in%20the%20element%20parameter.)
+
+* [Generics](https://docs.oracle.com/javase/tutorial/java/generics/index.html)
+
 
 Terms & Keywords
 -----------------
 
 
 * varargs
+* Nested Classes+ 
+* local classes
+* anonymous classes
+* Static Nested Classes
+* Shadowing
+*  generic type parameter,
+* annotations
+* Generics
