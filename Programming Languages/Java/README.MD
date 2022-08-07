@@ -4,6 +4,17 @@ Java
 * [Java](https://www.java.com/en/)
 * [Java Downloads](https://www.oracle.com/java/technologies/downloads/)
 
+### Components of Java
+
+* Java language
+* Java SE | Java Platform Standard Edition
+* Java Compiler
+* JVM Java virtual machine
+* JDK Java Development Kit
+* JRE Java Runtime Environment
+* JARs Java Archive
+* Garbage Collector
+ 
 Installation
 ------------
 
@@ -36,7 +47,7 @@ The Java 'Standar Lyibrary' is known as the "Application Programming Interface",
 
 ### Others
 
-* [Get started with Java  | IBM](https://developer.ibm.com/learningpaths/java-get-started/)
+* [Get started with Java  | IBM](https://developer.ibm.com/learningpaths/java-get-started/) | [Introduction to Java programming](https://developer.ibm.com/series/intro-to-java-programming/)
 * [Getting Started with Java  | dev.java](https://dev.java/learn/getting-started-with-java/)
 * [Getting Started with Java  | Docker docs using Spring Boot + Maven](https://docs.docker.com/language/java/)
 
@@ -48,9 +59,14 @@ Frameworks & Libraries
 * [Lightweight Java Game Library](https://www.lwjgl.org/)
 
 
+### Logging
+
+* [Apache Log4j 2](https://logging.apache.org/log4j/2.x/)
+
 ### Tools 
 
 * [The Checker Framework](https://checkerframework.org/)
+
 
 Projects
 --------
@@ -66,7 +82,25 @@ Tutorials
 * [Method References](https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html)
 * [What is the use of <T> in public static <T> T addAndReturn(T element, Collection<T> collection)](https://stackoverflow.com/questions/1668408/what-is-the-use-of-t-in-public-static-t-t-addandreturnt-element-collection#:~:text=T%20allows%20you%20to%20place,specified%20in%20the%20element%20parameter.)
 
+### Generics
+
+* **T**: T stands for Type. For example `Class<T>`.
+* **E**: Stabds for 'Element'. For example `List<E>`.
+
+
 * [Generics](https://docs.oracle.com/javase/tutorial/java/generics/index.html)
+* [Generics and more | IBM](https://developer.ibm.com/tutorials/java-language-constructs-2/)
+
+
+* [Spring | IBM](https://developer.ibm.com/components/spring/)
+
+
+### Data Structures
+
+* Array
+* List 
+* Sets | HashSet
+* Map | HashMap
 
 
 Terms & Keywords
@@ -82,3 +116,4 @@ Terms & Keywords
 *  generic type parameter,
 * annotations
 * Generics
+* Java Streams API
