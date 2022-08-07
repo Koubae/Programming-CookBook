@@ -97,10 +97,17 @@ Tutorials
 
 ### Data Structures
 
+* [Algorithms and Data Structures Cheatsheet](https://algs4.cs.princeton.edu/cheatsheet/)
+
 * Array
 * List 
 * Sets | HashSet
 * Map | HashMap
+
+### Arrays 
+
+See [arrays.java](./Core%20Principles%20%26%20Structure/Data%20Structures/arrays.java)
+
 
 
 Terms & Keywords
