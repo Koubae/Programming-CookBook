@@ -54,6 +54,21 @@ The Java 'Standar Lyibrary' is known as the "Application Programming Interface",
 Frameworks & Libraries
 --------
 
+### Desktop & GUI Applications
+
+* [JavaFX](https://openjfx.io/)
+    * [JavaFX - Getting Started](https://openjfx.io/openjfx-docs/)
+    * [java.javafx](https://openjfx.io/javadoc/16/)
+    * [JavaFX Course | Youtube](https://www.youtube.com/watch?app=desktop&v=9XJicRt_FaI)
+* [java.swing](https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/package-summary.html) [java.swing](https://docs.oracle.com/javase/8/javase-clienttechnologies.htm)
+    * [Creating a GUI With Swing](https://docs.oracle.com/javase/tutorial/uiswing/)
+    * [Using Swing Components](https://docs.oracle.com/javase/tutorial/uiswing/components/index.html)
+    * [Laying Out Components Within a Container](https://docs.oracle.com/javase/tutorial/uiswing/layout/index.html)
+    * [Layout - border](https://docs.oracle.com/javase/tutorial/uiswing/layout/border.html) | [Layout - box](https://docs.oracle.com/javase/tutorial/uiswing/layout/box.html)
+
+* [Scene Builder | Builder for JavaFX](https://gluonhq.com/products/scene-builder/)
+* [Apache NetBeans 14 | Builder for swing](https://netbeans.apache.org/kb/docs/java/quickstart-gui.html)
+
 ### Gaming & Graphics
 
 * [Lightweight Java Game Library](https://www.lwjgl.org/)
@@ -74,6 +89,8 @@ Projects
 
 Repos
 --------------
+
+* [dionthorn/2DTacticalRPG | Videogame done with JavaFX](https://github.com/dionthorn/2DTacticalRPG)
 
 
 Tutorials
