@@ -78,10 +78,15 @@ Frameworks & Libraries
 
 * [Apache Log4j 2](https://logging.apache.org/log4j/2.x/)
 
+### CLI 
+
+* [picocli](https://picocli.info/)
+* []()
+
 ### Tools 
 
 * [The Checker Framework](https://checkerframework.org/)
-
+* [Spring Shell | baeldung](https://spring.io/projects/spring-shell) [Spring Shell](https://www.baeldung.com/spring-shell-cli)
 
 Projects
 --------
