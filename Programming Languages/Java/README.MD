@@ -59,6 +59,7 @@ Frameworks & Libraries
 * [JavaFX](https://openjfx.io/)
     * [JavaFX - Getting Started](https://openjfx.io/openjfx-docs/)
     * [java.javafx](https://openjfx.io/javadoc/16/)
+    * [JavaFX Docs](https://fxdocs.github.io/docs/html5/)
     * [JavaFX Course | Youtube](https://www.youtube.com/watch?app=desktop&v=9XJicRt_FaI)
     * [openjfx/javafx-maven-archetypes](https://github.com/openjfx/javafx-maven-archetypes)
 * [java.swing](https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/package-summary.html) [java.swing](https://docs.oracle.com/javase/8/javase-clienttechnologies.htm)
