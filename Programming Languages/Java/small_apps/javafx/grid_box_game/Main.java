@@ -76,12 +76,72 @@ public class Snake extends Application {
         });
 
         grid.setStyle("-fx-background-color: white; -fx-grid-lines-visible: true");
+        grid.setStyle(
+                "-fx-background-fill: white, black;" +
+                "-fx-background-insets: 0, 0 1 1 0;" +
+                "-fx-grid-lines-visible: true;");
+
         Scene scene = new Scene(grid, (columns * 40) , (rows * 40), Color.WHITE);
         stage.setScene(scene);
         stage.show();
 
+          // ------------------------------------------------------- \\
+          int rows = 5;
+          int columns = 5;
+  
+          stage.setTitle("Enjoy your game");
+  
+          GridPane grid = new GridPane();
+          grid.getStyleClass().add("game-grid");
+  
+          for(int i = 0; i < columns; i++) {
+              ColumnConstraints column = new ColumnConstraints(40);
+              grid.getColumnConstraints().add(column);
+          }
+  
+          for(int i = 0; i < rows; i++) {
+              RowConstraints row = new RowConstraints(40);
+              grid.getRowConstraints().add(row);
+          }
+  
+          for (int i = 0; i < columns; i++) {
+              for (int j = 0; j < rows; j++) {
+                  Pane pane = new Pane();
+                  pane.setOnMouseReleased(e -> {
+                      pane.getChildren().add(Anims.getAtoms(1));
+                  });
+                  pane.getStyleClass().add("game-grid-cell");
+                  if (i == 0) {
+                      pane.getStyleClass().add("first-column");
+                  }
+                  if (j == 0) {
+                      pane.getStyleClass().add("first-row");
+                  }
+                  grid.add(pane, i, j);
+              }
+          }
+  
+  
+          Scene scene = new Scene(grid, (columns * 40) + 100, (rows * 40) + 100, Color.WHITE);
+          scene.getStylesheets().add("game.css");
+          stage.setScene(scene);
+          stage.show();
 
 
+
+    }
+
+    public static class Anims {
+
+        public static Node getAtoms(final int number) {
+            Circle circle = new Circle(20, 20f, 7);
+            circle.setFill(Color.RED);
+            Group group = new Group();
+            group.getChildren().add(circle);
+//            SubScene scene = new SubScene(group, 40, 40);
+//            scene.setFill(Color.TRANSPARENT);
+            return group;
+        }
     }
 
 

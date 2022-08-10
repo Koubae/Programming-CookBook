@@ -1,0 +1,18 @@
+.game-grid {
+    -fx-background-color: white ;
+    -fx-padding: 10 ;
+    -fx-grid-lines-visible: true;
+}
+.game-grid-cell {
+    -fx-background-color: black, white ;
+    -fx-background-insets: 0, 0 1 1 0 ;
+}
+.game-grid-cell.first-row {
+    -fx-background-insets: 0, 1 1 1 0 ;
+}
+.game-grid-cell.first-column {
+    -fx-background-insets: 0, 0 1 1 1 ;
+}
+.game-grid-cell.first-row.first-column {
+    -fx-background-insets: 0, 1 ;
+}
