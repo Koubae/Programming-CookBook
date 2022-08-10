@@ -60,6 +60,7 @@ Frameworks & Libraries
     * [JavaFX - Getting Started](https://openjfx.io/openjfx-docs/)
     * [java.javafx](https://openjfx.io/javadoc/16/)
     * [JavaFX Course | Youtube](https://www.youtube.com/watch?app=desktop&v=9XJicRt_FaI)
+    * [openjfx/javafx-maven-archetypes](https://github.com/openjfx/javafx-maven-archetypes)
 * [java.swing](https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/package-summary.html) [java.swing](https://docs.oracle.com/javase/8/javase-clienttechnologies.htm)
     * [Creating a GUI With Swing](https://docs.oracle.com/javase/tutorial/uiswing/)
     * [Using Swing Components](https://docs.oracle.com/javase/tutorial/uiswing/components/index.html)

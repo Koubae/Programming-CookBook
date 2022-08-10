@@ -31,3 +31,36 @@ javac file_name.java
 
 # Run
 java file_name.java 
+
+
+##########################################
+#            MAVEN                       #
+##########################################
+# install
+sudo apt install maven
+mvn --version 
+
+# it worked
+export JAVA_HOME=/usr/lib/jvm/default-java
+
+
+# or craate a maven.º
+# # https://linuxize.com/post/how-to-install-apache-maven-on-ubuntu-18-04/
+
+# sudo vim /etc/profile.d/maven.sh
+export JAVA_HOME=/usr/lib/jvm/default-java
+export M2_HOME=/opt/maven
+export MAVEN_HOME=/opt/maven
+export PATH=${M2_HOME}/bin:${PATH}
+
+
+# Create a project
+mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+
+
+# download dependencies without doing anything else
+mvn dependency:resolve
+# download a single dependency
+mvn dependency:get -Dartifact=groupId:artifactId:version
+# run 
+mvn clean javafx:run
