@@ -63,6 +63,8 @@ Frameworks & Libraries
     * [JavaFX Course | Youtube](https://www.youtube.com/watch?app=desktop&v=9XJicRt_FaI)
     * [openjfx/javafx-maven-archetypes](https://github.com/openjfx/javafx-maven-archetypes)
     * [JavaFX Color Palette](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/paint/Color.html)
+    * [JavaFX Background tutorial](https://edencoding.com/scene-background/#:~:text=The%20simplest%20way%20to%20set,accept%20multiple%20images%20and%20fills.)
+    * [JavaFX Movements](https://gamedevelopment.tutsplus.com/tutorials/introduction-to-javafx-for-game-development--cms-23835)
 * [java.swing](https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/package-summary.html) [java.swing](https://docs.oracle.com/javase/8/javase-clienttechnologies.htm)
     * [Creating a GUI With Swing](https://docs.oracle.com/javase/tutorial/uiswing/)
     * [Using Swing Components](https://docs.oracle.com/javase/tutorial/uiswing/components/index.html)
