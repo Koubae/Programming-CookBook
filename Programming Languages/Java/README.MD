@@ -151,3 +151,4 @@ Terms & Keywords
 * annotations
 * Generics
 * Java Streams API
+* **POJO** [What is meaning of Plain Old Java Object (POJO)?](https://stackoverflow.com/questions/3326319/what-is-meaning-of-plain-old-java-object-pojo)
