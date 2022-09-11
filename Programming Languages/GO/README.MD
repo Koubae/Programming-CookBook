@@ -73,6 +73,25 @@ Guide & Areas of Study
 
 * [Standard Go Project Layout](https://github.com/golang-standards/project-layout)
 
+If you need help with naming, formatting and style start by running [`gofmt`](https://golang.org/cmd/gofmt/) and [`golint`](https://github.com/golang/lint). Also make sure to read these Go code style guidelines and recommendations:
+* https://talks.golang.org/2014/names.slide
+* https://golang.org/doc/effective_go.html#names
+* https://blog.golang.org/package-names
+* https://github.com/golang/go/wiki/CodeReviewComments
+* [Style guideline for Go packages](https://rakyll.org/style-packages) (rakyll/JBD)
+
+See [`Go Project Layout`](https://medium.com/golang-learn/go-project-layout-e5213cdcfaa2) for additional background information.
+
+More about naming and organizing packages as well as other code structure recommendations:
+* [GopherCon EU 2018: Peter Bourgon - Best Practices for Industrial Programming](https://www.youtube.com/watch?v=PTE4VJIdHPg)
+* [GopherCon Russia 2018: Ashley McNamara + Brian Ketelsen - Go best practices.](https://www.youtube.com/watch?v=MzTcsI6tn-0)
+* [GopherCon 2017: Edward Muller - Go Anti-Patterns](https://www.youtube.com/watch?v=ltqV6pDKZD8)
+* [GopherCon 2018: Kat Zien - How Do You Structure Your Go Apps](https://www.youtube.com/watch?v=oL6JBUk6tj0)
+
+A Chinese Post about Package-Oriented-Design guidelines and Architecture layer
+* [面向包的设计和架构分层](https://github.com/danceyoung/paper-code/blob/master/package-oriented-design/packageorienteddesign.md)
+
+
 
 -----------------------------------------------------------------------------------------------------
 
