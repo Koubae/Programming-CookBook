@@ -67,6 +67,13 @@ Guide & Areas of Study
 * [Go BY Examples](https://gobyexample.com/)
 * [Go By Examples: Arrays](https://gobyexample.com/arrays)
 
+
+### Project Structure
+
+
+* [Standard Go Project Layout](https://github.com/golang-standards/project-layout)
+
+
 -----------------------------------------------------------------------------------------------------
 
 Terms & Keywords
