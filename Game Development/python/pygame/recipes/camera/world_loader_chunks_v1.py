@@ -1,3 +1,29 @@
+import pygame as pg
+from pygame.math import Vector2
+from player import Player
+from camera import Camera2D
+import csv
+
+TILE_SIZE = 64
+TILE_WIDTH = TILE_SIZE * 20  # 1280
+TILE_HEIGHT = TILE_SIZE * 10  # 640
+
+MAP_LENGTH = 20  # The visible map length
+MAP_TALL = 10  # THe Visible Map tall
+MAP_LENGTH_TOTAL = MAP_LENGTH * 20  # The total map legnth
+MAP_TALL_TOTAL = MAP_TALL * 4  # The Total Map hegith
+
+TILE_MAX_COLLISION = TILE_SIZE * 2  # distance where the collision from a entity should be check
+
+WIN_SIZE = (TILE_WIDTH, TILE_HEIGHT)
+WIN_WIDTH = WIN_SIZE[0]
+WIN_WIDTH_HALF = WIN_WIDTH / 2
+WIN_HEIGHT = WIN_SIZE[1] / 2
+WIN_HEIGHT_HALF = WIN_HEIGHT / 2
+window = pg.display.set_mode(WIN_SIZE, 0, 32)
+background = pg.Surface(WIN_SIZE)
+# map
+map_level = load_map()
 def generate_world() -> list:
     """Generates a World adding its talese in multidimensional array by its tall"""
 
