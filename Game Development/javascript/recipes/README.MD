@@ -5,6 +5,10 @@ In order to use the recipes, use the **[index.html](index.html)**, all recipes u
 The script in the html file is `main.js` so or change the script name in the html or the targeted js file.
 
 
+See Also:
+
+### [ Programming-CookBook/GameDevelopment/Javascript](https://github.com/Koubae/Programming-CookBook/tree/master/Game%20Development/javascript)
+
 Docs 
 ----
 
