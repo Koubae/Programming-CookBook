@@ -1,0 +1,152 @@
+:root {
+    --color-bg: white;
+    --color-bg-secondary: #d5d5d5;
+    --color-bg-dark: #444;
+    --color-text-primary: #ffe900;
+    --color-text-secondary: #fff;
+    --color-text-active: #00d3ba;
+    --color-text-active-light: #00ffe2;;
+}
+body {
+    background: var(--color-bg);
+    margin: 0;
+}
+
+a,
+button {
+    transition: 300ms ease;
+}
+/* unvisited link */
+a:link,
+a:visited {
+    color: var(--color-text-secondary);
+}
+
+
+/* mouse over link */
+a:hover,
+a:active {
+    color: var(--color-text-active-light);
+}
+
+
+
+.margin {
+    margin: 2rem;
+}
+
+
+.navbar {
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    margin: 1rem;
+    padding: 1rem;
+    background: var(--color-bg-dark);
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+.navbar.hide {
+    display: none;
+}
+.header {
+    grid-area: header;
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: var(--color-text-primary);
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+    1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+
+}
+.content {
+    grid-area: content;
+}
+.sidebar {
+    grid-area: sidebar;
+}
+.content,
+.sidebar {
+    min-height: 75vh;
+    color: var(--color-bg-secondary);
+}
+
+.content fieldset {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin: 1rem 1rem;
+}
+
+
+.footer {
+    grid-area: footer;
+}
+
+.content-wrapper {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas:
+    "nav  nav  nav"
+    "header  header  header"
+    "sidebar content content"
+    "footer  footer  footer";
+    background-color: var(--color-bg);
+}
+
+.content-wrapper.hide {
+    display: none;
+}
+
+.box {
+    background-color: var(--color-bg-dark);
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.header,
+.footer {
+    background-color: var(--color-bg-secondary);
+}
+
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.topright {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.bottomright {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+.btn {
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    font-weight: 800;
+    margin: .3rem;
+    padding: .5rem 1rem;
+    text-transform: uppercase;
+    background: var(--color-text-active);
+}
+
+.btn:hover,
+.btn:focus {
+    background: var(--color-text-active-light);
+}
