@@ -1,7 +1,7 @@
 Threejs Recipes
 =====================
 
-
+For more recipes visit: [Koubae/threesj-framework](https://github.com/Koubae/threesj-framework)
 
 Docs 
 ----
