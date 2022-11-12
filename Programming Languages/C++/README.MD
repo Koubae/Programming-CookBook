@@ -106,6 +106,9 @@ Documentations
 * [C++ Quick Language Reference](http://kali.azc.uam.mx/clc/03_docencia/licenciatura/i_programacion/Libro_C++.pdf)
 * [C++ Standard Library Containers](https://docs.microsoft.com/en-us/cpp/standard-library/stl-containers?view=msvc-170)
 
+* [Documenting C++](https://developer.lsst.io/cpp/api-docs.html)
+ 
+
 ### Linux
 
 * [Linux development with C++ | Create and debug applications for Linux](https://docs.microsoft.com/en-us/cpp/linux/?view=msvc-170)
