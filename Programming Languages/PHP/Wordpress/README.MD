@@ -34,11 +34,16 @@ Documentation
 * [PHP Extensions](https://make.wordpress.org/hosting/handbook/server-environment/#php-extensions) List of PHP extensions that are required to run Wordpress
 * [wordpress Semantics](https://wordpress.org/support/article/wordpress-semantics/)
 
+* [List of Template Tags](https://developer.wordpress.org/themes/references/list-of-template-tags/)
 
 #### Plugin 
 
+* [Plugin Handbook](https://developer.wordpress.org/plugins/)
+* [Header Requirements](https://developer.wordpress.org/plugins/plugin-basics/header-requirements/)
+
 #### Themes
 
+* [Theme Handbook](https://developer.wordpress.org/themes/)
 * [Theme required files](https://developer.wordpress.org/themes/getting-started/what-is-a-theme/#required-files)
 
 ### Wordpress.com
