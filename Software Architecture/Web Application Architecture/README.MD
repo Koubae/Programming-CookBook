@@ -32,3 +32,14 @@ Projects
 * [Creating an HTTP Load Balancer in Python/Part 1/Theoretical Concepts](https://testdriven.io/courses/http-load-balancer/concepts/)
 
 -----------------------------------------------------------------------------------------------------
+
+Frameworks / Packages
+--------
+
+### Load Balancer
+
+* [nginx](https://nginx.org/en/docs/)
+* (python load-balancer) [PumpkinLB 2.0.0](https://pypi.org/project/PumpkinLB/)
+
+
+-----------------------------------------------------------------------------------------------------
