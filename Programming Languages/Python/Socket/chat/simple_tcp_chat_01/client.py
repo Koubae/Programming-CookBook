@@ -49,8 +49,6 @@ def main():
                 break
         close_app()
 
-
-
     def run():
         # Starting Threads For Listening And Writing
         receive_thread = threading.Thread(target=receive)
@@ -60,7 +58,6 @@ def main():
         write_thread.daemon = True
         receive_thread.start()
         write_thread.start()
-
 
     def close_app():
         nonlocal app_on
