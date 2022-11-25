@@ -18,6 +18,8 @@ lock = threading.Lock()
 def main():
 
     server: socket.socket = create_tcp_socket(HOST, PORT)
+    # the SO_REUSEADDR flag tells the kernel to reuse a local socket in TIME_WAIT state,
+    server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
     server.listen(MAX_CON)
     print(f'Server listening at {HOST}:{PORT} ....')
 
