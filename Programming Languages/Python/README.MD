@@ -96,6 +96,10 @@ Uses the other two modules to store Python objects on a file by key
 
 -----------------------------------------------------------------------------------------------------
 
+## Networking
+
+* [Twisted](https://twisted.org/)
+
 ## Web Scraping
 
 - [Rebound --GITHUB--](https://github.com/shobrook/rebound?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more)
