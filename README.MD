@@ -71,6 +71,16 @@ Programmer & Developer Cook-Book | Covers Programming Languages, Databases, Linu
 - [Web Scraping Reference: Cheat Sheet for Web Scraping using R --GITHUB--](https://github.com/ChaitanyaBaweja/r-web-scraping-cheat-sheet)
 - [johnsmilga.com ---projects](https://www.johnsmilga.com/projects)
 
+### APIs and API Gatewa
+
+- [tyk.io](https://tyk.io)
+- [kong](https://konghq.com)
+
+
+### Serverless
+
+- [Open iron.io](https://open.iron.io)
+
 ### GOJS
 
 Interactive JavaScript Diagrams for the Web
