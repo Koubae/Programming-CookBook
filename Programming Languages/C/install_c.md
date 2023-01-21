@@ -1,16 +1,16 @@
-C Installation
+Install C
 ==============
 
 
 Linux | Ubuntu
 --------------
 
-See [here](https://github.com/Koubae/Programming-CookBook/tree/master/Linux/Ubuntu#install-cc-compiler)
+- [Linux | Ubuntu (C++)](https://github.com/Koubae/Programming-CookBook/tree/master/Linux/Ubuntu#install-cc-compiler)
 
 Linux | Cygwin
 --------------
 
-See [here](https://en.wikibooks.org/wiki/C_Programming/Obtaining_a_compiler)
+- [Linux | Cygwin](https://en.wikibooks.org/wiki/C_Programming/Obtaining_a_compiler)
 
 Windows 
 -------
