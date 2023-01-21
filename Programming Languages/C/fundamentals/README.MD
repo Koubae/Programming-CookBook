@@ -3,6 +3,22 @@ C | Fundamentals
 
 *Fundamental stuff about the C language*
 
+- [Features](#features)
+- [Data Types](#data-types)
+- [Operators](#operators)
+- [Variables](#variables)
+    - [variable scope](#variable-scope)
+- [Conditionals](#conditionals)
+- [Loops](#loops)
+- [Functions | Subroutines](#functions--subroutines)
+- [Type definitions | Enums](#type-definitions--enum)
+- [Structures | struct](#structures--struct)
+- [The Preprocessor CPP](#the-preprocessor-cpp)
+- [typedef](#typedef)
+- [I/O | Input & Output](#io--input--output)
+- [Headers files](#headers-files)
+- [Command Line Parameters](#command-line-parameters)
+
 
 Features
 ---------
@@ -839,7 +855,7 @@ This is useful if you pass the ```-DDEBUG flag``` to the gcc compiler at the tim
 #endif
 ```
 
- ### Common uses of C preprocessor are:
+### Common uses of C preprocessor are:
 
 
 - Including Header Files: #include   
@@ -852,7 +868,7 @@ This is useful if you pass the ```-DDEBUG flag``` to the gcc compiler at the tim
 
 - Predefined Macros
 
-## Conditionals
+### Conditionals
 
 ```
 
