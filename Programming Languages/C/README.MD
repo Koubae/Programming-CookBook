@@ -8,7 +8,12 @@ Content
 -------
 
 - [Install C](./install_c.md)
-- [C - Fundamentals](./fundamentals/README.MD)
+- [C - Fundamentals](./fundamentals)
+    - [Fundamentals](./fundamentals/README.MD)
+    - [Data Structure](./fundamentals/Data%20Structure/)
+    - [Functions](./fundamentals/Functions/)
+    - [Standard Library](./fundamentals/Standard-Library/)
+    - [Advanced](./fundamentals/Advanced)
 - [External Libraries](./External-Libraries)
 - [C - Keywords & Terms](./keywords_and_terms.md)
 
