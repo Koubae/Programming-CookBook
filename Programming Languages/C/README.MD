@@ -5,7 +5,6 @@
 
 
 
-
 # [INDEX](https://pubs.opengroup.org/onlinepubs/009695399/idx/index.html)
 
 # [HEADERS](https://pubs.opengroup.org/onlinepubs/009695399/idx/headers.html)
