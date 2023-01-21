@@ -1,2 +1,7 @@
 .idea 
 .DS_Store
+
+# C compiled files
+main 
+
+

@@ -63,3 +63,5 @@ developer.
 - gdb
 - I/O | input , output, I/O streams
 - command line params
+- CMake
+- Make
