@@ -1,16 +1,42 @@
 Install C
 ==============
 
+- [GCC Releases](https://gcc.gnu.org/releases.html)
 
-Linux | Ubuntu
+In order to start to develop in **C** you should at least install the following:
+
+- **`gcc`:** GNU C Compiler
+- **`gdb`:** C debugger
+
+There are different distribution of C, depending on what you need to build. For example, for Windows apps, 
+using the IDE [Visual Studio](https://visualstudio.microsoft.com/vs/) (Not [Visual Studio Code](https://code.visualstudio.com/?wt.mc_id=DX_841432) which is more of a Editor with IDE capabilities on command)), will use a different C distribution by default more oriented for Windows developement, and Windows set of *C libraries*.
+Check out more on [Compilers](#compilers) below.
+
+
+- [Linux](#linux)
+- [Windows](#windows)
+
+
+Linux
 --------------
 
+- [Installing GCC - Download](https://gcc.gnu.org/install/)
+- [How to switch between multiple GCC and G++ compiler versions on Ubuntu 20.04 LTS Focal Fossa](https://linuxconfig.org/how-to-switch-between-multiple-gcc-and-g-compiler-versions-on-ubuntu-20-04-lts-focal-fossa)
 - [Linux | Ubuntu (C++)](https://github.com/Koubae/Programming-CookBook/tree/master/Linux/Ubuntu#install-cc-compiler)
 
-Linux | Cygwin
---------------
+
+### Ubuntu
+
+```bash
+sudo apt install build-essential
+
+```
+
+### Cygwin
 
 - [Linux | Cygwin](https://en.wikibooks.org/wiki/C_Programming/Obtaining_a_compiler)
+
+
 
 Windows 
 -------
@@ -52,3 +78,21 @@ C:\msys64\mingw64\lib
 C:\msys64\usr\include
 C:\msys64\mingw64\include
 ``` 
+
+
+Compilers
+---------
+
+
+### Windows OS Compilers
+
+#### Free
+
+<li>CCS C Compiler</li><li>Turbo C</li><li>Minimalist GNU for Windows (MinGW)</li><li>Portable C Compiler</li><li>Clang C++</li><li>Digital Mars C++ Compiler</li><li>Intel C++</li><li>IBM C++</li><li>Visual C++ : Express Edition</li><li>Oracle C++</li>
+
+#### Payment
+
+<li>Embarcadero C++</li><li>Edison Design Group C++</li><li>Green Hills C++</li><li>HP C++ for Unix</li><li>Intel C++&nbsp;for Windows, Linux, and some embedded systems.</li><li>Microsoft C++</li><li>Paradigm C++</li>
+
+
+<p>To use the C compiler in Windows, you can install any software mentioned below.</p><ul><li>You can <a href="https://www.microsoft.com/express/download/" rel="nofollow noopener">download a 90-day trial version of Visual Studio</a></li><li>You can download <a href="https://www.bloodshed.net/">Dev-C++ IDE</a> to develop C and C++ applications.</li><li>You can install <a href="http://www.mingw.org/" rel="nofollow noopener">MinGW</a>

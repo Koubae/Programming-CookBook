@@ -3,6 +3,8 @@
 
 *Collection of C language tutorial, documentations, recipes and quick references.*
 
+- [GCC Releases](https://gcc.gnu.org/releases.html)
+
 
 Content
 -------
@@ -84,6 +86,6 @@ NOTES & Interesting Codes
 
 - [What should main() return in C and C++?](https://stackoverflow.com/questions/204476/what-should-main-return-in-c-and-c)
 - [__attribute__((weak)) and static libraries](https://stackoverflow.com/questions/51656838/attribute-weak-and-static-libraries)
-
+- [Difference between CC, gcc and g++?](https://stackoverflow.com/questions/1516609/difference-between-cc-gcc-and-g)
 
 -----------------------------------------------------------------------------------------------------
