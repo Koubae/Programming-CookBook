@@ -1,6 +1,11 @@
 # C
 =======================
 
+*Collection of C language tutorial, documentations, recipes and quick references.*
+
+
+
+
 # [INDEX](https://pubs.opengroup.org/onlinepubs/009695399/idx/index.html)
 
 # [HEADERS](https://pubs.opengroup.org/onlinepubs/009695399/idx/headers.html)
