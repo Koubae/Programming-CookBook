@@ -58,6 +58,7 @@ Documentation
 
 #### [tutorialspoint.com](https://www.tutorialspoint.com/cprogramming)
 
+- [C Standard Library Reference Tutorial](https://www.tutorialspoint.com/c_standard_library/index.htm)
 - [Bit Fields tutorialspoint.com](https://www.tutorialspoint.com/cprogramming/c_bit_fields.htm)
 - [Type Casting](https://www.tutorialspoint.com/cprogramming/c_type_casting.htm)
 
@@ -65,6 +66,10 @@ Documentation
 
 - [Good Reference of main feature | javatpoint.com](https://www.javatpoint.com/c-programming-language-tutorial)
 
+#### [en.wikibooks.org](https://en.wikibooks.org/wiki/C_Programming)
+
+- [ANSI C library header files](https://en.wikibooks.org/wiki/C_Programming/Standard_libraries)
+- [Functions from the C Standard Library](https://en.wikibooks.org/wiki/C_Programming/Procedures_and_functions)
 
 -----------------------------------------------------------------------------------------------------
 
@@ -78,6 +83,7 @@ NOTES & Interesting Codes
 ### Stack Overflow
 
 - [What should main() return in C and C++?](https://stackoverflow.com/questions/204476/what-should-main-return-in-c-and-c)
+- [__attribute__((weak)) and static libraries](https://stackoverflow.com/questions/51656838/attribute-weak-and-static-libraries)
 
 
 -----------------------------------------------------------------------------------------------------
