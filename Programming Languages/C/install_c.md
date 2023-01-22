@@ -55,6 +55,8 @@ sudo apt-get install gcc-9
 Windows 
 -------
 
+- [Install C/GCC Compiler for Windows DigitalOcean](https://www.digitalocean.com/community/tutorials/c-compiler-windows-gcc)
+
 ### MinGW
 
 - [GCC, the GNU Compiler Collection](https://gcc.gnu.org/)

@@ -25,3 +25,9 @@ sudo apt-get install gcc-9
 
 # simple compilation
 gcc main.c -o main 
+
+# compile with compiler warning message
+# The option -Wall enables all compiler’s warning messages. This option is recommended to generate better code. 
+gcc -Wall main.c -o main 
+# Generate compiler intermediate files, good for compilation
+gcc -Wall -save-temps main.c –o main 
