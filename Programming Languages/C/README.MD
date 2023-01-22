@@ -11,14 +11,18 @@ Content
 
 - [C RoadMap](./roadmap.md)
 - [Install C](./install_c.md)
-- [C - Fundamentals](./fundamentals)
-    - [Fundamentals](./fundamentals/README.MD)
-    - [Data Structure](./fundamentals/Data%20Structure/)
-    - [Functions](./fundamentals/Functions/)
-    - [Standard Library](./fundamentals/Standard-Library/)
-    - [Advanced](./fundamentals/Advanced)
+
 - [External Libraries](./External-Libraries)
 - [C - Keywords & Terms](./keywords_and_terms.md)
+
+- OLD docs 
+    - [C - Fundamentals](./old/fundamentals)
+        - [Fundamentals](./old/fundamentals/README.MD)
+        - [Data Structure](./old/fundamentals/Data%20Structure/)
+        - [Functions](./old/fundamentals/Functions/)
+        - [Standard Library](./old/fundamentals/Standard-Library/)
+        - [Advanced](./old/fundamentals/Advanced)
+
 
 
 Documentation

@@ -27,6 +27,7 @@ move forward with the language, or, especially if you have experience with other
 Basic
 -----
 
+- Install C
 - Compiler 1
     - #include 
     - gcc : C standard Compiler
