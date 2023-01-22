@@ -98,6 +98,17 @@ Libraries
 
 -----------------------------------------------------------------------------------------------------
 
+Projects and Repos
+------------------
+
+*List of interesting projects and repos*
+
+- [ jamesroutley /write-a-hash-table](https://github.com/jamesroutley/write-a-hash-table)
+
+
+
+-----------------------------------------------------------------------------------------------------
+
 
 NOTES & Interesting Codes
 -------------------------
