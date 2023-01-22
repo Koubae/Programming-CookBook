@@ -16,12 +16,12 @@ Content
 - [C - Keywords & Terms](./keywords_and_terms.md)
 
 - OLD docs 
-    - [C - Fundamentals](./old/fundamentals)
-        - [Fundamentals](./old/fundamentals/README.MD)
-        - [Data Structure](./old/fundamentals/Data%20Structure/)
-        - [Functions](./old/fundamentals/Functions/)
-        - [Standard Library](./old/fundamentals/Standard-Library/)
-        - [Advanced](./old/fundamentals/Advanced)
+    - [C - Fundamentals](./fundamentals/old)
+        - [Fundamentals](./fundamentals/old/README.MD)
+        - [Data Structure](./fundamentals/old/Data%20Structure/)
+        - [Functions](./fundamentals/old/Functions/)
+        - [Standard Library](./fundamentals/old/Standard-Library/)
+        - [Advanced](./fundamentals/old/Advanced)
 
 
 
