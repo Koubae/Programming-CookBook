@@ -9,9 +9,8 @@
 Content
 -------
 
-- [C RoadMap](./roadmap.md)
+- [C RoadMap](./fundamentals/roadmap)
 - [Install C](./install_c.md)
-
 - [External Libraries](./External-Libraries)
 - [C - Keywords & Terms](./keywords_and_terms.md)
 
