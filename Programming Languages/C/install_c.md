@@ -30,6 +30,20 @@ Linux
 ```bash
 sudo apt install build-essential
 
+# ------------------ < Installation > ------------------ #
+sudo apt update
+sudo apt upgrade
+sudo apt -y install gcc 
+sudo apt-get install build-essential gdb
+gcc --version
+
+
+# Multiple GCC version https://www.fosslinux.com/39386/how-to-install-multiple-versions-of-gcc-and-g-on-ubuntu-20-04.htm
+sudo apt install build-essential
+sudo apt -y install gcc-7 gcc-8
+sudo add-apt-repository ppa:jonathonf/gcc-9.0
+sudo apt-get install gcc-9
+
 ```
 
 ### Cygwin

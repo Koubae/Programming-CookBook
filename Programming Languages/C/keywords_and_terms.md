@@ -65,3 +65,4 @@ developer.
 - command line params
 - CMake
 - Make
+- _Generic

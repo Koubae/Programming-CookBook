@@ -9,6 +9,7 @@
 Content
 -------
 
+- [C RoadMap](./roadmap.md)
 - [Install C](./install_c.md)
 - [C - Fundamentals](./fundamentals)
     - [Fundamentals](./fundamentals/README.MD)
@@ -72,6 +73,28 @@ Documentation
 
 - [ANSI C library header files](https://en.wikibooks.org/wiki/C_Programming/Standard_libraries)
 - [Functions from the C Standard Library](https://en.wikibooks.org/wiki/C_Programming/Procedures_and_functions)
+
+
+#### [geeksforgeeks.org](https://www.geeksforgeeks.org/c-programming-language/?ref=shm)
+
+- [C Programming Language](https://www.geeksforgeeks.org/c-programming-language/?ref=shm)
+- [_Generic keyword in C](https://www.geeksforgeeks.org/_generic-keyword-c/)
+
+-----------------------------------------------------------------------------------------------------
+
+Libraries
+---------
+
+
+### Command Lines
+
+- [GNU getopt](https://en.wikipedia.org/wiki/Getopt)
+
+### Databases
+
+- [https://github.com/Blosc/c-blosc2](https://github.com/Blosc/c-blosc2)
+
+
 
 -----------------------------------------------------------------------------------------------------
 

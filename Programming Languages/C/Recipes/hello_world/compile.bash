@@ -9,10 +9,10 @@ COMPILE_ONLY=$2;
 cd "$DIR";
 gcc main.c -o main 
 
-if [[ -n "$COMPILE_ONLY" ]]
+if [[ "$COMPILE_ONLY" == "true" ]]
 
     then 
         echo "Compiled main in $(pwd). Run with $(pwd)/main" && exit;
     else
-        ./main 
+        ./main "${@:2}"
 fi 
