@@ -17,7 +17,6 @@ Content
 
 - OLD docs 
     - [C - Fundamentals](./fundamentals/old)
-        - [Fundamentals](./fundamentals/old/README.MD)
         - [Data Structure](./fundamentals/old/Data%20Structure/)
         - [Functions](./fundamentals/old/Functions/)
         - [Standard Library](./fundamentals/old/Standard-Library/)
