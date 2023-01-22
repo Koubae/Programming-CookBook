@@ -145,7 +145,7 @@ void *hashtable_Get(HashTable *hash_table, void *key)
     Node *next = hash_table->table[hash % hash_table->size];
 
     while(next) {
-        if (hash_table->compareEqual( next-key, key)) return next->value;
+        if (hash_table->compareEqual( next->key, key)) return next->value;
         else next = next->next;
     }
 }

@@ -32,7 +32,6 @@ Basic
     - gcc : C standard Compiler
     - how compile programm
     - C versions / standars 
-- Variables 1
 - Data Types 1
     - int
         - short
@@ -46,12 +45,15 @@ Basic
     - bool
     - Typecasting
     - String interpolation
+- Variables 1
+    - const
 - Operators
     - arithmetic operators
     - relational operators
     - logic operators
     - assignment operators
     - bitwise operators
+    - sizeof
 - Control flow
     - Conditionals 
         - if , else if, else
@@ -67,6 +69,7 @@ Basic
     - functions
     - parameters and how they work with C
     - function invocation
+    - exit
 
 Intermediate
 ------------
@@ -75,6 +78,7 @@ Intermediate
 - Functions 2
     - Functions prototypes
     - recursions
+    - 
 - Scopes
 - Data Structures
     - Strings
@@ -87,6 +91,9 @@ Intermediate
     - Stack
     - Queue
 - I/O Stream
+    - FILE
+    - stdin
+    - stderr
     - print on console
     - input/output and closing file
     - printf
@@ -102,21 +109,30 @@ Intermediate
         - static 
         - register
     - Symbolic constants
-        - __LINE__ | __FILE__ | __DATE__ | __TIME__
+        - __LINE__ | __FILE__ | __DATE__ | __TIME__ | __STDC__
 - Data Types 2
     - pointers
         - double pointer
-        - declare pointer to a function
+        - function pointer
     - struct (structure)
+        - Access operator '.'  [struct].[proprerty]
+        - Access operator pointer '->'  [struct]->[proprerty]
     - union 
     - enum 
     - size_t [What is size_t in C?](https://stackoverflow.com/questions/2550774/what-is-size-t-in-c)
     - typedef
 - C Standard Library [C++ Standard Library headers](https://en.cppreference.com/w/cpp/header)
     - First to learn
+        - <stdio.h>
         - <stdlib.h>
         - <string.h>
         - <ctype.h>
+        - <time.h>
+        - <stddef.h>
+        - <stdint.h>
+        - <stdarg.h>
+        - <stdbool.h>
+        - <errno.h>
     - Main by topic
         - Concepts library
         - Coroutines library
@@ -163,11 +179,16 @@ Intermediate
     - #ifdef
     - #ifndev 
     - #iddef
-    - macors
+    - macros
+        -  EXIT_SUCCESS
+        - EXIT_FAILURE
+        - [Variadic macro in the C preprocessor](https://en.wikipedia.org/wiki/Variadic_macro_in_the_C_preprocessor)
+        - [ellipsis operator](https://stackoverflow.com/questions/3792761/what-is-ellipsis-operator-in-c)
     - #pragma
     - __attribute__
     - Preprocessor Predefined symbolic constants
     - [Directive (programming)](https://en.wikipedia.org/wiki/Directive_(programming))
+
 - Command line arguments
 - Generics
     - _Generic
@@ -179,6 +200,8 @@ Advanced
 
 - Debugging
 - Testing    
+- Buffers
+    - Circular Buffer
 - UNIX System interface : https://clc-wiki.net/wiki/K%26R2_solutions:Chapter_8
 - Compiler 3
     - How Compiler works

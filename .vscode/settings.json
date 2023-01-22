@@ -60,6 +60,13 @@
         "stop_token": "cpp",
         "streambuf": "cpp",
         "thread": "cpp",
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
+        "time.h": "c",
+        "stdarg.h": "c",
+        "stdbool.h": "c",
+        "stdlib.h": "c",
+        "stdio.h": "c",
+        "stddef.h": "c",
+        "errno.h": "c"
     }
 }
