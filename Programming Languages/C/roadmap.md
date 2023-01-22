@@ -20,6 +20,9 @@ Here, a list of the main C components and feature, listed more or less by diffic
 Keep in mind that this list if not just by 'topic' but some point are just specified to take your attention of a particula feature
 of the language that is controversial, different, unexpected or simply requires more attention (hence, need to be studied!).
 
+Also, is not **EVERYTHING** specific to the *C* language, some stuff are just some generic *Software Developer* stuff but are required to 
+move forward with the language, or, especially if you have experience with other programing languages, to see how is done in C rather. 
+
 
 Basic
 -----
@@ -27,12 +30,18 @@ Basic
 - Compiler 1
     - #include 
     - gcc : C standard Compiler
-    - gdb : C standard debugger
     - how compile programm
     - C versions / standars 
 - Variables 1
 - Data Types 1
     - int
+        - short
+        - long 
+        - long long
+        - uint8_t
+        - uint16_t
+        - uint32_t
+        - uint64_t
     - char
     - bool
     - Typecasting
@@ -57,10 +66,12 @@ Basic
 - Functions 1
     - functions
     - parameters and how they work with C
+    - function invocation
 
 Intermediate
 ------------
 
+- [Keywords in C](https://www.programiz.com/c-programming/list-all-keywords-c-language)
 - Functions 2
     - Functions prototypes
     - recursions
@@ -70,6 +81,8 @@ Intermediate
     - Arrays
         - multidimensional arrays
         - matrix array
+        - array subscript operator.
+        - array | subscript.
     - Linked List
     - Stack
     - Queue
@@ -80,12 +93,16 @@ Intermediate
     - perror
     - FIles
     - directories
+    - streams
+    - buffers
 - Variable 2
     - storage classes
         - auto
         - extern
         - static 
         - register
+    - Symbolic constants
+        - __LINE__ | __FILE__ | __DATE__ | __TIME__
 - Data Types 2
     - pointers
         - double pointer
@@ -132,13 +149,30 @@ Intermediate
         - bfree
 - Compiler 2
     - c header files [file].h
+    - GNU (just understand what is it, no need to go deep in this)
+    - [GCC Command-Line Options](http://tigcc.ticalc.org/doc/comopts.html)
+    - gdb : C standard debugger
+    - CMAKE
+    - Make
 - Preprocessor    
     - #define
     - #undef
+    - #if
+    - #else
+    - #endif
+    - #ifdef
+    - #ifndev 
+    - #iddef
     - macors
     - #pragma
     - __attribute__
+    - Preprocessor Predefined symbolic constants
+    - [Directive (programming)](https://en.wikipedia.org/wiki/Directive_(programming))
 - Command line arguments
+- Generics
+    - _Generic
+    - [Syntax and Sample Usage of _Generic in C11](https://stackoverflow.com/questions/9804371/syntax-and-sample-usage-of-generic-in-c11)
+
 
 Advanced
 --------
