@@ -14,7 +14,7 @@ C RoadMap
 - [The Complete Roadmap for C Programming, Everything you need to know.](https://www.linkedin.com/pulse/complete-roadmap-c-programming-everything-you-need-know-muntashir/)
 - [Developer Roadmaps](https://roadmap.sh/)
 - [https://github.com/kamranahmedse/developer-roadmap](https://github.com/kamranahmedse/developer-roadmap)
-
+- [C (programming language) - wikipedia](https://en.wikipedia.org/wiki/C_(programming_language))
 
 Here, a list of the main C components and feature, listed more or less by difficul level (first easier , last more advanced).
 Keep in mind that this list if not just by 'topic' but some point are just specified to take your attention of a particula feature
@@ -110,11 +110,12 @@ Intermediate
         - static 
         - register
     - Symbolic constants
-        - __LINE__ | __FILE__ | __DATE__ | __TIME__ | __STDC__
+        - __LINE__ | __FILE__ | __DATE__ | __TIME__ | __STDC__ | __STDC_VERSION__
 - Data Types 2
     - pointers
         - double pointer
         - function pointer
+        - restrict
     - struct (structure)
         - Access operator '.'  [struct].[proprerty]
         - Access operator pointer '->'  [struct]->[proprerty]
@@ -164,6 +165,7 @@ Intermediate
         - realloc
         - free
         - bfree
+    - volatile 
 - Compiler 2
     - c header files [file].h
     - GNU (just understand what is it, no need to go deep in this)
@@ -180,6 +182,7 @@ Intermediate
     - #ifdef
     - #ifndev 
     - #iddef
+    - inline
     - macros
         -  EXIT_SUCCESS
         - EXIT_FAILURE
@@ -194,6 +197,17 @@ Intermediate
 - Generics
     - _Generic
     - [Syntax and Sample Usage of _Generic in C11](https://stackoverflow.com/questions/9804371/syntax-and-sample-usage-of-generic-in-c11)
+- keywords (currently not in a specific topic, need to put in place)
+    - _Bool
+    - _Complex
+    - _Imaginary
+    - _Alignas
+    - _Alignof
+    - _Atomic   
+    - _Noreturn
+    - _Static_assert
+    - _Thread_local
+
 
 
 Advanced

@@ -118,8 +118,29 @@ gcc -Wall -save-temps filename.c –o filename
 C versions / standars
 ---------------------
 
+```
+__STDC_VERSION__
+```
+
+- C89: 1989
+- C90: 1990
+- C95: 1995
+- C99: 1999
+- C11: 2011
+- C17: 2018
+- C23: 2022
 
 
+- [GCC Releases](https://gcc.gnu.org/releases.html)
+- [The GNU C Library Release Timeline](https://sourceware.org/glibc/wiki/Glibc%20Timeline)
+- [The GNU C Library (glibc)](https://www.gnu.org/software/libc/)
+- [History of C](https://en.cppreference.com/w/c/language/history)
+
+
+- [How can I know the version of c?](https://stackoverflow.com/questions/36662063/how-can-i-know-the-version-of-c)
+- [C Programming Language Version History](https://developerinsider.co/c-programming-language-version-history/)
+- [List of C-family programming languages](https://en.wikipedia.org/wiki/List_of_C-family_programming_languages)
+- [C Standard library features - microsoft](https://learn.microsoft.com/en-us/cpp/overview/visual-cpp-language-conformance?view=msvc-170#c-standard-library-features-1)
 
 
 
