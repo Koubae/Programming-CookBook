@@ -3,5 +3,6 @@
 
 # C compiled files
 main 
+*.o
 
 

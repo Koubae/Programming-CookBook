@@ -128,6 +128,7 @@ Intermediate
         - <stdio.h>
         - <stdlib.h>
         - <string.h>
+        - <stdbool.h>
         - <ctype.h>
         - <time.h>
         - <stddef.h>

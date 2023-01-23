@@ -136,7 +136,7 @@ __STDC_VERSION__
 - [The GNU C Library (glibc)](https://www.gnu.org/software/libc/)
 - [History of C](https://en.cppreference.com/w/c/language/history)
 
-
+- [Language Standards](https://sourceforge.net/p/predef/wiki/Standards/)
 - [How can I know the version of c?](https://stackoverflow.com/questions/36662063/how-can-i-know-the-version-of-c)
 - [C Programming Language Version History](https://developerinsider.co/c-programming-language-version-history/)
 - [List of C-family programming languages](https://en.wikipedia.org/wiki/List_of_C-family_programming_languages)
