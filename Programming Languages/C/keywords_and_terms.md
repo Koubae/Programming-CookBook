@@ -53,6 +53,8 @@ developer.
 - [Bit Fields tutorialspoint.com](https://www.tutorialspoint.com/cprogramming/c_bit_fields.htm)
 - EOF (End of File)
 - [Type Casting](https://www.tutorialspoint.com/cprogramming/c_type_casting.htm)  | type-conversion
+    - Integer promotion
+    - Data loss
 - array subscript operator.
 - array | subscript.
 - interpolation
