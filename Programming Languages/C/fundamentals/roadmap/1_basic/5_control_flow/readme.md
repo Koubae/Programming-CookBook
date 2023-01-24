@@ -12,8 +12,8 @@ C Roadmap - Control Flow
         - do while
         - for loop`
     - continue, break 
-    - go to 
-    
+    - goto
+
 
 Same as the [C Roadmap - Operators](../4_operators/readme.md), for *C Control Flow* you shouldn't spend too much time, especially if you come with another 
 programming language, and even more if that programming language has a C style (many, Java, Javascript, PHP, C#, C++, ...). 

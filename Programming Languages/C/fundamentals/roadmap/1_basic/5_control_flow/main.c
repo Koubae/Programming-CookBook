@@ -131,6 +131,19 @@ int main(void)
     }
     printf("Exited the first while loop, Counter %d\n", counter);
 
+    int counter2 = 0;
+    while (counter2 < 10) {
+        printf("(while loop) Counter %d\n", counter);
+        counter2 ++;
+
+        if (counter2 < 4) 
+            continue; 
+        else if (counter2 > 9)
+            break;
+       
+    }
+    printf("Exited the Second while loop, Counter %d\n", counter);
+
     // do while
     do {
        printf("(do while loop) Counter %d\n", counter); // executes at least once
