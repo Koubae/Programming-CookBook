@@ -48,6 +48,7 @@ Basic
     - String interpolation
 - Variables 1
     - const
+    - #define 
 - Operators
     - arithmetic operators
     - relational operators
@@ -116,6 +117,7 @@ Intermediate
         - double pointer
         - function pointer
         - restrict
+    - volatile
     - struct (structure)
         - Access operator '.'  [struct].[proprerty]
         - Access operator pointer '->'  [struct]->[proprerty]
@@ -166,7 +168,7 @@ Intermediate
         - realloc
         - free
         - bfree
-    - volatile 
+    - volatile (studied earlier, but re-inforce it now with memory)
 - Compiler 2
     - c header files [file].h
     - GNU (just understand what is it, no need to go deep in this)
