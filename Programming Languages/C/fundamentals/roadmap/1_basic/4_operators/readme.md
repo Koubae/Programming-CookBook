@@ -2,6 +2,14 @@ C Roadmap - Operators
 ======================
 
 
+- arithmetic operators
+- relational operators
+- logic operators
+- assignment operators
+- bitwise operators
+- sizeof
+
+
 For operators, there is no much to add, especially if you come with a previous programming language background, the operators are pretty much the same.
 You shouldn't spend too much time as a totally beginner neither, just have a quick look of what they are and more or less what they do, these stuff will grasp by doing, 
 and some other operators that you will not use you don't have to memorize.

@@ -66,7 +66,7 @@ Basic
         - do while
         - for loop`
     - continue, break 
-    - go to 
+    - goto
 - Functions 1
     - functions
     - parameters and how they work with C
@@ -105,7 +105,7 @@ Intermediate
     - streams
     - buffers
 - Variable 2
-    - storage classes
+    - C Storage Class
         - auto
         - extern
         - static 
@@ -125,6 +125,10 @@ Intermediate
     - enum 
     - size_t [What is size_t in C?](https://stackoverflow.com/questions/2550774/what-is-size-t-in-c)
     - typedef
+- Control flow 2
+    - longjmp  (quite advanced, used for error handling, start to have a look!)
+    - setjmp   (quite advanced, used for error handling, start to have a look!)
+    - jmp_buf  (quite advanced, used for error handling, start to have a look!)
 - C Standard Library [C++ Standard Library headers](https://en.cppreference.com/w/cpp/header)
     - First to learn
         - <stdio.h>
@@ -161,6 +165,9 @@ Intermediate
 - Error Handling
     - perror
     - error log
+    - longjmp 
+    - setjmp  
+    - jmp_buf 
 - Memory
     - Dynamic Memory Allocation
         - malloc
