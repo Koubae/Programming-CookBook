@@ -82,16 +82,13 @@ Intermediate
     - recursions
     - 
 - Scopes
-- Data Structures
-    - Strings
-    - Arrays
-        - multidimensional arrays
-        - matrix array
-        - array subscript operator.
-        - array | subscript.
-    - Linked List
-    - Stack
-    - Queue
+    - local
+    - global
+    - From: [Scope - cppreference.com](https://en.cppreference.com/w/c/language/scope) see:
+        - block scope
+        - file scope
+        - function scope
+        - function prototype scope 
 - I/O Stream
     - FILE
     - stdin
@@ -232,7 +229,16 @@ Advanced
     - How Compiler works
     - Heap
     - Stack
-
+- Data Structures
+    - Strings
+    - Arrays
+        - multidimensional arrays
+        - matrix array
+        - array subscript operator.
+        - array | subscript.
+    - Linked List
+    - Stack
+    - Queue
 
 
 Others not C specific

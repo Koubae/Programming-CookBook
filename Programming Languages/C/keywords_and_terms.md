@@ -68,3 +68,5 @@ developer.
 - CMake
 - Make
 - _Generic
+- linkage 
+- storage duration
