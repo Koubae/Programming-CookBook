@@ -70,3 +70,9 @@ developer.
 - _Generic
 - linkage 
 - storage duration
+- opaque data type
+- stdin
+- stdout
+- stderr
+- FILE
+- file descriptor

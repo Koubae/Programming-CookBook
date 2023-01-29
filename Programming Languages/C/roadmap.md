@@ -92,8 +92,10 @@ Intermediate
 - I/O Stream
     - FILE
     - stdin
+    - stdout
     - stderr
     - print on console
+    - getchar | putchar  | gets | puts
     - input/output and closing file
     - printf
     - perror

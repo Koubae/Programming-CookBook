@@ -3,6 +3,7 @@
         "type_traits": "c",
         "stdint.h": "c",
         "stdbool.h": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "string.h": "c"
     }
 }

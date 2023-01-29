@@ -46,6 +46,11 @@ Documentation
 - [Implicit conversions](https://en.cppreference.com/w/cpp/language/implicit_conversion)
 - [Explicit type conversion](https://en.cppreference.com/w/cpp/language/explicit_cast)
 
+#### [learn.microsoft.com](https://learn.microsoft.com/en-gb/cpp/?view=msvc-170)
+
+- [Microsoft C runtime library (CRT) reference](https://learn.microsoft.com/en-gb/cpp/c-runtime-library/c-run-time-library-reference?view=msvc-170)
+- [Universal C runtime routines by category](https://learn.microsoft.com/en-gb/cpp/c-runtime-library/data-conversion?view=msvc-170)
+
 #### [pubs.opengroup.org](https://pubs.opengroup.org/onlinepubs/009695399/)
 
 - [IEEE Std 1003.1 C - Index](https://pubs.opengroup.org/onlinepubs/009695399/idx/index.html)
