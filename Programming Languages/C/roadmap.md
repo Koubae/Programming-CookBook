@@ -109,6 +109,8 @@ Intermediate
         - extern
         - static 
         - register
+        - typedef
+        - __declspec ( extended-decl-modifier-seq ) /* Microsoft-specific */
     - Symbolic constants
         - __LINE__ | __FILE__ | __DATE__ | __TIME__ | __STDC__ | __STDC_VERSION__
 - Data Types 2

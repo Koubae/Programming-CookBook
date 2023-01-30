@@ -128,5 +128,6 @@ NOTES & Interesting Codes
 - [What should main() return in C and C++?](https://stackoverflow.com/questions/204476/what-should-main-return-in-c-and-c)
 - [__attribute__((weak)) and static libraries](https://stackoverflow.com/questions/51656838/attribute-weak-and-static-libraries)
 - [Difference between CC, gcc and g++?](https://stackoverflow.com/questions/1516609/difference-between-cc-gcc-and-g)
+- [What should and what shouldn't be in a header file? [closed]](https://softwareengineering.stackexchange.com/questions/167723/what-should-and-what-shouldnt-be-in-a-header-file)
 
 -----------------------------------------------------------------------------------------------------
