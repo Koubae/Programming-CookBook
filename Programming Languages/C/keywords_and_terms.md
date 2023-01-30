@@ -76,3 +76,4 @@ developer.
 - stderr
 - FILE
 - file descriptor
+-  strict total ordering | [Total Order](https://en.wikipedia.org/wiki/Total_order#Strict_total_order)

@@ -224,6 +224,10 @@ Intermediate
 Advanced
 --------
 
+- objects
+    - Object representation
+    - Alignment
+    - aliasing
 - Debugging
 - Testing    
 - Buffers
