@@ -12,7 +12,10 @@ Content
 - [C RoadMap](./fundamentals/roadmap)
 - [Install C](./install_c.md)
 - [External Libraries](./External-Libraries)
-- [C - Keywords & Terms](./keywords_and_terms.md)
+- [C - Keywords & Terms](./keywords_and_terms.md)ç
+- [Linux kernel coding style](https://www.kernel.org/doc/html/v4.10/process/coding-style.html)
+    - [Linux kernel coding style - rst](https://www.kernel.org/doc/Documentation/process/coding-style.rst)
+
 
 - OLD docs 
     - [C - Fundamentals](./fundamentals/old)

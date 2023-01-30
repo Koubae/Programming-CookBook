@@ -28,7 +28,7 @@ Pointers
 
 - [valatile - cppreference.com](https://en.cppreference.com/w/c/language/volatile)
 - [restrict - cppreference.com](https://en.cppreference.com/w/c/language/restrict)
-- [Typedef - cppreference.com](https://en.cppreference.com/w/c/language/typedef)
+- [Typedef ](https://en.cppreference.com/w/c/language/typedef)
 
 - [Why is volatile needed in C?](https://stackoverflow.com/questions/246127/why-is-volatile-needed-in-c)
 
