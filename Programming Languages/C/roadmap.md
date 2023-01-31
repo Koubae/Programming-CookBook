@@ -126,10 +126,6 @@ Intermediate
     - enum 
     - size_t [What is size_t in C?](https://stackoverflow.com/questions/2550774/what-is-size-t-in-c)
     - typedef
-- Control flow 2
-    - longjmp  (quite advanced, used for error handling, start to have a look!)
-    - setjmp   (quite advanced, used for error handling, start to have a look!)
-    - jmp_buf  (quite advanced, used for error handling, start to have a look!)
 - C Standard Library [C++ Standard Library headers](https://en.cppreference.com/w/cpp/header)
     - First to learn
         - <stdio.h>
@@ -163,6 +159,10 @@ Intermediate
         - Atomic Operations library
         - Thread support library
         - C compatibility headers
+- Control flow 2
+    - longjmp  (quite advanced, used for error handling, start to have a look!)
+    - setjmp   (quite advanced, used for error handling, start to have a look!)
+    - jmp_buf  (quite advanced, used for error handling, start to have a look!)
 - Error Handling
     - perror
     - error log
@@ -182,8 +182,10 @@ Intermediate
     - GNU (just understand what is it, no need to go deep in this)
     - [GCC Command-Line Options](http://tigcc.ticalc.org/doc/comopts.html)
     - gdb : C standard debugger
-    - CMAKE
-    - Make
+    - C Projects
+        -  Typical C project structures
+        - CMAKE
+        - Make
 - Preprocessor    
     - #define
     - #undef

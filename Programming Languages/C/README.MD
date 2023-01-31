@@ -39,6 +39,8 @@ Documentation
 
 ### [gcc.gnu.org](https://gcc.gnu.org/onlinedocs/)
 
+- [The GNU C Library (glibc) - gnu.org](https://www.gnu.org/software/libc/)
+- [The GNU C Library Reference Manual - gnu.org](https://www.gnu.org/software/libc/manual/pdf/libc.pdf)
 - [Header Files](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html#Header-Files)
 - [Macros](https://gcc.gnu.org/onlinedocs/cpp/Macros.html#Macros)
 - [Pragmas](https://gcc.gnu.org/onlinedocs/cpp/Pragmas.html#Pragmas)
@@ -78,6 +80,14 @@ Documentation
 #### [javatpoint.com](https://www.javatpoint.com/c-programming-language-tutorial)
 
 - [Good Reference of main feature | javatpoint.com](https://www.javatpoint.com/c-programming-language-tutorial)
+
+
+####
+
+- [ANSI C - wikipedia](https://en.wikipedia.org/wiki/ANSI_C)
+- [C standard library - wikipedia](https://en.wikipedia.org/wiki/C_standard_library)
+- [C POSIX library - wikipedia](https://en.wikipedia.org/wiki/C_POSIX_library)
+
 
 #### [en.wikibooks.org](https://en.wikibooks.org/wiki/C_Programming)
 
