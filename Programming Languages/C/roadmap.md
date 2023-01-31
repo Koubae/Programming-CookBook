@@ -159,16 +159,13 @@ Intermediate
         - Atomic Operations library
         - Thread support library
         - C compatibility headers
-- Control flow 2
-    - longjmp  (quite advanced, used for error handling, start to have a look!)
-    - setjmp   (quite advanced, used for error handling, start to have a look!)
-    - jmp_buf  (quite advanced, used for error handling, start to have a look!)
 - Error Handling
     - perror
     - error log
-    - longjmp 
-    - setjmp  
-    - jmp_buf 
+        - Control flow 2
+        - longjmp  (quite advanced, used for error handling, start to have a look!)
+        - setjmp   (quite advanced, used for error handling, start to have a look!)
+        - jmp_buf  (quite advanced, used for error handling, start to have a look!)
 - Memory
     - Dynamic Memory Allocation
         - malloc
