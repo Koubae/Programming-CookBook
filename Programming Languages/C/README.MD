@@ -31,6 +31,8 @@ Documentation
 
 *Collection of C documentations and tutorials of all sorts.*
 
+- [The C Book — Table of Contents](https://publications.gbdirect.co.uk//c_book/)
+
 #### ISO | Standards
 
 #### [iso-9899](https://www.iso-9899.info/wiki/Main_Page)
@@ -125,7 +127,7 @@ Projects and Repos
 
 - [ jamesroutley /write-a-hash-table](https://github.com/jamesroutley/write-a-hash-table)
 
-
+- Valgrind 
 
 -----------------------------------------------------------------------------------------------------
 
