@@ -27,11 +27,21 @@ export JAVA_HOME="$(jrunscript -e 'java.lang.System.out.println(java.lang.System
 # ----------------
 #   Compile
 # ----------------
-javac file_name.java 
+javac FileName.java 
+# Compile all java files (same folder)
+javac *.java
 
 # Run
-java file_name.java 
+java FileName 
 
+# Class Path to include other jars
+java -classpath [lib/..jar]
+
+# multiple jars
+java -cp "Test.jar:lib/*" my.package.MainClass
+java -cp jar1:jar2:jar3:dir1:. HelloWorld
+# windows
+java -cp C:/.../jardir1/*;C:/.../jardir2/* class_with_main_method
 
 ##########################################
 #            MAVEN                       #
@@ -64,3 +74,29 @@ mvn dependency:resolve
 mvn dependency:get -Dartifact=groupId:artifactId:version
 # run 
 mvn clean javafx:run
+
+
+# download junit
+mvn dependency:get -DremoteRepositories=http://repo1.maven.org/maven2/ \
+                   -DgroupId=junit -DartifactId=junit -Dversion=4.8.2 \
+                   -Dtransitive=false
+# spring
+mvn dependency:get -Dartifact=org.springframework:spring-instrument:3.2.3.RELEASE
+# maven plugin
+mvn org.apache.maven.plugins:maven-dependency-plugin:2.1:get \
+    -DrepoUrl=http://download.java.net/maven/2/ \
+    -Dartifact=robo-guice:robo-guice:0.4-SNAPSHOT 
+
+
+
+# copy command  https://stackoverflow.com/a/65019190/13903942
+mvn dependency:copy -Dartifact=<group>:<artifact-name>:<version> -DoutputDirectory=/tmp/my_custom_dir
+
+
+##########################################
+#            jshell                      #
+##########################################
+jshell 
+# exit (also CTRL + d)
+/exit 
+/ex

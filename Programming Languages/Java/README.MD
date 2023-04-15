@@ -3,6 +3,8 @@ Java
 
 * [Java](https://www.java.com/en/)
 * [Java Downloads](https://www.oracle.com/java/technologies/downloads/)
+* [jdk - java.net](https://jdk.java.net/)
+* [Inside Java](https://inside.java/) |  [Inside java - tags](https://inside.java/tag/jdk%2021)
 
 ### Components of Java
 
@@ -13,6 +15,12 @@ Java
 * JDK Java Development Kit
 * JRE Java Runtime Environment
 * JARs Java Archive
+* J2EE | Java EE | Jakarta EE
+* jshell 
+
+### Features of Java 
+
+* Object Oriented Programming 
 * Garbage Collector
  
 Installation
@@ -44,6 +52,8 @@ The Java 'Standar Lyibrary' is known as the "Application Programming Interface",
 * [The Java™ Tutorials](https://docs.oracle.com/javase/tutorial/tutorialLearningPaths.html)
 * [Java Documentation | Oracle](https://docs.oracle.com/en/java/)
 * [JDK 18 Documentation](https://docs.oracle.com/en/java/javase/18/)
+* [jshell](https://docs.oracle.com/en/java/javase/20/docs/specs/man/jshell.html)
+* [https://docs.oracle.com/en/java/javase/17/docs/api/index.html](https://docs.oracle.com/en/java/javase/17/docs/api/index.html)
 
 ### Others
 
@@ -53,6 +63,9 @@ The Java 'Standar Lyibrary' is known as the "Application Programming Interface",
 
 Frameworks & Libraries
 --------
+
+* [Apache Commons Lang](https://commons.apache.org/proper/commons-lang/)
+
 
 ### Desktop & GUI Applications
 
@@ -95,6 +108,9 @@ Frameworks & Libraries
 
 Projects
 --------
+
+* [openjdk - Projects](https://openjdk.org/projects/)
+* [Project Amber](https://openjdk.org/projects/amber/)
 
 
 Repos
