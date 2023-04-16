@@ -23,6 +23,7 @@ Java
 * Object Oriented Programming 
 * Garbage Collector
 * autoboxing | unboxing
+* Builder-Pattern [https://en.wikipedia.org/wiki/Builder_pattern, https://stackoverflow.com/a/222295/13903942]
 
 Installation
 ------------
@@ -61,6 +62,9 @@ The Java 'Standar Lyibrary' is known as the "Application Programming Interface",
 * [Get started with Java  | IBM](https://developer.ibm.com/learningpaths/java-get-started/) | [Introduction to Java programming](https://developer.ibm.com/series/intro-to-java-programming/)
 * [Getting Started with Java  | dev.java](https://dev.java/learn/getting-started-with-java/)
 * [Getting Started with Java  | Docker docs using Spring Boot + Maven](https://docs.docker.com/language/java/)
+
+
+* [refactoring.guru](https://refactoring.guru/design-patterns/command/java/example)
 
 Frameworks & Libraries
 --------
@@ -112,6 +116,7 @@ Projects
 
 * [openjdk - Projects](https://openjdk.org/projects/)
 * [Project Amber](https://openjdk.org/projects/amber/)
+* [nipafx.dev]nipafx.dev/)
 
 
 Repos

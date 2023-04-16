@@ -72,9 +72,14 @@ mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -Darchety
 mvn dependency:resolve
 # download a single dependency
 mvn dependency:get -Dartifact=groupId:artifactId:version
-# run 
+# clean 
 mvn clean javafx:run
-
+# compile 
+mvn compile
+# build project 
+mvn package 
+# run project 
+java -cp target/my-app-1.0-SNAPSHOT.jar com.mycompany.app.App
 
 # download junit
 mvn dependency:get -DremoteRepositories=http://repo1.maven.org/maven2/ \
