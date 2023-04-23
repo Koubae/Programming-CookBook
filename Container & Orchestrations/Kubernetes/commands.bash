@@ -16,6 +16,8 @@ kubectl apply -f configs/
 kubectl diff -R -f configs/
 kubectl apply -R -f configs/
 
+kubectl get ingress --field-selector foo.bar=baz
+kubectl get pods --field-selector=status.phase!=Running,spec.restartPolicy=Always
 # ------------------------ < CONFIG > ------------------------ # 
 kubectl config get-contexts
 
@@ -63,12 +65,21 @@ kubectl get po -A
 kubectl describe pods
 kubectl delete pod nginx
 
+# List the Pods created by the deployment:
+kubectl get pods -l app=nginx
+# Display information about a Pod:
+kubectl describe pod <pod-name>
+
 # equality-based 
 kubectl get pods -l environment=production,tier=frontend
 # set-based
 kubectl get pods -l 'environment in (production),tier in (frontend)'
 kubectl get pods -l 'environment in (production, qa)'
 kubectl get pods -l 'environment,environment notin (frontend)'
+
+# Field Selector 
+kubectl get pods --field-selector status.phase=Running
+
 # ------------------------ < DEPLOY > ------------------------ # 
 kubectl get deployments
 kubectl get deployments -o yaml
@@ -80,10 +91,17 @@ kubectl delete deploy <deploy_name>
 kubectl create deployment nginx --image nginx
 
 
-# ------------------------ < SERVICES > ------------------------ # 
+# ------------------------ < svc - SERVICES > ------------------------ # 
 kubectl get service -o wide
 
-kubectl delete svc <service_name>
+kubectl delete svc <svc_name>
+
+# ------------------------ < pv - PersistentVolumeClaim > ------------------------ # 
+kubectl delete pv <pv_name>
+
+# ------------------------ < pvc - PersistentVolumeClaim > ------------------------ # 
+kubectl describe pvc <pvc_name>
+kubectl delete pvc <pvc_name>
 
 # ------------------------ < RUN > ------------------------ # 
 kubectl apply -f .

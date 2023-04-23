@@ -52,6 +52,21 @@ Components
 - etcd (key-value store of cluser stare, (brain))
 
 
+### Workloads
+
+- Deployment 
+- ReplicaSet
+- StatefulSet 
+- DaemonSet
+- Job
+- Third-Party Workloads
+
+### Services 
+
+- Services
+- Ingress
+
+
 ### Other components
 
 - [Node conformance test](https://kubernetes.io/docs/setup/best-practices/node-conformance/#node-conformance-test)
