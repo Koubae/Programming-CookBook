@@ -1,0 +1,52 @@
+apiVersion: apps/v1 
+kind: Deployment 
+metadata:
+  name: flask-deploy
+  labels:
+    app: flask-deploy
+  
+spec: 
+  replicas: 4
+  selector: 
+    matchLabels:
+      app: flask-deploy
+
+  template: 
+    metadata: 
+      labels:
+        app: flask-deploy
+
+    spec:
+      containers:
+        - name: flask-pod 
+          image: temp_flask_read_live:latest 
+          imagePullPolicy: Never
+          ports:  
+            - containerPort: 5000 
+
+          livenessProbe:
+            httpGet:
+              path: /liveness
+              port: 5000 
+            initialDelaySeconds: 15
+            timeoutSeconds: 2 
+            periodSeconds: 5
+            failureThreshold: 2
+
+          readinessProbe:
+            httpGet:
+              path: /readiness
+              port: 5000 
+            initialDelaySeconds: 10
+            timeoutSeconds: 3
+            periodSeconds: 10
+            failureThreshold: 3 
+
+          resources:
+            limits:
+              memory: 256Mi 
+              cpu: "1"
+            
+            requests:
+              memory: 256Mi 
+              cpu: "0.2"
