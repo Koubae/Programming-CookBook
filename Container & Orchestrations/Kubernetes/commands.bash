@@ -30,6 +30,8 @@ kubectl config set-credentials <credential-name> --client-key <path-to-key>.pem 
 kubectl config set-context default-system --cluster default-cluster --user <credential-name>
 kubectl config use-context default-system
 
+# List the Pod's container environment variables:
+kubectl exec <pod_name> -- printenv
 
 
 # ------------------------ < NAMESPACE > ------------------------ #
