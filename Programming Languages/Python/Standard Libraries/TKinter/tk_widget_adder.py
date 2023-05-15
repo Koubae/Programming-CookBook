@@ -51,8 +51,8 @@ def main(title):
         "bg": "black",
         # "width": 1200,
         # "height": 940,
-        # "geometry": '350x450+700+200'
-        "geometry": '1200x940',
+        "geometry": '350x450+700+200',
+        # "geometry": '1200x940',
         # 'fullscreen': '-fullscreen'
         'fullscreen': False
     }
