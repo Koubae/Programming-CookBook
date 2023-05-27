@@ -5,6 +5,7 @@ Java
 * [Java Downloads](https://www.oracle.com/java/technologies/downloads/)
 * [jdk - java.net](https://jdk.java.net/)
 * [Inside Java](https://inside.java/) |  [Inside java - tags](https://inside.java/tag/jdk%2021)
+* [Java RoadMap](https://roadmap.sh/java)
 
 ### Components of Java
 
