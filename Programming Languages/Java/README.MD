@@ -7,6 +7,11 @@ Java
 * [Inside Java](https://inside.java/) |  [Inside java - tags](https://inside.java/tag/jdk%2021)
 * [Java RoadMap](https://roadmap.sh/java)
 
+### Related Repositories
+
+* [java-spring-examples](https://github.com/Koubae/java-spring-examples)
+* [Java - Snake Game](https://github.com/Koubae/JavaFX---Snake)
+
 ### Components of Java
 
 * Java language
