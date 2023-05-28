@@ -97,6 +97,13 @@ mvn org.apache.maven.plugins:maven-dependency-plugin:2.1:get \
 # copy command  https://stackoverflow.com/a/65019190/13903942
 mvn dependency:copy -Dartifact=<group>:<artifact-name>:<version> -DoutputDirectory=/tmp/my_custom_dir
 
+# -------------
+# Maven + Spring Boot
+# -------------
+./mvnw spring-boot:run 
+# Build jar and run 
+./mvnw clean package
+java -jar target/target-jar.jar
 
 ##########################################
 #            jshell                      #

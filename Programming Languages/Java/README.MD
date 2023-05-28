@@ -72,6 +72,12 @@ Frameworks & Libraries
 
 * [Apache Commons Lang](https://commons.apache.org/proper/commons-lang/)
 
+### Web Development
+
+#### Spring 
+
+* [Spring Framework Documentation](https://docs.spring.io/spring-framework/reference/index.html)
+* [Spring Boot Reference Documentation](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#legal)
 
 ### Desktop & GUI Applications
 
@@ -119,9 +125,14 @@ Projects
 * [Project Amber](https://openjdk.org/projects/amber/)
 * [nipafx.dev]nipafx.dev/)
 
+* [Tukks/cogito](https://github.com/Tukks/cogito)
+* [Odaym/Snipit](https://github.com/Odaym/Snipit)
+* [weberjn/jBM -- BookMarks](https://github.com/weberjn/jBM)
+
 ### Google
 
 * [Bookmarks.java (Google Git)](https://android.googlesource.com/platform/packages/apps/Browser/+/froyo/src/com/android/browser/Bookmarks.java)
+
 
 
 Repos
@@ -129,6 +140,11 @@ Repos
 
 * [dionthorn/2DTacticalRPG | Videogame done with JavaFX](https://github.com/dionthorn/2DTacticalRPG)
 
+### Spring 
+
+* [Spring Guides](https://github.com/spring-guides)
+* [spring-guides/getting-started-guides](https://github.com/spring-guides/getting-started-guides)
+*  [Quoter](https://github.com/spring-guides/quoters/blob/master/src/main/java/org/springframework/quoters)
 
 Tutorials
 ---------
