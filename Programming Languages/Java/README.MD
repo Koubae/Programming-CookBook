@@ -150,7 +150,8 @@ Repos
 
 * [Spring Guides](https://github.com/spring-guides)
 * [spring-guides/getting-started-guides](https://github.com/spring-guides/getting-started-guides)
-*  [Quoter](https://github.com/spring-guides/quoters/blob/master/src/main/java/org/springframework/quoters)
+* [Quoter](https://github.com/spring-guides/quoters/blob/master/src/main/java/org/springframework/quoters)
+* [spring-projects/spring-petclinic](https://github.com/spring-projects/spring-petclinic)
 
 Tutorials
 ---------

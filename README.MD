@@ -25,6 +25,12 @@ Programmer & Developer Cook-Book | Covers Programming Languages, Databases, Linu
 
 - [Kaggle](https://www.kaggle.com/)
 
+### JetBrains
+
+* [add  several JetBrains accounts using only one email address](https://account.jetbrains.com/profile-details/linked-emails.)
+    * [Related Question](https://intellij-support.jetbrains.com/hc/en-us/community/posts/4519198498578-Multiple-Jetbrains-Accounts-One-Computer)
+
+
 ### NOTES & THINGS TO KNOW
 
 - ***[REGEXR](https://regexr.com/)***
