@@ -1,0 +1,13 @@
+<!-- @see: https://stackoverflow.com/questions/74781733/vulnerable-dependency-mavenorg-yamlsnakeyaml  -->
+
+<dependency>
+  <artifactId>spring-boot-starter-data-mongodb</artifactId>
+  <groupId>org.springframework.boot</groupId>
+  <!-- @note removes warning @see: https://stackoverflow.com/questions/74781733/vulnerable-dependency-mavenorg-yamlsnakeyaml  -->
+  <exclusions>
+    <exclusion>
+      <artifactId>snakeyaml</artifactId>
+      <groupId>org.yaml</groupId>
+    </exclusion>
+  </exclusions>
+</dependency>

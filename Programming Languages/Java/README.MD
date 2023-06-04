@@ -77,12 +77,33 @@ Frameworks & Libraries
 
 * [Apache Commons Lang](https://commons.apache.org/proper/commons-lang/)
 
+### Testing
+
+#### Integration Tests
+
+* [Rest Assured](https://rest-assured.io/)
+
 ### Web Development
 
 #### Spring 
 
 * [Spring Framework Documentation](https://docs.spring.io/spring-framework/reference/index.html)
 * [Spring Boot Reference Documentation](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#legal)
+* [Spring Dependency](https://docs.spring.io/spring-framework/reference/core/beans/dependencies.html)
+
+* [What exactly is Field Injection and how to avoid it?](https://stackoverflow.com/a/39892204/13903942)
+    * [Field Dependency Injection Considered Harmful - Blog](https://www.vojtechruzicka.com/field-dependency-injection-considered-harmful/)
+
+* **6.0.9**
+    * [The IoC Container](https://docs.spring.io/spring-framework/reference/core/beans.html)
+    * [Constructor-based Dependency Injection](https://docs.spring.io/spring-framework/reference/6.1-SNAPSHOT/core/beans/dependencies/factory-collaborators.html#beans-constructor-injection)
+    * [Setter-based Dependency Injection](https://docs.spring.io/spring-framework/reference/6.1-SNAPSHOT/core/beans/dependencies/factory-collaborators.html#beans-setter-injection)
+
+* **4.2**
+    * [The IoC container](https://docs.spring.io/spring-framework/docs/4.2.x/spring-framework-reference/html/beans.html) 
+    * [Constructor-based dependency injection](https://docs.spring.io/spring-framework/docs/4.2.x/spring-framework-reference/html/beans.html#beans-constructor-injection) 
+    * [Setter-based dependency injection](https://docs.spring.io/spring-framework/docs/4.2.x/spring-framework-reference/html/beans.html#beans-setter-injection) 
+
 
 ### Desktop & GUI Applications
 
