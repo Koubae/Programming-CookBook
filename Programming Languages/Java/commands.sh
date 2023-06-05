@@ -112,3 +112,13 @@ jshell
 # exit (also CTRL + d)
 /exit 
 /ex
+
+
+# With -XX:+UseSerialGC This will perform garbage collection inline with the thread allocating the heap memory instead of a dedicated GC thread(s)
+
+# With -Xss512k This will limit each threads stack memory to 512KB instead of the default 1MB
+
+# With -XX:MaxRAM=72m This will restrict the JVM's calculations for the heap and non heap managed memory to be within the limits of this value.
+
+# In addition to the above JVM options you can also use the following property inside your application.properties file:
+# server.tomcat.max-threads = 1 This will limit the number of HTTP request handler threads to 1 (default is 200)

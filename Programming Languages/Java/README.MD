@@ -155,6 +155,45 @@ Projects
 * [Odaym/Snipit](https://github.com/Odaym/Snipit)
 * [weberjn/jBM -- BookMarks](https://github.com/weberjn/jBM)
 
+### Spring 
+
+* [Are there any big spring-boot open source projects?](https://stackoverflow.com/questions/54782469/are-there-any-big-spring-boot-open-source-projects)
+<div class="s-prose js-post-body" itemprop="text" style="display: block;">
+<p>Here are some non pet store but a real world , non trivial , and open source application that use Spring Boot 2.</p>
+<ol>
+<li><p><a href="https://thingsboard.io/" rel="nofollow noreferrer">Thingsboard</a> which is an IoT platform with the microservice architecture. Built with Spring Boot , Spring Security , Spring Data , Spring MVC etc.</p>
+</li>
+<li><p><a href="http://www.flowable.org" rel="nofollow noreferrer">Flowable</a> is a business process engines that are based on Spring and have already upgrade to <a href="https://blog.flowable.org/2018/04/11/the-road-to-spring-boot-2-0/" rel="nofollow noreferrer">support Spring Boot 2.0</a></p>
+</li>
+<li><p><a href="https://github.com/spring-io/initializr" rel="nofollow noreferrer">Spring Initializr</a> is the backend web API that can quickly generate a sample spring-boot project. It is exactly the backend API that powered the famous <a href="https://start.spring.io/" rel="nofollow noreferrer">start.spring.io</a>.</p>
+</li>
+<li><p><a href="https://github.com/obsidiandynamics/kafdrop" rel="nofollow noreferrer">Kafdrop</a> is the web client that managing Kafka. Built with Spring Boot, Spring MVC, Freemarker etc.</p>
+</li>
+<li><p><a href="https://www.klaw-project.io/" rel="nofollow noreferrer">Klaw</a> is another web client that managing Kafka. Built with Spring Boot, Spring MVC, Spring Security,Spring Data JPA and Thymeleaf etc.</p>
+</li>
+<li><p>The <a href="https://github.com/corona-warn-app/cwa-server" rel="nofollow noreferrer">backend</a> of the <a href="https://www.coronawarn.app/en/" rel="nofollow noreferrer">Corona-Warn-App</a> which is an app that helps trace infection chains of COVID-19 in Germany.Built with Spring Boot, Spring MVC, Spring Security,Spring Data JPA, Bean Validation etc.</p>
+</li>
+<li><p>CloudFoundry User Account and Authentication (<a href="https://github.com/cloudfoundry/uaa" rel="nofollow noreferrer">UAA</a>) Server is a multi tenant identity management service used in Cloud Foundry , but also available as a stand alone OAuth2 server. Built with Spring Boot , Spring MVC , Spring Security , Spring JDBC etc.</p>
+</li>
+<li><p><a href="https://github.com/apolloconfig" rel="nofollow noreferrer">Apollo</a> is the distributed configuration management system to allow you change your application 's configuration to take effect in the real time without starting your application. Can be used to implement grayscale release too. Built with Spring Boot , Spring Cloud (e.g Eureka) , Spring Session , Spring Security , Spring MVC , Spring Data JPA etc.</p>
+</li>
+</ol>
+    </div>
+
+<div class="s-prose js-post-body" itemprop="text">
+<p>I know for example this two:</p>
+
+<ul>
+<li>Project Sagan: <a href="https://github.com/RameshMF/sagan" rel="noreferrer">https://github.com/RameshMF/sagan</a></li>
+<li>Zipkin: <a href="https://zipkin.io/" rel="noreferrer">https://zipkin.io/</a></li>
+</ul>
+
+<p>More can be found under: <a href="https://www.javaguides.net/2018/10/free-open-source-projects-using-spring-boot.html" rel="noreferrer">https://www.javaguides.net/2018/10/free-open-source-projects-using-spring-boot.html</a></p>
+    </div>
+
+<p>You can have a look at the <a href="https://www.jhipster.tech/" rel="nofollow noreferrer">Jhipster</a> project.</p>
+
+
 ### Google
 
 * [Bookmarks.java (Google Git)](https://android.googlesource.com/platform/packages/apps/Browser/+/froyo/src/com/android/browser/Bookmarks.java)
