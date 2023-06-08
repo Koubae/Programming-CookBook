@@ -12,6 +12,7 @@ Programmer & Developer Cook-Book | Covers Programming Languages, Databases, Linu
 - [jankfree.org](http://jankfree.org)
 - [Upstart Intro, Cookbook and Best Practices.](https://upstart.ubuntu.com/cookbook/#environment-variables)
 - [HTTP (HyperText Transfer Protocol)](https://www3.ntu.edu.sg/home/ehchua/programming/webprogramming/HTTP_Basics.html)
+* [Enterprise Integration PatternsEnterprise Integration Patterns](https://www.enterpriseintegrationpatterns.com/)
 
 ## Learning Material
 
@@ -125,5 +126,10 @@ openssl x509 -text -noout -in certificate.crt
 
 openssl x509 -in certificate.crt -text
 ```
+
+Further Reading
+===============
+
+* [Software release life cycle](https://en.wikipedia.org/wiki/Software_release_life_cycle)
 
 -----------------------------------------------------------------------------------------------------

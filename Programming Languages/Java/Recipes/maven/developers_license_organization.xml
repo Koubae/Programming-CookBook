@@ -1,0 +1,21 @@
+    <developers>
+        <developer>
+            <name>Federico Baú</name>
+            <email>info@federicobau.dev</email>
+            <organization>Software Developer</organization>
+            <organizationUrl>https://federicobau.dev/</organizationUrl>
+        </developer>
+    </developers>
+
+
+        <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://github.com/Koubae/</url>
+        </license>
+    </licenses>
+
+    <organization>
+        <name>Software Developer</name>
+        <url>>https://federicobau.dev</url>
+    </organization>

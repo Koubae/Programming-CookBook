@@ -8,7 +8,7 @@
 
 “Metaclasses are deeper magic than 99% of users should ever worry about. If you wonder whether you need them, you don’t (the people who actually need them know with certainty that they need them, and don’t need an explanation about why).”—Tim Peters
 
-
+- Domain Driven Design
 - Google Search URL args ID:
 
 &biw=1536&bih=674&tbm=isch&sxsrf=ACYBGNSXXpS6YmAKUiLKKBs6xWb4uUY5gA:1581168823770&source=lnms&sa=X&ved=0ahUKEwioj8jwiMLnAhW9AhAIHbXTBMMQ_AUI3QUoAQ
@@ -135,7 +135,7 @@ Programming Methods
 -------------------
 
 - operator overloading
-
+* Software release life cycle
 
  User Agent
 -----------

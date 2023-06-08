@@ -63,6 +63,24 @@ The Java 'Standar Lyibrary' is known as the "Application Programming Interface",
 * [jshell](https://docs.oracle.com/en/java/javase/20/docs/specs/man/jshell.html)
 * [https://docs.oracle.com/en/java/javase/17/docs/api/index.html](https://docs.oracle.com/en/java/javase/17/docs/api/index.html)
 
+### JMX (Java Management Extensions)
+
+* [Java Management Extensions](https://en.wikipedia.org/wiki/Java_Management_Extensions)
+* [JMX - Spring](https://docs.spring.io/spring-framework/reference/integration/jmx.html)
+
+### JMS (Java Message Service) | Message Queue | Open Message Queue | ActiveMQ
+
+* [Java Message Service (JMS)](https://www.oracle.com/java/technologies/java-message-service.html)
+* [Open Message Queue (Open MQ) -- A complete JMS MOM Platform](https://javaee.github.io/openmq/)
+* [JMS (Java Message Service) - Spring](https://docs.spring.io/spring-framework/reference/integration/jms.html)
+* [Real world use of JMS/message queues?](https://stackoverflow.com/questions/1035949/real-world-use-of-jms-message-queues)
+
+**STOMP Protocol (Streaming Text Oriented Messaging Protocol)**
+
+* [STOMP Protocol](https://stomp.github.io/)
+* [Streaming Text Oriented Messaging Protocol - Wiki](https://en.wikipedia.org/wiki/Streaming_Text_Oriented_Messaging_Protocol)
+
+
 ### Others
 
 * [Get started with Java  | IBM](https://developer.ibm.com/learningpaths/java-get-started/) | [Introduction to Java programming](https://developer.ibm.com/series/intro-to-java-programming/)
@@ -72,10 +90,15 @@ The Java 'Standar Lyibrary' is known as the "Application Programming Interface",
 
 * [refactoring.guru](https://refactoring.guru/design-patterns/command/java/example)
 
+
 Frameworks & Libraries
 --------
 
 * [Apache Commons Lang](https://commons.apache.org/proper/commons-lang/)
+
+### HTTP & Networking
+
+* [OpenFeign - http client](https://github.com/OpenFeign/feign)
 
 ### Testing
 
@@ -143,6 +166,7 @@ Frameworks & Libraries
 
 * [The Checker Framework](https://checkerframework.org/)
 * [Spring Shell | baeldung](https://spring.io/projects/spring-shell) [Spring Shell](https://www.baeldung.com/spring-shell-cli)
+* [Quarts Scheduler](https://www.quartz-scheduler.org/)
 
 Projects
 --------
@@ -246,6 +270,15 @@ Tutorials
 See [arrays.java](./Core%20Principles%20%26%20Structure/Data%20Structures/arrays.java)
 
 
+Further Reading 
+---------------
+
+* [Do we really need @Override and so on when code Java? [duplicate]](https://stackoverflow.com/questions/4822954/do-we-really-need-override-and-so-on-when-code-java)
+* [When do you use Java's @Override annotation and why?](https://stackoverflow.com/questions/94361/when-do-you-use-javas-override-annotation-and-why)
+* [Enterprise Integration Patterns Enterprise Integration Patterns](https://www.enterpriseintegrationpatterns.com/)
+* [What is difference between CrudRepository and JpaRepository interfaces in Spring Data JPA?](https://stackoverflow.com/questions/14014086/what-is-difference-between-crudrepository-and-jparepository-interfaces-in-spring)
+
+* [Software release life cycle](https://en.wikipedia.org/wiki/Software_release_life_cycle)
 
 Terms & Keywords
 -----------------
@@ -262,3 +295,12 @@ Terms & Keywords
 * Generics
 * Java Streams API
 * **POJO** [What is meaning of Plain Old Java Object (POJO)?](https://stackoverflow.com/questions/3326319/what-is-meaning-of-plain-old-java-object-pojo)
+* JMS
+    * Java Message Service
+    * Message Queue
+    * Open Message Queue
+    * ActiveMQ
+* STOMP Protocol (Streaming Text Oriented Messaging Protocol)
+* JMX
+* Domain Driven Design
+* Software release life cycle
