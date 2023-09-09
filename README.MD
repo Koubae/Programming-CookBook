@@ -14,6 +14,8 @@ Programmer & Developer Cook-Book | Covers Programming Languages, Databases, Linu
 - [HTTP (HyperText Transfer Protocol)](https://www3.ntu.edu.sg/home/ehchua/programming/webprogramming/HTTP_Basics.html)
 * [Enterprise Integration PatternsEnterprise Integration Patterns](https://www.enterpriseintegrationpatterns.com/)
 
+* [Starlark Language](https://bazel.build/rules/language)
+
 ## Learning Material
 
 - [DevDocs — API Documentation Browser](https://github.com/freeCodeCamp/devdocs)
