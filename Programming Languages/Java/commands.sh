@@ -20,6 +20,13 @@ sudo update-alternatives --config java # which lists all installed versions with
 # use to set $JAVA_HOME from current active version
 export JAVA_HOME="$(jrunscript -e 'java.lang.System.out.println(java.lang.System.getProperty("java.home"));')"
 
+# Find Java installation
+# Windows - CMD 
+for %i in (javac.exe) do @echo.   %~$PATH:i
+# Linux 
+which java
+
+
 ##########################################
 #            RUN / BUILD                 #
 ##########################################

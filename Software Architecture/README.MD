@@ -119,4 +119,11 @@ Guide & Areas of Study
 * **software layers**: user interface (UI),  Presentation layer, business logic layer, middleware, middleware
 * 
 
+
+
+ ### Design - Architecture and Patterns
+
+* [Builder pattern](https://en.wikipedia.org/wiki/Builder_pattern)
+* [Gang of Four design patterns / Design Patterns](https://en.wikipedia.org/wiki/Design_Patterns)
+
 -----------------------------------------------------------------------------------------------------
