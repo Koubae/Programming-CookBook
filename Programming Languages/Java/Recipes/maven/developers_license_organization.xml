@@ -1,21 +1,31 @@
-    <developers>
-        <developer>
-            <name>Federico Baú</name>
-            <email>info@federicobau.dev</email>
-            <organization>Software Developer</organization>
-            <organizationUrl>https://federicobau.dev/</organizationUrl>
-        </developer>
-    </developers>
-
-
-        <licenses>
-        <license>
-            <name>MIT License</name>
-            <url>https://github.com/Koubae/</url>
-        </license>
-    </licenses>
-
     <organization>
         <name>Software Developer</name>
         <url>>https://federicobau.dev</url>
     </organization>
+
+    <developers>
+        <developer>
+            <id>fbauKoubae</id>
+            <name>Federico Baú</name>
+            <email>info@federicobau.dev</email>
+            <organization>Software Developer</organization>
+            <organizationUrl>https://federicobau.dev/</organizationUrl>
+            <url>https://github.com/Koubae</url>
+            <roles>
+                <role>owner</role>
+                <role>architect</role>
+                <role>developer</role>
+                <role>maintainer</role>
+            </roles>
+            <timezone>Europe/Madrid</timezone>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://github.com/Koubae</url>
+            <distribution>manual</distribution>
+            <comments>License</comments>
+        </license>
+    </licenses>

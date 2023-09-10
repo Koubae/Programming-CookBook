@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.koubae</groupId>
+    <artifactId>app-parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>app-parent</name>
+    <description>app-parent Maven</description>
+
+    <properties>
+        <java.version>17</java.version>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+
+    <organization>
+        <name>Software Developer</name>
+        <url>https://federicobau.dev</url>
+    </organization>
+
+    <developers>
+        <developer>
+            <id>federico.bau.Koubae</id>
+            <name>Federico Baú</name>
+            <email>info@federicobau.dev</email>
+            <organization>Software Developer</organization>
+            <organizationUrl>https://federicobau.dev/</organizationUrl>
+            <url>https://github.com/Koubae</url>
+            <roles>
+                <role>owner</role>
+                <role>architect</role>
+                <role>developer</role>
+                <role>maintainer</role>
+            </roles>
+            <timezone>Europe/Madrid</timezone>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://github.com/Koubae</url>
+            <distribution>manual</distribution>
+            <comments>License</comments>
+        </license>
+    </licenses>
+
+    <modules>
+        <module>module-name</module>
+    </modules>
+
+</project>

@@ -12,7 +12,7 @@ public class App {
     private static  Logger log = null;
     static {
         System.setProperty("java.util.logging.SimpleFormatter.format",
-                "[%1$tF %1$tT] [%4$-1s] %5$s %n");
+                "[%1$tF %1$tT] [%4$-1s] %5$s %n%6$s%n");
         log = Logger.getLogger(App.class.getName());
 
     }

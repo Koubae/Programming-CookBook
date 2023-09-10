@@ -82,6 +82,23 @@ The Java 'Standar Lyibrary' is known as the "Application Programming Interface",
 * [STOMP Protocol](https://stomp.github.io/)
 * [Streaming Text Oriented Messaging Protocol - Wiki](https://en.wikipedia.org/wiki/Streaming_Text_Oriented_Messaging_Protocol)
 
+### Build Project
+
+* [Java Platform Module System (JSR 376)](https://openjdk.org/projects/jigsaw/spec/)
+* [IntelliJ - Modules](https://www.jetbrains.com/help/idea/creating-and-managing-modules.html)
+
+#### Ant 
+
+#### Maven
+
+* [POM Reference](https://maven.apache.org/pom.html)
+
+* [How to manage multi app project in maven?](https://stackoverflow.com/questions/58318251/how-to-manage-multi-app-project-in-maven)
+* [How to have multiple spring boot applications in one repository?](https://stackoverflow.com/questions/39403514/how-to-have-multiple-spring-boot-applications-in-one-repository)
+* [Releasing a multi-module Maven project hosted in single Git repository](https://stackoverflow.com/questions/11528877/releasing-a-multi-module-maven-project-hosted-in-single-git-repository)
+
+#### Gradle
+
 
 ### Others
 
@@ -270,6 +287,13 @@ Tutorials
 ### Arrays 
 
 See [arrays.java](./Core%20Principles%20%26%20Structure/Data%20Structures/arrays.java)
+
+
+Best Practices & Conventions
+----------------------------
+
+* [Oracel - Indentations and formatting Conventions](https://www.oracle.com/java/technologies/javase/codeconventions-indentation.html)
+
 
 
 Further Reading 
