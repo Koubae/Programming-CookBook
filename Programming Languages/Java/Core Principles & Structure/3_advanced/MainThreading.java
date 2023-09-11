@@ -3,6 +3,7 @@ public class MainThreading {
         System.out.printf("- [%s] Threading Example\n", Thread.currentThread().getName());
 
         Thread thread = new Thread() {
+            @Override
             public void run() {
                 String threadName = Thread.currentThread().getName();
                 try {
