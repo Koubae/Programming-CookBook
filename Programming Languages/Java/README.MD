@@ -109,6 +109,16 @@ The Java 'Standar Lyibrary' is known as the "Application Programming Interface",
 
 * [refactoring.guru](https://refactoring.guru/design-patterns/command/java/example)
 
+* [Java HashMap With Different Value Types](https://www.baeldung.com/java-hashmap-different-value-types)
+
+
+Katas
+--------------
+
+* [TheBowlingGameKata](http://butunclebob.com/ArticleS.UncleBob.TheBowlingGameKata)
+* [gregoryyoung/ProbabilityKata](https://gist.github.com/gregoryyoung/1018570)
+
+
 
 Frameworks & Libraries
 --------
@@ -305,6 +315,8 @@ Further Reading
 * [What is difference between CrudRepository and JpaRepository interfaces in Spring Data JPA?](https://stackoverflow.com/questions/14014086/what-is-difference-between-crudrepository-and-jparepository-interfaces-in-spring)
 
 * [Software release life cycle](https://en.wikipedia.org/wiki/Software_release_life_cycle)
+* [Growing Object-Oriented Software Guided by Tests](http://www.growing-object-oriented-software.com)
+* [Foundations of Programming 2 - Chapter 5 - Effective Testing](www.openmymind.net/2011/2/23/Foundations-of-Programming-2-Chapter-5-Effective-T/)
 
 Terms & Keywords
 -----------------
