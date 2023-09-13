@@ -18,7 +18,7 @@ public class MainStack {
 
         System.out.println("----------------- GET ELEMENTS FROM STACK --------------");
         for (int y = 0; y < 20; y ++ ) {
-            System.out.printf("- [%d] {%d} Next Stack: %s\n", y + 1, stack.getStackScanPosition(), stack.getNextOnStack());
+            System.out.printf("- [%d] {%d} Next Stack: %s\n", y + 1, stack.getStackScanPosition(), stack.stackDown());
         }
 
         System.out.println("----------------- ADD ELEMENTS into STACK --------------");
@@ -43,7 +43,7 @@ public class MainStack {
         System.out.println("----------------- GET ELEMENTS FROM STACK --------------");
 
         for (int y = 0; y < 20; y ++ ) {
-            System.out.printf("- [%d] {%d} Next Stack: %s\n", y, stack.getStackScanPosition(), stack.getNextOnStack());
+            System.out.printf("- [%d] {%d} Next Stack: %s\n", y, stack.getStackScanPosition(), stack.stackDown());
         }
 
 
@@ -56,7 +56,7 @@ public class MainStack {
         }
         System.out.println("----------------- GET ELEMENTS FROM MINI STACK --------------");
         for (int y = 0; y < 20; y ++ ) {
-            System.out.printf("- [%d] {%d} Next Stack: %s\n", y + 1, minIStack.getStackScanPosition(), minIStack.getNextOnStack());
+            System.out.printf("- [%d] {%d} Next Stack: %s\n", y + 1, minIStack.getStackScanPosition(), minIStack.stackDown());
         }
 
 
@@ -65,7 +65,7 @@ public class MainStack {
         
         System.out.println(String.format("stack top -> %s", stackDemo2.top()));
         System.out.println(String.format("stack bottom -> %s", stackDemo2.bottom()));
-        System.out.println(String.format("stack next on stack %d -> %s", stackDemo2.getStackScanPosition(), stackDemo2.getNextOnStack()));
+        System.out.println(String.format("stack next on stack %d -> %s", stackDemo2.getStackScanPosition(), stackDemo2.stackDown()));
 
         stackDemo2.add("Element 1");
         System.out.println(String.format("stack bottom -> %s", stackDemo2.bottom()));
@@ -76,12 +76,49 @@ public class MainStack {
         stackDemo2.add("Element 3");
         System.out.println(String.format("stack bottom -> %s", stackDemo2.bottom()));
 
-        for (int y = 0; y < 10; y++ ){
-            String element = stackDemo2.getNextOnStack();
-            int scanPosition = stackDemo2.getStackScanPosition();
-            System.out.println(String.format("stack next on stack %d -> %s", scanPosition, element));
+        stackDemo2.add("Element 4");
+        System.out.println(String.format("stack bottom -> %s", stackDemo2.bottom()));
+        
+        i = 0;
+        for (String element: stackDemo2.getStack()) {
+            System.out.printf("- [%d] Element -> %s\n", i, element);
+            i ++;
         }
 
+        for (int y = 0; y < 10; y++ ){
+            String element = stackDemo2.stackDown();
+            int scanPosition = stackDemo2.getStackScanPosition();
+            System.out.println(String.format("stack down on stack %d -> %s", scanPosition, element));
+        }
+
+        System.out.println("----------------- Stack up! --------------");
+        for (int y = 0; y < 10; y++ ){
+            String element = stackDemo2.stackUp();
+            int scanPosition = stackDemo2.getStackScanPosition();
+            System.out.println(String.format("stack up on stack %d -> %s", scanPosition, element));
+        }
+
+        System.out.println("----------------- STACK 3 --------------");
+        Stack stackDemo3 = new Stack();
+        for (int y = 0; y < 5; y++) {
+            stackDemo3.add(String.format("[%d] item", y + 1));
+        }
+        i = 0;
+        for (String element: stackDemo3.getStack()) {
+            System.out.printf("- [%d] - %s\n", i, element);
+            i ++;
+        }
+
+        System.out.println("----------------- Stack up! --------------");
+        for (int y = 0; y < 10; y++ ){
+            String element = stackDemo3.stackUp();
+            int scanPosition = stackDemo3.getStackScanPosition();
+            System.out.println(String.format("stack up on stack %d -> %s", scanPosition, element));
+        }
+
+        System.out.println(String.format("Current Stack element %d -> %s", stackDemo3.getStackScanPosition(), stackDemo3.currentStackElement()));
+        System.out.println(String.format("Top: %s | Stack: %s | Result:\nIndex -> %d, current Stack position -> %d is stack position index? %s", 
+            stackDemo3.top(), stackDemo3.currentStackElement(), stackDemo3.getIndex(), stackDemo3.getStackScanPosition(), stackDemo3.isCurrentStackPositionTop()));
     }
 
     
@@ -89,13 +126,14 @@ public class MainStack {
     
 }
 
+// TODO: Check if Stack is thread save (may need to add syncrhonized or volatile here and there), to some testings!
 
 /**
  *
  * Minimalistic Stack implementation
  * It uses an index as 'cursor' to identify the current latest element added in the stack (therefore being at the top of the stack)
  * <p></p>
- * We can go through the stack via <strong><code>getNextOnStack</code></strong> method which automatically wrap back up to the top element,
+ * We can go through the stack via <strong><code>stackDown</code></strong> method which automatically wrap back up to the top element,
  * and is doing this by simply going backward from the current index
  *
  * @see <a href="https://stackoverflow.com/a/15840632/13903942">Credit: Java Stack with elements limit<a>
@@ -120,15 +158,31 @@ class Stack {
         if (maxSize <= 0 || maxSize > STACK_MAX_SIZE) {
             throw new IllegalArgumentException(String.format("Max size must be between 0 and %d, %s provided", STACK_MAX_SIZE, maxSize));
         }
-        this.size = maxSize;
+
+        size = maxSize;
         stack = new String[size];
     }
 
-    public void add(String element) {
+    public synchronized void add(String element) {
         indexWrap();
-        stack[index] = element;
+        stackPut(index, element);
         stackScanPosition = index; // when adding a new element, the stackScanPosition reset. This can be changed depending on use case
         index ++;
+    }
+
+    public String top() {
+        return stackGet(getIndex());
+    }
+
+    public String bottom() {
+        String element = stackGet(index);
+        if (element == null)
+            element = stackGet(0);
+        return element;
+    }
+
+    public String currentStackElement() {
+        return stackGet(getStackScanPosition());
     }
 
     /**
@@ -156,28 +210,34 @@ class Stack {
      * 
      * @return String
     */
-    public String getNextOnStack() {
-        String element = accessStack(stackScanPosition);
+    public synchronized String stackDown() {
+        String element = stackGet(stackScanPosition);
         if (element == null) {
             stackScanPosition = getIndex();
-            element = accessStack(stackScanPosition);
+            element = stackGet(stackScanPosition);
         }
 
         stackScanPosition --;
-        stackScanPositionWrap(); 
+        stackScanPositionWrapDown(); 
         return element;
     }
 
-    public String top() {
-        return accessStack(getIndex());
-    }
+    /**
+     * Same as stackDown but goes on opposite direction
+     * @return String 
+     */
+    public synchronized String stackUp() {
+        String element = stackGet(stackScanPosition);
+        if (element == null) {
+            stackScanPosition = 0;
+            element = stackGet(stackScanPosition);
+        }
 
-    public String bottom() {
-        String element = accessStack(index);
-        if (element == null)
-            element = accessStack(0);
+        stackScanPosition ++;
+        stackScanPositionWrapUp(); 
         return element;
-    }
+
+    }    
 
     public String[] getStack() {
         return stack;
@@ -191,18 +251,32 @@ class Stack {
         return stackScanPosition;
     }
 
-    private void indexWrap() {
+    public boolean isCurrentStackPositionTop() {
+        return getStackScanPosition() == getIndex();
+    }
+
+    private synchronized void indexWrap() {
         if (index + 1 > size)
             index = 0;
     }
 
-    private void stackScanPositionWrap() {
+    private synchronized void stackScanPositionWrapDown() {
         if (stackScanPosition < 0) {
             stackScanPosition = size - 1;
         }
     }
 
-    private String accessStack(int position) {
+    private synchronized void stackScanPositionWrapUp() {
+        if (stackScanPosition + 1 > size) {
+            stackScanPosition = 0;
+        }
+    }
+
+    private synchronized void stackPut(int index, String element) {
+        stack[index] = element;
+    }
+
+    private String stackGet(int position) {
         try {
             return stack[position];
         } catch (ArrayIndexOutOfBoundsException ignored) {

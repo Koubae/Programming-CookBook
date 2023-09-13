@@ -133,5 +133,6 @@ Further Reading
 ===============
 
 * [Software release life cycle](https://en.wikipedia.org/wiki/Software_release_life_cycle)
+* [Kaylan Blog Post](https://kalyanchakravarthy.net/?p=413)
 
 -----------------------------------------------------------------------------------------------------

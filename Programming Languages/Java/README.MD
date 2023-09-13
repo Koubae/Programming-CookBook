@@ -305,10 +305,16 @@ Best Practices & Conventions
 * [Oracel - Indentations and formatting Conventions](https://www.oracle.com/java/technologies/javase/codeconventions-indentation.html)
 
 
+Books
+-----
+
+* [Java Concurrency in Practice](https://jcip.net)
+* [Computer Architecture - A Quantitative Approach](https://shop.elsevier.com/books/computer-architecture/hennessy/978-0-12-383872-8)
 
 Further Reading 
 ---------------
 
+* [Managing volatility](http://web.archive.org/web/20210221170926/https://www.ibm.com/developerworks/java/library/j-jtp06197/)
 * [Do we really need @Override and so on when code Java? [duplicate]](https://stackoverflow.com/questions/4822954/do-we-really-need-override-and-so-on-when-code-java)
 * [When do you use Java's @Override annotation and why?](https://stackoverflow.com/questions/94361/when-do-you-use-javas-override-annotation-and-why)
 * [Enterprise Integration Patterns Enterprise Integration Patterns](https://www.enterpriseintegrationpatterns.com/)
