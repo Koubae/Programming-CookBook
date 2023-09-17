@@ -258,6 +258,9 @@ Repos
 
 * [dionthorn/2DTacticalRPG | Videogame done with JavaFX](https://github.com/dionthorn/2DTacticalRPG)
 * [Kvark900/spring-jpa-thymeleaf-bootstrap](https://github.com/Kvark900/spring-jpa-thymeleaf-bootstrap)
+* [RawConsoleInput](https://www.source-code.biz/snippets/java/RawConsoleInput/) | [source-code.biz](https://www.source-code.biz)
+* [Java Native Access (JNA)](https://github.com/java-native-access/jna)
+
 
 ### Spring 
 
