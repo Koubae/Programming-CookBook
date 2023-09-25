@@ -261,6 +261,8 @@ Repos
 * [RawConsoleInput](https://www.source-code.biz/snippets/java/RawConsoleInput/) | [source-code.biz](https://www.source-code.biz)
 * [Java Native Access (JNA)](https://github.com/java-native-access/jna)
 
+* [JsonBodyHandler.java](https://github.com/mjg123/java-http-clients/blob/master/src/main/java/com/twilio/JsonBodyHandler.java)
+* [mjg123/java-http-clients](https://github.com/mjg123/java-http-clients/tree/master)
 
 ### Spring 
 
