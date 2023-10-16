@@ -98,6 +98,12 @@ Interactive JavaScript Diagrams for the Web
 - [GOJS --GITHUB--](https://github.com/NorthwoodsSoftware/GoJS)
 
 
+APIs 
+----
+
+* [dailympotion.com - graph-api](https://developers.dailymotion.com/api/#graph-api)
+
+
 Tools
 =====
 

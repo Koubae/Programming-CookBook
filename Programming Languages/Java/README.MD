@@ -208,6 +208,16 @@ Projects
 * [Odaym/Snipit](https://github.com/Odaym/Snipit)
 * [weberjn/jBM -- BookMarks](https://github.com/weberjn/jBM)
 
+### HTTP / HTTP-Client
+
+* [OKHttp](https://square.github.io/okhttp/)
+* [google-http-java-client](https://github.com/googleapis/google-http-java-client)
+    * [google-http-java-client - overview](https://googleapis.github.io/google-http-java-client/)
+    * [google-http-java-client - setup](https://googleapis.github.io/google-http-java-client/setup.html)
+    * [google-http-client - JavaDOCS](https://cloud.google.com/java/docs/reference/google-http-client/latest/overview.html)
+
+* [Comparison of Java HTTP Clients](https://reflectoring.io/comparison-of-java-http-clients/)
+
 ### Spring 
 
 * [Are there any big spring-boot open source projects?](https://stackoverflow.com/questions/54782469/are-there-any-big-spring-boot-open-source-projects)
@@ -328,6 +338,10 @@ Further Reading
 * [Software release life cycle](https://en.wikipedia.org/wiki/Software_release_life_cycle)
 * [Growing Object-Oriented Software Guided by Tests](http://www.growing-object-oriented-software.com)
 * [Foundations of Programming 2 - Chapter 5 - Effective Testing](www.openmymind.net/2011/2/23/Foundations-of-Programming-2-Chapter-5-Effective-T/)
+
+* [5-ways-to-make-http-requests-in-java](https://www.twilio.com/blog/5-ways-to-make-http-requests-in-java)
+* [Which Java HTTP client is best in 2020?](https://www.reddit.com/r/java/comments/jmnzgd/which_java_http_client_is_best_in_2020/)
+* [What is the best Java library to use for HTTP POST, GET etc.? [closed]](https://stackoverflow.com/questions/1322335/what-is-the-best-java-library-to-use-for-http-post-get-etc)
 
 Terms & Keywords
 -----------------
