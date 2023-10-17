@@ -32,6 +32,18 @@ Load balancers ensure reliability and availability by monitoring the "health" of
 To learn more on load balancing, visit DevCentral.
 
 
+### Pool 
+
+* [Pool (computer science)](https://en.wikipedia.org/wiki/Pool_(computer_science))
+
+> In computer science, a pool is a collection of resources that are kept in memory, ready to use, rather than the memory acquired on use or the memory released afterwards. 
+
+* [polling (computing)](https://www.techtarget.com/whatis/definition/polling)
+
+> In computer science, polling or a polled operation denotes the process of repeatedly sampling the status of external devices by a client program. The term polling is often used when describing input/output and referred to as software-driven I/O or polled I/O. This process can occur thousands of times a second.
+
+For more information see [Design Principles - Pool](./Design%20Principles/pool.md)
+
 -----------------------------------------------------------------------------------------------------
 
 Testing
