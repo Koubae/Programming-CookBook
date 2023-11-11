@@ -5,6 +5,7 @@ Vue
 
 *Version: **v3.3.8***
 
+Also see [Koubae/Vue-CookBook](https://github.com/Koubae/Vue-CookBook)
 
 Documentation
 -------------
@@ -13,7 +14,7 @@ Documentation
 * [Tooling](https://vuejs.org/guide/scaling-up/tooling.html)
 * [Progrressive Enhancement](https://developer.mozilla.org/en-US/docs/Glossary/Progressive_Enhancement)
 * [Style Guide](https://vuejs.org/style-guide/)
-
+* [Examples](https://vuejs.org/examples/#hello-world)
 
 ### Linting
 
@@ -26,7 +27,12 @@ Documentation
 * SFC: `Vue Single-File Components`
 * reactive
 * ref 
+* Single-Page Application (SPA)
+* Fullstack / Server-Side Rendering (SSR)
+* Jamstack / Static Site Generation (SSG)
 
+
+* [globalsAllowList.ts](https://github.com/vuejs/core/blob/main/packages/shared/src/globalsAllowList.ts#L3)
 
 Courses
 -------
@@ -58,6 +64,7 @@ Projects
 
 * [awesome-vite](https://github.com/vitejs/awesome-vite#templates)
 * [degit](https://github.com/Rich-Harris/degit)
+* [VsCode - Vue Extensions](https://github.com/antfu/vscode-settings/blob/main/.vscode/extensions.json)
 
 
 Debugging
@@ -70,7 +77,7 @@ Debugging
 Further Reading
 ----------------
 
-
+* [How Can i use Nuxt and Django for production at the same time?](https://stackoverflow.com/questions/69357302/how-can-i-use-nuxt-and-django-for-production-at-the-same-time)
 * [ref vs reactive in Vue 3?](https://stackoverflow.com/questions/61452458/ref-vs-reactive-in-vue-3)
 * [Credit](https://stackoverflow.com/a/65262638/13903942)
 
