@@ -10,7 +10,7 @@ Learning
 - [Airbnb JavaScript Style Guide --GITHUB--](https://github.com/airbnb/javascript)
 - [JavaScript Style Guide](https://airbnb.io/projects/javascript/)
 - [Airbnb React/JSX Style Guide](https://airbnb.io/javascript/react/)
-
+- [w3docs](https://www.w3docs.com)
 
 
 ### Asynchronous JavaScript
