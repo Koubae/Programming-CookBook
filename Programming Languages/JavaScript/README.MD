@@ -121,8 +121,13 @@ The Canvas API provides a means for drawing graphics via JavaScript and the HTML
 
 ### TypeCheck & linting
 
+* [Google JavaScript Style Guide](https://google.github.io/styleguide/javascriptguide.xml#JsTypes)
+
 - [EsLint](https://eslint.org)
 - [jslint](https://www.jslint.com)
+
+* [jsdoc](https://jsdoc.app)
+* [jsdoc - typedef](https://jsdoc.app/tags-typedef)
 
 -----------------------------------------------------------------------------------------------------
 

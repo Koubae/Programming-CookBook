@@ -54,10 +54,15 @@ Courses
 Libraries
 ----------
 
-
+* [VueUse](https://vueuse.org/)
 * [Vue Petite](https://github.com/vuejs/petite-vue)
+* [Mande](https://github.com/posva/mande)
+* [Sentry](https://docs.sentry.io/)
+* [BugSnag](https://docs.bugsnag.com/)
+* [nuxt-contrib/devalue](https://github.com/nuxt-contrib/devalue)
 
-
+* [Vitesse - Pinia](https://github.com/antfu/vitesse/blob/main/src/modules/pinia.ts)
+* [vite-plugin-ssr - pinia](https://vite-plugin-ssr.com/pinia)
 
 Projects
 --------
@@ -65,6 +70,7 @@ Projects
 * [awesome-vite](https://github.com/vitejs/awesome-vite#templates)
 * [degit](https://github.com/Rich-Harris/degit)
 * [VsCode - Vue Extensions](https://github.com/antfu/vscode-settings/blob/main/.vscode/extensions.json)
+
 
 
 Debugging
