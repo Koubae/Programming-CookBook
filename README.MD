@@ -3,6 +3,7 @@
 
 Programmer & Developer Cook-Book | Covers Programming Languages, Databases, Linux Commands and more. 
 
+
 -----------------------------------------------------------------------------------------------------
 
 ## General Knowledge
@@ -37,6 +38,7 @@ Programmer & Developer Cook-Book | Covers Programming Languages, Databases, Linu
 ### NOTES & THINGS TO KNOW
 
 - ***[REGEXR](https://regexr.com/)***
+- [Interview Questions](./Software%20Architecture/interview_questions.md)
 
 - [Backus–Naur form](https://en.wikipedia.org/wiki/Backus–Naur_form)
 - [The History of the ALGOL Effort](https://heerdebeer.org/ALGOL/The_History_of_ALGOL.pdf)
