@@ -61,6 +61,39 @@ Data point can help formulate hypothesis.
 * [Optimization: Why Data Points Matter?](https://www.linkedin.com/pulse/optimization-why-data-points-matter-expanz/)
 
 
+### SOLID
+
+* S: Single Responsability 
+* O: Open-Closed 
+* L: Liskov Substitution 
+* I: Interface Segregation 
+* D: Dependency Inversion
+
+
+Architecture
+------------------
+
+### Clean Architecture / Screaming Architecture
+
+* [The Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
+* [Screaming Architecture](https://blog.cleancoder.com/uncle-bob/2011/09/30/Screaming-Architecture.html)
+
+source code dependencies can only **point inwards.**
+
+### Hexagonal Architecture 
+
+* [What's Hexagonal Architecture?](https://medium.com/@luishrsoares/whats-hexagonal-architecture-6da22d4ab600)
+* [Hexagonal architecture (software)](https://en.wikipedia.org/wiki/Hexagonal_architecture_(software))
+* [Hexagonal Architecture, there are always two sides to every story](https://medium.com/ssense-tech/hexagonal-architecture-there-are-always-two-sides-to-every-story-bc0780ed7d9c)
+* [DDD, Hexagonal, Onion, Clean, CQRS, … How I put it all together](https://herbertograca.com/2017/11/16/explicit-architecture-01-ddd-hexagonal-onion-clean-cqrs-how-i-put-it-all-together/)
+
+
+### Other Architectures
+
+* [EBI Architecture](https://herbertograca.com/2017/08/24/ebi-architecture/)
+* [Ports & Adapters Architecture](https://herbertograca.com/2017/09/14/ports-adapters-architecture/)
+
+
 Terminology
 ----------
 
@@ -73,3 +106,11 @@ Terminology
 - Data point
 - data collections
 - datum
+- SOLID
+- Clean Architecture
+- Hexagonal Architecture
+- Onion Architecture
+- Screaming Architecture
+- Domain-Driven Design
+- EBI Architecture
+- Ports & Adapters Architecture
