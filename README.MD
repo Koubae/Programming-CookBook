@@ -17,6 +17,31 @@ Programmer & Developer Cook-Book | Covers Programming Languages, Databases, Linu
 
 * [Starlark Language](https://bazel.build/rules/language)
 
+### RESTFULApis
+
+* [Richardson Maturity Model](https://www.martinfowler.com/articles/richardsonMaturityModel.html)
+* [REST: I don't Think it Means What You Think it Does • Stefan Tilkov • GOTO 2014](https://www.youtube.com/watch?v=pspy1H6A3FM)
+* [If an API only provides POST requests functions, is it RESTful?](https://stackoverflow.com/questions/47539691/if-an-api-only-provides-post-requests-functions-is-it-restful)
+
+#### APi Meshup
+
+* [GeoChain: API Scraping with Ballerina](https://ballerinagist.blogspot.com/2017/05/geochain-api-scraping-with-ballerina.html)
+* [API Mashups in API Gateway 10.4](https://tech.forums.softwareag.com/t/api-mashups-in-api-gateway-10-4/237327)
+* [Design to aggregate multiple REST APIs and send the data to UI](https://stackoverflow.com/a/58076585/13903942)
+* [Need recommendation to create an API by aggregating data from multiple source APIs](https://stackoverflow.com/questions/71475411/need-recommendation-to-create-an-api-by-aggregating-data-from-multiple-source-ap)
+
+* [ETL (Extract Transform Load) problem](https://aws.amazon.com/what-is/etl/)
+    * [What is the fastest way to send 100,000 HTTP requests in Python?](https://stackoverflow.com/a/57689101/13903942)
+    * [ETL REST API using Python Flask](https://medium.com/plumbersofdatascience/etl-rest-api-using-python-flask-c8171ac925c5)
+    * [Batching with API Mesh for Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/batching/)
+
+* Aggregate API Calls | API Mesh
+    * [How should I aggregate multiple API requests?](https://stackoverflow.com/questions/65919500/how-should-i-aggregate-multiple-api-requests)
+    * [Optimizing the Netflix API](https://netflixtechblog.com/optimizing-the-netflix-api-5c9ac715cf19)
+    * [How Api gateway combine responses form microservices](https://stackoverflow.com/questions/58684080/how-api-gateway-combine-responses-form-microservices)
+
+* [Gateway Aggregation pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/gateway-aggregation)
+
 ## Learning Material
 
 - [DevDocs — API Documentation Browser](https://github.com/freeCodeCamp/devdocs)
