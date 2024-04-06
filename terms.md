@@ -19,12 +19,14 @@
     - Automatic memoization
 
 - Referential transparency
+- [Twelve-Factor App methodology](https://en.wikipedia.org/wiki/Twelve-Factor_App_methodology) | [The Twelve-Factor App](https://12factor.net)
 
 - Computational complexity theory
 
 - closures
 - decorator pattern
 - Function object
+- Infrastructure plumbing
 
 - Natural language processing
 
