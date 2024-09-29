@@ -152,6 +152,8 @@ Projects
 * [CMake](https://cmake.org/)
 * [CMake projects in Visual Studio](https://docs.microsoft.com/en-us/cpp/build/cmake-projects-in-visual-studio?view=msvc-170)
 * [Light-City/CPlusPlusThings](https://github.com/Light-City/CPlusPlusThings)
+* [libcpr/example-cmake-fetch-content](https://github.com/libcpr/example-cmake-fetch-content)
+
 
 Repos
 --------------
