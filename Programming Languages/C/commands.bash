@@ -25,6 +25,9 @@ sudo apt-get install gcc-9
 
 # simple compilation
 gcc main.c -o main 
+# Specific version compilation
+gcc main.c -std=c17 -o main 
+
 
 # compile with compiler warning message
 # The option -Wall enables all compiler’s warning messages. This option is recommended to generate better code. 
