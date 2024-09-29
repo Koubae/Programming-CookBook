@@ -10,7 +10,8 @@ C ++
 
 #### Relative Projects
 
-* [Owner avatar C-Calculator-Simple](https://github.com/Koubae/C-Calculator-Simple)
+* [Koubae/C-CPP-Examples](https://github.com/Koubae/C-CPP-Examples)
+* [Koubae/C-Calculator-Simple](https://github.com/Koubae/C-Calculator-Simple)
 
 Installation
 ------------
