@@ -92,6 +92,7 @@ Projects
 
 ### To Learn
 
+* [davidetaibi/Microservices_Project_List](https://github.com/davidetaibi/Microservices_Project_List)
 * [PacktPublishing/Docker-Orchestration](https://github.com/PacktPublishing/Docker-Orchestration)
     * [Docker Orchestration book By Randall Smith](https://www.packtpub.com/product/docker-orchestration/9781787122123)
 
