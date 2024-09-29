@@ -8,6 +8,10 @@ C ++
 
 * [https://github.com/salmer/CppDeveloperRoadmap](https://github.com/salmer/CppDeveloperRoadmap)
 
+#### Relative Projects
+
+* [Owner avatar C-Calculator-Simple](https://github.com/Koubae/C-Calculator-Simple)
+
 Installation
 ------------
 
@@ -124,11 +128,29 @@ Documentations
 -g tells the compiler to store symbol table information in the executable. Among other things, this includes:
 ```
 
+StackOverflow | Forums | QA
+-------------
+
+
+* [What is the weird colon-member (“ : “) syntax in constructor?](https://saikamesh.medium.com/what-is-the-weird-colon-member-syntax-in-constructor-2fd065278d6f)
+* [C++, What does the colon after a constructor mean? [duplicate]](https://stackoverflow.com/questions/2785612/c-what-does-the-colon-after-a-constructor-mean)
+* [Variables after the colon in a constructor [duplicate]](https://stackoverflow.com/questions/2349978/variables-after-the-colon-in-a-constructor)
+* [What does a colon following a C++ constructor name do? [duplicate]](https://stackoverflow.com/questions/1272680/what-does-a-colon-following-a-c-constructor-name-do)
+
+
+### CLion
+
+* [Multiple Main Source files in CLion](https://intellij-support.jetbrains.com/hc/en-us/community/posts/205823219-Multiple-Main-Source-files-in-CLion)
+* [Run/debug single file](https://www.jetbrains.com/help/clion/run-single-file.html?_gl=1*reacd7*_gcl_aw*R0NMLjE3Mjc1NDQwODcuQ2p3S0NBancwdDYzQmhBVUVpd0E1eFA1NFI5OUFYWktvc2JlbWZlWHFDajRhNTZUVTk0ZHowUFNZM01HYjdlNm44YjhOUk1RMEpyQlRob0NZem9RQXZEX0J3RQ..*_gcl_au*MTE1ODc1NDYyMy4xNzI3MTY5ODYw*_ga*MjA1NjYzNjkwNC4xNzI3MTY5ODU5*_ga_9J976DJZ68*MTcyNzYwNTc2OS4zLjEuMTcyNzYwNTkwMS40Ni4wLjA.)
+* [developerinsider/C-Programming-Example](https://github.com/developerinsider/C-Programming-Example)
+
+
 Projects
 --------
 
 * [CMake](https://cmake.org/)
 * [CMake projects in Visual Studio](https://docs.microsoft.com/en-us/cpp/build/cmake-projects-in-visual-studio?view=msvc-170)
+* [Light-City/CPlusPlusThings](https://github.com/Light-City/CPlusPlusThings)
 
 Repos
 --------------
