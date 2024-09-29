@@ -7,7 +7,11 @@
 
 
 
-
+/**
+ * @docs: https://stackoverflow.com/questions/34383516/should-i-default-virtual-destructors
+ * @docs: https://stackoverflow.com/questions/827196/virtual-default-destructors-in-c
+ * @docs: https://stackoverflow.com/questions/17221668/why-do-we-need-to-use-virtual-a-default-instead-of-virtual-a-in-c1
+ */
 class Calculator
 {
 
@@ -15,7 +19,7 @@ class Calculator
 
 public: 
     Calculator();   /// Constructor
-    virtual ~Calculator() = default; /// Virtual destructor to prevent delete errors
+    virtual ~Calculator() = default; /// Virtual destructor to prevent delete errors  @ see https://stackoverflow.com/questions/34383516/should-i-default-virtual-destructors
 
     // ----------------------
     //  Methods
