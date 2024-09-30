@@ -52,13 +52,17 @@ Hope this helps :slight_smile:
 * [Unreal Engine 4 Tutorial - Lightswitch Actor](https://www.youtube.com/watch?v=THMd4HaHnZM)
 * Cool -> [UE4 Emissive lighting and materials tutorial - unreal engine for beginners](https://www.youtube.com/watch?v=eVPuvCAEz4Q&t=70s)
 * [Unreal Engine 4 C++ Tutorial: Rotate Angle Axis Specify Vector](https://www.youtube.com/watch?v=eicFMa3kis4)
+* [How To Use The New Enhanced Input Action Mappings In Unreal Engine 5.1 (Tutorial)](https://www.youtube.com/watch?v=nXJuXUxQfa8)
+
+* [Create and modify shapes in Unreal engine 5](https://www.youtube.com/watch?v=6NV7rqdtTTY)
+
 
 ### Forum / Questions
 
 * [Trying to follow CPP and CPP/BP Examples](https://forums.unrealengine.com/t/trying-to-follow-cpp-and-cpp-bp-examples/1543420)
 * [What does “class” in class UPointLightComponent* PointLight1; mean?](https://forums.unrealengine.com/t/what-does-class-in-class-upointlightcomponent-pointlight1-mean/323406)
 * [Faster compile times?](https://forums.unrealengine.com/t/faster-compile-times/148765/3)
-
+* [ WUT? Axis and Action mappings are now deprecated, please use Enhanced Input Acitons and Input Mappi](https://forums.unrealengine.com/t/wut-axis-and-action-mappings-are-now-deprecated-please-use-enhanced-input-acitons-and-input-mapping-contexts-instead/776849)
 
 
 ```cs
