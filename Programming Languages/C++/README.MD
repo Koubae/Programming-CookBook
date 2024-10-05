@@ -194,6 +194,11 @@ Tutorials
 * [Best C++ Documentation](https://obiztools.com/best-c-documentation/)
 * [What is a simple C or C++ TCP server and client example? [closed]](https://stackoverflow.com/questions/662328/what-is-a-simple-c-or-c-tcp-server-and-client-example)
 * [Beej's Guide to Network Programming](https://www.beej.us/guide/bgnet/html/)
+
+
+
+### TCP And Networking
+
 * [bozkurthan/Simple-TCP-Server-Client-CPP-Example](https://github.com/bozkurthan/Simple-TCP-Server-Client-CPP-Example)
 
 * [Creating a TCP Server in C++](https://www.youtube.com/watch?v=WDn-htpBlnU)
@@ -205,6 +210,16 @@ Tutorials
 * [StudioCherno/Walnut-Networking](https://github.com/StudioCherno/Walnut-Networking)
 * [StudioCherno/Walnut](https://github.com/StudioCherno/Walnut)
 
+* [TCP Client Server Application | C++ in 2021 ](https://www.youtube.com/watch?v=DVMHEDhYEr4)
+* [ C++ Network programming: Basic TCP echo server tutorial ](https://www.youtube.com/watch?v=CFe5LQOPdfk)
+* [toprakkeskin/Cpp-Socket-Simple-TCP-Echo-Server-Client](https://github.com/toprakkeskin/Cpp-Socket-Simple-TCP-Echo-Server-Client)
+* [Winsock echo server port](https://stackoverflow.com/questions/31461531/winsock-echo-server-port)
+* [mafintosh/echo-servers.c](https://github.com/mafintosh/echo-servers.c)
+
+* [Winsock Server Source Code](https://learn.microsoft.com/en-us/windows/win32/winsock/complete-server-code)
+* [WSK TCP Echo Server](https://learn.microsoft.com/en-us/samples/microsoft/windows-driver-samples/wsk-tcp-echo-server/)
+* [Complete Winsock Client Code](https://learn.microsoft.com/en-us/windows/win32/winsock/complete-client-code)
+* [getaddrinfo function (ws2tcpip.h)](https://learn.microsoft.com/en-us/windows/win32/api/ws2tcpip/nf-ws2tcpip-getaddrinfo?redirectedfrom=MSDN)
 
 
 Terms & Keywords
