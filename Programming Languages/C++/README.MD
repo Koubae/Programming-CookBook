@@ -181,9 +181,31 @@ Tutorials
 * []()
 * []()
 
+
+
+
+### Youtube
+
+* [Welcome to C++ (The Cherno))](https://youtu.be/18c3MTX0PK0?si=RFc4TAS66zwiJy1H)
+
+
 ### Misc
 
 * [Best C++ Documentation](https://obiztools.com/best-c-documentation/)
+* [What is a simple C or C++ TCP server and client example? [closed]](https://stackoverflow.com/questions/662328/what-is-a-simple-c-or-c-tcp-server-and-client-example)
+* [Beej's Guide to Network Programming](https://www.beej.us/guide/bgnet/html/)
+* [bozkurthan/Simple-TCP-Server-Client-CPP-Example](https://github.com/bozkurthan/Simple-TCP-Server-Client-CPP-Example)
+
+* [Creating a TCP Server in C++](https://www.youtube.com/watch?v=WDn-htpBlnU)
+* [ Creating a TCP Client in C++ [Linux / Code Blocks] ](https://www.youtube.com/watch?v=fmn-pRvNaho)
+
+* [Networking in C++s](https://www.youtube.com/watch?v=jS9rBienEFQ)
+* [ValveSoftware/GameNetworkingSockets](https://github.com/ValveSoftware/GameNetworkingSockets)
+* [TheCherno/Walnut-Chat](https://github.com/TheCherno/Walnut-Chat)
+* [StudioCherno/Walnut-Networking](https://github.com/StudioCherno/Walnut-Networking)
+* [StudioCherno/Walnut](https://github.com/StudioCherno/Walnut)
+
+
 
 Terms & Keywords
 -----------------
