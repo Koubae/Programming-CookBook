@@ -1,10 +1,46 @@
 GO
 ========
 
+### Related Projects
+
+* [Koubae/go-example](https://github.com/Koubae/go-example)
+
 
 Documentation
 -------------
 
+* [Go -- Documentation](https://go.dev/doc/)
+* [Frequently Asked Questions (FAQ)](https://go.dev/doc/faq)
+* [The Go Memory Model](https://go.dev/ref/mem)
+
+* [Get Started](https://go.dev/learn/)
+    * [Tutorial: Get started with Go](https://go.dev/doc/tutorial/getting-started)
+* [Download and install](https://go.dev/doc/install)
+    * [Managing Go installations](https://go.dev/doc/manage-install)
+* [All releases](https://go.dev/dl/)
+* [Go Wiki: GOPATH](https://go.dev/wiki/GOPATH)
+
+
+* [How to Write Go Code](https://go.dev/doc/code)
+    * [Remote import paths](https://pkg.go.dev/cmd/go#hdr-Remote_import_paths)
+    * [Workspace](https://go.dev/doc/tutorial/workspaces)
+    * [Module release and versioning workflow](https://go.dev/doc/modules/release-workflow)
+    * [Organizing a Go module](https://go.dev/doc/modules/layout)
+    * [Managing module source](https://go.dev/doc/modules/managing-source)
+    * [Internal Directories](https://pkg.go.dev/cmd/go#hdr-Internal_Directories)
+
+* [gofmt](https://pkg.go.dev/cmd/gofmt)
+* [staticcheck](https://github.com/dominikh/go-tools/tree/master/cmd/staticcheck)
+
+### Go by Example
+
+* [Go Web Examples Learn Web Programming in Go by Examples](https://gowebexamples.com/)
+* [Go by Example: HTTP Servers](https://gobyexample.com/http-servers)
+
+### Other
+
+* [Building an Awesome CLI App in Go – OSCON 2017](https://spf13.com/presentation/building-an-awesome-cli-app-in-go-oscon/)
+* [Go Programming Language Tutorial | Golang Tutorial For Beginners | Go Language Training | Edureka](https://www.youtube.com/watch?v=Q0sKAMal4WQ&ab_channel=edureka%21)
 
 -----------------------------------------------------------------------------------------------------
 
@@ -12,8 +48,11 @@ Documentation
 Repos & Projects
 -----------------------
 
+* [Golang Example](https://github.com/golang/example)
+* [golang-standards/project-layout](https://github.com/golang-standards/project-layout)
 * [willvelida/learn-go-on-azure](https://github.com/willvelida/learn-go-on-azure)
 
+* [antonputra/tutorials](https://github.com/antonputra/tutorials)
 
 ### Game Dev
 
@@ -34,6 +73,8 @@ Frameworks
 * [GUI](https://golangr.com/gui/)
 * [AllenDang/giu](https://github.com/AllenDang/giu)
 * [goki/g](https://github.com/goki/gi)
+
+
 ### Web Development
 
 * [Gin Web Framework](https://gin-gonic.com/docs/)
@@ -57,6 +98,8 @@ Guide & Areas of Study
 - [Developing and publishing modules](https://go.dev/doc/modules/developing)
 * [Exported names](https://go.dev/tour/basics/3)
 * [Go Slices: usage and internals](https://go.dev/blog/slices-intro)
+
+
 ### Others
 
 * [An Introduction to Programming in GO](https://www.golang-book.com/books/intro)
@@ -100,6 +143,7 @@ Terms & Keywords
 
 * multi-module workspaces
 * [Exported names](https://go.dev/tour/basics/3)
+    * [Exported identifiers](https://go.dev/ref/spec#Exported_identifiers)
 * [INit function](https://go.dev/doc/effective_go#init)
 * [The blank identifier](https://go.dev/doc/effective_go#blank)
 * [context](https://pkg.go.dev/context)
@@ -118,6 +162,8 @@ Terms & Keywords
 * Interface : type constraint
 * fuzzing | [Go fuzzing glossary](https://go.dev/doc/fuzz/#glossary)
 * [Function literals](https://go.dev/ref/spec#Function_literals)
+
+
 ### Datatype | Types | Components
 
 * boolean
@@ -132,6 +178,26 @@ Terms & Keywords
 * maps
 * functions 
 
+-----------------------------------------------------------------------------------------------------
+
+Further Reading
+----------
+
+* [What should be the values of GOPATH and GOROOT?](https://stackoverflow.com/questions/7970390/what-should-be-the-values-of-gopath-and-goroot/45529403#45529403)
+* [What should be the values of GOPATH and GOROOT?](https://stackoverflow.com/questions/7970390/what-should-be-the-values-of-gopath-and-goroot)
+* [What should be the values of GOPATH and GOROOT?](https://stackoverflow.com/questions/7970390/what-should-be-the-values-of-gopath-and-goroot/45529403#45529403)
+
+* [Benchmarking Golang and Java: Concurrency Performance Analysis for File Consumption](https://arthuracosta.medium.com/benchmarking-golang-and-java-concurrency-performance-analysis-for-file-consumption-563105ae028b)
+
+* [GitHub examples of Go that's written really well?](https://www.reddit.com/r/golang/comments/wp65j1/github_examples_of_go_thats_written_really_well/)
+* [Go Masterpieces](https://www.reddit.com/r/golang/comments/qvlnyw/go_masterpieces/)
+
+* [Keeping Your Modules Compatible](https://go.dev/blog/module-compatibility)
+* [Strings, bytes, runes and characters in Go](https://go.dev/blog/strings)
+    * [Strings & Runes](https://gobyexample.com/strings-and-runes)
+
+* [How to use interfaces in Go](https://jordanorelli.com/post/32665860244/how-to-use-interfaces-in-go)
+* [Deconstructing Type Parameters](https://go.dev/blog/deconstructing-type-parameters)
 
 -----------------------------------------------------------------------------------------------------
 
