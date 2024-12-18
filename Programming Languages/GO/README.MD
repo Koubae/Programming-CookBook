@@ -41,6 +41,7 @@ Documentation
 
 * [Building an Awesome CLI App in Go – OSCON 2017](https://spf13.com/presentation/building-an-awesome-cli-app-in-go-oscon/)
 * [Go Programming Language Tutorial | Golang Tutorial For Beginners | Go Language Training | Edureka](https://www.youtube.com/watch?v=Q0sKAMal4WQ&ab_channel=edureka%21)
+* [Learn Go with Tests](https://quii.gitbook.io/learn-go-with-tests)
 
 -----------------------------------------------------------------------------------------------------
 
@@ -198,6 +199,13 @@ Further Reading
 
 * [How to use interfaces in Go](https://jordanorelli.com/post/32665860244/how-to-use-interfaces-in-go)
 * [Deconstructing Type Parameters](https://go.dev/blog/deconstructing-type-parameters)
+
+
+
+* [go build not working when used with workspaces](https://stackoverflow.com/a/76180815/13903942)
+    * [Minimal version selection (MVS)](https://go.dev/ref/mod#minimal-version-selection)
+    * [Workspace](https://go.dev/ref/mod#workspaces)
+    * [Environment variables](https://go.dev/ref/mod#environment-variables)
 
 -----------------------------------------------------------------------------------------------------
 

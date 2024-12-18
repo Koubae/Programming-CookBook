@@ -91,7 +91,7 @@ go list -f '{{.Target}}'
 go list -f '{{.Target}}'
 
 go list -m -json -mod=readonly all
-
+go list -m all
 # ------------------
 # Testings
 # ------------------
@@ -114,3 +114,6 @@ go work init ./hello
 go work use ./example/hello
 # syncs dependencies from the workspace’s build list into each of the workspace modules.
 go work sync
+
+# https://go.dev/ref/mod#environment-variables
+GOWORK=off go run main.go
