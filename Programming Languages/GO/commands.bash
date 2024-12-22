@@ -1,5 +1,5 @@
 go version
-
+go doc fmt
 # --------------------
 # Install
 # --------------------
@@ -64,6 +64,9 @@ go get example.com/theirmodule@v0.0.0-unpublished
 # https://go.dev/doc/modules/release-workflow
 go get example.com/theirmodule@v1.2.3-alpha
 
+
+# https://pkg.go.dev/gopkg.in/yaml.v3#section-readme
+go get gopkg.in/yaml.v3
 
 # remove all downloaded modules, you can pass the -modcache flag to go clean:
 go clean -modcache

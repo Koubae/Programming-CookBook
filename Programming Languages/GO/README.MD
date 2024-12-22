@@ -65,9 +65,21 @@ Repos & Projects
 * [Pixel](https://github.com/faiface/pixel)
 
 
-Frameworks
+### Cool
+
+* [Yaml-to-GO](https://zhwt.github.io/yaml-to-go/)
+* [Json-to-GO](https://mholt.github.io/json-to-go/)
+
+
+Frameworks & Packages
 ----------
 
+* [Awesome GO](https://awesome-go.com/)
+
+### Serialization & File system
+
+* [github.com/go-yaml/yaml](https://pkg.go.dev/gopkg.in/yaml.v2)
+* [github.com/kr/fs Filesystem Package](https://github.com/kr/fs)
 
 ### GUI / Desktop development
 
@@ -83,6 +95,9 @@ Frameworks
 * [gorilla/handlers](https://github.com/gorilla/handlers)
 * [Writing HTTP Middleware in Go](https://justinas.org/writing-http-middleware-in-go)
 
+### Linters & Tools
+
+* [golangci](https://golangci-lint.run/)
 
 -----------------------------------------------------------------------------------------------------
 
@@ -206,6 +221,10 @@ Further Reading
     * [Minimal version selection (MVS)](https://go.dev/ref/mod#minimal-version-selection)
     * [Workspace](https://go.dev/ref/mod#workspaces)
     * [Environment variables](https://go.dev/ref/mod#environment-variables)
+
+* [Five suggestions for setting up a Go project](https://dave.cheney.net/2014/12/01/five-suggestions-for-setting-up-a-go-project)
+* [Andrew Gerrand’s excellent talk on Go naming.](https://go.dev/talks/2014/names.slide#1)
+* [How to write benchmarks in Go](https://dave.cheney.net/2013/06/30/how-to-write-benchmarks-in-go)
 
 -----------------------------------------------------------------------------------------------------
 
