@@ -5,7 +5,7 @@ APIs - Security & OAuth
 Authorization workflow
 ----------------------
 
-* **Credit [Hands-On RESTful API Design Patterns and Best Practices](https://www.oreilly.com/library/view/hands-on-restful-api/9781788992664/**)
+* **Credit [Hands-On RESTful API Design Patterns and Best Practices](https://www.oreilly.com/library/view/hands-on-restful-api/9781788992664)**
 
 The flow is as follows. The application client first sends a request and grabs a JWT access
 token from the third-party authentication and authorization server by supplying the
