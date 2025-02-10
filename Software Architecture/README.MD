@@ -2,6 +2,8 @@ Software Architecture
 =======================
 
 
+* A smart guy --> [Simon Brown](https://simonbrown.je/)
+
 Components
 ----------
 

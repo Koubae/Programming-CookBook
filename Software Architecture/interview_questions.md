@@ -84,9 +84,14 @@ source code dependencies can only **point inwards.**
 
 * [What's Hexagonal Architecture?](https://medium.com/@luishrsoares/whats-hexagonal-architecture-6da22d4ab600)
 * [Hexagonal architecture (software)](https://en.wikipedia.org/wiki/Hexagonal_architecture_(software))
-* [Hexagonal Architecture, there are always two sides to every story](https://medium.com/ssense-tech/hexagonal-architecture-there-are-always-two-sides-to-every-story-bc0780ed7d9c)
+* Really good --> [Hexagonal Architecture, there are always two sides to every story](https://medium.com/ssense-tech/hexagonal-architecture-there-are-always-two-sides-to-every-story-bc0780ed7d9c)
 * [DDD, Hexagonal, Onion, Clean, CQRS, … How I put it all together](https://herbertograca.com/2017/11/16/explicit-architecture-01-ddd-hexagonal-onion-clean-cqrs-how-i-put-it-all-together/)
 
+
+### DDD Domain Driven Design
+
+* [wiki -- Domain-driven design](https://en.wikipedia.org/wiki/Domain-driven_design)
+* [sso -- What is Domain Driven Design?](https://stackoverflow.com/questions/5325836/what-is-domain-driven-design)
 
 ### Other Architectures
 
@@ -114,3 +119,5 @@ Terminology
 - Domain-Driven Design
 - EBI Architecture
 - Ports & Adapters Architecture
+    - Primary/Driving Adapters  `<-> ()`
+    - Secondary/Driven Adapters `() <->`
