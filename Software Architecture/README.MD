@@ -58,8 +58,8 @@ Repos / Examples
     * [Sairyss/system-design-patterns](https://github.com/Sairyss/system-design-patterns)
     * [Sairyss/fullstack-starter-template](https://github.com/Sairyss/fullstack-starter-template)
 * PHP --> [hgraca/explicit-architecture-php#explicit-architecture-1](https://github.com/hgraca/explicit-architecture-php#explicit-architecture-1)  
-* []()
-* []()
+* Java --> [AlicanAkkus/Modular-Architecture-Hexagonal-Demo-Project](https://github.com/AlicanAkkus/Modular-Architecture-Hexagonal-Demo-Project)
+* Java --> [JonathanM2ndoza/Hexagonal-Architecture-DDD](https://github.com/JonathanM2ndoza/Hexagonal-Architecture-DDD)
 * []()
 
 Components
