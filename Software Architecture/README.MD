@@ -4,6 +4,64 @@ Software Architecture
 
 * A smart guy --> [Simon Brown](https://simonbrown.je/)
 
+
+Guide & Areas of Study
+-----------------------
+
+### Guides
+
+* [Refactoring Gury](https://refactoring.guru)
+* [DDD: Part I (Introduction)](https://dzone.com/articles/ddd-part-i-introduction)
+    * [DDD, Part 2: DDD Building Blocks](https://dzone.com/articles/ddd-part-ii-ddd-building-blocks)
+
+ ### Design - Architecture and Patterns
+
+* [Builder pattern](https://en.wikipedia.org/wiki/Builder_pattern)
+* [Gang of Four design patterns / Design Patterns](https://en.wikipedia.org/wiki/Design_Patterns)
+
+### Otherr
+
+* [non-functional requirements (NFRs)](https://en.wikipedia.org/wiki/Non-functional_requirement)
+* [Functional requirement](https://en.wikipedia.org/wiki/Functional_requirement)
+* [quality of service (QoS)](https://en.wikipedia.org/wiki/Quality_of_service)
+* [high availability (HA)](https://en.wikipedia.org/wiki/High_availability)
+* [HA and failover guidelines](https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=GHA_FAILOVER)
+* content attack protection (CAP)
+* [Content Security Policy (CSP)](https://www.imperva.com/learn/application-security/content-security-policy-csp-header/)
+* [Hardware security modules (HSMs)](https://en.wikipedia.org/wiki/Hardware_security_module)
+* [Federated identity](https://en.wikipedia.org/wiki/Federated_identity)
+    * [OpenID](https://openid.net)
+    * [Security Assertion Markup Language SAML](https://en.wikipedia.org/wiki/Security_Assertion_Markup_Language)
+    * [OAuth](https://en.wikipedia.org/wiki/OAuth#:~:text=OAuth%20(Open%20Authorization)%20is%20an,without%20giving%20them%20the%20passwords.)
+* [JSON Web Token JWT](https://en.wikipedia.org/wiki/JSON_Web_Token)
+* [CI/CD](https://en.wikipedia.org/wiki/CI/CD) | [what-is-cicd](https://www.synopsys.com/glossary/what-is-cicd.html)
+
+* **software layers**: user interface (UI),  Presentation layer, business logic layer, middleware, middleware
+
+
+
+Repos / Examples
+-----------------------
+
+### Examples
+
+* []()
+* []()
+* []()
+* []()
+* []()
+
+### Repositories
+
+* Typescript --> [Sairyss/domain-driven-hexagon](https://github.com/Sairyss/domain-driven-hexagon)
+    * [Sairyss/backend-best-practices](https://github.com/Sairyss/backend-best-practices)
+    * [Sairyss/system-design-patterns](https://github.com/Sairyss/system-design-patterns)
+    * [Sairyss/fullstack-starter-template](https://github.com/Sairyss/fullstack-starter-template)
+* PHP --> [hgraca/explicit-architecture-php#explicit-architecture-1](https://github.com/hgraca/explicit-architecture-php#explicit-architecture-1)  
+* []()
+* []()
+* []()
+
 Components
 ----------
 
@@ -47,6 +105,11 @@ To learn more on load balancing, visit DevCentral.
 For more information see [Design Principles - Pool](./Design%20Principles/pool.md)
 
 -----------------------------------------------------------------------------------------------------
+
+DDD | Clean | Hexagon 
+--------
+
+* [Bounded Context](https://martinfowler.com/bliki/BoundedContext.html)
 
 Testing
 --------
@@ -108,36 +171,5 @@ Security / Authorization
         * secure routing
         * challenge-handshake authentication protocol (CHAP)
 
-
------------------------------------------------------------------------------------------------------
-
-Guide & Areas of Study
------------------------
-
-
-* [non-functional requirements (NFRs)](https://en.wikipedia.org/wiki/Non-functional_requirement)
-* [Functional requirement](https://en.wikipedia.org/wiki/Functional_requirement)
-* [quality of service (QoS)](https://en.wikipedia.org/wiki/Quality_of_service)
-* [high availability (HA)](https://en.wikipedia.org/wiki/High_availability)
-* [HA and failover guidelines](https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=GHA_FAILOVER)
-* content attack protection (CAP)
-* [Content Security Policy (CSP)](https://www.imperva.com/learn/application-security/content-security-policy-csp-header/)
-* [Hardware security modules (HSMs)](https://en.wikipedia.org/wiki/Hardware_security_module)
-* [Federated identity](https://en.wikipedia.org/wiki/Federated_identity)
-    * [OpenID](https://openid.net)
-    * [Security Assertion Markup Language SAML](https://en.wikipedia.org/wiki/Security_Assertion_Markup_Language)
-    * [OAuth](https://en.wikipedia.org/wiki/OAuth#:~:text=OAuth%20(Open%20Authorization)%20is%20an,without%20giving%20them%20the%20passwords.)
-* [JSON Web Token JWT](https://en.wikipedia.org/wiki/JSON_Web_Token)
-* [CI/CD](https://en.wikipedia.org/wiki/CI/CD) | [what-is-cicd](https://www.synopsys.com/glossary/what-is-cicd.html)
-
-* **software layers**: user interface (UI),  Presentation layer, business logic layer, middleware, middleware
-* 
-
-
-
- ### Design - Architecture and Patterns
-
-* [Builder pattern](https://en.wikipedia.org/wiki/Builder_pattern)
-* [Gang of Four design patterns / Design Patterns](https://en.wikipedia.org/wiki/Design_Patterns)
 
 -----------------------------------------------------------------------------------------------------
