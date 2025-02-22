@@ -3,6 +3,7 @@ Software Architecture
 
 
 * A smart guy --> [Simon Brown](https://simonbrown.je/)
+* [Refactoring Guru](https://refactoring.guru)
 
 
 Guide & Areas of Study
@@ -18,6 +19,7 @@ Guide & Areas of Study
 
 * [Builder pattern](https://en.wikipedia.org/wiki/Builder_pattern)
 * [Gang of Four design patterns / Design Patterns](https://en.wikipedia.org/wiki/Design_Patterns)
+* [Behavior-driven development (BDD)](https://en.wikipedia.org/wiki/Behavior-driven_development)
 
 ### Otherr
 
@@ -46,10 +48,7 @@ Repos / Examples
 ### Examples
 
 * []()
-* []()
-* []()
-* []()
-* []()
+
 
 ### Repositories
 
@@ -173,3 +172,23 @@ Security / Authorization
 
 
 -----------------------------------------------------------------------------------------------------
+
+
+Books
+-----
+
+* [Design Patterns: Elements of Reusable Object-Oriented Software](https://www.amazon.com/gp/product/0201633612/) (*"the GoF book"* or *"the book by the gang of four"*)
+* [A Pattern Language: Towns, Buildings, Construction (Center for Environmental Structure Series) By Christopher Alexander](https://www.amazon.com/-/dp/0195019199)
+
+
+Further Reading
+-----
+
+* [Revenge of the Nerds](https://www.paulgraham.com/icad.html)
+* [Are Design Patterns Missing Language Features](http://wiki.c2.com/?AreDesignPatternsMissingLanguageFeatures)
+
+
+Cool People
+-----
+
+* [Ward Cunningham](https://en.wikipedia.org/wiki/Ward_Cunningham)

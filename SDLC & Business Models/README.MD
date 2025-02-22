@@ -8,6 +8,12 @@ SDLC & Business Models
 - [Software Business Models](BusinessModel.md)
 
 
+Methodologies
+-----------------------
+
+* [Extreme programming](https://en.wikipedia.org/wiki/Extreme_programming)
+* [Behavior-driven development (BDD)](https://en.wikipedia.org/wiki/Behavior-driven_development)
+
 
 -----------------------------------------------------------------------------------------------------
 

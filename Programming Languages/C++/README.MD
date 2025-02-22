@@ -5,6 +5,7 @@ C ++
 * [isocpp.org](https://isocpp.org/get-started)
 * [A Tour of C++](https://isocpp.org/tour)
 * [C++ Team Blog](https://devblogs.microsoft.com/cppblog/)
+* [Current Status / C++ Version](https://isocpp.org/std/status)
 
 * [https://github.com/salmer/CppDeveloperRoadmap](https://github.com/salmer/CppDeveloperRoadmap)
 
