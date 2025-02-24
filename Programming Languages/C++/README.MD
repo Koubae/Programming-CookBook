@@ -37,15 +37,10 @@ Uninstall
 ---------
 
 
-
 ```bash
 sudo apt purge --autoremove -y g++
-
 # specific version
-
 sudo apt purge --autoremove -y g++-11
-
-
 ```
 
 
@@ -102,7 +97,7 @@ Compile `c++` with different versions
 ```
 
 
-Documentations
+Documentation
 --------------
 
 
@@ -130,38 +125,76 @@ Documentations
 -g tells the compiler to store symbol table information in the executable. Among other things, this includes:
 ```
 
-StackOverflow | Forums | QA
--------------
+From [Canonical Project Structure](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p1204r0.html) The name conventions of C++ Files names:
+
+> The C source file extensions should be .h/.c and the C++ source file extension scheme should be .?pp:
+
+```bash
+file        .?pp
+
+header      .hpp
+module      .mpp
+inline      .ipp
+template    .tpp
+source      .cpp
+```
 
 
-* [What is the weird colon-member (“ : “) syntax in constructor?](https://saikamesh.medium.com/what-is-the-weird-colon-member-syntax-in-constructor-2fd065278d6f)
-* [C++, What does the colon after a constructor mean? [duplicate]](https://stackoverflow.com/questions/2785612/c-what-does-the-colon-after-a-constructor-mean)
-* [Variables after the colon in a constructor [duplicate]](https://stackoverflow.com/questions/2349978/variables-after-the-colon-in-a-constructor)
-* [What does a colon following a C++ constructor name do? [duplicate]](https://stackoverflow.com/questions/1272680/what-does-a-colon-following-a-c-constructor-name-do)
+### Project Structure
+
+* [vcpkg](https://vcpkg.io/en/)
 
 
-### CLion
+* [The Pitchfork Layout (PFL)](https://api.csswg.org/bikeshed/?force=1&url=https://raw.githubusercontent.com/vector-of-bool/pitchfork/develop/data/spec.bs)
+    * [github.com/vector-of-bool/pitchfork](https://github.com/vector-of-bool/pitchfork)
+* [Canonical Project Structure](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p1204r0.html)
+* [Modern CMake -- How to structuure your project](https://cliutils.gitlab.io/modern-cmake/chapters/basics/structure.html)
 
-* [Multiple Main Source files in CLion](https://intellij-support.jetbrains.com/hc/en-us/community/posts/205823219-Multiple-Main-Source-files-in-CLion)
-* [Run/debug single file](https://www.jetbrains.com/help/clion/run-single-file.html?_gl=1*reacd7*_gcl_aw*R0NMLjE3Mjc1NDQwODcuQ2p3S0NBancwdDYzQmhBVUVpd0E1eFA1NFI5OUFYWktvc2JlbWZlWHFDajRhNTZUVTk0ZHowUFNZM01HYjdlNm44YjhOUk1RMEpyQlRob0NZem9RQXZEX0J3RQ..*_gcl_au*MTE1ODc1NDYyMy4xNzI3MTY5ODYw*_ga*MjA1NjYzNjkwNC4xNzI3MTY5ODU5*_ga_9J976DJZ68*MTcyNzYwNTc2OS4zLjEuMTcyNzYwNTkwMS40Ni4wLjA.)
-* [developerinsider/C-Programming-Example](https://github.com/developerinsider/C-Programming-Example)
+* [Youtube The BEST Project Structure for C/C++/MCU | Embedded System Project Series #7](https://www.youtube.com/watch?v=6oJ2LLxfP3s&ab_channel=ArtfulBytes)
+    * [My development environment](https://www.artfulbytes.com/devenv/)
+    * [github.com/artfulbytes](https://github.com/artfulbytes)
 
+* [Michael Forest -- C++ Libraries For Beginners](https://www.youtube.com/watch?v=a5kUr-u2UNo&t=303s&ab_channel=MichaelForest)
+
+* [Luke's Dev Tutorials Youtube Page](https://www.youtube.com/@lukesdevtutorials)
+    * [Single Codebase UI Apps in C++ for Linux, Windows and MacOS - building with wxWidgets and CMake](https://www.youtube.com/watch?v=MfuBS9n5_aY&t=1052s&ab_channel=Luke%27sDevTutorials)
+    * [Easy C++ Dependency Management with CMake's FetchContent: Quick Tutorial](https://www.youtube.com/watch?v=zjNg5HdgNO0&t=18s&ab_channel=Luke%27sDevTutorials)
+
+* [The Cherno](https://www.youtube.com/@TheCherno)
+    * [How to Properly Setup C++ Projects](https://www.youtube.com/watch?v=5glH8dGoeCA&ab_channel=TheCherno)
 
 Projects
 --------
 
 * [CMake](https://cmake.org/)
+    * [An Introduction to Modern CMake](https://cliutils.gitlab.io/modern-cmake/README.html)
+* [Premake](https://premake.github.io/docs/)
+* [vcpkg](https://vcpkg.io/en/)
 * [CMake projects in Visual Studio](https://docs.microsoft.com/en-us/cpp/build/cmake-projects-in-visual-studio?view=msvc-170)
 * [Light-City/CPlusPlusThings](https://github.com/Light-City/CPlusPlusThings)
 * [libcpr/example-cmake-fetch-content](https://github.com/libcpr/example-cmake-fetch-content)
+
+#### Databases
+
+* [github.com/dragonflydb/dragonfly](https://github.com/dragonflydb/dragonfly)
+
+#### JSON
+
+* [github.com/nlohmann/json](https://github.com/nlohmann/json)
+* [github.com/stephenberry/glaze](https://github.com/stephenberry/glaze)
 
 
 Repos
 --------------
 
+* [Github Trending C++](https://github.com/trending/cpp)
+
 * [christopher-siewert/cpp-calculator(https://github.com/christopher-siewert/cpp-calculator)
 * [microsoft/calculator](https://github.com/microsoft/calculator)
+* [C++ ProjectTemplate github/TheCherno](https://github.com/TheCherno/ProjectTemplate)
+* [github.com/hyprwm/Hyprland](https://github.com/hyprwm/Hyprland/tree/main)
 
+* [github.com/cp-algorithms/cp-algorithms](https://github.com/cp-algorithms/cp-algorithms)
 
 
 Tutorials
@@ -187,7 +220,21 @@ Tutorials
 
 ### Youtube
 
-* [Welcome to C++ (The Cherno))](https://youtu.be/18c3MTX0PK0?si=RFc4TAS66zwiJy1H)
+
+* [The Cherno](https://www.youtube.com/@TheCherno)
+    * [How to Properly Setup C++ Projects](https://www.youtube.com/watch?v=5glH8dGoeCA&ab_channel=TheCherno)
+    * [Welcome to C++ (The Cherno))](https://youtu.be/18c3MTX0PK0?si=RFc4TAS66zwiJy1H)
+    * [How to Properly Setup C++ Projects](https://www.youtube.com/watch?v=5glH8dGoeCA&list=PLY4JiNTzQpr0uNY2RAlxHH2uB2YgL7132&index=16&t=71s&ab_channel=TheCherno)
+
+* [Youtube The BEST Project Structure for C/C++/MCU | Embedded System Project Series #7](https://www.youtube.com/watch?v=6oJ2LLxfP3s&ab_channel=ArtfulBytes)
+    * [My development environment](https://www.artfulbytes.com/devenv/)
+    * [github.com/artfulbytes](https://github.com/artfulbytes)
+
+* [Michael Forest -- C++ Libraries For Beginners](https://www.youtube.com/watch?v=a5kUr-u2UNo&t=303s&ab_channel=MichaelForest)
+
+* [Luke's Dev Tutorials Youtube Page](https://www.youtube.com/@lukesdevtutorials)
+    * [Single Codebase UI Apps in C++ for Linux, Windows and MacOS - building with wxWidgets and CMake](https://www.youtube.com/watch?v=MfuBS9n5_aY&t=1052s&ab_channel=Luke%27sDevTutorials)
+    * [Easy C++ Dependency Management with CMake's FetchContent: Quick Tutorial](https://www.youtube.com/watch?v=zjNg5HdgNO0&t=18s&ab_channel=Luke%27sDevTutorials)
 
 
 ### Misc
@@ -221,6 +268,23 @@ Tutorials
 * [WSK TCP Echo Server](https://learn.microsoft.com/en-us/samples/microsoft/windows-driver-samples/wsk-tcp-echo-server/)
 * [Complete Winsock Client Code](https://learn.microsoft.com/en-us/windows/win32/winsock/complete-client-code)
 * [getaddrinfo function (ws2tcpip.h)](https://learn.microsoft.com/en-us/windows/win32/api/ws2tcpip/nf-ws2tcpip-getaddrinfo?redirectedfrom=MSDN)
+
+
+StackOverflow | Forums | QA
+-------------
+
+
+* [What is the weird colon-member (“ : “) syntax in constructor?](https://saikamesh.medium.com/what-is-the-weird-colon-member-syntax-in-constructor-2fd065278d6f)
+* [C++, What does the colon after a constructor mean? [duplicate]](https://stackoverflow.com/questions/2785612/c-what-does-the-colon-after-a-constructor-mean)
+* [Variables after the colon in a constructor [duplicate]](https://stackoverflow.com/questions/2349978/variables-after-the-colon-in-a-constructor)
+* [What does a colon following a C++ constructor name do? [duplicate]](https://stackoverflow.com/questions/1272680/what-does-a-colon-following-a-c-constructor-name-do)
+
+
+### CLion
+
+* [Multiple Main Source files in CLion](https://intellij-support.jetbrains.com/hc/en-us/community/posts/205823219-Multiple-Main-Source-files-in-CLion)
+* [Run/debug single file](https://www.jetbrains.com/help/clion/run-single-file.html?_gl=1*reacd7*_gcl_aw*R0NMLjE3Mjc1NDQwODcuQ2p3S0NBancwdDYzQmhBVUVpd0E1eFA1NFI5OUFYWktvc2JlbWZlWHFDajRhNTZUVTk0ZHowUFNZM01HYjdlNm44YjhOUk1RMEpyQlRob0NZem9RQXZEX0J3RQ..*_gcl_au*MTE1ODc1NDYyMy4xNzI3MTY5ODYw*_ga*MjA1NjYzNjkwNC4xNzI3MTY5ODU5*_ga_9J976DJZ68*MTcyNzYwNTc2OS4zLjEuMTcyNzYwNTkwMS40Ni4wLjA.)
+* [developerinsider/C-Programming-Example](https://github.com/developerinsider/C-Programming-Example)
 
 
 Terms & Keywords
