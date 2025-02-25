@@ -196,6 +196,13 @@ Repos
 
 * [github.com/cp-algorithms/cp-algorithms](https://github.com/cp-algorithms/cp-algorithms)
 
+* [github.com/qt](https://github.com/qt)
+    * [github.com/qt/qtserialbus](https://github.com/qt/qtserialbus)
+    * [qt/qtwebengine](https://github.com/qt/qtwebengine)
+* [boostorg/boost](https://github.com/boostorg/boost)
+* [github.com/juce-framework/JUCE](https://github.com/juce-framework/JUCE)
+* [github.com/llvm/llvm-project](https://github.com/llvm/llvm-project)
+
 
 Tutorials
 ---------
@@ -234,8 +241,9 @@ Tutorials
 
 * [Luke's Dev Tutorials Youtube Page](https://www.youtube.com/@lukesdevtutorials)
     * [Single Codebase UI Apps in C++ for Linux, Windows and MacOS - building with wxWidgets and CMake](https://www.youtube.com/watch?v=MfuBS9n5_aY&t=1052s&ab_channel=Luke%27sDevTutorials)
+        * [github.com/lszl84/wx_cmake_template](https://github.com/lszl84/wx_cmake_template)
     * [Easy C++ Dependency Management with CMake's FetchContent: Quick Tutorial](https://www.youtube.com/watch?v=zjNg5HdgNO0&t=18s&ab_channel=Luke%27sDevTutorials)
-
+        * [github.com/lszl84/wx_cmake_fetchcontent_template](https://github.com/lszl84/wx_cmake_fetchcontent_template)
 
 ### Misc
 
@@ -308,6 +316,8 @@ Terms & Keywords
 * queue
 * priority_queue
 * stack 
+* [member initializer lists](https://en.cppreference.com/w/cpp/language/constructor)
+    * Delegating constructor
 
 * [Range-based for Statement (C++)](https://docs.microsoft.com/en-us/cpp/cpp/range-based-for-statement-cpp?view=msvc-170)
 
