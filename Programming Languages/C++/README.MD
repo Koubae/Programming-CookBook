@@ -143,6 +143,7 @@ source      .cpp
 ### Project Structure
 
 * [vcpkg](https://vcpkg.io/en/)
+* [Ninja](https://ninja-build.org/)
 
 
 * [The Pitchfork Layout (PFL)](https://api.csswg.org/bikeshed/?force=1&url=https://raw.githubusercontent.com/vector-of-bool/pitchfork/develop/data/spec.bs)
@@ -162,6 +163,21 @@ source      .cpp
 
 * [The Cherno](https://www.youtube.com/@TheCherno)
     * [How to Properly Setup C++ Projects](https://www.youtube.com/watch?v=5glH8dGoeCA&ab_channel=TheCherno)
+    * [github.com/TheCherno/ProjectTemplate](https://github.com/TheCherno/ProjectTemplate)
+    * [Using Libraries in C++ (Static Linking)](https://www.youtube.com/watch?v=or1dAmUO8k0&t=1s&ab_channel=TheCherno)
+    * [Making and Working with Libraries in C++ (Multiple Projects in Visual Studio)](https://www.youtube.com/watch?v=Wt4dxDNmDA8&ab_channel=TheCherno)
+
+* [github.com/elibroftw/cpp-vcpkg-cmake-example](https://github.com/elibroftw/cpp-vcpkg-cmake-example)
+
+
+* [Most simple but complete CMake example](https://stackoverflow.com/questions/21163188/most-simple-but-complete-cmake-example)
+    * [Is it better to specify source files with GLOB or each file individually in CMake?](https://stackoverflow.com/questions/1027247/is-it-better-to-specify-source-files-with-glob-or-each-file-individually-in-cmak)
+    * [Why is cmake file GLOB evil?](https://stackoverflow.com/questions/32411963/why-is-cmake-file-glob-evil)
+
+
+#### Tests
+
+* [Testing With CMake and CTest](https://cmake.org/cmake/help/book/mastering-cmake/chapter/Testing%20With%20CMake%20and%20CTest.html)
 
 Projects
 --------
@@ -203,6 +219,9 @@ Repos
 * [github.com/juce-framework/JUCE](https://github.com/juce-framework/JUCE)
 * [github.com/llvm/llvm-project](https://github.com/llvm/llvm-project)
 
+* [github.com/wxWidgets/wxWidgets](https://github.com/wxWidgets/wxWidgets)
+* [pybind/pybind11](https://github.com/pybind/pybind11)
+    * [Scikit Build Proposal](https://iscinumpy.gitlab.io/post/scikit-build-proposal/)
 
 Tutorials
 ---------
@@ -219,8 +238,7 @@ Tutorials
 ### Cool 
 
 * [isocpp.org](https://isocpp.org/get-started)
-* []()
-* []()
+* [Scikit Build Proposal](https://iscinumpy.gitlab.io/post/scikit-build-proposal/)
 
 
 
