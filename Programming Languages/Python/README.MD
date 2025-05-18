@@ -19,6 +19,12 @@ Articles and news
 - [Wheel vs Egg](https://packaging.python.org/discussions/wheel-vs-egg/)
 - [PythonEggs](http://peak.telecommunity.com/DevCenter/PythonEggs)
 
+#### Different Python Depenency Management
+
+- [A complete-ish guide to dependency management in Python](https://www.reddit.com/r/Python/comments/1gphzn2/a_completeish_guide_to_dependency_management_in/)
+  - [Python dependency management is a dumpster fire](https://nielscautaerts.xyz/python-dependency-management-is-a-dumpster-fire.html)
+
+
 ```
 print('==='*15 + ' < ' + f'MESSAGE{}' + ' > ' + '==='*15)
 
