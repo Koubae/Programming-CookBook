@@ -1,0 +1,105 @@
+"========================================================
+"  Python-centric .vimrc – starter template
+"========================================================
+"
+" 1.  Install vim-plug first (see: https://github.com/junegunn/vim-plug)
+" 2.  :source %   then  :PlugInstall
+" 3.  Tweak to taste ☺
+"
+"--------------------------------------------------------
+" General feel & ergonomics
+"--------------------------------------------------------
+set nocompatible          " use Vim, not Vi
+filetype plugin indent on " file-type detection & indent scripts
+syntax on                 " syntax highlighting
+set encoding=utf-8
+set number relativenumber " hybrid line numbers
+set showmatch             " flash matching () [] {}
+set matchtime=3           " 0.3 s flash
+set scrolloff=3           " keep context lines above/below cursor
+set signcolumn=yes        " reserve space for ALE signs
+set mouse=a               " enable mouse (handy for splits)
+set clipboard=unnamedplus " share clipboard with OS
+set hidden                " switch buffers without saving
+set splitbelow splitright
+set updatetime=300        " faster CursorHold events (for ALE)
+
+"--------------------------------------------------------
+" Text editing defaults
+"--------------------------------------------------------
+set expandtab             " insert spaces for <Tab>
+set tabstop=4             " 1 tab = 4 spaces (Python PEP 8)
+set shiftwidth=4
+set softtabstop=4
+set autoindent smartindent
+set colorcolumn=79        " PEP 8 ruler
+set textwidth=88          " black’s default wrap width
+
+"--------------------------------------------------------
+" Quick/ergonomic mappings
+"--------------------------------------------------------
+inoremap jj <Esc>         " home-row Escape
+nnoremap <Space> <Leader> " make <Space> the leader key
+nnoremap <Leader>w :w<CR> " fast save
+nnoremap <Leader>q :q<CR> " fast quit
+nnoremap <Leader>e :Ex<CR>
+
+"--------------------------------------------------------
+" Plugin section (vim-plug)
+"--------------------------------------------------------
+call plug#begin('~/.vim/plugged')
+
+" Quality-of-life
+Plug 'tpope/vim-sensible'       " sane defaults
+Plug 'itchyny/lightline.vim'    " lightweight statusline
+
+" Python tooling
+Plug 'dense-analysis/ale'       " async lint & fix (flake8, mypy, etc.)
+Plug 'davidhalter/jedi-vim'     " autocompletion/navigation
+Plug 'psf/black', { 'branch': 'stable' }  " +:Black formatter
+
+" Syntax & trees
+Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate', 'for': ['python'] }
+
+call plug#end()
+
+"--------------------------------------------------------
+" ALE – asynchronous linting / formatting
+"--------------------------------------------------------
+let g:ale_linters = { 'python': ['flake8', 'mypy'] }
+let g:ale_fixers  = { 'python': ['black'] }
+let g:ale_python_black_options = '--quiet'
+let g:ale_fix_on_save = 1
+
+"--------------------------------------------------------
+" Black – on-demand formatting
+"--------------------------------------------------------
+nnoremap <Leader>b :Black<CR>
+inoremap <Leader>b <Esc>:Black<CR>gi   " keep cursor in place while typing
+
+"--------------------------------------------------------
+" Jedi-vim
+"--------------------------------------------------------
+let g:jedi#completions_enabled = 1
+let g:jedi#use_tabs_not_buffers = 1
+let g:jedi#show_call_signatures = 2
+
+"--------------------------------------------------------
+" Treesitter (optional; helps highlighting large files)
+"--------------------------------------------------------
+lua << EOF
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = { "python" },
+  highlight = { enable = true }
+}
+EOF
+
+"--------------------------------------------------------
+" Project-specific configs (.vimrc in repo root)
+"--------------------------------------------------------
+set exrc                     " let projects supply their own .vimrc
+set secure                   " but sandbox risky commands
+
+"========================================================
+" End of file – happy hacking! 🐍
+"========================================================

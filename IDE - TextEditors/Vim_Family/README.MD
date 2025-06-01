@@ -20,6 +20,10 @@ Vim
 * [badwolf](https://github.com/sjl/badwolf)
 * [Neovim + Item2 + Truecolor = Awesome](https://medium.com/@ericclifford/neovim-item2-truecolor-awesome-70b975516849)
 
+* [VimCharm: Approximating PyCharm on vim](https://kevinmartinjose.com/2020/11/22/vimcharm-approximating-pycharm-on-vim/)
+* [JetBrains-Inspired colorscheme for Vim](https://www.reddit.com/r/vim/comments/17lf643/jetbrainsinspired_colorscheme_for_vim/)
+* [VimCharm](https://github.com/kevinmartinjos/vimcharm)
+
 ### Tutorials
 
 * [Youtube -- ThePrimeagen Vim As Your Editor - Introduction](https://www.youtube.com/watch?v=X6AR2RMB5tE&list=PLm323Lc7iSW_wuxqmKx_xxNtJC_hJbQ7R)
@@ -28,6 +32,10 @@ Vim
 * [openvim](https://openvim.com/)
 * [VIM and Python – A Match Made in Heaven](https://realpython.com/vim-and-python-a-match-made-in-heaven/)
 * [How to Install a Theme in VIM (Without a Plugin Manager)](https://www.youtube.com/watch?v=HmSJ2BxDvwU)
+
+### vimrc examples
+
+* [kevinmartinjos/vimcharm/](https://github.com/kevinmartinjos/vimcharm/blob/master/.vimrc)
 
 NeoVim
 ------

@@ -1,0 +1,6 @@
+"https://stackoverflow.com/questions/4766230/map-shift-tab-in-vim-to-inverse-tab-in-vim"
+
+" For command/normal mode
+nnoremap <S-Tab> <<
+" For insert mode
+inoremap <S-Tab> <C-d>
