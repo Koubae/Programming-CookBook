@@ -13,7 +13,9 @@ set nocompatible          " use Vim, not Vi
 filetype plugin indent on " file-type detection & indent scripts
 syntax on                 " syntax highlighting
 set encoding=utf-8
-set number relativenumber " hybrid line numbers
+"set number relativenumber " hybrid line numbers
+set number
+
 set showmatch             " flash matching () [] {}
 set matchtime=3           " 0.3 s flash
 set scrolloff=3           " keep context lines above/below cursor
@@ -23,6 +25,14 @@ set clipboard=unnamedplus " share clipboard with OS
 set hidden                " switch buffers without saving
 set splitbelow splitright
 set updatetime=300        " faster CursorHold events (for ALE)
+
+set ruler                 " Show file stats
+set visualbell            " Blink cursor on error instead of beeping (grr)
+set ttyfast               " Rendering
+
+set laststatus=2          " Status bar
+set showmode              " Last line
+set showcmd
 
 "--------------------------------------------------------
 " Text editing defaults
@@ -34,6 +44,20 @@ set softtabstop=4
 set autoindent smartindent
 set colorcolumn=79        " PEP 8 ruler
 set textwidth=88          " black’s default wrap width
+
+"--------------------------------------------------------
+" Theme
+"--------------------------------------------------------
+set t_Co=256              " Color scheme (terminal)
+set background=dark
+let g:solarized_termcolors=256
+let g:solarized_termtrans=1
+
+set termguicolors 
+colorscheme habamax         "habamax evening lunaperche slate sorbet
+" blue darkbluuue default delek desert elflord evening habamax industry koehler lunaperche morning murphy pablo peachpuff
+" quite retrobox ron shine slate sorbet torte wildcharm zaibatsu sellner
+
 
 "--------------------------------------------------------
 " Quick/ergonomic mappings
