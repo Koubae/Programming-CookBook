@@ -57,3 +57,33 @@ CTRL-w <            # - Make the current split narrower
 :source %           # Source current file (reload)
 CTRL + SPACE        # treesitter (select next node)
 ```
+
+### NeoVim
+
+```bash
+:terminal           # open terminal
+:qa                 # Close all
+:qa!                # Close all (force unsaved)
+:echo stdpath("config")     # Neovim config path
+
+
+<space> th          # theme selector
+<space> e           # open explorer
+
+Ctrl-w h            # →  Move to the left split (usually the explorer)
+Ctrl-w l            # →  Move to the right split (usually your file)
+Ctrl-w w            # →  Jump to the next window
+
+
+Shift   h            # Show/Hide Hidden Files
+
+
+gt                   # Go to next tab
+gT                   # Go to previous tab
+:tabnext             # Go to next tab
+:tabprev             # Go to previous tab
+
+V                    # Select multiple lines
+y                    # Copy
+p                    # paste
+```

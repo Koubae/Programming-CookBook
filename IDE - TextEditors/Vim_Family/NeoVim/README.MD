@@ -9,6 +9,7 @@ NeoVim
     * [VS Code josean-dev/dev-environment-files](https://github.com/auth/github_editor?redirect=%2Fjosean-dev%2Fdev-environment-files%2Fblob%2Fmain%2F.config%2Fnvim%2Flua%2Fjosean%2Fplugins%2Finit.lua&requestId=37c20ea5-fdb2-4ebe-9d5e-93652dc34e4b)
 
 * [The perfect Neovim setup for Go (Nvchad) ](https://www.youtube.com/watch?v=i04sSQjd-qo)
+    * [dreamsofcode-io/neovim-go-config](https://github.com/dreamsofcode-io/neovim-go-config)
 * [(setup with Lazy) My Neovim configuration for Golang development in 2024 (Using lazy.nvim and go.nvim)](https://www.youtube.com/watch?v=n5_WLgxwkU8)
 * [Configure Golang in Neovim](https://www.youtube.com/watch?v=EgwiPok2nbU)
     * [exosyphon/nvim](https://github.com/exosyphon/nvim)
@@ -62,5 +63,5 @@ That's all the crap you need to learn and setup for Neovim but is freaking worth
 #wsl
 sudo add-apt-repository ppa:neovim-ppa/unstable -y
 sudo apt update
-sudo apt install make gcc ripgrep unzip git xclip neovim
+sudo apt install make gcc ripgrep unzip git xclip fd-find neovim 
 ```

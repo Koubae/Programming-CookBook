@@ -7,6 +7,12 @@
 :Lazy
 :Lazy reload <plugin-name>
 
+### Clean up neovim configs
+# Linux / MacOS (unix)
+rm -rf ~/.config/nvim
+rm -rf ~/.local/state/nvim
+rm -rf ~/.local/share/nvim
+
 # ------------------
 # Color Schemes
 # ------------------
