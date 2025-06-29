@@ -24,6 +24,7 @@ R                   # Rename file/dir
 %                   # Create new file name (after typed file name)
 d                   # Create new dir name (after typed file name)
 ctrl+L              # Same as % -- Create new file name (after typed file name)
+:e <filename>       # New file
 
 ### Usefull Explorer Commands
 ?                   # Full list of commands
@@ -53,4 +54,6 @@ CTRL-w <            # - Make the current split narrower
 :wq                 # Save and close
 :x                  # Save and close (same as wq)
 
+:source %           # Source current file (reload)
+CTRL + SPACE        # treesitter (select next node)
 ```

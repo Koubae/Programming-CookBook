@@ -3,6 +3,9 @@
 # ------------------
 # Reload without re-starting
 :source ~/.vimrc
+# NeoVim -- lazy io
+:Lazy
+:Lazy reload <plugin-name>
 
 # ------------------
 # Color Schemes
@@ -26,3 +29,12 @@ for f in map(split(globpath(&rtp, "colors/*.vim"), "\n"), 'fnamemodify(v:val, ":
 
 :colorscheme habamax
 :colorscheme slate
+
+
+# ------------------
+# Editor
+# ------------------
+:source %           # Source current file (reload)
+:e <filename>       # New file
+
+CTRL + SPACE        # treesitter (select next node)
