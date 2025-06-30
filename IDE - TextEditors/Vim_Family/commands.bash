@@ -44,3 +44,26 @@ for f in map(split(globpath(&rtp, "colors/*.vim"), "\n"), 'fnamemodify(v:val, ":
 :e <filename>       # New file
 
 CTRL + SPACE        # treesitter (select next node)
+
+# Copy paste stuff...
+# https://stackoverflow.com/a/39177926/13903942
+
+`shift + drag mouse`  to select a text in vim then `ctrl + shift` + c on the terminal then `ctrl + v` on other editor
+
+
+
+# ------------------
+# Vim Plug
+# ------------------
+:PlugInstall to install the plugins
+:PlugUpdate to install or update the plugins
+:PlugDiff to review the changes from the last update
+:PlugClean to remove plugins no longer in the list
+
+# Go
+:GoInstallBinaries
+
+# ------------------
+# Coc -- Language Server
+# ------------------
+:CocConfig

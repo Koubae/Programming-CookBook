@@ -56,6 +56,11 @@ CTRL-w <            # - Make the current split narrower
 
 :source %           # Source current file (reload)
 CTRL + SPACE        # treesitter (select next node)
+
+
+### File Editings
+u                   # Undo
+CTRL+R              # Redo (r or R)
 ```
 
 ### NeoVim

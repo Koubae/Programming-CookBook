@@ -45,6 +45,8 @@ set autoindent smartindent
 set colorcolumn=79        " PEP 8 ruler
 set textwidth=88          " black’s default wrap width
 
+set clipboard^=unnamed,unnamedplus
+
 "--------------------------------------------------------
 " Theme
 "--------------------------------------------------------
