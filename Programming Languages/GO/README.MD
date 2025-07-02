@@ -5,7 +5,6 @@ GO
 
 * [Koubae/go-example](https://github.com/Koubae/go-example)
 
-
 Documentation
 -------------
 
@@ -69,7 +68,7 @@ Repos & Projects
 
 * [Yaml-to-GO](https://zhwt.github.io/yaml-to-go/)
 * [Json-to-GO](https://mholt.github.io/json-to-go/)
-
+* [Encore Dev](https://encore.dev/)
 
 Frameworks & Packages
 ----------
