@@ -14,8 +14,16 @@ Documentation
 Guide & Areas of Study
 -----------------------
 
+### Prompting
 
 
+* [AI -- Prompting](./prompting.md)
+
+#### Context prompting
+
+
+* [context_prompting_templates](./context_prompting_templates)
+    * [context_promt_template_1.MD](./context_prompting_templates/context_promt_template_1.MD)
 
 
 -----------------------------------------------------------------------------------------------------
