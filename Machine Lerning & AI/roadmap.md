@@ -40,31 +40,47 @@ Resources
 * [The Complete Machine Learning Roadmap](https://www.youtube.com/watch?v=7IgVGSaQPaw)
 * [DON'T Become an AI/ML Engineer - Do THIS Instead](https://www.youtube.com/watch?v=P18Bkozqr0A)
 
+#### Courses
+
+* [Statistical Learning with Python](https://www.youtube.com/playlist?list=PLoROMvodv4rPP6braWoRt5UCXYZ71GZIQ)
 
 Components
 ----------
 
 1. Python
+    * Scikit 
 2. SQL
 
 _Intro to AI & ML_
 
 3. Exploratory Data Analysis (EDA)
 4. ML Intuition
+    * [Machine Learning specific Concepts](#machine-learning-specific-concepts)
     * Train/Test Split
     * Classification vs. Regression
     * Supervised vs. Unsupervised learning
     * Evaluation Metrics
     * The Bias-Variance Trade-off
 5. Math for ML
+    * [Basic Statistics & Probability](#basic-statistics--probability)
     * Descriptive Statistics & Experimentation
     * Basic Probability
-    * Linear Algebra
+    * [Linear Algebra](#linear-algebra)
+    * [Calculus](#calculus)
     * Basic Multivariate Calculus
-6. Deep Learning
+    * [Statistical Learning with Python](https://www.youtube.com/playlist?list=PLoROMvodv4rPP6braWoRt5UCXYZ71GZIQ)
+    * [Statistics and probability (khanacademy)](https://www.khanacademy.org/math/statistics-probability)
+    * [Linear algebra (khanacademy)](https://www.khanacademy.org/math/linear-algebra)
+    * [Differential Calculus (khanacademy)](https://www.khanacademy.org/math/differential-calculus)
+6. Data Science
+    * Linear Regression
+    * Logistic Regression
+    * Decision Trees
+    * Random Forest
+7. Deep Learning
     * TensorFlow
     * PyTorch
-7. ML System Design
+8. ML System Design
 
 ### Software Engineering
 
@@ -93,11 +109,23 @@ _Intro to AI & ML_
 
 ### AI & Machine Learning 
 
+* [Machine Learning specific Concepts](#machine-learning-specific-concepts)
 * Neural networks
 * Supervised 
 * Unsupervised
-
 * Deep Learning
+
+##### Machine Learning specific Concepts
+
+* **bias & variance** + **bias-variance tradeoff**
+* Loss functions
+* gradient Descent
+* Regularization
+* Train, Test, Validation set
+* Truly and fully understand at least Linear Regression
+* Labels, Weights (Parameters), Hyperparameters
+* Validation and Cross Validation
+* Overfitting & Underfitting
 
 #### AI Models
 
@@ -111,12 +139,40 @@ _Intro to AI & ML_
 
 #### Basics | Minimal for AI & ML
 
+* [Basic Statistics & Probability](#basic-statistics--probability)
+* [Linear Algebra](#linear-algebra)
+* [Calculus](#calculus)
 * derivatives and integrals
 * vectors and matrics
-* basic concepts behind probability theory
 * some math tricks
 * Linear Regression
 * Model Fitting
+
+##### Basic Statistics & Probability
+
+* Random Variables
+* Probability Distributions
+* Different Types of Plots
+* Populations and samples & Law of Large numbers
+* The mean, the mediaan and expected values
+* Variance & Coveriance, correlation
+* Central Limit Theorem & Normal Distribution
+* Standard Deviation, Statistical Significance, Z-Scores and Hypothesis testing
+* Specificity, Sensitivity & Confusion metrices
+* Multiple comparisons Problem & Solutions (i.e Bonferroni correction)
+* Conditional Probability  and Bayes Theorem
+
+##### Linear Algebra
+
+* Vectors and Matrices
+* Matrix operations (addition, subtractions, multiplication, inverse, transpose)
+* Matrix rank and linear Independence
+* Basic Trigonometric terms
+
+##### Calculus
+
+* Derivatives & their meaning
+* Basic rules like the chain rules
 
 #### Others
 
