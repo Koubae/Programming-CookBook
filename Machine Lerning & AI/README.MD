@@ -2,14 +2,15 @@ Machine Lerning & AI
 ========
 
 
+* [kaggle](https://www.kaggle.com/)
+
 Documentation
 -------------
 
 * [TensorFlow Responsible AI Guidebook ](https://www.tensorflow.org/responsible_ai/tutorials)
 * [AI Principles](https://www.blog.google/technology/ai/ai-principles/)
 
-
------------------------------------------------------------------------------------------------------
+---
 
 Guide & Areas of Study
 -----------------------
@@ -17,22 +18,7 @@ Guide & Areas of Study
 
 ### RoadMaps
 
-* [Machine learning education (tensorflow)](https://www.tensorflow.org/resources/learn-ml)
-* [How to learn Machine Learning? My Roadmap (reddit)](https://www.reddit.com/r/MLQuestions/comments/u6l4bn/how_to_learn_machine_learning_my_roadmap/)
-
-#### roadmap.sh
-
-* [RoadMaps -- Machine Learning](https://roadmap.sh/roadmaps?g=Machine+Learning)
-
-* [AI and Data Scientist Roadmap](https://roadmap.sh/ai-data-scientist)
-* **[AI Engineer](https://roadmap.sh/ai-engineer)**
-* [AI Agents](https://roadmap.sh/ai-agents)
-
-* [AI Red Teaming](https://roadmap.sh/ai-red-teaming)
-* [Data Analyst Roadmap](https://roadmap.sh/data-analyst)
-
-* [MLOps Roadmap](https://roadmap.sh/mlops)
-* [Prompt Engineering Roadmap](https://roadmap.sh/prompt-engineering)
+* **[AI & Machine Learning RoadMap](./roadmap.md)**
 
 
 ### Prompting
@@ -47,25 +33,122 @@ Guide & Areas of Study
     * [context_promt_template_1.MD](./context_prompting_templates/context_promt_template_1.MD)
 
 
+Courses | School | Certifications
+-------------
 
------------------------------------------------------------------------------------------------------
+
+* [Machine Learning Specialization](https://www.coursera.org/specializations/machine-learning-introduction)
+* [Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning)
+   
+* [CS25: Transformers United V4](https://web.stanford.edu/class/cs25/past/cs25-v4/)
+    * [Stanford CS25: V4 I Overview of Transformers](https://www.youtube.com/watch?v=fKMB5UlVY1E)
+
+* [projectpro](https://www.projectpro.io/)
+
+#### AWS
+
+* [AWS Certified Machine Learning Engineer - Associate](https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/)
+* [AWS Certified Machine Learning - Specialty](https://aws.amazon.com/certification/certified-machine-learning-specialty/)
+
+### Math
+
+* [Khan Academy](https://www.khanacademy.org/)
+* [Why Machines Learn: The Elegant Math Behind Modern AI Tapa dura](https://www.amazon.es/Why-Machines-Learn-Elegant-Behind/dp/0593185749)
+
+
+### Books
+
+* [Why Machines Learn: The Elegant Math Behind Modern AI Tapa dura](https://www.amazon.es/Why-Machines-Learn-Elegant-Behind/dp/0593185749)
+* [Understanding Deep Learning](https://udlbook.github.io/udlbook/)
+
+
+---
+
+Tools
+------
+
+* CrewAI
+* Langflow
+* n8n
+* VAPI
+* LiveKit
+
+
+---
 
 Terms & Keywords
 ----------------
 
+![ai-fields](image-1.png)
+
+**Credit of picture: [All Machine Learning Concepts Explained in 22 Minutes](https://www.youtube.com/watch?v=Fa_V9fP2tpU&t=24s)**
+
+![ai-fields](image-2.png)
+
+
+![ml-fields](image-3.png)
+
+* Artificial Intelligence (AI)
+* Machine Learning (ML)
+* Deep Learning (DL)
+* Data Science
+
+
 * Responsible AI (RAI) practices
 * RAI Toolkit 
 * Fairness indicators
+* Neural Networks
+    * Convolutional Neural Networks
+    * Recurrent Neural Networks
+    * Stochastic Neural Networks
+* Supervised 
+    * Random Forests
+    * Decision trees
+    * Relevant Vector Machines
+    * Support Vector Machines
+* Unsupervised
+* Labeled data
+* Unlabelled data
 
 
------------------------------------------------------------------------------------------------------
+* Ensemble learning
+* Deep learning
+* Reinforcement Learning
+* NLP
+* Computer vision
+* Natural Language Processing
 
-References
-----------
 
+* Logistic Regression
+* Decision Trees
+* Recommeder Systems
+* Robotics
+* Model
+* Model Fitting
+* Training Data
+* Dimensionality
+    * Curse of Dimensionality
+    * Dimensionality reduction
 
+* Data PreProcessing Techniques:
+    * Feature Engineering
+    * Feature Scaling
+    * Dimensionality Reduction
+    * Data Cleaning
+    * Data Augmentation
 
------------------------------------------------------------------------------------------------------
+![Model Complexity](image-4.png)
 
-Notes
------
+* Model Complexity
+* bias
+    * underfitting (high bias)
+    * overfitting (high viariance) 
+    * Good Balance (low bias, low variance)
+* noise
+* Regularization
+* batch 
+    * epoch
+* Gradient descent
+* Learning rate
+
+---
