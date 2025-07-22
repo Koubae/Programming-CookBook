@@ -281,6 +281,9 @@ Host github.com
 ## check ssh login to github
 ssh -T git@github.com
 
+
+git show --show-signature
+
 ```
 
 
