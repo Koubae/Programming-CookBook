@@ -3,6 +3,10 @@
 
 Programmer & Developer Cook-Book | Covers Programming Languages, Databases, Linux Commands and more. 
 
+* [Commands](./commands.md)
+* [.bashrc Templates](./bashrc_templates.md)
+* [Mac keyboard shortcuts](./mac_shortcuts.md)
+
 
 -----------------------------------------------------------------------------------------------------
 
