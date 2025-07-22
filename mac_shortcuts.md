@@ -32,3 +32,10 @@ Mac keyboard shortcuts
 ### Slack
 
 * hyperlink --> CMD + Shift + U
+
+
+### Black
+
+* black setup https://black.readthedocs.io/en/stable/integrations/editors.html
+
+Set as mac shortcut OPT + . 

@@ -378,6 +378,9 @@ cp -r  /mnt/wsl/share/.ssh ~
 @Mac
 -------
 
+* black setup https://black.readthedocs.io/en/stable/integrations/editors.html
+
+Set as mac shortcut OPT + . 
 
 ```bash
 
