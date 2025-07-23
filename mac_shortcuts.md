@@ -10,7 +10,7 @@ Mac keyboard shortcuts
 * CMD + Space --> Spotlight (Search)
 * Command–Option–Space bar --> perform a Spotlight search from a Finder window
 * Control–Command–Space bar --> Emoji
-
+* Cmd + ⇧ Shift + O --> Okta Plugin https://chromewebstore.google.com/detail/okta-browser-plugin/glnpjglilkicbckjpbgcfkogebgllemb?hl=en&pli=1
 
 * Screen record -> Shift, Command, and 5. | https://support.apple.com/en-us/102618
 
