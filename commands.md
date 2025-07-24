@@ -438,6 +438,9 @@ pyenv exec python --version 3.11.11
 # You can also use the full path to the interpreter
 ~/.pyenv/versions/3.11.11/bin/python
 
+export PYENV_VERSION=3.10; python -m venv ./sub_folder/sub_folder_2/.venv; source ./sub_folder/sub_folder_2/.venv/bin/activate
+
+
 ### --------------------------
 ##  pipenv
 ### --------------------------
