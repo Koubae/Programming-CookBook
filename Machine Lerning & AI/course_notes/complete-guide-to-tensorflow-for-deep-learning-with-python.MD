@@ -30,9 +30,17 @@ Complete Guide to TensorFlow for Deep Learning with PythonComplete
 
 
 ```mermaid
-  graph TD;
-      A-->B;
-      A-->C;
-      B-->D;
-      C-->D;
+    flowchart TD
+        A(Data Acquisition) 
+        B(Data Cleaning)
+
+        A --> B
+        B --> C(Test)
+        B --> D(Train)
+        D --> E(Train Model)
+        E --> F(Evaluate Model)
+        F --> E
+        F --> G(Deploy Model)
+        C --> F
+    
 ```
