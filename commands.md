@@ -515,3 +515,17 @@ poetry config virtualenvs.in-project true
 
 
 ```
+
+
+@OpenAPI
+-----
+
+```bash
+brew install openapi-generator
+
+# Generate a Python client from the OpenAPI YAML file: bash Copy
+openapi-generator generate -i /path/to/your/openapi-spec.yaml -g python -o ./generated-client
+# Generate a Node.js client from the OpenAPI YAML file: bash Copy
+openapi-generator generate -i /path/to/your/openapi-spec.yaml -g javascript -o ./generated-client
+
+```

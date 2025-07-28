@@ -1,0 +1,167 @@
+openapi: 3.0.0
+info:
+  title: Sample API
+  description: This is a simple API for demonstrating different tags and RESTful resources.
+  version: 1.0.0
+servers:
+  - url: https://api.sample.com/v1
+    description: Main API Server
+
+tags:
+  - name: Users
+    description: Operations related to user management
+  - name: Products
+    description: Operations related to product management
+  - name: Orders
+    description: Operations related to order management
+
+paths:
+  /users:
+    get:
+      tags:
+        - Users
+      summary: Get a list of users
+      operationId: getUsers
+      description: Retrieve a list of all users in the system
+      responses:
+        '200':
+          description: A list of users
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                    name:
+                      type: string
+                    email:
+                      type: string
+    post:
+      tags:
+        - Users
+      summary: Create a new user
+      operationId: createUser
+      description: Create a new user in the system
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                email:
+                  type: string
+      responses:
+        '201':
+          description: User created successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  name:
+                    type: string
+                  email:
+                    type: string
+
+  /users/{userId}:
+    get:
+      tags:
+        - Users
+      summary: Get user details by ID
+      operationId: getUserById
+      description: Retrieve details of a user by their unique ID
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          description: The ID of the user to retrieve
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: The user details
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  name:
+                    type: string
+                  email:
+                    type: string
+        '404':
+          description: User not found
+
+  /products:
+    get:
+      tags:
+        - Products
+      summary: Get a list of products
+      operationId: getProducts
+      description: Retrieve a list of products available in the system
+      responses:
+        '200':
+          description: A list of products
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                    name:
+                      type: string
+                    price:
+                      type: number
+                      format: float
+
+  /orders:
+    post:
+      tags:
+        - Orders
+      summary: Place a new order
+      operationId: createOrder
+      description: Create a new order in the system
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                userId:
+                  type: integer
+                productId:
+                  type: integer
+                quantity:
+                  type: integer
+      responses:
+        '201':
+          description: Order created successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  orderId:
+                    type: integer
+                  userId:
+                    type: integer
+                  productId:
+                    type: integer
+                  quantity:
+                    type: integer
+        '400':
+          description: Invalid order request
