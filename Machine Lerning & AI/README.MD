@@ -125,13 +125,10 @@ Terms & Keywords
     * Relevant Vector Machines
     * Support Vector Machines
 * Unsupervised
-* Labeled data
-* Unlabelled data
-
+* Reinforcement Learning
 
 * Ensemble learning
 * Deep learning
-* Reinforcement Learning
 * NLP
 * Computer vision
 * Natural Language Processing
@@ -168,5 +165,8 @@ Terms & Keywords
     * epoch
 * Gradient descent
 * Learning rate
+
+* word embeddings
+* Word2Vec
 
 ---
