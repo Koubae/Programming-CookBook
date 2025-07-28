@@ -468,7 +468,9 @@ pipenv --version
 pipenv lock    # records new requirements to Pipefile.lock
 pipenv update  # records new requirements to Pipefile.lock + installs missing dependencies 
 
-
+### --------------------------
+##  pyenv
+### --------------------------
 ## install & create python venv all commands
 pyenv install 3.11.12
 pyenv global 3.11.12
@@ -477,6 +479,39 @@ pyenv versions
 pipenv install --python=$(which python)
 # or
 pipenv install --python=$HOME/.pyenv/versions/3.11.12/bin/python
+
+### --------------------------
+##  poetry
+### --------------------------
+# install https://python-poetry.org/docs/
+curl -sSL https://install.python-poetry.org | python3 -
+
+# vim ~/.zshrc
+#poetry
+export PATH="$HOME/.local/bin:$PATH"
+# ...
+# poetry
+fpath+=~/.zfunc
+autoload -Uz compinit && compinit
+
+# commands
+poetry init
+poetry add requests
+poetry add --dev pytest
+poetry install
+poetry build
+poetry publish
+
+# clean u
+poetry env remove python
+
+
+# poetry + pyenv
+poetry env use $(pyenv which python)
+pyenv local 3.11.6
+
+poetry config virtualenvs.in-project true
+
 
 
 ```
