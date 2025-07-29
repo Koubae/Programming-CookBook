@@ -27,6 +27,21 @@ Complete Guide to TensorFlow for Deep Learning with PythonComplete
     * Environment - What agent interacts with
     * Actions -- What the agent can do
 
+### Evaluation
+
+* supervised learning -- clasification eval
+    * Accuracy | Recall | Precision
+    * Accuracy | Correctly classified divided by total samples
+
+* supervised learning -- regression eval
+    * MAE | MSE | RMSE
+    * all measurements of: on average how far off are you from the correct continous value
+
+* unsupervised learning -- Evaluation
+    * harder on 
+    * cluster homogeneity, Rand index
+
+### Deploy Model on New Incoming Data
 
 
 ```mermaid
@@ -44,3 +59,13 @@ Complete Guide to TensorFlow for Deep Learning with PythonComplete
         C --> F
     
 ```
+![Deploy Model on New Incoming Data](image.png)
+
+### Unsupervised Learning
+
+![Unsupervised Learning](image-1.png)
+
+### hold out sets
+
+![hold out sets](image-2.png)
+
