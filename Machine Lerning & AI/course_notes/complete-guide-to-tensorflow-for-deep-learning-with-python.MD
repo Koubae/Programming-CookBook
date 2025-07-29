@@ -3,7 +3,17 @@ Complete Guide to TensorFlow for Deep Learning with PythonComplete
 
 
 * Course: [Complete Guide to TensorFlow for Deep Learning with Python](https://www.udemy.com/course/complete-guide-to-tensorflow-for-deep-learning-with-python)
+* [playground.tensorflow.org](https://playground.tensorflow.org/)
 
+
+### Components
+
+* numpy
+* panda
+* tensorflow
+
+
+---
 
 
 
@@ -69,3 +79,57 @@ Complete Guide to TensorFlow for Deep Learning with PythonComplete
 
 ![hold out sets](image-2.png)
 
+
+---
+
+
+Introduction to Neural Networks
+-------------------------------
+
+* Artificial Neural Networks (ANN)
+* Activation Function
+* Cost functions
+
+* Biological Neuron
+* Perceptron Model
+* Mathematical Representation
+
+
+
+**perceptron**
+
+![perceptron](image-3.png)
+
+
+* Input layer 
+* Hidden layers
+* output layer
+
+```bash
+z = wx + b
+```
+
+#### Activation functions
+
+* sigmoid function tanh(z)
+* hyperbolic tangent
+* Rectified linear Unit (ReLU)
+
+**sigmoid function**
+
+#### Cost functions
+
+* y: represents true value
+* a: represents neuron's prediction
+
+* `w * x + b = z`
+* Pass `z` into activation function `function o(z) = a`
+
+* Quadratic cost | `C = E(y-a)2`
+* Cross Entropy
+* Gradient Descent
+* Gradient Descent -- Backpropagation
+
+* chain rule
+
+* PostOrder Tree Traversal

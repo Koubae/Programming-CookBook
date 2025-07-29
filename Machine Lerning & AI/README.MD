@@ -3,6 +3,8 @@ Machine Lerning & AI
 
 
 * [kaggle](https://www.kaggle.com/)
+* [playground.tensorflow.org](https://playground.tensorflow.org/)
+
 
 Documentation
 -------------
@@ -168,5 +170,9 @@ Terms & Keywords
 
 * word embeddings
 * Word2Vec
+
+* Artificial Neural Networks (ANN)
+* **perceptron**
+
 
 ---
