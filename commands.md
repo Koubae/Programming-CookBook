@@ -517,6 +517,40 @@ poetry config virtualenvs.in-project true
 ```
 
 
+**ruff**
+
+```makefile
+
+# Lint the code (show issues, but do not fix)
+lint:
+	poetry run ruff check .
+
+# Format the code (auto-fix style issues, like Black)
+format:
+	poetry run ruff format .
+
+# Lint only and fail if anything is wrong (CI-safe)
+check-lint:
+	poetry run ruff check . --no-fix
+
+# Check formatting only (but don't modify files)
+check-format:
+	poetry run ruff format --check .
+
+# Apply auto-fixes for all fixable issues
+fix-lint:
+	poetry run ruff check . --fix
+
+# Combine formatting and linting fixes
+fix-all:
+	poetry run ruff format .
+	poetry run ruff check . --fix
+
+# Print help: shows all enabled rules
+ruff-help:
+	poetry run ruff rule --select all
+```
+
 @OpenAPI
 -----
 
