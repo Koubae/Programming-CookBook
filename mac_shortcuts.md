@@ -39,3 +39,15 @@ Mac keyboard shortcuts
 * black setup https://black.readthedocs.io/en/stable/integrations/editors.html
 
 Set as mac shortcut OPT + . 
+
+
+#### windsurf
+
+* Code with cascade : ⌘ L
+* open command pallet: ⇧ ⌘ P
+* Code with cascade :  ⌘ L
+* Edit code inline: ⌘ I
+
+#### windsurf -- pycharm plugin
+
+* Toggle Cascade: ⌘ ⇧ L
