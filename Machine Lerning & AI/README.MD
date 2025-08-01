@@ -96,6 +96,14 @@ Tools
 
 ---
 
+
+Further Reading
+----------------
+
+* [Chain of Thought Monitorability: A New and Fragile Opportunity for AI Safety](./cot_monitoring.pdf)
+
+---
+
 Terms & Keywords
 ----------------
 
