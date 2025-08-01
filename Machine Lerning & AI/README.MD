@@ -183,4 +183,17 @@ Terms & Keywords
 * **perceptron**
 
 
+#### Other
+
+* CoT stands for Chain of Thought. | Chain of Thought (CoT) prompting or reasoning. : In the context of AI—particularly large language models (LLMs) like GPT, Claude, etc.—this refers to the intermediate reasoning steps the model goes through to arrive at an answer. These are usually expressed in natural language, like a human “thinking out loud.”
+* confabulation: models write what looks like a good explanation but actually made up the steps
+
+
+
 ---
+
+
+#### CoT stands for Chain of Thought
+
+
+![CoT](image-5.png)
