@@ -284,6 +284,29 @@ ssh -T git@github.com
 
 git show --show-signature
 
+### Add user 2 in another repo
+
+# create ssh keys
+ssh-keygen -t rsa -C "<email.adrrss@example.com>" -f ~/.ssh/id_rsa_koubae
+
+vim ~/.ssh/config
+
+Host github-koubae
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_rsa_koubae
+    IdentitiesOnly yes
+
+
+# change the remote so that points to value "Host"
+git remote set-url origin git@github-koubae:Koubae/Software-Engineer-Study-Notes.git
+
+# copy key (mac)
+pbcopy < ~/.ssh/id_rsa_koubae.pub
+# verify (mac)
+pbpaste
+
+
 ```
 
 

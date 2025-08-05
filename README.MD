@@ -6,6 +6,7 @@ Programmer & Developer Cook-Book | Covers Programming Languages, Databases, Linu
 * [Commands](./commands.md)
 * [.bashrc Templates](./bashrc_templates.md)
 * [Mac keyboard shortcuts](./mac_shortcuts.md)
+* [Software-Engineer-Study-Notes](https://github.com/Koubae/Software-Engineer-Study-Notes)
 
 
 -----------------------------------------------------------------------------------------------------
