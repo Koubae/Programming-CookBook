@@ -599,3 +599,66 @@ openapi-generator generate -i /path/to/your/openapi-spec.yaml -g python -o ./gen
 openapi-generator generate -i /path/to/your/openapi-spec.yaml -g javascript -o ./generated-client
 
 ```
+
+@Snowflake
+----------
+
+```bash
+# python 
+python -m pip install snowflake-connector-python cryptography
+
+# mac
+brew install --cask snowflake-snowsql
+
+# key-pair auth
+
+# Generate private key with passphrase (recommended)
+openssl genrsa 2048 | openssl pkcs8 -topk8 -inform PEM -out rsa_key.p8 -nocrypt
+# Extract the public key
+openssl rsa -in rsa_key.p8 -pubout -out rsa_key.pub
+
+# For Snowflake you need Base64 DER of the public key:
+#openssl rsa -in rsa_key.pem -pubout -outform DER | base64 -w0 > rsa_key_base64.txt
+openssl rsa -in rsa_key.p8 -pubout -outform DER | base64 -w0 > rsa_key_base64.txt
+
+# You’ll now have:
+# rsa_key.pem → your private key (keep safe, do not commit)
+# rsa_key.pub → human-readable public key
+# rsa_key_base64.txt → the version you paste into Snowflake
+
+## paste the keys into ~/.snowsql
+
+
+# vim ~/.snowsql/config
+#[connections.dev]
+#accountname = xy12345.eu-west-1
+#username = DEV_USER
+#private_key_path = /Users/you/rsa_key.pem
+#private_key_passphrase = your_passphrase
+#role = SYSADMIN
+#warehouse = COMPUTE_WH
+
+[connections.dev]
+accountname = xy12345.eu-west-1
+username = dev_user
+private_key_path = ~/.snowsql/rsa_key.p8
+role = SYSADMIN
+warehouse = COMPUTE_WH
+
+# connect with 
+snowsql -c dev
+# exit
+\q
+
+CREATE USER dev_user
+  PASSWORD = 'TEMPORARY_PASSWORD'  -- needed initially
+  DEFAULT_ROLE = SYSADMIN
+  DEFAULT_WAREHOUSE = COMPUTE_WH
+  MUST_CHANGE_PASSWORD = FALSE;
+
+GRANT ROLE SYSADMIN TO USER dev_user;
+ALTER USER dev_user SET DEFAULT_ROLE = SYSADMIN;
+
+ALTER USER dev_user
+  SET RSA_PUBLIC_KEY = '<paste contents of rsa_key_base64.txt>';
+```
