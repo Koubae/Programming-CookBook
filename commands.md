@@ -661,4 +661,28 @@ ALTER USER dev_user SET DEFAULT_ROLE = SYSADMIN;
 
 ALTER USER dev_user
   SET RSA_PUBLIC_KEY = '<paste contents of rsa_key_base64.txt>';
+
+
+-- See which role Python is using:
+-- (from step 1 in Python: CURRENT_ROLE())
+-- Then grant visibility to that role:
+GRANT USAGE ON DATABASE FAKE_BRONZE_EM TO ROLE MY_PYTHON_ROLE;
+
+-- Also grant schema usage (and object privileges as needed):
+GRANT USAGE ON ALL SCHEMAS IN DATABASE FAKE_BRONZE_EM TO ROLE MY_PYTHON_ROLE;
+-- and typically:
+GRANT SELECT ON ALL TABLES IN SCHEMA FAKE_BRONZE_EM.PUBLIC TO ROLE MY_PYTHON_ROLE;
+GRANT SELECT ON FUTURE TABLES IN SCHEMA FAKE_BRONZE_EM.PUBLIC TO ROLE MY_PYTHON_ROLE;
+
+GRANT USAGE, OPERATE ON WAREHOUSE COMPUTE_WH TO ROLE SYSADMIN;
+
+# see current session info
+SELECT
+  CURRENT_ORGANIZATION_NAME() AS org,
+  CURRENT_ACCOUNT_NAME()      AS account_name,
+  CURRENT_ACCOUNT()           AS account_locator,
+  CURRENT_REGION()            AS region,
+  CURRENT_USER()              AS user_name,
+  CURRENT_ROLE()              AS role,
+  CURRENT_SECONDARY_ROLES()   AS secondary_roles;
 ```

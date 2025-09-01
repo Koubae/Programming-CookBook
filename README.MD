@@ -167,6 +167,12 @@ openssl x509 -text -noout -in certificate.crt
 openssl x509 -in certificate.crt -text
 ```
 
+Books
+=====
+
+* [The Phoenix Project](https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/0988262592)
+* [The DevOps Handbook](https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1942788002)
+
 Further Reading
 ===============
 
