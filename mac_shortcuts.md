@@ -14,6 +14,8 @@ Mac keyboard shortcuts
 
 * Screen record -> Shift, Command, and 5. | https://support.apple.com/en-us/102618
 
+* `cmd+shift+F` chrome hide/show top bar full screen --> ref https://superuser.com/questions/1368977/how-to-re-enable-proper-full-screen-mode-in-chrome-with-display-of-toolbar-on-ho
+
 #### windows
 
 * https://apple.stackexchange.com/questions/193937/shortcut-for-toggling-between-different-windows-of-same-app
