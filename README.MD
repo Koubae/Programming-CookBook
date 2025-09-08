@@ -8,6 +8,38 @@ Programmer & Developer Cook-Book | Covers Programming Languages, Databases, Linu
 * [Mac keyboard shortcuts](./mac_shortcuts.md)
 * [Software-Engineer-Study-Notes](https://github.com/Koubae/Software-Engineer-Study-Notes)
 
+### Quick Start
+
+
+#### 0) Use it online
+
+Just use it navigating the repo in github at https://github.com/Koubae/Programming-CookBook
+you can actually open a VSCode Editor in github on the browser, simply type/hit `.` (dot) while in the repo or
+change the url domain from https://github.com/Koubae/Programming-CookBook --> https://github.dev/Koubae/Programming-CookBook
+(is github.code --> github.dev)
+
+Alternativelly clone it:
+
+#### 1) Clone the project
+```bash
+git clone git@github.com:Koubae/Programming-CookBook.git
+```
+
+If you see error:
+
+```bash
+Error: " unable to create symlink Programming Languages/C/fundamentals/roadmap/readme.md: File name too long"
+```
+
+
+Try:
+
+```bash
+git -c core.symlinks=false -c core.longpaths=true clone git@github.com:Koubae/Programming-CookBook.git
+``` 
+
+#### 2) Use as you wish
+
 
 -----------------------------------------------------------------------------------------------------
 
