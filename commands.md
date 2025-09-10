@@ -587,6 +587,33 @@ ruff-help:
 	poetry run ruff rule --select all
 ```
 
+@go | @golang
+-------
+
+```bash
+### Install and manage multiple go versions
+go install golang.org/dl/go1.23.0@latest
+# Download and install the toolchain
+go1.23.0 download
+go1.23.0 version
+go1.23.0 build
+go1.23.0 run main.go
+
+## direnv | https://direnv.net/
+# To automatically change go verison
+sudo apt install direnv
+# vim ~/.bashrc
+eval "$(direnv hook bash)"   # for bash
+eval "$(direnv hook zsh)"    # for zsh
+# vin .envrc
+echo 'export PATH=$HOME/go/bin:$PATH' > .envrc
+echo 'alias go=go1.23.0' >> .envrc
+direnv allow
+```
+
+
+
+
 @OpenAPI
 -----
 
