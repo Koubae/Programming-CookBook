@@ -611,8 +611,105 @@ echo 'alias go=go1.23.0' >> .envrc
 direnv allow
 ```
 
+@java
+-------
+
+```bash
+# Install Java corretto - Add multiple 3 latest versions
+# 1) ======================
+#    Update system
+# 1) ======================
+sudo apt update && sudo apt upgrade -y
+# 2) ======================
+#    Add Amazon Corretto repository
+# 2) ======================
+# Import the Amazon Corretto GPG key
+wget -O- https://apt.corretto.aws/corretto.key | sudo apt-key add -
+# Add the repository
+sudo add-apt-repository 'deb https://apt.corretto.aws stable main'
+# Update package lists
+sudo apt update
+
+# 3) ======================
+#    Install the latest 3 versions
+# 3) ======================
+sudo apt install -y java-17-amazon-corretto-jdk
+sudo apt install -y java-21-amazon-corretto-jdk
+# sudo apt install -y java-22-amazon-corretto-jdk
+sudo apt install -y java-24-amazon-corretto-jdk
+
+# 4) ======================
+#    Manage multiple Java versions
+# 4) ======================
+update-alternatives --list java
+# Register alternatives (if not auto-registered):
+sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/java-17-amazon-corretto/bin/java 1717
+sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/java-21-amazon-corretto/bin/java 2121
+sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/java-24-amazon-corretto/bin/java 2424
+
+#  Set default Java to the latest (24)
+sudo update-alternatives --config java
+sudo update-alternatives --display java
+
+java -version
+
+# ======================
+#  Set JAVA_HOME
+# ======================
+# Find your install dir:
+ls -d /usr/lib/jvm/java-24-amazon-corretto
 
 
+# option 2
+# Java version switcher
+export JAVA_HOME=/usr/lib/jvm/java-24-amazon-corretto
+export PATH="$JAVA_HOME/bin:$PATH"
+
+use_java17() {
+  export JAVA_HOME=/usr/lib/jvm/java-17-amazon-corretto
+  export PATH="$JAVA_HOME/bin:$PATH"
+  java -version
+}
+
+use_java21() {
+  export JAVA_HOME=/usr/lib/jvm/java-21-amazon-corretto
+  export PATH="$JAVA_HOME/bin:$PATH"
+  java -version
+}
+
+use_java24() {
+  export JAVA_HOME=/usr/lib/jvm/java-24-amazon-corretto
+  export PATH="$JAVA_HOME/bin:$PATH"
+  java -version
+}
+
+# ======================
+#  Gradle
+# ======================
+# Create directory for Gradle
+sudo mkdir -p /opt/gradle
+cd /opt/gradle
+
+# Download Gradle (replace version if newer is out)
+sudo wget https://services.gradle.org/distributions/gradle-8.10.2-bin.zip -P /tmp
+
+# Unzip
+sudo unzip -d /opt/gradle /tmp/gradle-8.10.2-bin.zip
+
+# Symlink "current" to latest
+sudo ln -sfn /opt/gradle/gradle-8.10.2 /opt/gradle/current
+
+## Add gradle to path
+export PATH=/opt/gradle/current/bin:$PATH
+source ~/.bashrc
+gradle --version
+
+# ======================
+#  Maven
+# ======================
+sudo apt install maven
+mvn --version
+```
 
 @OpenAPI
 -----
