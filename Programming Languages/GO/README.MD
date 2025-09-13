@@ -126,6 +126,13 @@ Guide & Areas of Study
 * [Go By Examples: Arrays](https://gobyexample.com/arrays)
 
 
+### Coursera
+
+* [Programming with Google Go Specialization](https://www.coursera.org/specializations/google-golang)
+* [C, Go, and C++: A Comprehensive Introduction to Programming Specialization](https://www.coursera.org/specializations/c-go-c-plus-plus)
+* [Developing a REST API with Go and Cloud Run](https://www.coursera.org/projects/googlecloud-developing-a-rest-api-with-go-and-cloud-run-tdech)
+* [Golang for Beginners: Data Types, Functions, and Packages](https://www.coursera.org/projects/golang-beginners-data-types-functions-packages)
+
 ### Project Structure
 
 
