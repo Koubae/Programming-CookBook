@@ -41,12 +41,15 @@ go run .
 
 # Build
 go build .
+go build -o <exe-name> .
 
 # Install
 go install . 
 
 go get .
 
+# go get should be deprecatead and should be use with the -d flag
+# https://stackoverflow.com/a/24878851/13903942 | https://stackoverflow.com/a/64800215/13903942
 # Add a dependency on the golang.org/x/example/hello/reverse package by using go get.
 go get golang.org/x/example/hello/reverse
 # install package
