@@ -53,6 +53,7 @@ git -c core.symlinks=false -c core.longpaths=true clone git@github.com:Koubae/Pr
 * [Enterprise Integration PatternsEnterprise Integration Patterns](https://www.enterpriseintegrationpatterns.com/)
 
 * [Starlark Language](https://bazel.build/rules/language)
+- [UTF-8, UTF-16, UTF-32 & BOM](https://unicode.org/faq/utf_bom.html)
 
 ### RESTFULApis
 

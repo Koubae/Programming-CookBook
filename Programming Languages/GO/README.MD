@@ -156,7 +156,9 @@ More about naming and organizing packages as well as other code structure recomm
 A Chinese Post about Package-Oriented-Design guidelines and Architecture layer
 * [面向包的设计和架构分层](https://github.com/danceyoung/paper-code/blob/master/package-oriented-design/packageorienteddesign.md)
 
+### Videos
 
+* [All About The Go Compiler](https://www.youtube.com/watch?v=U8F6tV-qYNc)
 
 -----------------------------------------------------------------------------------------------------
 
