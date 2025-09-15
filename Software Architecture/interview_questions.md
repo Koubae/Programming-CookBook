@@ -33,6 +33,9 @@ Software Principles
 * REST
 * SOAP
 * Long Polling
+* Web Hooks
+
+* Scaling | Vertical | Horizontal
 
 
 Architecture & Design Frameworks
