@@ -31,6 +31,9 @@ Documentation
 * [gofmt](https://pkg.go.dev/cmd/gofmt)
 * [staticcheck](https://github.com/dominikh/go-tools/tree/master/cmd/staticcheck)
 
+* [Passing by reference and value in Go to functions](https://stackoverflow.com/questions/47296325/passing-by-reference-and-value-in-go-to-functions)
+* [Golang Pass by value vs Pass by reference](https://david-yappeter.medium.com/golang-pass-by-value-vs-pass-by-reference-e48aac8b2716)
+
 ### Go by Example
 
 * [Go Web Examples Learn Web Programming in Go by Examples](https://gowebexamples.com/)
@@ -132,6 +135,8 @@ Guide & Areas of Study
 * [C, Go, and C++: A Comprehensive Introduction to Programming Specialization](https://www.coursera.org/specializations/c-go-c-plus-plus)
 * [Developing a REST API with Go and Cloud Run](https://www.coursera.org/projects/googlecloud-developing-a-rest-api-with-go-and-cloud-run-tdech)
 * [Golang for Beginners: Data Types, Functions, and Packages](https://www.coursera.org/projects/golang-beginners-data-types-functions-packages)
+
+* [Go Programming Language Specialization](https://www.coursera.org/specializations/go-programming-language)
 
 ### Project Structure
 
