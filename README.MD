@@ -206,6 +206,9 @@ Books
 * [The Phoenix Project](https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/0988262592)
 * [The DevOps Handbook](https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1942788002)
 
+* [Google -- What is Site Reliability Engineering (SRE)?](https://sre.google/)
+* [Google -- sre-book](https://sre.google/sre-book/introduction/)
+
 Further Reading
 ===============
 

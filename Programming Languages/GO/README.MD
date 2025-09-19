@@ -115,8 +115,15 @@ Guide & Areas of Study
 - [Maps are not safe for concurrent use](https://go.dev/doc/faq#atomic_maps)
 - [Developing and publishing modules](https://go.dev/doc/modules/developing)
 * [Exported names](https://go.dev/tour/basics/3)
-* [Go Slices: usage and internals](https://go.dev/blog/slices-intro)
 
+#### Go -- Blogs
+
+* [Go Concurrency Patterns](https://go.dev/talks/2012/concurrency.slide#1)
+
+* [Go Slices: usage and internals](https://go.dev/blog/slices-intro)
+* [Go Concurrency Patterns: Context](https://go.dev/blog/context)
+* [Go Concurrency Patterns: Pipelines and cancellation](https://go.dev/blog/pipelines)
+* [Contexts and structs](https://go.dev/blog/context-and-structs)
 
 ### Others
 
