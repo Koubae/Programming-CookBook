@@ -125,6 +125,8 @@ Guide & Areas of Study
 * [Go Concurrency Patterns: Pipelines and cancellation](https://go.dev/blog/pipelines)
 * [Contexts and structs](https://go.dev/blog/context-and-structs)
 
+* [Squinting at Power Series](https://swtch.com/~rsc/thread/squint.pdf)
+
 ### Others
 
 * [An Introduction to Programming in GO](https://www.golang-book.com/books/intro)
@@ -171,6 +173,13 @@ A Chinese Post about Package-Oriented-Design guidelines and Architecture layer
 ### Videos
 
 * [All About The Go Compiler](https://www.youtube.com/watch?v=U8F6tV-qYNc)
+
+* [Google I/O 2012 - Go Concurrency Patterns](https://www.youtube.com/watch?v=f6kdp27TYZs)
+* [Google I/O 2013 - Advanced Go Concurrency Patterns](https://www.youtube.com/watch?v=QDDwwePbDtw)
+    * [Advanced Go Concurrency Patterns](https://go.dev/blog/io2013-talk-concurrency)
+
+
+
 
 -----------------------------------------------------------------------------------------------------
 
