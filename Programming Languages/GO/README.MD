@@ -178,7 +178,9 @@ A Chinese Post about Package-Oriented-Design guidelines and Architecture layer
 * [Google I/O 2013 - Advanced Go Concurrency Patterns](https://www.youtube.com/watch?v=QDDwwePbDtw)
     * [Advanced Go Concurrency Patterns](https://go.dev/blog/io2013-talk-concurrency)
 
-
+* [Complete Backend Engineering Course in Go](https://www.youtube.com/watch?v=h3fqD6IprIA&t=591s)
+    * [sikozonpc/GopherSocial](https://github.com/sikozonpc/GopherSocial)
+    * [Self Made Engineer](https://www.selfmadeengineer.com/)
 
 
 -----------------------------------------------------------------------------------------------------
