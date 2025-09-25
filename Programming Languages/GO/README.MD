@@ -180,8 +180,8 @@ A Chinese Post about Package-Oriented-Design guidelines and Architecture layer
 
 * [Complete Backend Engineering Course in Go](https://www.youtube.com/watch?v=h3fqD6IprIA&t=591s)
     * [sikozonpc/GopherSocial](https://github.com/sikozonpc/GopherSocial)
-    * [Self Made Engineer](https://www.selfmadeengineer.com/)
-
+        * [Self Made Engineer](https://www.selfmadeengineer.com/)
+        *
 
 -----------------------------------------------------------------------------------------------------
 

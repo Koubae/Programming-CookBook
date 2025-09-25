@@ -11,6 +11,7 @@ Guide & Areas of Study
 
 ### Guides
 
+* [Representational State Transfer (REST)](https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm)
 * [Refactoring Gury](https://refactoring.guru)
 * [DDD: Part I (Introduction)](https://dzone.com/articles/ddd-part-i-introduction)
     * [DDD, Part 2: DDD Building Blocks](https://dzone.com/articles/ddd-part-ii-ddd-building-blocks)

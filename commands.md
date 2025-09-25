@@ -724,6 +724,51 @@ openapi-generator generate -i /path/to/your/openapi-spec.yaml -g javascript -o .
 
 ```
 
+Databases
+=========
+
+@PostgreSQL
+----------
+
+```bash
+# login|connect
+psql -h locahost -U admin -d database_name
+PGPASSWORD=admin psql -h db-postgres -U admin -d any_business
+docker compose exec db-postgres bash -lc "PGPASSWORD=admin psql -h db-postgres -U admin -d any_business"
+# connect to db
+\c <db-name>
+# show database
+\l
+\l+
+SELECT datname FROM pg_database;
+# show tables
+\d     -- all relations
+\d+
+\dt
+\dv+   -- views
+\ds+   -- sequences 
+\dt public.*   -- vlist specific schema
+\dt schema_name.*   -- vlist specific schema
+# show columns
+\d tablename
+\d+ tablename
+\d schema_name.tablename
+
+SELECT column_name, data_type, is_nullable, column_default
+FROM information_schema.columns
+WHERE table_schema = 'public'
+  AND table_name   = 'users'
+ORDER BY ordinal_position;
+
+# enable extension 
+CREATE EXTENSION IF NOT EXISTS pgcrypto; 
+# create schema
+CREATE SCHEMA IF NOT EXISTS myschema;
+
+
+```
+
+
 @Snowflake
 ----------
 
