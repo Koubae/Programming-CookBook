@@ -22,7 +22,7 @@ Guide & Areas of Study
 * [Gang of Four design patterns / Design Patterns](https://en.wikipedia.org/wiki/Design_Patterns)
 * [Behavior-driven development (BDD)](https://en.wikipedia.org/wiki/Behavior-driven_development)
 
-### Otherr
+### Other
 
 * [non-functional requirements (NFRs)](https://en.wikipedia.org/wiki/Non-functional_requirement)
 * [Functional requirement](https://en.wikipedia.org/wiki/Functional_requirement)
@@ -48,7 +48,6 @@ Repos / Examples
 
 ### Examples
 
-* []()
 
 
 ### Repositories
@@ -60,7 +59,6 @@ Repos / Examples
 * PHP --> [hgraca/explicit-architecture-php#explicit-architecture-1](https://github.com/hgraca/explicit-architecture-php#explicit-architecture-1)  
 * Java --> [AlicanAkkus/Modular-Architecture-Hexagonal-Demo-Project](https://github.com/AlicanAkkus/Modular-Architecture-Hexagonal-Demo-Project)
 * Java --> [JonathanM2ndoza/Hexagonal-Architecture-DDD](https://github.com/JonathanM2ndoza/Hexagonal-Architecture-DDD)
-* []()
 
 Components
 ----------
@@ -173,6 +171,13 @@ Security / Authorization
 
 
 -----------------------------------------------------------------------------------------------------
+
+Videos & Courses
+----------------
+
+### Youtube
+
+* [Kafka Deep Dive w/ a Ex-Meta Staff Engineer](https://www.youtube.com/watch?v=DU8o-OTeoCc&t=805s)
 
 
 Books
