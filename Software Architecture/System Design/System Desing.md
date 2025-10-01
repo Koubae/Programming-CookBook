@@ -7,7 +7,8 @@ Designs
 _These are just **MOCK** Designs done for training and fun purpooses!_
 
 * [Designs](./designs/)
-* [Ticket Master](./designs//ticket_master/Ticket%20Master.md)
+    * [Ticket Master](./designs//ticket_master/Ticket%20Master.md)
+    * [Uber](./designs/uber/Uber.md)
 
 
 Steps
@@ -61,5 +62,6 @@ Steps
 Videos & Courses
 ----------------
 
+* [Kafka Deep Dive w/ a Ex-Meta Staff Engineer](https://www.youtube.com/watch?v=DU8o-OTeoCc) 
 * [System Design Interview: Design Ticketmaster w/ a Ex-Meta Staff Engineer](https://www.youtube.com/watch?v=fhdPyoO6aXI)
-* [Kafka Deep Dive w/ a Ex-Meta Staff Engineer](https://www.youtube.com/watch?v=DU8o-OTeoCc)
+* [System Design Interview: Design Uber w/ a Ex-Meta Staff Engineer](https://www.youtube.com/watch?v=lsKU38RKQSo)
