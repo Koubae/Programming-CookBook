@@ -169,6 +169,7 @@ Security / Authorization
         * challenge-handshake authentication protocol (CHAP)
 
 * Minimum Viable Product (MVP) --> https://en.wikipedia.org/wiki/Minimum_viable_product
+* distrubuted lock https://en.wikipedia.org/wiki/Distributed_lock_manager | https://redis.io/docs/latest/develop/clients/patterns/distributed-locks/
 
 Videos & Courses
 ----------------
