@@ -4,6 +4,7 @@ Software Architecture
 
 * A smart guy --> [Simon Brown](https://simonbrown.je/)
 * [Refactoring Guru](https://refactoring.guru)
+* [System Design](./System%20Design/System%20Desing.md)
 
 
 Guide & Areas of Study
@@ -166,6 +167,8 @@ Security / Authorization
         * Kerberos protocol prevention
         * secure routing
         * challenge-handshake authentication protocol (CHAP)
+
+* Minimum Viable Product (MVP) --> https://en.wikipedia.org/wiki/Minimum_viable_product
 
 Videos & Courses
 ----------------
