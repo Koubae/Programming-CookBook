@@ -21,11 +21,8 @@ request messages:
 
 * Confidentiality / Confidentiality / Availability / Secure communication
 
------------------------------------------------------------------------------------------------------
 
 Guide & Areas of Study
 -----------------------
 
 *  Distributed denial of service (DDoS)
-
------------------------------------------------------------------------------------------------------

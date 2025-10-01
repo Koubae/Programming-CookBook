@@ -2,8 +2,6 @@ Web Application Architecture
 ================
 
 
------------------------------------------------------------------------------------------------------
-
 Components
 ----------
 
@@ -27,8 +25,6 @@ Components
     * Serverless Tools
      
 
------------------------------------------------------------------------------------------------------
-
 Guides, Documentations & Areas of Study
 -----------------------
 
@@ -37,11 +33,8 @@ Guides, Documentations & Areas of Study
 * [Everything You Wanted to Know About Microservices Architecture](https://litslink.com/blog/microservices-architecture-everything-you-wanted-to-know)
 * [Web Application Architecture: The Ultimate Guide](https://www.intellectsoft.net/blog/web-application-architecture/)
 * [Client-Server Architecture](https://teachcomputerscience.com/client-server-architecture/)
-* []()
-* []()
-* []()
 
------------------------------------------------------------------------------------------------------
+
 
 Projects
 --------
@@ -72,8 +65,6 @@ Projects
 * [DevDungeon/NanoPot](https://github.com/DevDungeon/NanoPot)
 
 
------------------------------------------------------------------------------------------------------
-
 Frameworks / Packages
 --------
 
@@ -88,7 +79,3 @@ Frameworks / Packages
 #### Python
 
 * [Twisted](https://twisted.org/)
-
-
-
------------------------------------------------------------------------------------------------------

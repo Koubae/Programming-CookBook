@@ -42,12 +42,10 @@ Guide & Areas of Study
 * **software layers**: user interface (UI),  Presentation layer, business logic layer, middleware, middleware
 
 
-
 Repos / Examples
 -----------------------
 
 ### Examples
-
 
 
 ### Repositories
@@ -168,9 +166,6 @@ Security / Authorization
         * Kerberos protocol prevention
         * secure routing
         * challenge-handshake authentication protocol (CHAP)
-
-
------------------------------------------------------------------------------------------------------
 
 Videos & Courses
 ----------------

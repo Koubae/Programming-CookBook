@@ -19,13 +19,9 @@ Principles
 * Depend upon abstractions, not concretions.
 
 
-
 Documentation
 -------------
 
-
-
------------------------------------------------------------------------------------------------------
 
 Guides
 -----------------------
@@ -44,8 +40,6 @@ Guides
 - [What is an example of the Liskov Substitution Principle?](https://stackoverflow.com/questions/56860/what-is-an-example-of-the-liskov-substitution-principle)
 
 
------------------------------------------------------------------------------------------------------
-
 Terms & Keywords
 ----------------
 
@@ -56,14 +50,9 @@ Terms & Keywords
 - Design by contract
 
 
------------------------------------------------------------------------------------------------------
-
 References
 ----------
 
-
-
------------------------------------------------------------------------------------------------------
 
 Notes
 -----
