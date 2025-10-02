@@ -6,6 +6,8 @@ Game Development
 ### [Python](./python/)
 ### [Unity](./unity/)
 
+* [github.com/Koubae/java-libGDX](https://github.com/Koubae/java-libGDX)
+
 
 Documentation
 -------------

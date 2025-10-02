@@ -7,6 +7,8 @@ Java
 * [Inside Java](https://inside.java/) |  [Inside java - tags](https://inside.java/tag/jdk%2021)
 * [Java RoadMap](https://roadmap.sh/java)
 
+* [github.com/Koubae/java-libGDX](https://github.com/Koubae/java-libGDX)
+
 ### Related Repositories
 
 * [java-spring-examples](https://github.com/Koubae/java-spring-examples)
