@@ -316,6 +316,15 @@ Tutorials
 See [arrays.java](./Core%20Principles%20%26%20Structure/Data%20Structures/arrays.java)
 
 
+* [Is it worth it to learn java in 2025? (reddit)](https://www.reddit.com/r/learnjava/comments/1hwlc8j/is_it_worth_it_to_learn_java_in_2025/)
+    * [MOOC Java Programming from the University of Helsinki](https://java-programming.mooc.fi/)
+    * [The Java™ Tutorials -- oracle](https://docs.oracle.com/javase/tutorial/java/index.html)
+    * [Java Tutorial for Complete Beginners -- udemy](https://www.udemy.com/course/java-tutorial/?couponCode=LETSLEARNNOW)
+    * [Derek Banas' Java Playlist](https://www.youtube.com/playlist?list=PLE7E8B7F4856C9B19)
+    * [Coursera -- Algorithms, Part I -- Java](https://www.coursera.org/learn/algorithms-part1)
+    * [Coursera -- Algorithms, Part II -- Java](https://www.coursera.org/learn/algorithms-part2)
+    * [Algorithms 4th Edition](https://algs4.cs.princeton.edu/home/)
+
 Best Practices & Conventions
 ----------------------------
 
