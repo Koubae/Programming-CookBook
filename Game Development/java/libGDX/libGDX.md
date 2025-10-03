@@ -13,6 +13,14 @@ Documentations
 * [Managing your assets](https://libgdx.com/wiki/managing-your-assets)
 
 
+Extensions
+----------
+
+* [Dependency management with Gradle](https://libgdx.com/wiki/articles/dependency-management-with-gradle#freetypefont-gradle)
+* [gdx-freetype](https://libgdx.com/wiki/extensions/gdx-freetype)
+
+
+
 Tutorials
 ---------
 
