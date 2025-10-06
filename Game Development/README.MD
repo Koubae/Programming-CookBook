@@ -15,6 +15,8 @@ Assets
 ### Images | Pixel Art 
 
 * [krita](https://krita.org/en/download/)
+   * [How to make 2D game art! Simple assets, even if you are bad at drawing](https://www.youtube.com/watch?v=bKgi6WcXtCY)
+
 
 ### Music 
 
