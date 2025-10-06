@@ -320,7 +320,8 @@ git fetch --unshallow
 # then pull all at the end
 git pull --all
 
-
+## put core compression back to default if needed
+git config --global core.compression -1
 
 ```
 

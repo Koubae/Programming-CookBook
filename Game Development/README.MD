@@ -12,6 +12,10 @@ Game Development
 Assets
 ------
 
+### Images | Pixel Art 
+
+* [krita](https://krita.org/en/download/)
+
 ### Music 
 
 * [opengameart](https://opengameart.org/)
