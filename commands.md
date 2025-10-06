@@ -306,6 +306,21 @@ pbcopy < ~/.ssh/id_rsa_koubae.pub
 # verify (mac)
 pbpaste
 
+```
+
+@git
+
+```bash
+# Clone large projects
+# @credti: https://stackoverflow.com/questions/34389446/how-do-i-download-a-large-git-repository
+git config --global core.compression 0
+git clone --depth 1 <repo_URI>
+# multiple times 
+git fetch --unshallow
+# then pull all at the end
+git pull --all
+
+
 
 ```
 
