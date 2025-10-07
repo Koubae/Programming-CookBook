@@ -75,3 +75,81 @@ Assets
 - **Safe choices for commercial games**  
   Stick with **CC0**, **OGA-BY**, or **CC-BY** (with proper attribution)  
   to avoid complications.
+
+
+Mathematics & Geometry
+----------------------
+
+### Difference between Eucledian distance and Displacement vector
+
+#### Displacement Vector
+
+A direction AND magnitude - tells you both how far AND which way.
+
+Use it when you need to know:
+
+* "Which direction should I face?"
+* "Where should I move?"
+* "What angle is the target at?"
+
+```java
+Vector2 position = Vector2(x=10, y=20);
+Vector2 target = Vector2(x=25, y=30);
+Vector2 displacement = Vector2(x=target.x - position.x, y=target.y - position.y);
+
+Vector2 displacement = new Vector2(100, 50); # 100 units right, 50 units up
+float angle = Math.atan2(displacement.y, displacement.x); #  Calculate direction
+#  Now I know which way to rotate/aim
+
+``` 
+
+
+
+#### Eucledian Distance
+
+A single number - the straight-line distance between two points.
+Use it when you need to know:
+* "How far away is something?"
+* "Is the target within range?"
+* "Am I close enough to stop moving?"
+
+```java
+
+
+float distance = 150.5f; // 150.5 units away
+if (distance < 200f) {
+    // Target is within shooting range
+}
+
+Vector2 position = Vector2(x=10, y=20);
+Vector2 target = Vector2(x=25, y=30);
+Vector2 displacement = Vector2(x=target.x - position.x, y=target.y - position.y);
+float eucledianDistance = (float)Math.sqrt((displacement.x * displacement.x) + (displacement.y * displacement.y));
+// Also
+float distance = (float) Math.hypot(displacement.x, displacement.y);
+``` 
+
+
+**Practical Example - Chasing a target:**
+
+```java
+// Where is the target relative to me?
+Vector2 displacement = new Vector2(
+    target.x - self.x,  // +100 means target is 100 units to the right
+    target.y - self.y   // -50 means target is 50 units down
+);
+
+// How far away is it?
+float distance = displacement.len(); // e.g., 111.8 units eucledian
+
+// Decision making:
+if (distance > 200) {
+    // Use DISPLACEMENT to know which direction to move
+    float angle = Math.atan2(displacement.y, displacement.x);
+    rotateTowards(angle);
+    moveForward();
+} else {
+    // Use DISTANCE to know we're close enough
+    stop();
+}
+``` 
