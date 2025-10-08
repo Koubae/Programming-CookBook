@@ -378,3 +378,14 @@ Terms & Keywords
 * JMX
 * Domain Driven Design
 * Software release life cycle
+
+
+IntelliJ Issues
+---------------
+
+
+### Freezes
+
+* https://intellij-support.jetbrains.com/hc/en-us/community/posts/21505865022226-IntelliJ-is-CONSTANTLY-freezing-on-me-desktop-or-laptop-doesn-t-matter
+    * [UI freezes on IDE due to loading a lot of unexpected files (e.g. pipe file) into VFS](https://youtrack.jetbrains.com/issue/IJPL-74471?_gl=1*1w2dpw1*_gcl_au*MTkxMTIxNjMzNS4xNzU4OTQ1MzYy*FPAU*MTkxMTIxNjMzNS4xNzU4OTQ1MzYy*_ga*MTA3MDk4OTU0MS4xNzUxMTM2ODc1*_ga_9J976DJZ68*czE3NTk5MDQwMDUkbzQwJGcxJHQxNzU5OTA0NTAyJGo2MCRsMCRoMA..)
+
