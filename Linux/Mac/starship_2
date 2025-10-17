@@ -1,0 +1,18 @@
+format = '$python$all'
+
+
+[python]
+symbol = '🐍 '
+format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+
+
+[aws]
+symbol = "☁️ "
+format = '[$symbol($profile )(\($region\) )(\[$duration\] )]($style)' 
+style = 'bold yellow'
+force_display = true
+
+[aws.profile_aliases]
+default = 'default'
+
+
