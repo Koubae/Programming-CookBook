@@ -1,0 +1,124 @@
+# ==========================
+# 🛠️  ENVIRONMENT SETUP
+# ==========================
+
+# Load Homebrew environment
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Use modern LS_COLORS if available
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+
+# History settings
+HISTSIZE=5000
+SAVEHIST=10000
+setopt APPEND_HISTORY
+setopt SHARE_HISTORY
+setopt HIST_IGNORE_DUPS
+
+# ==========================
+# 🐚 SHELL OPTIONS
+# ==========================
+setopt AUTO_CD          # Just type folder name to cd into it
+setopt AUTO_PUSHD       # Push dir onto stack on cd
+setopt PUSHD_IGNORE_DUPS
+setopt CORRECT          # Auto correct commands
+setopt EXTENDED_GLOB
+
+# ==========================
+# 📦 PATH SETUP
+# =========================
+
+#poetry
+export PATH="$HOME/.local/bin:$PATH"
+
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+
+# AWS
+export AWS_CA_BUNDLE="$HOME/.aws/nskp_config/netskope-cert-bundle.pem"
+
+# Java
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/amazon-corretto-24.jdk/Contents/Home
+
+
+# ==========================
+# ⚡ PROMPT (STARSHIP)
+# ==========================
+eval "$(starship init zsh)"
+
+export GPG_TTY=$(tty)
+gpgconf --launch gpg-agent
+
+# poetry
+fpath+=~/.zfunc
+autoload -Uz compinit && compinit
+
+# ==========================
+# 🧪 ALIASES
+# ==========================
+alias ll="ls -lah"
+alias gs="git status"
+alias gb="git branch"
+alias gc="git commit"
+alias gl="git log --oneline --graph --decorate"
+alias reload="source ~/.zshrc"
+
+alias tf='terraform'
+alias tfi='terraform init '
+alias tfa='terraform apply crplan'
+tfp() {
+  TF_CMD="plan"
+  modules=""
+  for m in "$@"
+  do
+     modules="${modules} -target=${m}"
+  done
+  TF_CMD="${TF_CMD}${modules} -out crplan"
+  `echo terraform $TF_CMD`
+}
+
+# "tfp" is a bash function for terraform plan with targets, e.g.:
+# $ tfp module.M1 module.M2 module.M3
+
+export AWS_PROFILE="default"
+export AWS_SSO_PROFILE="default"
+export AWS_DEFAULT_PROFILE="default"
+export AWS_REGION="us-east-1"
+
+function use_aws_profile() {
+  local profile="${1:-default}"  # use 'default' if no arg provided
+
+  export AWS_PROFILE="$profile"
+  export AWS_SSO_PROFILE="$profile"
+  export AWS_DEFAULT_PROFILE="$profile"
+
+  echo "🔄 Switching to AWS profile: $profile"
+
+
+  echo "🔐 Logging in via SSO..."
+  aws sso login --profile "$profile"
+
+  if [[ $? -eq 0 ]]; then
+    echo "✅ Logged in to AWS profile '$profile'"
+    
+   # Get region from config and set AWS_REGION
+    local region
+    region=$(aws configure get region --profile "$profile")
+
+    if [[ -n "$region" ]]; then
+      export AWS_REGION="$region"
+      echo "📍 AWS_REGION set to: $region"
+    else
+      unset AWS_REGION
+      echo "⚠️  No region configured for profile '$profile' — AWS_REGION unset"
+    fi
+
+  else
+    echo "❌ AWS SSO login failed for profile '$profile'"
+  fi
+}
+
