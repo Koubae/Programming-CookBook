@@ -16,6 +16,10 @@ Mac keyboard shortcuts
 
 * `cmd+shift+F` chrome hide/show top bar full screen --> ref https://superuser.com/questions/1368977/how-to-re-enable-proper-full-screen-mode-in-chrome-with-display-of-toolbar-on-ho
 
+**Tilde**
+* https://apple.stackexchange.com/questions/135135/how-to-type-a-normal-tilde-sign-in-mac
+* ⌥+N (Option + ñ) --> ~. (French, Spanish, German  ())
+
 #### windows
 
 * https://apple.stackexchange.com/questions/193937/shortcut-for-toggling-between-different-windows-of-same-app
