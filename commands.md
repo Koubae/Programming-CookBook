@@ -310,6 +310,11 @@ pbpaste
 
 @git
 
+- pull.rebase=true (Always rebase when pulling to avoid merge commits)
+- push.autoSetupRemote=true (automatically create remote tracking branches)
+- feature.manyFiles=1 (Improved performance for large repository)
+- core.fsmonitor=true (Filesystem monitor for improved performance)
+
 ```bash
 # Clone large projects
 # @credti: https://stackoverflow.com/questions/34389446/how-do-i-download-a-large-git-repository
