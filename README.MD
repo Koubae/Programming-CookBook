@@ -215,5 +215,6 @@ Further Reading
 * [Software release life cycle](https://en.wikipedia.org/wiki/Software_release_life_cycle)
 * [Kaylan Blog Post](https://kalyanchakravarthy.net/?p=413)
 * [Twelve-Factor App methodology](https://en.wikipedia.org/wiki/Twelve-Factor_App_methodology) | [The Twelve-Factor App](https://12factor.net)
+* [What is the 70:20:10 model? (Learning Model)](https://702010institute.com/702010-model/)
 
 -----------------------------------------------------------------------------------------------------
