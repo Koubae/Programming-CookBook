@@ -569,8 +569,15 @@ pyenv local 3.11.6
 
 poetry config virtualenvs.in-project true
 
-
-
+### --------------------------
+##  inv (Invoke)
+# https://www.pyinvoke.org/
+### --------------------------
+# view available tasks 
+inv -l
+# tab completition
+inv --print-completion-script zsh >> ~/.zshrc
+inv --print-completion-script bash >> ~/.bashrc
 ```
 
 
