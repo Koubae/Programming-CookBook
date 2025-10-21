@@ -583,6 +583,13 @@ inv -l
 # tab completition
 inv --print-completion-script zsh >> ~/.zshrc
 inv --print-completion-script bash >> ~/.bashrc
+
+### --------------------------
+##  pycharm
+### --------------------------
+# indexing process has gotten stuck
+# Help → Edit Custom Properties
+idea.max.intellisense.filesize=1024
 ```
 
 
