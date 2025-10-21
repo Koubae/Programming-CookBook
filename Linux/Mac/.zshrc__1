@@ -49,6 +49,7 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/amazon-corretto-24.jdk/Conten
 # ⚡ PROMPT (STARSHIP)
 # ==========================
 eval "$(starship init zsh)"
+eval "$(uv generate-shell-completion zsh)"
 
 export GPG_TTY=$(tty)
 gpgconf --launch gpg-agent

@@ -422,6 +422,11 @@ cp -r  /mnt/wsl/share/.ssh ~
 Set as mac shortcut OPT + . 
 
 ```bash
+# Install Uv
+brew install uv
+
+# add to .zshrc
+echo 'eval "$(uv generate-shell-completion zsh)"' >> ~/.zshrc
 
 ```
 
