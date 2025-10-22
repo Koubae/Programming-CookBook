@@ -19,7 +19,7 @@ default = 'default'
 
 [git_branch]
 format = '[$symbol$branch(:$remote_branch)]($style) '
-
+up_to_date = '✓'
 
 [git_status]
 format = '([\[$all_status$ahead_behind\]]($style) )'
