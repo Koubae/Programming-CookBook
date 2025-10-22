@@ -102,6 +102,20 @@ Further Reading
 
 * [Chain of Thought Monitorability: A New and Fragile Opportunity for AI Safety](./cot_monitoring.pdf)
 
+* [Generative artificial intelligence -- Wiki](https://en.wikipedia.org/wiki/Generative_artificial_intelligence)
+* [2025 Top 10 Risk & Mitigations for LLMs and Gen AI Apps](https://genai.owasp.org/llm-top-10/)
+* [OWASP Foundation Inc.](https://owasp.glueup.com/)
+* [AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework)
+* [Defense Information Systems Agency (DISA-STIG) -- Wiki](https://en.wikipedia.org/wiki/Defense_Information_Systems_Agency)
+* [Federal Trade Commission (FTC) -- Wiki](https://en.wikipedia.org/wiki/Federal_Trade_Commission)
+* [National Institute of Standards and Technology (NIST) -- Wiki](https://en.wikipedia.org/wiki/National_Institute_of_Standards_and_Technology)
+* [Self-Replicating Worm Hits 180+ npm Packages to Steal Credentials in Latest Supply Chain Attack](https://thehackernews.com/2025/09/40-npm-packages-compromised-in-supply.html)
+* [Machine Learning Bill of Materials (ML-BOM)](https://cyclonedx.org/capabilities/mlbom/)
+* [Red Teaming Language Models to Reduce Harms: Methods, Scaling Behaviors, and Lessons Learned](https://www.anthropic.com/news/red-teaming-language-models-to-reduce-harms-methods-scaling-behaviors-and-lessons-learned)
+* [OWASP Application Security Verification Standard (ASVS)](https://owasp.org/www-project-application-security-verification-standard/)
+
+* [Prompt Injection Scanner -- github](https://github.com/protectai/llm-guard/blob/v0.3.16/docs/input_scanners/prompt_injection.md)
+
 ---
 
 Terms & Keywords
