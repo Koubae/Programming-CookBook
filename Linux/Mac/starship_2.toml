@@ -1,3 +1,4 @@
+# Install NerdFont AND change it in the iterm2 or whatever you use!
 format = '$python$all'
 
 
@@ -16,3 +17,12 @@ force_display = true
 default = 'default'
 
 
+[git_branch]
+format = '[$symbol$branch(:$remote_branch)]($style) '
+
+
+[git_status]
+format = '([\[$all_status$ahead_behind\]]($style) )'
+
+[nodejs]
+format = '[$symbol($version )]($style)'
