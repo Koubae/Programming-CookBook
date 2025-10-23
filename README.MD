@@ -218,5 +218,7 @@ Further Reading
 * [What is the 70:20:10 model? (Learning Model)](https://702010institute.com/702010-model/)
 * [Radical Candour](https://www.radicalcandor.com/)
 
+* Social Quotient: [SQ and "process" or finding ways to improve things](https://www.noidea.dog/glue)
+* [Nemawashi](https://en.wikipedia.org/wiki/Nemawashi)
 
 -----------------------------------------------------------------------------------------------------
