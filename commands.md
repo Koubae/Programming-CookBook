@@ -328,6 +328,66 @@ git pull --all
 ## put core compression back to default if needed
 git config --global core.compression -1
 
+git add -p
+
+git commit
+#git commit -a
+# skip all pre-commit checks
+git commit -a --no-verify
+git push -u
+git push -f
+
+# rebase on latest passing commit from maste
+git rebase  -i $(inv circleci.get-latest-passing-master)
+
+git fetch origin master
+
+# rebase
+git fetch
+git rebase origin/master
+
+### About git amend
+# https://stackoverflow.com/questions/179123/how-to-modify-existing-unpushed-commit-messages
+git commit --amend
+git commit --amend -m "New commit message"
+# message + overwrite file
+git commit -a --amend -m "My new commit message"
+
+
+# To amend the previous commit and keep the same log message, run
+git commit --amend -C HEAD
+# To fix the previous commit by removing it entirely, run
+git reset --hard HEAD^
+git rebase -i HEAD~commit_count
+
+git push <remote> <branch> --force
+# Or
+git push <remote> <branch> -f
+# n is the number of commits up to the last commit you want to be able to edit (If you want to edit more than one commit message, run)
+git rebase -i HEAD~n
+#(Replace commit_count with number of commits that you want to edit.) 
+# This command launches your editor. 
+# Mark the first commit (the one that you want to change) as “edit” # instead of “pick”, 
+# then save and exit your editor. Make the change you want to commit and then run
+git commit --amend
+git rebase --continue
+
+
+# https://www.notion.so/kraken-tech/Branching-off-a-passing-commit-in-master-36c7eb2f4f434c39a5b5fae79d569d0c
+# # Reset head of local master to latest passing commit.
+grhm() {
+    git checkout master
+    current_branch=$(git rev-parse --abbrev-ref HEAD)
+    if [ "$current_branch" != "master" ]; then
+        echo "You are not on the master branch. Aborting."
+        return 1
+    fi
+    latest_commit=$(inv circleci.get-latest-passing-master)
+    git fetch
+    git reset --hard $latest_commit
+    echo "Reset to $latest_commit"
+}
+
 ```
 
 
