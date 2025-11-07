@@ -1,0 +1,54 @@
+{
+  "window.commandCenter": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.activityBar.orientation": "vertical",
+  "editor.fontFamily": "'JetBrains Mono', Consolas, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 13,
+  "editor.letterSpacing": 0.3,
+  "editor.lineHeight": 1.5,
+  "editor.fontLigatures": false,
+
+
+  // Keep VS Code from adding rainbow bracket colors
+  "editor.bracketPairColorization.enabled": false,
+
+  "workbench.colorCustomizations": {
+    "[Darcula]": {
+      "editorLineNumber.activeForeground": "#67d60c",
+      "editor.background": "#2B2B2B",
+      "editor.foreground": "#A9B7C6",
+      "editor.selectionBackground": "#214283",
+      "editor.lineHighlightBackground": "#323232",
+      "editorCursor.foreground": "#A9B7C6",
+      "editorLineNumber.foreground": "#606366",
+      "editorGutter.background": "#313335",
+      "sideBar.background": "#3C3F41",
+      "sideBar.foreground": "#BBBBBB",
+      "statusBar.background": "#3C3F41",
+      "statusBar.foreground": "#BBBBBB",
+      "titleBar.activeBackground": "#3C3F41",
+      "titleBar.activeForeground": "#BBBBBB",
+      "panel.background": "#3C3F41",
+      "tab.activeBackground": "#3C3F41",
+      "tab.inactiveBackground": "#2B2B2B",
+      "tab.inactiveForeground": "#A9B7C6",
+      "editorIndentGuide.background1": "#404040",
+      "editorIndentGuide.activeBackground1": "#606366",
+      "editorBracketMatch.background": "#3B514D",
+      "editorBracketMatch.border": "#3B514D",
+      "editorWhitespace.foreground": "#4B4B4B"
+    }
+  },
+  "editor.tokenColorCustomizations": {
+    "[Darcula]": {
+      "comments": "#15ff00",
+      "strings": "#6A8759",
+      "numbers": "#6897BB",
+      "keywords": "#CC7832",
+      "functions": "#FFC66D",
+      "types": "#9876AA",
+      "variables": "#A9B7C6"
+    }
+  },
+  "cursorpyright.analysis.typeCheckingMode": "recommended"
+}
