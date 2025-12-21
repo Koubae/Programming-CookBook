@@ -10,7 +10,11 @@ Tutorials & Videos
 * [The ultimate introduction to Godot 4 (Clear Code)](https://www.youtube.com/watch?v=nAh_Kx5Zh5Q&t=5180s)
 
 * [How to program in Godot - GDScript Tutorial](https://www.youtube.com/watch?v=e1zJS31tr88)
+* [Best practices](https://docs.godotengine.org/en/stable/tutorials/best_practices/index.html)
+* [GDScript style guide](https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_styleguide.html)
 
+* [SceneTree](https://docs.godotengine.org/en/stable/classes/class_scenetree.html#class-scenetree-method-change-scene)
+* [Change scenes manually](https://docs.godotengine.org/en/latest/tutorials/scripting/change_scenes_manually.html)
 
 
 * Area2D: An area that can check if another body entered | moved by changing position -> check if player enters an area... etc
@@ -63,6 +67,14 @@ Or we can leave "padding" space between so that in case we need to add in betwee
 18. Trigger
 
 
+Shortcuts (Editor)
+------------------
+
+* CTRL+A: Add Node
+* CTRL+Shift+O: Open Scene
+
+
+
 Terms & Keywords
 ----------------
 
@@ -73,3 +85,10 @@ Terms & Keywords
 
 * Layer
 * Mask
+
+
+Forum | QA | Further Reading
+----------------------------
+
+* [How does change_scene_to_file() method exactly work?](https://forum.godotengine.org/t/how-does-change-scene-to-file-method-exactly-work/74909)
+
