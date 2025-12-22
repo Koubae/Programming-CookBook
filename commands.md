@@ -30,6 +30,11 @@ some_executable 2>&1 | tee "some_executable_$(date +'%Y-%m-%d_%H-%M-%S').log"
 # delete all Zone.Identifier
 rm -rf **/*Zone.Identifier
 
+# previw 
+find . -type f \( -name ".DS_Store" -o -name "Zone.Identifier" -o -name "*:Zone.Identifier" \) -print
+find . -type f \( -name ".DS_Store" -o -name "Zone.Identifier" -o -name "*:Zone.Identifier" \) -delete
+
+
 # log name 
 echo "some_executable_$(date +'%Y-%m-%d_%H-%M-%S').log"
 
