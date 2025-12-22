@@ -27,6 +27,9 @@ curl --location 'https://google.com' | xclip -selection clipboard
 zcat /path/some_log.gz | grep WHAT_TO_LOOK_FOR | cut -d " " -f 3 | uniq -c
 some_executable 2>&1 | tee "some_executable_$(date +'%Y-%m-%d_%H-%M-%S').log"
 
+# delete all Zone.Identifier
+rm -rf **/*Zone.Identifier
+
 # log name 
 echo "some_executable_$(date +'%Y-%m-%d_%H-%M-%S').log"
 
