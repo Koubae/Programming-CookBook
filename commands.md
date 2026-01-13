@@ -963,3 +963,14 @@ SELECT
   CURRENT_ROLE()              AS role,
   CURRENT_SECONDARY_ROLES()   AS secondary_roles;
 ```
+
+
+@Docker | @Podman
+----------
+
+```bash
+
+podman ps
+
+```
+
