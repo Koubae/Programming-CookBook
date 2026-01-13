@@ -972,5 +972,11 @@ SELECT
 
 podman ps
 
+## Not sure this is the correct way but podman seems not to "map" its podman command with
+## 'docker' so a quick and dirty workaround is to semilink it
+
+sudo ln -s $(which podman) /usr/local/bin/docker
+
+
 ```
 
