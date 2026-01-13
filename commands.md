@@ -980,3 +980,29 @@ sudo ln -s $(which podman) /usr/local/bin/docker
 
 ```
 
+@npm | @nvm | @node
+----------
+
+```bash
+
+# install nvm
+brew upgrade
+brew install nvm
+
+# prepare mac
+ mkdir ~/.nvm
+
+# add this to .bashrc or .zshrc
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+# Install LTS versions of Node, npm, and npx
+nvm install --lts
+
+node -v
+npm -v 
+npx -v
+
+
+```
