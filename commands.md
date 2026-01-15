@@ -272,8 +272,13 @@ netsh interface portproxy add v4tov4 listenport=<port> listenaddress=0.0.0.0 con
 @ssh 
 
 ```bash
+# aint working well 
 openssl genrsa -out private.pem 2048
 openssl rsa -in private.pem -pubout -out public.pem
+# better
+
+ssh-keygen -t ed25519 -C "your_email@example.com"
+
 
 
 # rsa should have enough permissions
@@ -335,7 +340,7 @@ git pull --all
 
 ## put core compression back to default if needed
 git config --global core.compression -1
-
+git log --graph --oneline
 git add -p
 
 git commit
@@ -353,6 +358,17 @@ git fetch origin master
 # rebase
 git fetch
 git rebase origin/master
+git push -f
+
+git fetch origin master  # fetch only what's new on master
+git rebase origin/master
+git push -f
+
+# https://www.notion.so/kraken-tech/Git-8fdf81b319b24ce2b6601c22231d2be2#11a73c742c718014acc0f927f76d0e4f
+# From the feature branch pull with rebase
+git pull --rebase origin master
+# Force push up to my branch
+git push -f
 
 ### About git amend
 # https://stackoverflow.com/questions/179123/how-to-modify-existing-unpushed-commit-messages
@@ -360,13 +376,33 @@ git commit --amend
 git commit --amend -m "New commit message"
 # message + overwrite file
 git commit -a --amend -m "My new commit message"
-
+# Modify the commit, not the commit message
+git commit --amend --no-edit
 
 # To amend the previous commit and keep the same log message, run
 git commit --amend -C HEAD
 # To fix the previous commit by removing it entirely, run
 git reset --hard HEAD^
 git rebase -i HEAD~commit_count
+
+# How do I modify a specific commit? | https://stackoverflow.com/questions/1186535/how-do-i-modify-a-specific-commit
+
+## checkky pick
+git checkout my-pull-request-branch
+# where n is the number of last commits you want to include in interactive rebase.
+git rebase -i HEAD~n 
+# Replace pick with drop for commits you want to discard.
+# or
+git rebase --interactive <commit-hash>~
+git rebase --interactive <commit-hash>
+
+# add amend + modify
+git commit --all --amend --no-edit
+
+# modify: pick -> edit
+# discart: pick -> drop
+# save & exit
+git push --force-with-lease
 
 git push <remote> <branch> --force
 # Or
@@ -379,6 +415,20 @@ git rebase -i HEAD~n
 # then save and exit your editor. Make the change you want to commit and then run
 git commit --amend
 git rebase --continue
+
+
+#### Git rebease good
+# modify: pick -> edit
+# discart: pick -> drop
+# save & exit
+git rebase --interactive <commit-hash>~
+git add <?>
+git commit --all --amend --no-edit
+git rebase --continue
+git push --force-with-lease
+
+### --------
+git rebease <commit-hash>
 
 
 # https://www.notion.so/kraken-tech/Branching-off-a-passing-commit-in-master-36c7eb2f4f434c39a5b5fae79d569d0c
@@ -500,6 +550,20 @@ brew install uv
 
 # add to .zshrc
 echo 'eval "$(uv generate-shell-completion zsh)"' >> ~/.zshrc
+
+# Install Nerdfonts
+# https://www.lorenzobettini.it/2025/06/install-nerd-fonts-on-macos-with-homebrew/#google_vignette
+# Before installing fonts, it’s a good idea to have fontconfig:
+brew install fontconfig
+
+# install fonts
+brew install --cask \
+font-jetbrains-mono-nerd-font \
+font-caskaydia-cove-nerd-font \
+font-iosevka-term-nerd-font \
+font-fira-mono-nerd-font
+# use
+brew search nerd-font
 
 ```
 

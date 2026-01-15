@@ -51,9 +51,11 @@ export NVM_DIR="$HOME/.nvm"
 
 
 # ==========================
-# ⚡ PROMPT (STARSHIP)
+# ⚡ PROMPT
 # ==========================
+# starship
 eval "$(starship init zsh)"
+# UV
 eval "$(uv generate-shell-completion zsh)"
 
 export GPG_TTY=$(tty)
