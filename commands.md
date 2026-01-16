@@ -367,6 +367,15 @@ git push -f
 # https://www.notion.so/kraken-tech/Git-8fdf81b319b24ce2b6601c22231d2be2#11a73c742c718014acc0f927f76d0e4f
 # From the feature branch pull with rebase
 git pull --rebase origin master
+
+git pull origin dev
+
+# before reset
+git fetch --all --tags --prune --jobs=10
+# then 
+git reset --hard origin/dev
+
+
 # Force push up to my branch
 git push -f
 
