@@ -8,6 +8,7 @@ Articles and news
 -----------------
 
 - [Pycoders](https://pycoders.com)
+* [Python -- What's new (my notes)](./whats_new.md)
 
 
 ## Python Essential
