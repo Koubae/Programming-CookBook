@@ -11,7 +11,6 @@ to the original Python's documentation.
 * [template string literals](https://docs.python.org/3/whatsnew/3.14.html#whatsnew314-template-string-literals)
 * [deferred evaluation of annotations](https://docs.python.org/3/whatsnew/3.14.html#whatsnew314-deferred-annotations)
 * [support for subinterpreters in the standard library](https://docs.python.org/3/whatsnew/3.14.html#whatsnew314-multiple-interpreters)
-* []()
 
 **It is no longer necessary to enclose annotations in strings if they contain forward references.**
 

@@ -2,14 +2,15 @@
 =======================
 
 
------------------------------------------------------------------------------------------------------
+* [Python -- Async](./async/README.MD)
+
 
 Articles and news
 -----------------
 
+* [Python HOWTO](https://docs.python.org/3/howto/index.html#how-tos)
 - [Pycoders](https://pycoders.com)
 * [Python -- What's new (my notes)](./whats_new.md)
-
 
 ## Python Essential
 
