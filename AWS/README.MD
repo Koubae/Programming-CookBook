@@ -1,7 +1,7 @@
 AWS
 ========
 
-* [Tools to Build on AWS](https://aws.amazon.com/developer/tools/)
+
 
 
 Documentation
@@ -10,7 +10,7 @@ Documentation
 * [AWS Documentation](https://docs.aws.amazon.com/index.html?nc2=h_ql_doc)
 * [AWS Lambda Documentation](https://docs.aws.amazon.com/lambda/?icmpid=docs_homepage_featuredsvcs)
 * [Getting Started](https://aws.amazon.com/getting-started/)
-
+* [Tools to Build on AWS](https://aws.amazon.com/developer/tools/)
 
 ### Getting Started
 
@@ -51,8 +51,20 @@ Documentation
 * [Deploy a LAMP Web App on Amazon Lightsail](https://aws.amazon.com/getting-started/guides/deploy-lamp-lightsail/?pg=cloudessentials)
 
 
+Courses & Certifications
+-----------------------
 
------------------------------------------------------------------------------------------------------
+### Coursera
+
+* [Coursera -- AWS courses](https://www.coursera.org/partners/aws)
+* [Amazon EC2 Basics](https://www.coursera.org/learn/aws-amazon-ec2-basics)
+* [AWS Fundamentals Specialization](https://www.coursera.org/specializations/aws-fundamentals)
+* [AWS Fundamentals Lab Series](https://www.coursera.org/learn/aws-fundamentals-lab-series)
+* [AWS Cloud Solutions Architect Professional Certificate](https://www.coursera.org/professional-certificates/aws-cloud-solutions-architect#courses)
+* [AWS Cloud Practitioner Essentials](https://www.coursera.org/learn/aws-cloud-practitioner-essentials)
+* [AWS Cloud Technology Consultant Professional Certificate](https://www.coursera.org/professional-certificates/aws-cloud-technology-consultant)
+* [AWS Generative AI Applications Professional Certificate](https://www.coursera.org/professional-certificates/aws-generative-ai-applications)
+
 
 Guide & Areas of Study
 -----------------------
@@ -60,9 +72,7 @@ Guide & Areas of Study
 * [Amazon Virtual Private Cloud (Amazon VPC)](https://aws.amazon.com/vpc/)
 
 
-
 ### CDK 
-
 
 * [AWS CDK Toolkit (cdk command)](https://docs.aws.amazon.com/cdk/v2/guide/cli.html)
 * [Getting started with the AWS CDK](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html)
@@ -71,21 +81,20 @@ Guide & Areas of Study
 
 * [aws-samples/aws-cdk-examples](https://github.com/aws-samples/aws-cdk-examples)
 
------------------------------------------------------------------------------------------------------
 
 Terms & Keywords
 ----------------
 
 
 
------------------------------------------------------------------------------------------------------
 
 References
 ----------
 
 
 
------------------------------------------------------------------------------------------------------
 
 Notes
 -----
+
+
