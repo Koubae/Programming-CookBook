@@ -43,7 +43,7 @@ Guide & Areas of Study
     * [granite-embedding](https://ollama.com/library/granite-embedding)
     * [ibm-granite/granite-3.1-language-models](https://github.com/ibm-granite/granite-3.1-language-models)
     * [docling-project/docling](https://github.com/docling-project/docling)
-
+    * [docling_granite_question_answering.ipynb](https://github.com/IBM/ibmdotcom-tutorials/blob/main/generative-ai/docling_granite_question_answering.ipynb)
 
 * [granite-snack-cookbook/blob/main/recipes/RAG/Granite_Docling_RAG](https://github.com/ibm-granite-community/granite-snack-cookbook/blob/main/recipes/RAG/Granite_Docling_RAG.ipynb)
 * [granite-snack-cookbook](https://github.com/ibm-granite-community/granite-snack-cookbook/tree/main)
