@@ -731,6 +731,21 @@ inv --print-completion-script bash >> ~/.bashrc
 # indexing process has gotten stuck
 # Help → Edit Custom Properties
 idea.max.intellisense.filesize=1024
+
+
+### --------------------------
+##  @uv
+### --------------------------
+
+# dependencies
+uv add  <package>
+## Add dep in groups
+uv add  --dev <package>
+uv add --group dev2 <package>
+
+# remove package
+uv remove <package>
+
 ```
 
 

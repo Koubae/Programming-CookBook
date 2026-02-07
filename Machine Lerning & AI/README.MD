@@ -35,6 +35,20 @@ Guide & Areas of Study
     * [context_promt_template_1.MD](./context_prompting_templates/context_promt_template_1.MD)
 
 
+### Granite
+
+* [Granite](https://www.ibm.com/granite/docs/models/granite)
+* [Build a document-based question answering system by using Docling with Granite 3.1](https://www.youtube.com/watch?v=eBJblHgDaRs)
+    * [Build a document-based question answering system by using Docling with Granite 3.1](https://www.ibm.com/think/tutorials/build-document-question-answering-system-with-docling-and-granite)
+    * [granite-embedding](https://ollama.com/library/granite-embedding)
+    * [ibm-granite/granite-3.1-language-models](https://github.com/ibm-granite/granite-3.1-language-models)
+    * [docling-project/docling](https://github.com/docling-project/docling)
+
+
+* [granite-snack-cookbook/blob/main/recipes/RAG/Granite_Docling_RAG](https://github.com/ibm-granite-community/granite-snack-cookbook/blob/main/recipes/RAG/Granite_Docling_RAG.ipynb)
+* [granite-snack-cookbook](https://github.com/ibm-granite-community/granite-snack-cookbook/tree/main)
+
+
 Courses | School | Certifications
 -------------
 
