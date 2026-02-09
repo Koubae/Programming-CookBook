@@ -66,6 +66,13 @@ Courses & Certifications
 * [AWS Generative AI Applications Professional Certificate](https://www.coursera.org/professional-certificates/aws-generative-ai-applications)
 
 
+Videos
+------
+
+* [Getting Started With AWS Cloud | Step-by-Step Guide](https://www.youtube.com/watch?v=CjKhQoYeR4Q&t=105s)
+
+
+
 Guide & Areas of Study
 -----------------------
 
@@ -88,10 +95,11 @@ Terms & Keywords
 
 
 
-References
+References & Further Reading
 ----------
 
 
+* [IAM or IAM Identity Center](https://www.reddit.com/r/aws/comments/14j4wmn/iam_or_iam_identity_center/)
 
 
 Notes

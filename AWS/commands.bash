@@ -9,6 +9,7 @@ aws --version
 aws configure 
 # see if everything is working
 aws ec2 describe-vpcs
+aws s3 ls
 
 
 # how to get the right platform name - eg. 64bit Amazon Linux 2 v5.4.4 running Node.js 14
