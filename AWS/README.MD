@@ -2,6 +2,10 @@ AWS
 ========
 
 
+Aps
+----
+
+* [EC2](./ec2/README.MD)
 
 
 Documentation
@@ -70,7 +74,7 @@ Videos
 ------
 
 * [Getting Started With AWS Cloud | Step-by-Step Guide](https://www.youtube.com/watch?v=CjKhQoYeR4Q&t=105s)
-
+* [AWS Networking Basics For Programmers | Hands On](https://www.youtube.com/watch?v=2doSoMN2xvI)
 
 
 Guide & Areas of Study

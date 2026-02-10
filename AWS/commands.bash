@@ -9,6 +9,8 @@ aws --version
 aws configure 
 # see if everything is working
 aws ec2 describe-vpcs
+aws ec2 describe-instances
+
 aws s3 ls
 
 
