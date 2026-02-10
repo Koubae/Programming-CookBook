@@ -14,6 +14,7 @@ Documentation
 * [AWS Documentation](https://docs.aws.amazon.com/index.html?nc2=h_ql_doc)
 * [AWS Lambda Documentation](https://docs.aws.amazon.com/lambda/?icmpid=docs_homepage_featuredsvcs)
 * [Getting Started](https://aws.amazon.com/getting-started/)
+* [AWS services by category](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/amazon-web-services-cloud-platform.html)
 * [Tools to Build on AWS](https://aws.amazon.com/developer/tools/)
 
 ### Getting Started
