@@ -7,11 +7,22 @@
 aws --version
 # configure account
 aws configure 
+aws configure list
 # see if everything is working
+aws sts get-caller-identity
 aws ec2 describe-vpcs
 aws ec2 describe-instances
 
 aws s3 ls
+
+
+### 
+# ADD AUtompletion
+# https://docs.aws.amazon.com/cli/v1/userguide/cli-configure-completion.html
+###
+
+vim ~/.bashrc
+complete -C '/usr/local/bin/aws_completer' aws
 
 
 # how to get the right platform name - eg. 64bit Amazon Linux 2 v5.4.4 running Node.js 14

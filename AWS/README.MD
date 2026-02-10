@@ -30,6 +30,10 @@ Documentation
 
 * [Choose Your Web Application Infrastructure](https://aws.amazon.com/getting-started/guides/deploy-webapp-decision/)
 
+* [Login for AWS local development using console credentials](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sign-in.html)
+* [Configuring command completion in the AWS CLI](https://docs.aws.amazon.com/cli/v1/userguide/cli-configure-completion.html)
+
+
 #### Launch first app 
 
 * [AWS Elastic Beanstalk Documentation](https://docs.aws.amazon.com/elastic-beanstalk/?id=docs_gateway/?intClick=gsrc-2021)
