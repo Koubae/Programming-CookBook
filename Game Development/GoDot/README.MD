@@ -16,15 +16,16 @@ Tutorials & Videos
 * [SceneTree](https://docs.godotengine.org/en/stable/classes/class_scenetree.html#class-scenetree-method-change-scene)
 * [Change scenes manually](https://docs.godotengine.org/en/latest/tutorials/scripting/change_scenes_manually.html)
 
+* [Remaking Super Mario World in Godot (Playlist)](https://www.youtube.com/playlist?list=PLKCF1pHYsbiHNKGBoHrIM2l19tlN5GdVK)
+
+Tips tricks & memos
+--------------------
+
 
 * Area2D: An area that can check if another body entered | moved by changing position -> check if player enters an area... etc
 * StaticBody2D: Static body, other body can colide with  | Shouldn't move -> walls, beds, obstacles
 * RigidBody2D: Moving bodies via Physics                 | Set an initial velocity -> A granade, bullet, etc...
 * CharacterBody2D: Moving body controlled by code        | built ins methodss -> entities
-
-Tips tricks & memos
---------------------
-
 
 ### Collisions layers
 
