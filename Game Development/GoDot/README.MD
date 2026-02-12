@@ -17,6 +17,10 @@ Tutorials & Videos
 * [Change scenes manually](https://docs.godotengine.org/en/latest/tutorials/scripting/change_scenes_manually.html)
 
 * [Remaking Super Mario World in Godot (Playlist)](https://www.youtube.com/playlist?list=PLKCF1pHYsbiHNKGBoHrIM2l19tlN5GdVK)
+* [How To Make a Space Shooter in 20 Minutes (Godot Engine)](https://www.youtube.com/watch?v=qd0UTOQ_la8)
+* [How to Create PROCEDURAL Generation in Godot 4](https://www.youtube.com/watch?v=oB1xsCcO9wI)
+* [Godot 2D — Light in the Darkness (Tutorial)](https://www.youtube.com/watch?v=PpMqg-GMInU)
+* [How to Create PROCEDURAL Generation in Godot 4](https://www.youtube.com/watch?v=oB1xsCcO9wI)
 
 Tips tricks & memos
 --------------------
