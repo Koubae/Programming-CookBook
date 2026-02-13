@@ -21,6 +21,7 @@ Tutorials & Videos
 * [How to Create PROCEDURAL Generation in Godot 4](https://www.youtube.com/watch?v=oB1xsCcO9wI)
 * [Godot 2D — Light in the Darkness (Tutorial)](https://www.youtube.com/watch?v=PpMqg-GMInU)
 * [How to Create PROCEDURAL Generation in Godot 4](https://www.youtube.com/watch?v=oB1xsCcO9wI)
+* [How to add parallax scrolling to your 2D game in Godot 4 | step by step](https://www.youtube.com/watch?v=25qtnUolLc4&t=222s)
 
 Tips tricks & memos
 --------------------
