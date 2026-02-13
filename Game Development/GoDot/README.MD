@@ -23,6 +23,17 @@ Tutorials & Videos
 * [How to Create PROCEDURAL Generation in Godot 4](https://www.youtube.com/watch?v=oB1xsCcO9wI)
 * [How to add parallax scrolling to your 2D game in Godot 4 | step by step](https://www.youtube.com/watch?v=25qtnUolLc4&t=222s)
 
+* [Using Composition to Make More Scalable Games in Godot](https://www.youtube.com/watch?v=rCu8vQrdDDI)
+    * Udemy [Firebelley Games](https://www.udemy.com/user/firebelley-games/)
+
+* [ENEMIES THAT CAN SEE YOU (Vision Cone + Line of Sight in Godot)](https://www.youtube.com/watch?v=SS9nAEpjS4o)
+
+Plugins
+-------
+
+* [d-bucur/godot-vision-cone](https://github.com/d-bucur/godot-vision-cone)
+    * [how to draw vision cone?](https://forum.godotengine.org/t/how-to-draw-vision-cone/4188/2)
+
 Tips tricks & memos
 --------------------
 
@@ -97,4 +108,6 @@ Forum | QA | Further Reading
 ----------------------------
 
 * [How does change_scene_to_file() method exactly work?](https://forum.godotengine.org/t/how-does-change-scene-to-file-method-exactly-work/74909)
+
+* [What would be the best way to create a cone representing the field of view of an entity in Godot Engine?](https://gamedev.stackexchange.com/questions/179626/what-would-be-the-best-way-to-create-a-cone-representing-the-field-of-view-of-an)
 
