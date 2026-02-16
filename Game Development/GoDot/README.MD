@@ -31,11 +31,17 @@ Tutorials & Videos
 
 ### Path Finding & Navigation
 
-* []()
-
 * [Youtube -- How To Create PATHFINDING in Godot 4](https://www.youtube.com/watch?v=Lt9YdQ6Ztm4)
+* [Youtube -- 2D Pathfinding with Godot 4!](https://www.youtube.com/watch?v=zr_prddvLYM)
 * [Youtube -- Build a 2D Top Down Racer with Godot 4.5+! Part #1 Reupload (2)](https://www.youtube.com/watch?v=jil1BvTCZLw&t=2s)
+    * [Build a 2D Top Down Racer with Godot 4.5+! Part #2 Track Collisions](https://www.youtube.com/watch?v=FIJjpD2LHVE&list=PLZ1QII7yudbdUebdoI0K1vdnjwiMq7pTc&index=2)
+    * [Build a 2D Top Down Racer with Godot 4.5+! Part #3 Particles and Paths](https://www.youtube.com/watch?v=r42lUnl61Ns&list=PLZ1QII7yudbdUebdoI0K1vdnjwiMq7pTc&index=3)
 * [Youtube -- Godot 4.3 2D Navigation Pathfinding Using NavigationAgent2D and NavigationRegion2D](https://www.youtube.com/watch?v=qIqcp7xBGkw&t=358s)
+
+
+* [2D Platformer Pathfinding](https://forum.godotengine.org/t/2d-platformer-pathfinding/116519)
+    * [Youtube -- Godot 4.x Advanced 2D Platformer Path Finding](https://www.youtube.com/playlist?list=PL6Ikt4l3NbVi_9_-TqX-JUsJ9nIFeYAFE)
+
 
 
 Plugins
