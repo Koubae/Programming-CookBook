@@ -28,6 +28,16 @@ Tutorials & Videos
 
 * [ENEMIES THAT CAN SEE YOU (Vision Cone + Line of Sight in Godot)](https://www.youtube.com/watch?v=SS9nAEpjS4o)
 
+
+### Path Finding & Navigation
+
+* []()
+
+* [Youtube -- How To Create PATHFINDING in Godot 4](https://www.youtube.com/watch?v=Lt9YdQ6Ztm4)
+* [Youtube -- Build a 2D Top Down Racer with Godot 4.5+! Part #1 Reupload (2)](https://www.youtube.com/watch?v=jil1BvTCZLw&t=2s)
+* [Youtube -- Godot 4.3 2D Navigation Pathfinding Using NavigationAgent2D and NavigationRegion2D](https://www.youtube.com/watch?v=qIqcp7xBGkw&t=358s)
+
+
 Plugins
 -------
 
