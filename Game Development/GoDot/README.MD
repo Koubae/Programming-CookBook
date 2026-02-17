@@ -40,8 +40,12 @@ Tutorials & Videos
 
 
 * [2D Platformer Pathfinding](https://forum.godotengine.org/t/2d-platformer-pathfinding/116519)
-    * [Youtube -- Godot 4.x Advanced 2D Platformer Path Finding](https://www.youtube.com/playlist?list=PL6Ikt4l3NbVi_9_-TqX-JUsJ9nIFeYAFE)
+    * uses C# [Youtube -- Godot 4.x Advanced 2D Platformer Path Finding](https://www.youtube.com/playlist?list=PL6Ikt4l3NbVi_9_-TqX-JUsJ9nIFeYAFE)
 
+
+### Udemy
+
+* [Create a Complete 2D Survivors Style Game in Godot 4](https://www.udemy.com/course/create-a-complete-2d-arena-survival-roguelike-game-in-godot-4/)
 
 
 Plugins
