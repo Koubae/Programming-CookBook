@@ -10,3 +10,5 @@ GoDot Keyboard Shortcut memos
 * New Scene: CTRL+N
 * Open Scene: CTRL+SHIFT+O
 
+* Open docs: F1
+
