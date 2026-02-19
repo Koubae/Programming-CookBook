@@ -12,10 +12,12 @@ Game Development
 Assets
 ------
 
-### Images | Pixel Art 
+### Images | Pixel Art | Pictures
 
 * [krita](https://krita.org/en/download/)
    * [How to make 2D game art! Simple assets, even if you are bad at drawing](https://www.youtube.com/watch?v=bKgi6WcXtCY)
+
+* [kenney.nl](https://kenney.nl/)
 
 
 ### Music 

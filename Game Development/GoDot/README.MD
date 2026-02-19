@@ -46,6 +46,7 @@ Tutorials & Videos
 ### Udemy
 
 * [Create a Complete 2D Survivors Style Game in Godot 4](https://www.udemy.com/course/create-a-complete-2d-arena-survival-roguelike-game-in-godot-4/)
+    * [Create_Complete_2D_survivors_styleGame.md](./courses/Create_Complete_2D_survivors_styleGame.md)
 
 
 Plugins
