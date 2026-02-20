@@ -12,3 +12,6 @@ GoDot Keyboard Shortcut memos
 
 * Open docs: F1
 
+#### Editor
+
+* Higlight text then CTRL+D (highligh other same text on same line)

@@ -30,4 +30,6 @@ For pixel art you should set Texture FIlter from Linear -> Nearest
 * Stretch mode: viewport
 
 
+**Remove Pixel Jittering**
 
+* Project -> Rendering -> 2D -> Snap 2D Transform to Pixel
