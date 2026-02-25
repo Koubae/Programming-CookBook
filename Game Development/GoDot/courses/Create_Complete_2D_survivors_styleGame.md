@@ -33,3 +33,12 @@ For pixel art you should set Texture FIlter from Linear -> Nearest
 **Remove Pixel Jittering**
 
 * Project -> Rendering -> 2D -> Snap 2D Transform to Pixel
+
+
+**Draw base on Y position**
+
+* Create Node2D -- Example `Entities`
+* Nest inside related nodes
+* Go to Ordering -> `Y Sort Enabled` -> `On`
+
+
