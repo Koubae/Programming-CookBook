@@ -1,0 +1,14 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+alt+f5",
+        "command": "debug.startFromConfig",
+        "args": {
+            "type": "python",
+            "request": "launch",
+            "name": "Python: Current File",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        }
+    }
+]
