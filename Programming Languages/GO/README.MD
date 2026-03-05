@@ -257,6 +257,15 @@ Further Reading
 * [Andrew Gerrand’s excellent talk on Go naming.](https://go.dev/talks/2014/names.slide#1)
 * [How to write benchmarks in Go](https://dave.cheney.net/2013/06/30/how-to-write-benchmarks-in-go)
 
+* [Cursor for large Go projects](https://www.reddit.com/r/golang/comments/1j4wgkz/cursor_for_large_go_projects/)
+    * [Cursor for Large Projects](https://getstream.io/blog/cursor-ai-large-projects/)
+
+### Youtube
+
+* [VScode for Golang [2022] Simple setup!](https://www.youtube.com/watch?v=pvfESSAbbts)
+* [The TRUTH About Golang Backend Frameworks](https://www.youtube.com/watch?v=JECZTdEJnOI)
+* [Cursor & Golang: TODO App Live Stream](https://www.youtube.com/watch?v=5ZfI7zrEwAE)
+
 -----------------------------------------------------------------------------------------------------
 
 References
