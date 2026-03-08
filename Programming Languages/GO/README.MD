@@ -181,7 +181,15 @@ A Chinese Post about Package-Oriented-Design guidelines and Architecture layer
 * [Complete Backend Engineering Course in Go](https://www.youtube.com/watch?v=h3fqD6IprIA&t=591s)
     * [sikozonpc/GopherSocial](https://github.com/sikozonpc/GopherSocial)
         * [Self Made Engineer](https://www.selfmadeengineer.com/)
-        *
+    
+
+### Update Go and managing multiple Versions
+
+* Official docs [Managing Go installations](https://go.dev/doc/manage-install)
+* [How to update the Go version](https://gist.github.com/nikhita/432436d570b89cab172dcf2894465753)
+* This repository is meant to update golang [github.com/udhos/update-golang](https://github.com/udhos/update-golang)
+
+Check [commands.bash](./commands.bash) 
 
 -----------------------------------------------------------------------------------------------------
 

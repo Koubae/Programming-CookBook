@@ -11,6 +11,57 @@ go install golang.org/dl/go1.10.7@latest
 go1.10.7 download
 go1.10.7 version
 
+## Install latest version
+# ref https://gist.github.com/nikhita/432436d570b89cab172dcf2894465753?permalink_comment_id=4772143#gistcomment-4772143
+git clone https://github.com/udhos/update-golang
+cd update-golang
+sudo ./update-golang.sh
+
+### =====================================================
+## MANUAL INSTALL NEW VERSION AND INSTALL OLDER CURRENT
+### =====================================================
+# Alternitavelly I think we can use a much better method. First of all. 
+# we also may want to keep old go available. In my case I have
+# old (current): go1.24.4
+# new (desired): go1.26.1
+# So we can simply follow instruction from go installation doc which shows we should remove the installation
+# and re-install https://go.dev/doc/install
+
+# cheeck CPU architecture 
+# If it says x86_64, use amd64. If it says aarch64, use arm64
+uname -m
+
+# 1) Remove old go and install desired go version
+cd /tmp && \ 
+    wget https://go.dev/dl/go1.26.1.linux-amd64.tar.gz && \ 
+    sudo rm -rf /usr/local/go && \ 
+    sudo tar -C /usr/local -xzf go1.26.1.linux-amd64.tar.gz && \
+    rm -rf /tmp/go1.26.1.linux-amd64.tar.gz && \
+    cd ~ && go version
+
+# 2) Re-install old version 
+go install golang.org/dl/go1.24.4@latest
+go1.24.4 download
+go1.24.4 version
+
+# PS I assume already set path envs if not this is my current setting
+# -----------------------------------------------
+vim ~/.bashrc
+# go
+export PATH=$PATH:/usr/local/go/bin
+export PATH="$HOME/go/bin:$PATH"
+
+#export GOROOT=$HOME/go
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT/bin
+
+# -----------------------------------------------
+
+### =====================================================
+##  *****************************************************
+### =====================================================
+
 # Set environment
 go env -w GOBIN=/somewhere/else/bin
 # unset 
