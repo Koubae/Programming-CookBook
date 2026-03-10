@@ -25,15 +25,13 @@
             ],
             "preLaunchTask": "C/C++: gcc.exe build active file"
         },
-
         // GO LANG
-          {
+        {
             "name": "GO: Launch file",
             "type": "go",
             "request": "launch",
             "mode": "debug",
             "program": "${file}"
         }
-    
     ]
 }
