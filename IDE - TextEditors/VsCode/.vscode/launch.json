@@ -31,7 +31,9 @@
             "type": "go",
             "request": "launch",
             "mode": "debug",
-            "program": "${file}"
+            "program": "${file}",
+            // If you want to accept stdin
+            //   "console": "integratedTerminal"
         }
     ]
 }
