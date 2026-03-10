@@ -53,3 +53,16 @@ Shortcut -- Hotkeys
 * Shift+Alt+H: Show calls from or to a func
 * CTRL+F12: GO to implementation
 
+
+
+Plugins
+-------
+
+* Material Icons
+* Gitlens
+* Go
+* Remote SSH
+    * WSL
+
+* better makefile
+* even better toml
