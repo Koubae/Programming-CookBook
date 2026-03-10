@@ -43,7 +43,7 @@ Shortcut -- Hotkeys
 * [Go (code navigation)](https://code.visualstudio.com/docs/languages/go#_code-navigation)
 
 * F12: Go definition
-* Alta+F12: Peek Definition
+* Alt+F12: Peek Definition
 * Shift+F12: Show ALl refs
 * Shift+Alta+H: Show calls from or to a func
 * CTRL+F12: GO to implementation
