@@ -10,10 +10,7 @@ Find references
 Similar to Pycharm "Find usage"
 
 
-* Go to Definition (F12)
-* Peek Definition (Alt+F12)
-* Find All References: Shift+F12
-* Peek References (Alt+Shift+F12)
+
 
 
 **Cursor-specific features**
@@ -37,14 +34,22 @@ Shortcut -- Hotkeys
 ===================
 
 
+* F5: Launch -- Run file
+* ctrl+alt+f5 (custom for python): run current file
+
 * CTRL+SPACE: Show suggestions
 * Shift+Alt+F: Format file
+
+* Go to Definition (F12)
+* Peek Definition (Alt+F12)
+* Find All References: Shift+F12
+* Peek References (Alt+Shift+F12)
 
 * [Go (code navigation)](https://code.visualstudio.com/docs/languages/go#_code-navigation)
 
 * F12: Go definition
 * Alt+F12: Peek Definition
 * Shift+F12: Show ALl refs
-* Shift+Alta+H: Show calls from or to a func
+* Shift+Alt+H: Show calls from or to a func
 * CTRL+F12: GO to implementation
 
