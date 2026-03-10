@@ -191,6 +191,12 @@ A Chinese Post about Package-Oriented-Design guidelines and Architecture layer
 
 Check [commands.bash](./commands.bash) 
 
+
+### VSCode + Cursor setup
+
+* [VScode for Golang [2022] Simple setup!](https://www.youtube.com/watch?v=pvfESSAbbts)
+* [Go (code navigation)](https://code.visualstudio.com/docs/languages/go#_code-navigation)
+
 -----------------------------------------------------------------------------------------------------
 
 Terms & Keywords
@@ -273,6 +279,10 @@ Further Reading
 * [VScode for Golang [2022] Simple setup!](https://www.youtube.com/watch?v=pvfESSAbbts)
 * [The TRUTH About Golang Backend Frameworks](https://www.youtube.com/watch?v=JECZTdEJnOI)
 * [Cursor & Golang: TODO App Live Stream](https://www.youtube.com/watch?v=5ZfI7zrEwAE)
+
+
+
+
 
 -----------------------------------------------------------------------------------------------------
 
