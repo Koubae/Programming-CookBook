@@ -30,3 +30,12 @@ Similar to Pycharm "Find usage"
 From:https://stackoverflow.com/a/75908810/13903942
 
 if you wanna change where CodeLens opens references when clicking on the "2 References" link above definitions the setting you wanna change is Preferred Location to "view" instead of "peak":
+
+
+
+Shortcut -- Hotkeys
+===================
+
+
+* CTRL+SPACE: Show suggestions
+
