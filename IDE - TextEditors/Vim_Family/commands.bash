@@ -67,3 +67,75 @@ CTRL + SPACE        # treesitter (select next node)
 # Coc -- Language Server
 # ------------------
 :CocConfig
+
+# ------------------
+# Vim + NeoVim versions
+# ------------------
+vim --version | head -20
+nvim --version
+ls -la ~ | grep vim
+ls -la ~/.config | grep nvim
+
+# ------------------
+# Config backups
+# ------------------
+
+# ~/.vimrc → your main Vim config
+# ~/.vim/ → plugins, colorschemes, custom scripts
+# ~/.viminfo → history, marks, registers
+# ~/.gvimrc → GUI Vim config
+# ~/.config/nvim/ → main NeoVim config
+# ~/.local/share/nvim/ → plugins and installed data
+# ~/.local/state/nvim/ → sessions, state, logs
+# ~/.cache/nvim/ → cache files
+
+# --------------
+# Inspect current configs
+ls -la ~ | grep vim
+ls -la ~/.config | grep nvim
+ls -la ~/.local/share | grep nvim
+ls -la ~/.local/state | grep nvim
+ls -la ~/.cache | grep nvim
+
+
+# --------------
+# backup type one
+mkdir -p ~/vim-backup
+
+[ -f ~/.vimrc ] && cp -a ~/.vimrc ~/vim-backup/
+[ -d ~/.vim ] && cp -a ~/.vim ~/vim-backup/
+[ -f ~/.viminfo ] && cp -a ~/.viminfo ~/vim-backup/
+[ -f ~/.gvimrc ] && cp -a ~/.gvimrc ~/vim-backup/
+
+[ -d ~/.config/nvim ] && cp -a ~/.config/nvim ~/vim-backup/
+[ -d ~/.local/share/nvim ] && cp -a ~/.local/share/nvim ~/vim-backup/
+[ -d ~/.local/state/nvim ] && cp -a ~/.local/state/nvim ~/vim-backup/
+[ -d ~/.cache/nvim ] && cp -a ~/.cache/nvim ~/vim-backup/
+
+[ -d ~/.config/vim ] && cp -a ~/.config/vim ~/vim-backup/
+[ -f ~/.exrc ] && cp -a ~/.exrc ~/vim-backup/
+[ -f ~/.ideavimrc ] && cp -a ~/.ideavimrc ~/vim-backup/
+# --------------
+
+
+# --------------
+# Better version with timestamp
+BACKUP_DIR=~/vim-backup-$(date +%Y%m%d-%H%M%S)
+mkdir -p "$BACKUP_DIR"
+
+[ -f ~/.vimrc ] && cp -a ~/.vimrc "$BACKUP_DIR/"
+[ -d ~/.vim ] && cp -a ~/.vim "$BACKUP_DIR/"
+[ -f ~/.viminfo ] && cp -a ~/.viminfo "$BACKUP_DIR/"
+[ -f ~/.gvimrc ] && cp -a ~/.gvimrc "$BACKUP_DIR/"
+
+[ -d ~/.config/nvim ] && cp -a ~/.config/nvim "$BACKUP_DIR/"
+[ -d ~/.local/share/nvim ] && cp -a ~/.local/share/nvim "$BACKUP_DIR/"
+[ -d ~/.local/state/nvim ] && cp -a ~/.local/state/nvim "$BACKUP_DIR/"
+[ -d ~/.cache/nvim ] && cp -a ~/.cache/nvim "$BACKUP_DIR/"
+
+[ -d ~/.config/vim ] && cp -a ~/.config/vim "$BACKUP_DIR/"
+[ -f ~/.exrc ] && cp -a ~/.exrc "$BACKUP_DIR/"
+[ -f ~/.ideavimrc ] && cp -a ~/.ideavimrc "$BACKUP_DIR/"
+
+echo "Backup created in: $BACKUP_DIR"
+
