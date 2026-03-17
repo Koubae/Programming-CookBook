@@ -65,3 +65,20 @@ sudo add-apt-repository ppa:neovim-ppa/unstable -y
 sudo apt update
 sudo apt install make gcc ripgrep unzip git xclip fd-find neovim 
 ```
+
+
+### Quickstart
+
+
+Fresh start
+
+Neovim + lazy.nvim, then: add only six things
+* LSP
+* completion
+* treesitter
+* formatter
+* fuzzy finder
+* small statusline
+
+
+
