@@ -229,3 +229,85 @@ Examples:
 * <C-s> → Ctrl+s
 * <leader>e → Space e
 
+
+
+### nvim-tree
+
+#### Open / navigation
+
+- `<CR>` or `o` — open
+- `O` — open without window picker
+- `<C-v>` — open in vertical split
+- `<C-x>` — open in horizontal split
+- `<C-t>` — open in new tab
+- `<Tab>` — open preview
+- `P` — go to parent directory
+- `-` — change root to parent
+- `<C-]>` — change root to current node
+- `<BS>` — close directory
+- `q` — close tree
+- `R` — refresh
+- `g?` — help
+
+#### Create / rename / delete
+
+- `a` — create file or directory
+- `r` — rename
+- `e` — rename basename
+- `u` — rename full path
+- `<C-r>` — rename: omit filename
+- `d` — delete
+- `D` — trash
+- `x` — cut
+- `c` — copy
+- `p` — paste
+
+#### Copy path / name
+
+- `y` — copy name
+- `Y` — copy relative path
+- `gy` — copy absolute path
+- `ge` — copy basename
+
+#### Tree movement
+
+- `>` — next sibling
+- `<` — previous sibling
+- `K` — first sibling
+- `J` — last sibling
+- `W` — collapse all
+- `E` — expand all
+- `L` — toggle group empty
+
+#### Filters / search
+
+- `f` — start live filter
+- `F` — clear live filter
+- `H` — toggle dotfiles
+- `I` — toggle git ignored
+- `C` — toggle git clean
+- `B` — toggle no-buffer filter
+- `M` — toggle no-bookmark filter
+- `U` — toggle custom filter
+- `S` — search node
+
+#### Git / diagnostics
+
+- `]c` — next git item
+- `[c` — previous git item
+- `]e` — next diagnostic
+- `[e` — previous diagnostic
+
+#### Bookmarks / marks
+
+- `m` — toggle bookmark
+- `bd` — delete bookmarked
+- `bt` — trash bookmarked
+- `bmv` — move bookmarked
+
+#### Run
+
+- `.` — run command
+- `s` — run system command
+- `<C-k>` — show info popup
+
