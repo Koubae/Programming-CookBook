@@ -53,6 +53,11 @@ CTRL-hjkl           # -  Go to split LEFT,DOWN,UP,RIGHT | see below Split Naviga
 CTRL-l              # -  Open: Vertical Split CTRL+l | see below nvim tree CUSTOM!!
 CTRL-J              # -  Open: Horizontal Split CTRL+j | see below nvim tree CUSTOM!!
 CTRL-B              # -  Toogle Explorer Pan | see below nvim tree CUSTOM!!
+Leader+UP           # -  Split Height increase  | CUSTOM!!
+Leader+DOWN         # -  Split Height decrease  | CUSTOM!!
+Leader+LEFT         # -  Split Width increase  | CUSTOM!!
+Leader+RIGHT        # -  Split Width decrease  | CUSTOM!!
+
 ## CUSTOM!!
 
 
@@ -115,6 +120,11 @@ vim.keymap.set("n", "<C-k>", "<C-w>k", { desc = "Go to upper split", noremap = t
 vim.keymap.set("n", "<C-j>", "<C-w>j", { desc = "Go to lower split", noremap = true, silent = true })
 vim.keymap.set("n", "<C-h>", "<C-w>h", { desc = "Go to left split", noremap = true, silent = true })
 vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Go to right split", noremap = true, silent = true })
+-- Split Navigation resizing
+vim.keymap.set("n", "<leader><Up>", "<C-w>+", { desc = "Increase split height", silent = true })
+vim.keymap.set("n", "<leader><Down>", "<C-w>-", { desc = "Decrease split height", silent = true })
+vim.keymap.set("n", "<leader><Right>", "<C-w>>", { desc = "Increase split width", silent = true })
+vim.keymap.set("n", "<leader><Left>", "<C-w><", { desc = "Decrease split width", silent = true })
 
 -- nvim tree
 local function my_on_attach(bufnr)
