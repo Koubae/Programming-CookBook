@@ -100,6 +100,11 @@ Ctrl-w l            # →  Move to the right split (usually your file)
 Ctrl-w w            # →  Jump to the next window
 
 
+# I have this working already but is probably installed see https://github.com/Koubae/nvim/tree/setup/02-golang-setup-first
+# else use https://github.com/numToStr/Comment.nvim
+gcc                 # → comment/uncomment current line
+gc                  # in visual mode → comment/uncomment selected lines
+
 Shift   h            # Show/Hide Hidden Files
 
 
