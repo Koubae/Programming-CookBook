@@ -22,6 +22,8 @@ scp username@b:/path/to/file /path/to/destination
 
 # copy to clipboard
 curl --location 'https://google.com' | xclip -selection clipboard
+# copy file to clipboard | https://stackoverflow.com/a/62168635/13903942
+xclip -sel c < .bashrc
 
 # cutting from log unique values 
 zcat /path/some_log.gz | grep WHAT_TO_LOOK_FOR | cut -d " " -f 3 | uniq -c
