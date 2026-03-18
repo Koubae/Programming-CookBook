@@ -2,6 +2,13 @@ NeoVim
 ======
 
 
+# **Check also my NeoVim configuration setup [Koubae/nvim](https://github.com/Koubae/nvim)**
+## **Check also my NeoVim configuration setup [Koubae/nvim](https://github.com/Koubae/nvim)**
+### **Check also my NeoVim configuration setup [Koubae/nvim](https://github.com/Koubae/nvim)**
+### **Check also my NeoVim configuration setup [Koubae/nvim](https://github.com/Koubae/nvim)**
+#### **Check also my NeoVim configuration setup [Koubae/nvim](https://github.com/Koubae/nvim)**
+#### **Check also my NeoVim configuration setup [Koubae/nvim](https://github.com/Koubae/nvim)**
+
 * **Check also my NeoVim configuration setup [Koubae/nvim](https://github.com/Koubae/nvim)**
 
 
@@ -353,3 +360,14 @@ K            hover docs
 <leader>q    quit
 
 ```
+
+
+
+### Videos
+
+* [AstroNvim Tutorial 2025: Complete Setup Guide for Neovim Beginners (Mastering Neovim Part 2)](https://www.youtube.com/watch?v=S83XpVALvtU)
+* [0 to LSP : Neovim RC From Scratch -- The Primeagen](https://www.youtube.com/watch?v=w7i4amO_zaE)
+* [What’s the BEST Neovim Distro? (LazyVim vs AstroNvim vs NvChad + more)](https://www.youtube.com/watch?v=Z1qEKUf0ibk)
+
+
+
