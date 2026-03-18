@@ -116,3 +116,41 @@ K            hover docs
 <leader>q    quit
 
 ```
+
+
+
+
+### keybindings Vim Options meaning
+
+Example
+
+```bash
+vim.keymap.set("n", "<leader>e", ":Ex<CR>")
+
+``` 
+
+* vim.keymap.set(...) → create a key mapping
+* "n" → only in normal mode
+* "<leader>e" → press Space, then e
+* ":Ex<CR>" → run the Vim command :Ex and press Enter automatically
+* <CR> means Carriage Return, basically the Enter key. (presses Enter automatically)
+
+##### Small cheat sheet of useful key notation
+
+* <leader> = your leader key, here Space
+* <localleader> = secondary leader key
+* <CR> = Enter
+* <Esc> = Escape
+* <Tab> = Tab
+* <S-Tab> = Shift+Tab
+* <C-x> = Ctrl+x
+* <A-x> = Alt+x
+* <M-x> = Meta/Alt+x
+* <BS> = Backspace
+
+Examples:
+
+* <C-h> → Ctrl+h
+* <C-s> → Ctrl+s
+* <leader>e → Space e
+
