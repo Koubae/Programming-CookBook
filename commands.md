@@ -109,6 +109,12 @@ neofetch
 top
 htop
 
+
+#### bottom 
+# https://github.com/ClementTsang/bottom?tab=readme-ov-file#usage
+btm
+
+
 nautilus # file explorer / finder
 
 # ----------------------
