@@ -229,6 +229,21 @@ Examples:
 * <C-s> → Ctrl+s
 * <leader>e → Space e
 
+### Mappings
+
+
+```bash
+:map         " all mappings
+:nmap        " normal mode mappings
+:imap        " insert mode mappings
+:vmap        " visual mode mappings
+:xmap        " visual-select mappings
+:smap        " select mode mappings
+:omap        " operator-pending mappings
+:cmap        " command-line mappings
+:tmap        " terminal mappings
+
+```
 
 
 ### nvim-tree
