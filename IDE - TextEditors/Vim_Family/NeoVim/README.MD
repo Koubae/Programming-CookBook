@@ -370,4 +370,4 @@ K            hover docs
 * [What’s the BEST Neovim Distro? (LazyVim vs AstroNvim vs NvChad + more)](https://www.youtube.com/watch?v=Z1qEKUf0ibk)
 
 
-
+* Playlist: [astrovim + go](https://www.youtube.com/playlist?list=PL9IfXylCrZ1jd3FRLk_-oS5nZQpaOiYAf)
