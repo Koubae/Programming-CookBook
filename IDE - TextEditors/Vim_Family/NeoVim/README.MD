@@ -2,6 +2,9 @@ NeoVim
 ======
 
 
+* **Check also my NeoVim configuration setup [Koubae/nvim](https://github.com/Koubae/nvim)**
+
+
 * [The Only Video You Need to Get Started with Neovim](https://www.youtube.com/watch?v=m8C0Cq9Uv9o)
     * [nvim-lua/kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim)
 * [How I Setup Neovim To Make It AMAZING in 2024: The Ultimate Guide](https://www.youtube.com/watch?v=6pAG3BHurdM)

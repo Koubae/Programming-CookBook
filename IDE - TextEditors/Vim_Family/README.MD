@@ -9,7 +9,7 @@ Vim-like IDE includes:
 * [Emacs](https://www.gnu.org/software/emacs/)
 * [Nano](https://www.nano-editor.org/)
 
-
+**Check also my NeoVim configuration setup [Koubae/nvim](https://github.com/Koubae/nvim)**
 
 Vim
 ------
