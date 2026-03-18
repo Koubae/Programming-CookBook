@@ -243,6 +243,7 @@ Examples:
 :cmap        " command-line mappings
 :tmap        " terminal mappings
 
+:Telescope keymaps
 ```
 
 
