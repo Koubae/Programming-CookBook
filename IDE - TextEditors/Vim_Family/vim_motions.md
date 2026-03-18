@@ -92,3 +92,27 @@ V                    # Select multiple lines
 y                    # Copy
 p                    # paste
 ```
+
+
+
+
+### Shortcuts for neovim -- golang quickstart setup 
+
+
+**Your leader key here is Space.**
+
+```bash
+<leader>ff   find files
+<leader>fg   grep in project
+<leader>fb   buffers
+gd           go to definition
+gr           references
+gI           implementations
+K            hover docs
+<leader>rn   rename symbol
+<leader>ca   code action
+<leader>f    format file
+<leader>w    save
+<leader>q    quit
+
+```

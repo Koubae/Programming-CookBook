@@ -544,6 +544,20 @@ cp -r  /mnt/wsl/share/.ssh ~
 # https://askubuntu.com/questions/1379425/system-has-not-been-booted-with-systemd-as-init-system-pid-1-cant-operate
 # System has not been booted with systemd as init system (PID 1). Can't operate
 
+#### -------------------------
+# Free Memory
+#### ------------------------
+# https://stackoverflow.com/questions/66832570/how-to-check-allocated-memory-for-wsl-docker
+free -mh
+# print memory usage statistics
+vmstat -s
+# print top processes with memory information
+top
+# fancy top
+htop
+
+
+
 ```
 
 @Mac
