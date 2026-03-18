@@ -50,8 +50,8 @@ CTRL-w <            # - Make the current split narrower
 
 ## CUSTOM!!
 CTRL-hjkl           # -  Go to split LEFT,DOWN,UP,RIGHT | see below Split Navigation controlls CUSTOM!!
-CTRL-l              # -  Open: Vertical Split CTRL+l | see below nvim tree CUSTOM!!
-CTRL-J              # -  Open: Horizontal Split CTRL+j | see below nvim tree CUSTOM!!
+CTRL-ALT-l          # -  Open: Vertical Split CTRL+l | see below nvim tree CUSTOM!!
+CTRL-ALT-J          # -  Open: Horizontal Split CTRL+j | see below nvim tree CUSTOM!!
 CTRL-B              # -  Toogle Explorer Pan | see below nvim tree CUSTOM!!
 Leader+UP           # -  Split Height increase  | CUSTOM!!
 Leader+DOWN         # -  Split Height decrease  | CUSTOM!!
@@ -140,8 +140,8 @@ local function my_on_attach(bufnr)
   -- CUSTOMIZATIONS: Override split mappings
   
     -- your custom split mappings
-    vim.keymap.set("n", "<C-l>", api.node.open.vertical, opts("Open: Vertical Split CTRL+l"))
-    vim.keymap.set("n", "<C-j>", api.node.open.horizontal, opts("Open: Horizontal Split CTRL+j"))
+    vim.keymap.set("n", "<C-A-l>", api.node.open.vertical, opts("Open: Vertical Split CTRL+l"))
+    vim.keymap.set("n", "<C-A-j>", api.node.open.horizontal, opts("Open: Horizontal Split CTRL+j"))
 
 end
 
