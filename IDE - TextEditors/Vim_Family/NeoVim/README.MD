@@ -371,3 +371,12 @@ K            hover docs
 
 
 * Playlist: [astrovim + go](https://www.youtube.com/playlist?list=PL9IfXylCrZ1jd3FRLk_-oS5nZQpaOiYAf)
+
+
+
+### FurtherReading
+
+
+
+* Check [astrocfg/blob/main/lua/plugins/astroui.lua](https://github.com/parK-dev/astrocfg/blob/main/lua/plugins/astroui.lua)
+  * From redit post => [Transparent background using lazy.nvim](https://www.reddit.com/r/AstroNvim/comments/1c1jn5j/comment/lbt46s4/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
