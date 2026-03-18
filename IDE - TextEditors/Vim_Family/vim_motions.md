@@ -47,7 +47,22 @@ CTRL-w k            # - Move to the split above
 CTRL-w =            # - Make all splits equal size
 CTRL-w >            # - Make the current split wider
 CTRL-w <            # - Make the current split narrower
+
+## CUSTOM!!
+CTRL-hjkl           # -  Go to split LEFT,DOWN,UP,RIGHT | see below Split Navigation controlls CUSTOM!!
+CTRL-l              # -  Open: Vertical Split CTRL+l | see below nvim tree CUSTOM!!
+CTRL-J              # -  Open: Horizontal Split CTRL+j | see below nvim tree CUSTOM!!
+CTRL-B              # -  Toogle Explorer Pan | see below nvim tree CUSTOM!!
+## CUSTOM!!
+
+
+CTRL-w c            # - Close current window 1 ctrl+w then quick c
+CTRL-w o            # - Close all other splits, keep only current one
+CTRL-w q            # - Quit current window
+
 :Ex                 # - Return to Explorer mode in the current split
+
+
 
 :q                  # Close current Split
 :bd                 # Close bugger
@@ -93,8 +108,58 @@ y                    # Copy
 p                    # paste
 ```
 
+```lua
+
+# - Split Navigation controlls
+vim.keymap.set("n", "<C-k>", "<C-w>k", { desc = "Go to upper split", noremap = true, silent = true })
+vim.keymap.set("n", "<C-j>", "<C-w>j", { desc = "Go to lower split", noremap = true, silent = true })
+vim.keymap.set("n", "<C-h>", "<C-w>h", { desc = "Go to left split", noremap = true, silent = true })
+vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Go to right split", noremap = true, silent = true })
+
+-- nvim tree
+local function my_on_attach(bufnr)
+  local api = require('nvim-tree.api')
+
+  local function opts(desc)
+    return { desc = 'nvim-tree: ' .. desc, buffer = bufnr, noremap = true, silent = true, nowait = true }
+  end
+
+  -- Default mappings
+  api.config.mappings.default_on_attach(bufnr)
+
+  -- CUSTOMIZATIONS: Override split mappings
+  
+    -- your custom split mappings
+    vim.keymap.set("n", "<C-l>", api.node.open.vertical, opts("Open: Vertical Split CTRL+l"))
+    vim.keymap.set("n", "<C-j>", api.node.open.horizontal, opts("Open: Horizontal Split CTRL+j"))
+
+end
 
 
+return {
+  "nvim-tree/nvim-tree.lua",
+  version = "*",
+  lazy = false,
+  dependencies = {
+    "nvim-tree/nvim-web-devicons",
+  },
+  config = function()
+     local nvimtree = require("nvim-tree")
+
+     vim.g.loaded_netrw = 1
+     vim.g.loaded_netrwPlugin = 1
+
+    require("nvim-tree").setup {
+        on_attach = my_on_attach
+    }
+
+    vim.keymap.set("n", "<c-b>", ":NvimTreeFindFileToggle<CR>")
+
+
+  end,
+}
+
+```
 
 ### Shortcuts for neovim -- golang quickstart setup 
 

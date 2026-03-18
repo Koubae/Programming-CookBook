@@ -14,6 +14,9 @@ rm -rf ~/.local/share/nvim
 rm -rf ~/.local/state/nvim
 rm -rf ~/.cache/nvim
 
+# Run neovim clean without configs
+nvim --clean test.lua
+
 # ------------------
 # Color Schemes
 # ------------------
