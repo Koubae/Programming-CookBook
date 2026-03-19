@@ -7,6 +7,9 @@ Vim Motions
 * [AstroNVim -- Mappings](https://docs.astronvim.com/mappings)
 
 
+* [Jump Motions](https://neovim.io/doc/user/motion/#jump-motions) 
+  * CTRL+o (back) | CTRL+i (front)
+
 
 ### Explorer
 
