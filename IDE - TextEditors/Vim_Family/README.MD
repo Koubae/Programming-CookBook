@@ -39,6 +39,8 @@ Vim
 * [VIM and Python – A Match Made in Heaven](https://realpython.com/vim-and-python-a-match-made-in-heaven/)
 * [How to Install a Theme in VIM (Without a Plugin Manager)](https://www.youtube.com/watch?v=HmSJ2BxDvwU)
 
+* [Moving Blazingly Fast With The Core Vim Motions](https://www.barbarianmeetscoding.com/boost-your-coding-fu-with-vscode-and-vim/moving-blazingly-fast-with-the-core-vim-motions/)
+
 ### vimrc examples
 
 * [kevinmartinjos/vimcharm/](https://github.com/kevinmartinjos/vimcharm/blob/master/.vimrc)
