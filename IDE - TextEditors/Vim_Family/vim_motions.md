@@ -4,7 +4,7 @@ Vim Motions
 
 * [Vim Cheat Sheet](https://vim.rtorr.com/)
 * [Moving Blazingly Fast With The Core Vim Motions](https://www.barbarianmeetscoding.com/boost-your-coding-fu-with-vscode-and-vim/moving-blazingly-fast-with-the-core-vim-motions/)
-
+* [AstroNVim -- Mappings](https://docs.astronvim.com/mappings)
 
 
 
