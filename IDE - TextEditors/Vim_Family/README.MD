@@ -11,6 +11,12 @@ Vim-like IDE includes:
 
 **Check also my NeoVim configuration setup [Koubae/nvim](https://github.com/Koubae/nvim)**
 
+### Vim + NeoVim Learning components
+
+![Vim Learning](./nvim-vim-learnin.png)
+
+
+
 Vim
 ------
 
