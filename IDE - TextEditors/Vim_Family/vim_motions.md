@@ -336,6 +336,30 @@ Examples:
 - `<C-k>` — show info popup
 
 
+### Find And replace
+
+Using Telescope plugin (my case using AstroNVim)
+
+**Step 1: Search & Send to Quickfix**
+
+1. Open Live Grep: `<leader>fw` (Space + f + w)
+2. Type text to filter
+3. Send to Quickfix list: `Ctrl+q` (while the Telescope window is open. This sends all found matches into the Quickfix list.)
+
+**Step 2: Execute the replace command**
+
+Run this command 
+
+```bash
+:cfdo %s/old_text/new_text/gc | update
+```
+
+- `cfdo`: Runs the command on each file in the list (more efficient than cdo).
+- `%s/old/new/g`: The standard substitute command for all matches in a file.
+- `c`: (Optional) Add this flag to confirm each replacement one by one.
+- `| update`: Saves each file automatically after the replacement is made.
+
+
 #### Custom
 
 
