@@ -17,6 +17,10 @@ rm -rf ~/.cache/nvim
 # Run neovim clean without configs
 nvim --clean test.lua
 
+
+# find other running Nvim instances 
+pgrep -lf nvim
+
 # ------------------
 # Color Schemes
 # ------------------
