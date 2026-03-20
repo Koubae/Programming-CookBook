@@ -335,3 +335,11 @@ Examples:
 - `s` — run system command
 - `<C-k>` — show info popup
 
+
+#### Custom
+
+
+* `<localleader>ta`  — Run all Tests in project
+* `<localleader>tf`  — Run current file
+* `<localleader>tr`  — Run current cursor / nearest test 
+
