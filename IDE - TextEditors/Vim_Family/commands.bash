@@ -143,3 +143,14 @@ mkdir -p "$BACKUP_DIR"
 
 echo "Backup created in: $BACKUP_DIR"
 
+
+# --------------
+# Debug mapping
+# Check what is mapping mapped to
+:verbose nmap <command> 
+# example
+:verbose nmap gd
+
+# runs gd (go to definition)
+:lua vim.lsp.buf.definition()
+
