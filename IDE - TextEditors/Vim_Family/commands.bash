@@ -21,6 +21,30 @@ nvim --clean test.lua
 # find other running Nvim instances 
 pgrep -lf nvim
 
+## Check Nvim version from Inside Nvim using Lua
+:lua print("has nvim-0.12 =", vim.fn.has("nvim-0.12"))
+:lua print(vim.inspect(vim.version()))
+:echo exepath('nvim')
+
+### Reinstall Nvim 
+sudo apt remove -y neovim
+sudo snap remove nvim 2>/dev/null || true
+sudo rm -f /usr/local/bin/nvim
+hash -r
+
+# Instal Latest
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
+sudo rm -rf /opt/nvim-linux-x86_64
+sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
+
+# Cleanup tar
+rm nvim-linux-x86_64.tar.gz
+# Add to Path
+vim .bashrc 
+
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+
+
 # ------------------
 # Color Schemes
 # ------------------
