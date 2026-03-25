@@ -360,6 +360,27 @@ Run this command
 - `| update`: Saves each file automatically after the replacement is made.
 
 
+### Reload Files 
+
+* `:e` or `:edit:` Reloads the current file from disk.
+* `:e!` Discards any unsaved local changes and reloads the file from disk
+* `:checktime ` Checks all buffers to see if they have been changed outside of Neovim and prompts you to reload them.
+* `:bufdo e`: Forces a reload of every open buffer in your current session.
+* `set autoread`: Tells Neovim to automatically read the file again when it has been changed outside.
+
+_To have Neovim automatically reload files when they change on disk
+(e.g., after a git pull or external formatting), 
+add the following to your configuration:_
+
+```lua 
+vim.o.autoread = true
+vim.api.nvim_create_autocmd({ "BufEnter", "CursorHold", "CursorHoldI", "FocusGained" }, {
+  command = "if mode() != 'c' | checktime | endif",
+  pattern = { "*" },
+})
+
+```
+
 #### Custom
 
 
