@@ -1,1 +1,13 @@
-* text=auto
+# Normalize all text files to LF
+* text=auto eol=lf
+
+# Keep binary/image files untouched
+*.png  -text 
+*.jpg  -text 
+*.jpeg -text
+*.gif  -text
+*.bmp  -text
+*.webp -text
+*.ico  -text
+*.svg  -text
+*.pdf  -text
