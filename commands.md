@@ -402,6 +402,25 @@ git commit --amend -C HEAD
 git reset --hard HEAD^
 git rebase -i HEAD~commit_count
 
+# Remove latest changes 
+# To remove the latest commit, you have two options:
+# Keep changes (unstage them)
+git reset --soft HEAD~1
+# then to unstage — unstages everything
+git reset
+# or — unstages only that one file (does the same thing as git reset but for a specific file instead of all files.)
+git restore --staged <file>
+
+# to recover from the reset flow find commit via reflog
+git reflog
+git reset --soft <commit-hash>
+# or
+git reset --hard <commit-hash>
+
+# Discard changes entirely
+git reset --hard HEAD~1
+# if u already push that commit u must:
+
 # How do I modify a specific commit? | https://stackoverflow.com/questions/1186535/how-do-i-modify-a-specific-commit
 
 ## checkky pick
@@ -446,6 +465,10 @@ git push --force-with-lease
 
 ### --------
 git rebease <commit-hash>
+
+### Review commit
+git fetch origin <commit-hash>
+git checkout <commit-hash>
 
 
 # https://www.notion.so/kraken-tech/Branching-off-a-passing-commit-in-master-36c7eb2f4f434c39a5b5fae79d569d0c
