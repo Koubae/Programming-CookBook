@@ -92,6 +92,9 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+# https://stackoverflow.com/questions/66832570/how-to-check-allocated-memory-for-wsl-docker
+# check free mem 
+alias f="free -mh"
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -217,9 +220,7 @@ function create_python_env() {
 
 alias PYTHON_ENV=create_python_env
 
-# https://stackoverflow.com/questions/66832570/how-to-check-allocated-memory-for-wsl-docker
-# check free mem 
-alias f="free -mh"
+
 
 # AWS
 # https://docs.aws.amazon.com/cli/v1/userguide/cli-configure-completion.html

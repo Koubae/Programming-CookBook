@@ -327,6 +327,13 @@ pbcopy < ~/.ssh/id_rsa_koubae.pub
 # verify (mac)
 pbpaste
 
+# linux | https://stackoverflow.com/a/5130969
+sudo apt-get install xclip
+
+cat ~/.ssh/id_rsa.pub | xclip -selection clipboard
+cat ~/.ssh/id_rsa_koubae.pub | xclip -selection clipboard
+
+
 ```
 
 @git
