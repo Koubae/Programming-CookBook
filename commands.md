@@ -333,6 +333,67 @@ sudo apt-get install xclip
 cat ~/.ssh/id_rsa.pub | xclip -selection clipboard
 cat ~/.ssh/id_rsa_koubae.pub | xclip -selection clipboard
 
+# --------------------------------------------------------------
+### Use ed25519 instead of RSA — it's shorter, faster, and more secure. If you specifically need RSA
+### Separate Git Identity for Personal Projects | V2 
+# --------------------------------------------------------------
+ssh-keygen -t ed25519 -C "your-personal-email@example.com" -f ~/.ssh/id_ed25519_personal
+
+ssh-keygen -t ed25519 -C "58447627+Koubae@users.noreply.github.com" -f ~/.ssh/id_ed25519_koubae
+# Step 2: Add the key to your SSH agent
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519_koubae
+# Step 3: Add the public key to GitHub
+cat ~/.ssh/id_ed25519_koubae.pub | xclip -selection clipboard
+
+# Step 4: Configure SSH with a host alias
+vim ~/.ssh/config
+
+# the 'github-koubae' is the "key" that links git to this key!
+# instead of github-koubae you could use 'github-personal' 
+
+Host github-koubae
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_ed25519_koubae
+    IdentitiesOnly yes
+
+
+# Test it
+ssh -T git@github-koubae
+
+# Step 5: Set up conditional Git config
+mkdir -p ~/my_projects; 
+
+
+# Edit your global ~/.gitconfig — add this at the bottom:
+vim ~/.gitconfig
+
+[includeIf "gitdir:~/my_projects/"]
+    path = ~/.gitconfig-personal
+
+# Then create ~/.gitconfig-personal:
+vim  ~/.gitconfig-personal
+[user]
+    name = Koubae
+    email = 58447627+Koubae@users.noreply.github.com
+ 
+[url "git@github-koubae:"]
+    insteadOf = git@github.com:
+
+# Step 6: Clone your first repo
+cd ~/my_projects;
+git clone git@github.com:Koubae/Programming-CookBook.git
+
+# Step 7: Verify
+cd ~/my_projects/Programming-CookBook
+git config user.name    # → your personal name
+git config user.email   # → your personal email
+git remote -v           # → should show github-personal or github.com (rewritten)
+
+
+# check also with
+git ls-remote origin
 
 ```
 
@@ -352,6 +413,10 @@ git clone --depth 1 <repo_URI>
 git fetch --unshallow
 # then pull all at the end
 git pull --all
+
+# use vim instead of nano 
+git config --global core.editor "vim"
+
 
 ## put core compression back to default if needed
 git config --global core.compression -1
