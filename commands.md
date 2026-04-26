@@ -381,6 +381,25 @@ vim  ~/.gitconfig-personal
 [url "git@github-koubae:"]
     insteadOf = git@github.com:
 
+# IN case u want to add signature then also
+[gpg]
+    format = ssh
+ 
+[user]
+    signingkey = ~/.ssh/id_ed25519_koubae.pub
+ 
+[commit]
+    gpgsign = true
+ 
+[gpg "ssh"]
+    allowedSignersFile = ~/.ssh/allowed_signers
+
+# if u want to add signature then do
+echo "58447627+Koubae@users.noreply.github.com $(cat ~/.ssh/id_ed25519_koubae.pub)" >> ~/.ssh/allowed_signers
+
+cat  ~/.ssh/allowed_signers
+
+
 # Step 6: Clone your first repo
 cd ~/my_projects;
 git clone git@github.com:Koubae/Programming-CookBook.git
@@ -394,7 +413,9 @@ git remote -v           # → should show github-personal or github.com (rewritt
 
 # check also with
 git ls-remote origin
-
+# checkk if works (with signature)
+git commit --allow-empty -m "test signed commit"
+git log --show-signature -1
 ```
 
 @git
