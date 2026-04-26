@@ -558,6 +558,17 @@ cd Microsoft.PowerShell.Core\FileSystem::\\wsl.localhost\Ubuntu-18.04
 sudo apt update 
 sudo apt full-upgrade 
 
+sudo apt install build-essential
+
+# https://terminaltrove.com/categories/top/
+# bottom https://terminaltrove.com/bottom/
+curl -LO https://github.com/ClementTsang/bottom/releases/download/0.3.0/bottom_0.3.0_amd64.deb && sudo dpkg -i bottom_0.3.0_amd64.deb
+# run
+btm
+
+
+
+# eyes following user, calculator and other weird thing. do not install really XD
 sudo apt install x11-apps
 xeyes &
 xcalc
@@ -839,6 +850,9 @@ ruff-help:
 -------
 
 ```bash
+# download & Install 
+wget https://go.dev/dl/go1.26.2.linux-amd64.tar.gz && sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.26.2.linux-amd64.tar.gz && rm go1.26.2.linux-amd64.tar.gz
+
 ### Install and manage multiple go versions
 go install golang.org/dl/go1.23.0@latest
 # Download and install the toolchain
