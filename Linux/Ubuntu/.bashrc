@@ -91,7 +91,8 @@ fi
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
-alias l='ls -CF'
+alias lf='ls -CF'
+alias l='ls -1 --group-directories-first'
 # https://stackoverflow.com/questions/66832570/how-to-check-allocated-memory-for-wsl-docker
 # check free mem 
 alias f="free -mh"
