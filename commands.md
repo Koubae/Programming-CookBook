@@ -885,6 +885,39 @@ idea.max.intellisense.filesize=1024
 ### --------------------------
 ##  @uv
 ### --------------------------
+## install windows powershel
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+
+
+# install on mac
+# Install Uv
+brew install uv
+# add to .zshrc
+echo 'eval "$(uv generate-shell-completion zsh)"' >> ~/.zshrc
+
+# install linux / ubuntu 
+# https://docs.astral.sh/uv/getting-started/installation/
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Shell autocompletion Tip
+# https://docs.astral.sh/uv/getting-started/installation/#shell-autocompletion
+vim ~/.bashrc
+# uv 
+eval "$(uv generate-shell-completion bash)"
+
+# list installaed version 
+uv python list --only-installed
+# set verison 
+uv python pin --global 3.12
+
+uv python install 3.12
+# If you want the command python to globally point to a specific version managed by uv in your terminal, use the --default flag during
+uv python install --default 3.13
+uv python install --default 3.12
+
+# vscode / windsurf
+uv tool install debugpy
+
 
 # dependencies
 uv add  <package>
@@ -894,6 +927,7 @@ uv add --group dev2 <package>
 
 # remove package
 uv remove <package>
+
 
 ```
 

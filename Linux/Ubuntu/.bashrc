@@ -150,6 +150,9 @@ export PS1="\$(__git_ps1_custom)${PS1}"
 
 export PATH="/usr/local/bin/:$PATH"
 
+# uv 
+eval "$(uv generate-shell-completion bash)"
+
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
