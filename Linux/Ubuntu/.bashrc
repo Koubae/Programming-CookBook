@@ -141,8 +141,24 @@ __git_ps1_custom() {
 }
 
 
+__kube_context() {
+    local ctx color
+    ctx=$(kubectl config current-context 2>/dev/null) || return
+    if [[ "$ctx" == *dev* ]]; then
+        color="$Cyan"
+    elif [[ "$ctx" == *prod* ]]; then
+        color="$Yellow"
+    else
+        color="$White"
+    fi
+    printf '(\001%b\002%s\001%b\002)' "$color" "$ctx" "$Color_Off"
+}
 
-export PS1="\$(__git_ps1_custom)${PS1}"
+
+
+
+export PS1="\$(__kube_context)\$(__git_ps1_custom)${PS1}"
+# export PS1="\$(__git_ps1_custom)${PS1}"
 
 
 

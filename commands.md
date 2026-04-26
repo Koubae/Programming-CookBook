@@ -1106,6 +1106,37 @@ openapi-generator generate -i /path/to/your/openapi-spec.yaml -g javascript -o .
 
 ```
 
+Tools
+=========
+
+@Kubectl | @kubernetes
+----------
+
+```bash
+
+# show all context 
+kubectl config get-contexts
+# show current context
+kubectl config current-context
+# change context
+kubectl config use-context <ontext>
+
+
+
+# list namespaces
+kubectl get namespaces
+kubectl get ns
+
+
+# show services
+kubectl get svc
+# All namespace
+kubectl get svc -A
+# more info
+kubectl get svc -o wide
+``` 
+
+
 Databases
 =========
 
