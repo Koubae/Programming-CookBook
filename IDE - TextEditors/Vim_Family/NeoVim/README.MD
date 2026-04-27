@@ -71,7 +71,8 @@ That's all the crap you need to learn and setup for Neovim but is freaking worth
 ```bash
 #wsl --install
 #wsl
-sudo add-apt-repository ppa:neovim-ppa/unstable -y
+# sudo add-apt-repository ppa:neovim-ppa/unstable -y
+sudo add-apt-repository ppa:neovim-ppa/stable
 sudo apt update
 sudo apt install make gcc ripgrep unzip git xclip fd-find neovim 
 ```

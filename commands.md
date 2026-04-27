@@ -371,6 +371,8 @@ vim ~/.gitconfig
 
 [includeIf "gitdir:~/my_projects/"]
     path = ~/.gitconfig-personal
+[includeIf "gitdir:~/.config/nvim/"]
+    path = ~/.gitconfig-personal
 
 # Then create ~/.gitconfig-personal:
 vim  ~/.gitconfig-personal
