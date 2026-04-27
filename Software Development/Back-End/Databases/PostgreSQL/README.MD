@@ -1,6 +1,7 @@
 PostgreSQL
 ========
 
+* [PostgreSQL Functions](./postgre-functions.md)
 
 
 Installation
