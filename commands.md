@@ -1138,6 +1138,15 @@ kubectl get svc
 kubectl get svc -A
 # more info
 kubectl get svc -o wide
+
+# checkk labels
+kubectl get pods -o wide --show-labels | grep <service>
+
+# logs
+kubectl logs -f -l app=<service> --tail=100
+kubectl logs -f -l label --tail=100
+kubectl logs -f -l label --tail=100 --prefix
+
 ``` 
 
 
