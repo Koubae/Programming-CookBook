@@ -405,7 +405,7 @@ cat  ~/.ssh/allowed_signers
 # Step 6: Clone your first repo
 cd ~/my_projects;
 git clone git@github.com:Koubae/Programming-CookBook.git
-
+a
 # Step 7: Verify
 cd ~/my_projects/Programming-CookBook
 git config user.name    # → your personal name
