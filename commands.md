@@ -1123,6 +1123,8 @@ kubectl config current-context
 # change context
 kubectl config use-context <ontext>
 
+# list secrets
+kubectl get secrets
 
 
 # list namespaces
