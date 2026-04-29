@@ -566,6 +566,29 @@ git fetch origin <commit-hash>
 git checkout <commit-hash>
 
 
+### Work with fork
+git clone ssh:<repo> --recursive
+cd repo
+git remote rename origin upstream
+git remote add origin ssh://your_fork_url
+
+# update 
+git submodule update --init --recursive
+git submodule update --init -- <relative-path-to-submodule>
+
+# Keeping up to date with upstream
+git fetch upstream
+git checkout main
+git merge upstream/main      # or: git rebase upstream/main
+git push origin main         # update your fork's main
+
+
+# Remove the broken submodule git data
+rm -rf .git/modules/<relative-path-to-submodule>
+rm -rf <relative-path-to-submodule>
+# Re-init and clone fresh
+git submodule update --init --recursive -- <relative-path-to-submodule>
+
 # https://www.notion.so/kraken-tech/Branching-off-a-passing-commit-in-master-36c7eb2f4f434c39a5b5fae79d569d0c
 # # Reset head of local master to latest passing commit.
 grhm() {
