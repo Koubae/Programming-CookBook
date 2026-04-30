@@ -583,6 +583,11 @@ git merge upstream/main      # or: git rebase upstream/main
 git push origin main         # update your fork's main
 
 
+# pull origin 
+git fetch origin
+
+
+
 # Remove the broken submodule git data
 rm -rf .git/modules/<relative-path-to-submodule>
 rm -rf <relative-path-to-submodule>
