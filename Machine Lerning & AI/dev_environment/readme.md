@@ -18,9 +18,14 @@ Claude
 * [Advanced setup](https://code.claude.com/docs/en/setup)
 * [Authentication](https://code.claude.com/docs/en/authentication)
 * [common workflows](https://code.claude.com/docs/en/common-workflows)
+* [Extend Claude Code](https://code.claude.com/docs/en/features-overview)
 
 
 * [auto memory](https://code.claude.com/docs/en/memory#auto-memory)
+* [Work effectively with Claude Code](https://code.claude.com/docs/en/how-claude-code-works#work-effectively-with-claude-code)
+
+
+* [Model configuration](https://code.claude.com/docs/en/model-config)
 
 
 ### API Console -- Claude Platform 
