@@ -1,6 +1,11 @@
 Machine Lerning & AI
 ========
 
+### In this docs
+
+* [Development Environment](./dev_environment/readme.md)
+
+### Other
 
 * [kaggle](https://www.kaggle.com/)
 * [playground.tensorflow.org](https://playground.tensorflow.org/)
