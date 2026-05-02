@@ -11,6 +11,22 @@ AI & Machine Learning | Development Environment
 Claude
 ------
 
+#### Features
+
+- `CLAUDE.md`
+- Skills | https://code.claude.com/docs/en/skills
+- MCP Serviers
+- Subagents | https://code.claude.com/docs/en/sub-agents
+- Hooks | https://code.claude.com/docs/en/hooks
+
+you might use :
+
+> - CLAUDE.md for project conventions
+> - Skill for your deployment workflow
+> - MCP to connect to your database
+> - Hook to run linting after every edit. 
+
+Each feature handles what it’s best at
 
 ### Claude Code
 
@@ -29,6 +45,10 @@ Claude
 
 * [Build your setup over time](https://code.claude.com/docs/en/features-overview#build-your-setup-over-time)
 
+* [Hook Events](https://code.claude.com/docs/en/hooks#hook-events)
+* [How CLAUDE.md files load](https://code.claude.com/docs/en/memory#how-claude-md-files-load)
+* [Understand context costs](https://code.claude.com/docs/en/features-overview#understand-context-costs)
+
 ### API Console -- Claude Platform 
 
 * [Claude Platform Docs](https://platform.claude.com/docs/en/home)
@@ -42,8 +62,46 @@ Claude
 
 #### Claude's file index
 
+see [Explore the .claude directory](https://code.claude.com/docs/en/claude-directory)
+
 - `CLAUDE.md`: ...
+- `CLAUDE.local.md`: ...
 - `MEMORY..md`: ...
+- `.claude/rules/`: https://code.claude.com/docs/en/memory#organize-rules-with-claude/rules/
+
+* [Combine features](https://code.claude.com/docs/en/features-overview#combine-features)
+
+`_claudeMdExcludes_`
+- https://code.claude.com/docs/en/memory#exclude-specific-claude-md-files
+
+```json
+{
+  "claudeMdExcludes": [
+    "**/monorepo/CLAUDE.md",
+    "/home/user/monorepo/other-team/.claude/rules/**"
+  ]
+}
+```
+
+Comments on `md` files, Block-level HTML comments won't load into context:
+
+```markdown
+- rule 1
+<!-- maintainer notes -->
+- rule 2
+```
+
+- `--add-dir`: this flag gives Claude access to additional directories outside your main working directory. 
+  By default, CLAUDE.md files from these directories are not loaded.
+
+or To also load memory files from additional directories use this env var:
+
+```bash
+CLAUDE_CODE_ADDITIONAL_DIRECTORIES_CLAUDE_MD=1 claude --add-dir ../shared-config
+``` 
+
+> This loads `CLAUDE.md`, `.claude/CLAUDE.md`, `.claude/rules/*.md`, and `CLAUDE.local.md` from the additional directory. 
+> `CLAUDE.local.md` is skipped if you exclude local from `--setting-sources`.
 
 
 #### Claude Context & Token Management
@@ -58,6 +116,13 @@ Claude
 - Esc twice to rewind to a previous state of a file change
 - Press Shift+Tab to cycle through permission modes:
 
+
+### Claude's Skills
+
+- Manual Skills: `Set disable-model-invocation: true` in a skill’s frontmatter 
+  this hides it from Claude entirely until you invoke it manually. 
+  This reduces context cost to zero for skills you only trigger yourself.
+- **bundled skills:** [commands](https://code.claude.com/docs/en/commands)
 
 Misc
 ----
