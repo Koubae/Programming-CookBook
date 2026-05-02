@@ -48,6 +48,11 @@ Each feature handles what it’s best at
 * [Hook Events](https://code.claude.com/docs/en/hooks#hook-events)
 * [How CLAUDE.md files load](https://code.claude.com/docs/en/memory#how-claude-md-files-load)
 * [Understand context costs](https://code.claude.com/docs/en/features-overview#understand-context-costs)
+* [Configure thinking mode](https://code.claude.com/docs/en/common-workflows#configure-thinking-mode)
+* [Find bugs with ultrareview](https://code.claude.com/docs/en/ultrareview#find-bugs-with-ultrareview)
+
+Add `ultrathink` anywhere in your prompt,  
+Adds an in-context instruction telling the model to reason more on that turn.
 
 ### API Console -- Claude Platform 
 
@@ -115,7 +120,7 @@ CLAUDE_CODE_ADDITIONAL_DIRECTORIES_CLAUDE_MD=1 claude --add-dir ../shared-config
 
 - Esc twice to rewind to a previous state of a file change
 - Press Shift+Tab to cycle through permission modes:
-
+- CTRL+G: Open & Edit plan
 
 ### Claude's Skills
 
@@ -131,4 +136,9 @@ Misc
 * [juliusbrussee/caveman](https://github.com/juliusbrussee/caveman)
 
 
+Videos
+------
 
+
+* [Why You Need Plan Mode in Claude Code (Pro Tips)](https://www.youtube.com/watch?v=FoRIj5qcslg)
+* [How I Use Claude Code Plan Mode: 3 Examples](https://www.youtube.com/watch?v=altX5elI-1k)

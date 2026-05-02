@@ -1,8 +1,10 @@
-# Start Claude Code
-claude
 # claude location
 ~/.local/bin/claude
-
+# Start Claude Code
+claude
+# start claude plan mdoe
+claude --permission-mode plan
+claude --permission-mode plan -p "Plan message..."
 
 # Then login using Console / platform billing
 claude auth login --console
@@ -24,7 +26,7 @@ claude -p "sum 1 + 1"
 claude -c
 # resume prev convo 
 claude -r
-# erase convo history
+# erase convo history | creates new sesions
 /clear
 # show ava commands 
 /help
