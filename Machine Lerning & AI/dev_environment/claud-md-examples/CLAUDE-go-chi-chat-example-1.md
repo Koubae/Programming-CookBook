@@ -11,7 +11,7 @@ WebSocket.
 
 - **Go** with [chi](https://github.com/go-chi/chi) for HTTP routing
 - **SQLite3** via `github.com/mattn/go-sqlite3` (requires CGO)
-- **WebSocket** via `github.com/gorilla/websocket`
+- **WebSocket** via `github.com/gorilla/websocket`  
 - **Frontend** — plain HTML/JS served as embedded static files (`embed.FS`)
 
 ## Commands
