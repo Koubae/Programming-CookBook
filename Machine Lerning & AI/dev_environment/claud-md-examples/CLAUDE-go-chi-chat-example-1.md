@@ -46,6 +46,7 @@ golangci-lint run            # before declaring work done
 
 Structure
 
+```text
 cmd/
 server/         # main package — wires dependencies and starts HTTP server
 internal/
@@ -54,7 +55,7 @@ store/          # SQLite repository — message persistence
 handler/        # chi HTTP + WebSocket handlers; thin, no business logic
 pkg/
 sqlite/         # shared DB connection setup and migration runner
-
+```
 
 
 internal/ is not importable outside this module. pkg/ is for code that could be reused across binaries (currently just DB bootstrap).
@@ -69,6 +70,7 @@ Migrations are plain .sql files embedded in pkg/sqlite/migrations/ and run autom
 
 Environment
 
+```text
 ┌─────────┬───────────┬──────────────────┐
 │   Var   │  Default  │     Purpose      │
 ├─────────┼───────────┼──────────────────┤
@@ -76,6 +78,8 @@ Environment
 ├─────────┼───────────┼──────────────────┤
 │ DB_PATH │ ./chat.db │ SQLite file path │
 └─────────┴───────────┴──────────────────┘
+```
+
 
 The architecture section is the most important part here — the hub's channel-based concurrency model and the handler→chat→store layering are the two things most likely to be broken
 silently without explicit guidance.
