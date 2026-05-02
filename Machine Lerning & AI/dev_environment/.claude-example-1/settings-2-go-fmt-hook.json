@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "if": "Edit(*.go) || Write(*.go)",
+            "command": ".claude/hooks/go-format.sh",
+            "async": true
+          }
+        ]
+      }
+    ]
+  }
+}
