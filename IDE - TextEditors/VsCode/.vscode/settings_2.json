@@ -50,6 +50,14 @@
   "cursorpyright.analysis.typeCheckingMode": "recommended",
   // PyCharm Darcula like-colors
   // https://github.com/Bobronium/vscode-pycharm-darcula-theme/blob/master/themes/darcula-color-theme.json
+  "editor.semanticTokenColorCustomizations": {
+    "enabled": true,
+    "rules": {
+      "class": "#f7a727",
+      "type": "#FFC66D",
+      "struct": "#FFC66D"
+    }
+  },
   "editor.tokenColorCustomizations": {
     "strings": "#6A8759",
     "comments": "#15ff00",
@@ -92,6 +100,16 @@
           "foreground": "#6A8759",
         }
       },
+      {
+        "name": "Python Class Name",
+        "scope": [
+          "entity.name.type.class.python",
+          "entity.name.class"
+        ],
+        "settings": {
+          "foreground": "#FFC66D"
+        }
+      }
     ]
   }
 }
