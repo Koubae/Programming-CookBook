@@ -142,3 +142,14 @@ Videos
 
 * [Why You Need Plan Mode in Claude Code (Pro Tips)](https://www.youtube.com/watch?v=FoRIj5qcslg)
 * [How I Use Claude Code Plan Mode: 3 Examples](https://www.youtube.com/watch?v=altX5elI-1k)
+
+
+For this I want you to ultrathink
+
+- Main feature: Basic chat terminal application with username and a unique "channel", message broadcast 
+
+1. client should have a unique "name" we can start with user-uuid string (trimmed to 10 chars) 
+2. client must listen to messages and write to stdout where are from and msg content 
+3. cliet but accept input from stdin and write message once press Enter, a client is a chat terminal for now. 
+4. The server must wait for the client "hello" to load its username. the From is the username, UserConnection also has now a "remote" field which is  conn.RemoteAddr().String()
+
