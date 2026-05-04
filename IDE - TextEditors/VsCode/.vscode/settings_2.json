@@ -7,11 +7,8 @@
   "editor.letterSpacing": 0.3,
   "editor.lineHeight": 1.5,
   "editor.fontLigatures": false,
-
-
   // Keep VS Code from adding rainbow bracket colors
   "editor.bracketPairColorization.enabled": false,
-
   "workbench.colorCustomizations": {
     "[Darcula]": {
       "editorLineNumber.activeForeground": "#67d60c",
@@ -50,5 +47,51 @@
       "variables": "#A9B7C6"
     }
   },
-  "cursorpyright.analysis.typeCheckingMode": "recommended"
+  "cursorpyright.analysis.typeCheckingMode": "recommended",
+  // PyCharm Darcula like-colors
+  // https://github.com/Bobronium/vscode-pycharm-darcula-theme/blob/master/themes/darcula-color-theme.json
+  "editor.tokenColorCustomizations": {
+    "strings": "#6A8759",
+    "comments": "#15ff00",
+    "numbers": "#6897BB",
+    "keywords": "#CC7832",
+    "functions": "#FFC66D",
+    "types": "#9876AA",
+    "variables": "#A9B7C6",
+    "textMateRules": [
+      {
+        "name": "Python Docstring",
+        "scope": [
+          "string.quoted.docstring.multi.python",
+          // "string.quoted.multi.python"  // Multi-line strings
+        ],
+        "settings": {
+          "foreground": "#629755", // PyCharm Darcula Docstring
+          "fontStyle": "italic",
+        }
+      },
+      {
+        "name": "Python binary strings",
+        "scope": [
+          "string.quoted.binary.single.python",
+          "string.quoted.binary.single punctuation.definition.string.begin.python",
+          "string.quoted.binary.single punctuation.definition.string.end.python",
+          "string.quoted.binary.single storage.type.string.python"
+        ],
+        "settings": {
+          "foreground": "#FFC66D",
+          "fontStyle": ""
+        }
+      },
+      {
+        "name": "JSON strings",
+        "scope": [
+          "string.quoted.double.json"
+        ],
+        "settings": {
+          "foreground": "#6A8759",
+        }
+      },
+    ]
+  }
 }
