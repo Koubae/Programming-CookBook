@@ -1373,7 +1373,7 @@ code --remote "wsl+$WSL_DISTRO_NAME" ~/vscode-workspaces/myproject-123.code-work
 
 # .bashrc
 alias codewsl='code --remote "wsl+$WSL_DISTRO_NAME"'
-alias windsurfwsl='code --remote "wsl+$WSL_DISTRO_NAME"'
+alias windsurfwsl='windsurf --remote "wsl+$WSL_DISTRO_NAME"'
 # or reusable function 
 
 codewsl() {

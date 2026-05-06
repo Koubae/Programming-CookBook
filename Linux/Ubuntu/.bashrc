@@ -240,7 +240,8 @@ function create_python_env() {
 
 alias PYTHON_ENV=create_python_env
 
-
+alias codewsl='code --remote "wsl+$WSL_DISTRO_NAME"'
+alias windsurfwsl='windsurf --remote "wsl+$WSL_DISTRO_NAME"'
 
 # AWS
 # https://docs.aws.amazon.com/cli/v1/userguide/cli-configure-completion.html
