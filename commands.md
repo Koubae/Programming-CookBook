@@ -1355,3 +1355,33 @@ npx -v
 
 ```
 
+
+@vscode | @windsurf | @cursor
+-----------------------------
+
+
+```bash
+mkdir ~/vscode-workspaces
+cd ~/vscode-workspaces
+
+code  ~/vscode-workspaces/myproject-123.code-workspace
+windsurf ~/vscode-workspaces/myproject-123.code-workspace
+
+### wsl
+echo $WSL_DISTRO_NAME
+code --remote "wsl+$WSL_DISTRO_NAME" ~/vscode-workspaces/myproject-123.code-workspace
+
+# .bashrc
+alias codewsl='code --remote "wsl+$WSL_DISTRO_NAME"'
+alias windsurfwsl='code --remote "wsl+$WSL_DISTRO_NAME"'
+# or reusable function 
+
+codewsl() {
+  code --remote "wsl+$WSL_DISTRO_NAME" "$@"
+}
+
+# then 
+codewsl ~/vscode-workspaces/myproject-123.code-workspace
+windsurfwsl ~/vscode-workspaces/myproject-123.code-workspace
+
+```
