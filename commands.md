@@ -256,6 +256,8 @@ ss -lntu
 # List all used port
 ss -lntua
 
+ss -tulnp
+
 sudo lsof -i -P -n | grep LISTEN
 
 traceroute -T -p 9100 <IP address/hostname>
