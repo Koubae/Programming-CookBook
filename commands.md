@@ -611,6 +611,16 @@ grhm() {
     echo "Reset to $latest_commit"
 }
 
+
+## find Windows End Of line CRLF
+find /path/to/folder -type f -exec file {} + | grep CRLF
+
+# find and replace CRLF to linux LF
+sudo apt install dos2unix
+
+#  Only files that actually have CRLF (skips binaries and already-LF files):
+grep -rlI $'\r' /path/to/folder | xargs dos2unix
+
 ```
 
 
