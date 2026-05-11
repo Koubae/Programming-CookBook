@@ -588,6 +588,10 @@ git push origin main         # update your fork's main
 # pull origin 
 git fetch origin
 
+### go at that commit
+git reset --hard <commit-hash>
+### put things back
+git reset --hard origin/master
 
 
 # Remove the broken submodule git data
