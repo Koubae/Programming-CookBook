@@ -584,6 +584,19 @@ git checkout main
 git merge upstream/main      # or: git rebase upstream/main
 git push origin main         # update your fork's main
 
+# move commits from local master/main to branch
+git checkout <your-branch>
+git reset --hard master
+# possibly push
+git push
+
+# Reset master back 5 commits
+git checkout master
+git reset --hard HEAD~5
+
+# Go back to your branch with the commits
+git checkout <your-branch>
+
 
 # pull origin 
 git fetch origin
