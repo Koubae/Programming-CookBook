@@ -528,6 +528,8 @@ git rebase -i HEAD~n
 # or
 git rebase --interactive <commit-hash>~
 git rebase --interactive <commit-hash>
+# include that commit
+git rebase --interactive <commit-hash>^
 
 # add amend + modify
 git commit --all --amend --no-edit
