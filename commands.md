@@ -579,6 +579,8 @@ git remote add origin ssh://your_fork_url
 # update 
 git submodule update --init --recursive
 git submodule update --init -- <relative-path-to-submodule>
+# full submodule update
+git submodule update --recursive --remote 
 
 # Keeping up to date with upstream
 git fetch upstream
