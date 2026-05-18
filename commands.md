@@ -588,6 +588,11 @@ git checkout main
 git merge upstream/main      # or: git rebase upstream/main
 git push origin main         # update your fork's main
 
+## update version 2 (with 2 origins)
+git fetch --all
+git merge origin/master
+git merge upstream/master
+
 # move commits from local master/main to branch
 git checkout <your-branch>
 git reset --hard master
