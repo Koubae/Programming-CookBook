@@ -551,6 +551,41 @@ git rebase -i HEAD~n
 git commit --amend
 git rebase --continue
 
+### Change commit and add new commit then make changes on the last commit based on the new commit added.
+# imagine u have 2 commits
+# 50d3aa11 commit-b HEAD
+# 9b2617a7 commit-a
+# d6655d6d parent
+# but you need to put, between commit-a and commit-b "commit-a.1, commit-a.2, commit-a.3"
+# result:
+# 50d3aa11 commit-b HEAD
+# new-3    commit-a.3
+# new-2    commit-a.2
+# new-1    commit-a.1
+# 9b2617a7 commit-a
+# d6655d6d parent
+# then:
+
+
+git rebase -i d6655d6d
+# In editor:
+pick 9b2617a7 commit-a
+edit 50d3aa11 commit-b
+
+# Save and exit - rebase will apply 9b2617a7, then STOP at 50d3aa11
+# At the stop, create your 3 commits:
+git add <files>
+git commit -m "commit-a.1"
+git add <files>
+git commit -m "commit-a.2"
+git add <files>
+git commit -m "commit-a.3"
+# Now 50d3aa11 is HEAD, modify it based on the 3 new commits:
+git add <changes_to_50d3aa11>
+git commit --amend
+# Continue rebase
+git rebase --continue
+
 
 #### Git rebease good
 # modify: pick -> edit
