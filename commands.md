@@ -20,6 +20,8 @@ scp /path/to/file username@a:/path/to/destination
 # To copy a file from B to A while logged into A:
 scp username@b:/path/to/file /path/to/destination
 
+rsync -avz -e "ssh -i /path/to/cert" /path/to/source machine.username@machine-ip:~/path/to/target/
+
 # copy to clipboard
 curl --location 'https://google.com' | xclip -selection clipboard
 # copy file to clipboard | https://stackoverflow.com/a/62168635/13903942
