@@ -139,6 +139,14 @@
                         "foreground": "#A9B7C6"
                     }
                 },
+                  {
+                    "scope": [
+                        "constant.language.python"
+                    ],
+                    "settings": {
+                        "foreground": "#CC7832"
+                    }
+                }
             ]
         }
     },
