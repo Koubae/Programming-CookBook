@@ -1,0 +1,234 @@
+{
+    // ----------------------------------------------------------------------------
+    //                           THEME
+    // ----------------------------------------------------------------------------
+    "workbench.colorTheme": "JetBrains Darcula Theme",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontFamily": "'JetBrains Mono', Consolas, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 14,
+    "editor.letterSpacing": 0.3,
+    "editor.lineHeight": 1.5,
+    "editor.fontLigatures": false,
+    //  squiggly line
+    "editor.semanticHighlighting.enabled": true,
+    "editor.errorForeground": "#FF6B6B",
+    "editor.warningForeground": "#FFC66D",
+    // -----
+    // PyCharm Darcula like-colors
+    // https://github.com/Bobronium/vscode-pycharm-darcula-theme/blob/master/themes/darcula-color-theme.json
+    // "editor.semanticTokenColorCustomizations": {
+    //     "enabled": true,
+    //     "rules": {
+    //         "class": "#fcc88d",
+    //         "type": "#9876AA",
+    //         "struct": "#FFC66D",
+    //         "variable:unresolved": {
+    //             "foreground": "#FF6B6B",
+    //             "fontStyle": "underline"
+    //         }
+    //     }
+    // },
+    // "editor.tokenColorCustomizations": {
+    //     "strings": "#6A8759",
+    //     "comments": "#15ff00",
+    //     "numbers": "#6897BB",
+    //     "keywords": "#CC7832",
+    //     "functions": "#FFC66D",
+    //     "types": "#9876AA",
+    //     "variables": "#A9B7C6",
+    //     "textMateRules": [
+    //         {
+    //             "name": "Python Docstring",
+    //             "scope": [
+    //                 "string.quoted.docstring.multi.python",
+    //                 // "string.quoted.multi.python"  // Multi-line strings
+    //             ],
+    //             "settings": {
+    //                 "foreground": "#629755", // PyCharm Darcula Docstring
+    //                 "fontStyle": "italic",
+    //             }
+    //         },
+    //         {
+    //             "name": "Python binary strings",
+    //             "scope": [
+    //                 "string.quoted.binary.single.python",
+    //                 "string.quoted.binary.single punctuation.definition.string.begin.python",
+    //                 "string.quoted.binary.single punctuation.definition.string.end.python",
+    //                 "string.quoted.binary.single storage.type.string.python"
+    //             ],
+    //             "settings": {
+    //                 "foreground": "#FFC66D",
+    //                 "fontStyle": ""
+    //             }
+    //         },
+    //         {
+    //             "name": "JSON strings",
+    //             "scope": [
+    //                 "string.quoted.double.json"
+    //             ],
+    //             "settings": {
+    //                 "foreground": "#6A8759",
+    //             }
+    //         },
+    //         {
+    //             "name": "Python Class Name",
+    //             "scope": [
+    //                 "entity.name.type.class.python",
+    //                 "entity.name.class"
+    //             ],
+    //             "settings": {
+    //                 "foreground": "#FFC66D"
+    //             }
+    //         },
+    //         {
+    //             "name": "Unresolved Entity",
+    //             "scope": [
+    //                 "variable.other.readwrite.undefined",
+    //                 "variable.other.object.undefined",
+    //                 "entity.name.function.undefined",
+    //                 "support.function.undefined"
+    //             ],
+    //             "settings": {
+    //                 "foreground": "#FF6B6B",
+    //                 "fontStyle": "underline"
+    //             }
+    //         },
+    //     ]
+    // },
+    // ----------------------------------------------------------------------------
+    //                          JetBrains Darcula Theme
+    // ----------------------------------------------------------------------------
+    // 
+    // https://marketplace.visualstudio.com/items?itemName=Anan.jetbrains-darcula-theme&ssr=false#overview
+    "editor.tokenColorCustomizations": {
+        "[JetBrains Darcula Theme]": {
+            // "textMateRules": [
+            //     {
+            //         "scope": [
+            //             "source.python"
+            //         ],
+            //         "settings": {
+            //             "foreground": "#e06c75"
+            //         }
+            //     }
+            // ]
+            "textMateRules": [
+                {
+                    "scope": [
+                        // "variable",
+                        "variable.other",
+                        "variable.other.readwrite",
+                        "variable.other.object",
+                        "variable.other.member",
+                        "variable.other.property",
+                        "variable.other.class",
+                        "variable.other.instance",
+                        "support.variable.property",
+                        "meta.property-name",
+                        "variable.other.constant",
+                        "variable.other.constant.property",
+                        "variable.other.class.property",
+                        "variable.other.class.attribute",
+                        "meta.class-field",
+                        "variable.python",
+                        "variable.name",
+                        "constant",
+                        "entity.name.variable"
+                    ],
+                    "settings": {
+                        "foreground": "#A9B7C6"
+                    }
+                },
+            ]
+        }
+    },
+    // ----------------------------------------------------------------------------
+    //                           Material Icon Theme
+    // ----------------------------------------------------------------------------
+    "material-icon-theme.folders.associations": {
+        ".windsurf": "robot"
+    },
+    // ----------------------------------------------------------------------------
+    //                           File Associations
+    // --------------------------aaaaaaaaaaaaa--------------------------------------------------
+    // "files.associations": {
+    //     "*.sql": "vscode-postgres"
+    // },
+    // ----------------------------------------------------------------------------
+    //                            GO
+    // ----------------------------------------------------------------------------
+    // https://www.youtube.com/watch?v=pvfESSAbbts
+    // @docs https://go.dev/gopls/features/transformation
+    "[go]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    },
+    "[go.mod]": {
+        "editor.formatOnSave": false,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "never"
+        }
+    },
+    "gopls": {
+        "ui.semanticTokens": false
+    },
+    "terminal.external.windowsExec": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "path": "C:\\Program Files\\Git\\bin\\bash.exe",
+            "args": [
+                "--login",
+                "-i"
+            ]
+        }
+    },
+    // ----------------------------------------------------------------------------
+    //                            Python
+    // ----------------------------------------------------------------------------
+    "ruff.enable": true,
+    "ruff.lint.enable": true,
+    "[python]": {
+        // "editor.formatOnSave": true,
+        // "editor.defaultFormatter": "ms-python.black-formatter",
+        // "editor.codeActionsOnSave": {
+        //     "source.organizeImports": "explicit"
+        // }
+    },
+    // ----------------------------------------------------------------------------
+    //                            Git lens
+    // ----------------------------------------------------------------------------
+    // Git lens
+    // https://help.gitkraken.com/gitlens/gitlens-settings/#remote-provider-integration-settings
+    "gitlens.integrations.enabled": true,
+    "gitlens.remotes": [
+        {
+            "regex": "git@([^:]+):\\d+/(.+)\\.git",
+            "type": "BitbucketServer"
+        }
+    ],
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "git.blame.editorDecoration.enabled": true,
+    "windsurf.allowCascadeAccessGitignoreFiles": true,
+    "makefile.configureOnOpen": false,
+    "remote.autoForwardPortsSource": "hybrid",
+    "terminal.integrated.showCommandHint": false,
+    "material-icon-theme.folders.theme": "specific",
+    "workbench.editor.limit.value": 20,
+    "diffEditor.renderSideBySide": false,
+    "basedpyright.analysis.typeCheckingMode": "standard",
+    "claudeCode.preferredLocation": "panel"
+}
