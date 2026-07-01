@@ -684,6 +684,25 @@ sudo apt install dos2unix
 #  Only files that actually have CRLF (skips binaries and already-LF files):
 grep -rlI $'\r' /path/to/folder | xargs dos2unix
 
+
+# find diff between commits in 2 branch
+# given 2 release branch named: release-26.01 | release-26.02 then:
+
+
+# 1) Fetch and list the two release branches
+git fetch --all --quiet 2>&1 | head -5; echo "---branches---"; git branch -a | grep -E "release-26\.0[12]"
+
+# Merge commits in 26.02 but NOT in 26.01
+git log --merges --oneline origin/release/release-26.01..origin/release/release-26.02
+
+# Merge commits in 26.01 but NOT in 26.02
+git log --merges --oneline origin/release/release-26.02..origin/release/release-26.01
+
+
+# CHECK CHANGED FILED IN A BRANCH
+git diff --name-only HEAD
+
+
 ```
 
 
@@ -1249,6 +1268,22 @@ kubectl get pods -o wide --show-labels | grep <service>
 kubectl logs -f -l app=<service> --tail=100
 kubectl logs -f -l label --tail=100
 kubectl logs -f -l label --tail=100 --prefix
+
+# ----------------
+#   stern
+# ----------------
+URL=$(curl -s https://api.github.com/repos/stern/stern/releases/latest \
+     | grep -o '"browser_download_url": *"[^"]*linux_amd64.tar.gz"' \
+     | head -1 | cut -d'"' -f4) &&    echo "Resolved URL: $URL" &&    curl -Lo stern.tar.gz "$URL" &&    file stern.tar.gz
+
+tar xf stern.tar.gz && \
+  ls -l stern && \
+  sudo mv stern /usr/local/bin/ && \
+  rm -f stern.tar.gz && \
+stern --version
+
+
+stern -l app=<deployment|label> -n <namespace>
 
 ``` 
 
