@@ -279,6 +279,26 @@ inet 172.20.5.240
 
 netsh interface portproxy add v4tov4 listenport=<port> listenaddress=0.0.0.0 connectport=<port> connectaddress=<your WSL IP>
 
+
+### Create Partition 
+# https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/operations-guide?tabs=cmd#list-protectors
+# 1. Shrink C: by 500 MB
+Resize-Partition -DriveLetter C -Size ((Get-Partition -DriveLetter C).Size - 500MB)
+
+# 2. Create new partition and assign D:
+New-Partition -DiskNumber 0 -UseMaximumSize -DriveLetter D | Format-Volume -FileSystem NTFS -NewFileSystemLabel "Data"
+
+# list partition
+manage-bde.exe -status
+
+# Get status of each | will tell you encryption status
+manage-bde -status C:
+manage-bde -status D:
+
+# Get protectors such as bitlocker
+manage-bde.exe -protectors -get C:
+manage-bde.exe -protectors -get D:
+
 ```
 
 @ssh 
