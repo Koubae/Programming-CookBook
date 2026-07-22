@@ -1135,6 +1135,33 @@ eval "$(direnv hook zsh)"    # for zsh
 echo 'export PATH=$HOME/go/bin:$PATH' > .envrc
 echo 'alias go=go1.23.0' >> .envrc
 direnv allow
+
+# ------------------
+# fix formatting
+# ------------------
+#  lists all files with formatting diffs (the -d shows diffs; used it just to get the filenames).
+golangci-lint fmt -d 
+#  test files added by this branch.
+git diff --name-only --diff-filter=A master...HEAD | grep '_test\.go$'
+#  intersection of those two lists, i.e. new test files that also fail formatting.
+comm -12
+# runs golangci-lint fmt (write-in-place) on each of those 45 files.
+for f in $files; do golangci-lint fmt "$f"; done
+
+
+files=$(comm -12 \
+  <(golangci-lint fmt -d 2>&1 | grep -oE 'internal/[^ ]+\.go' | sort -u) \
+  <(git diff --name-only --diff-filter=A master...HEAD | grep '_test\.go$' | sort -u))
+for f in $files; do golangci-lint fmt "$f"; done
+
+
+# format entire project
+golangci-lint fmt
+# dry run: show the diff for everything, change nothing
+golangci-lint fmt -d  
+ # limit to a subtree        
+golangci-lint fmt ./internal/...  
+
 ```
 
 @java
