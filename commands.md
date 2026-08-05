@@ -14,6 +14,9 @@ Commands
 sudo dpkg -i [google__.deb]
 # check if package is installed
 dpkg -s libmagic1
+# generate uuid
+
+uuidgen
 
 # To copy a file from B to A while logged into B:
 scp /path/to/file username@a:/path/to/destination
@@ -721,6 +724,23 @@ git log --merges --oneline origin/release/release-26.02..origin/release/release-
 
 # CHECK CHANGED FILED IN A BRANCH
 git diff --name-only HEAD
+
+
+## ----------- Stashing
+git stash
+
+git stash push -m "my-changes"
+# stash all also new untrackked files
+git stash push -u -m "my-changes"
+
+# check stash
+git stash list
+
+git stash pop          # applies the most recent stash and removes it from the list
+git stash apply        # applies it but keeps it in the list
+
+## -----------
+
 
 
 ```
