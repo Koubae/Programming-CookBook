@@ -1,0 +1,36 @@
+{
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "files.exclude": {
+        "**/node_modules": true,
+        "**/.git": true,
+        "**/dist": true,
+        "**/build": true,
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+    },
+    "ruff.enable": true,
+    "ruff.lint.enable": true,
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    },
+
+    "makefile.configureOnOpen": false,
+    // "go.testEnvFile": "${workspaceFolder}/.vscode/.env.tests",
+    "[go]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        },
+    },
+    // "go.formatFlags": [
+    //     "--max-len=140",
+    //     "--base-formatter=gofumpt"
+    // ]
+    // "claudeCode.allowDangerouslySkipPermissions": true,
+}
