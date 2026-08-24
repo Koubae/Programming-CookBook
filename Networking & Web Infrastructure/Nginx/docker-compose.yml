@@ -17,3 +17,19 @@ services:
       interval: 5s
       timeout: 3s
       retries: 5
+
+  service-a:
+    build:
+      context: ./go_nginx
+      dockerfile: Dockerfile
+    container_name: service-a
+    command: ["./service", "3001"]
+    restart: unless-stopped
+
+  service-b:
+    build:
+      context: ./go_nginx
+      dockerfile: Dockerfile
+    container_name: service-b
+    command: ["./service", "3002"]
+    restart: unless-stopped
