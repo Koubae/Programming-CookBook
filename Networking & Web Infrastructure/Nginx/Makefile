@@ -9,11 +9,11 @@ help:
 	@echo "  make help          - Show this help message"
 
 nginx-up:
-	docker-compose up -d nginx
+	docker-compose --env-file .env.nginx up -d nginx
 
 nginx-down:
-	docker-compose stop nginx
-	docker-compose rm -f nginx
+	docker-compose --env-file .env.nginx stop nginx
+	docker-compose --env-file .env.nginx rm -f nginx
 
 nginx-terminal:
 	docker exec -it nginx bash
