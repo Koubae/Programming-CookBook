@@ -35,6 +35,15 @@ Stop Nginx:
 make nginx-down
 ```
 
+Docs
+----
+
+
+* [How nginx processes a request](https://nginx.org/en/docs/http/request_processing.html)
+* [Server names](https://nginx.org/en/docs/http/server_names.html)
+
+
+
 Guide / Notes
 -------------
 

@@ -11,6 +11,9 @@ services:
       # - ${NGINX_CONF_PATH:-./nginx/nginx.conf}:/etc/nginx/nginx.conf:ro
       - ${NGINX_CONF_PATH}:/etc/nginx/nginx.conf:ro
       - ./nginx/html:/usr/share/nginx/html:ro
+      # as per "Serving Static Content" -- https://nginx.org/en/docs/beginners_guide.html#static
+      - ./nginx/html:/data/www:ro
+      - ./nginx/data/images:/data/images:ro
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost"]

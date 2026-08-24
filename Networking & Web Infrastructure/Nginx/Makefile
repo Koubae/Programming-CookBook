@@ -15,16 +15,17 @@ help:
 	@echo "  make help           - Show this help message"
 
 up:
-	docker-compose --env-file .env.nginx up -d
+	docker-compose --env-file .env.nginx up -d nginx
 
 down:
-	docker-compose --env-file .env.nginx down
-
+	docker-compose --env-file .env.nginx down nginx
+down-all:
+	docker-compose --env-file .env.nginx down 
 restart:
-	docker-compose --env-file .env.nginx restart
+	docker-compose --env-file .env.nginx restart nginx
 
 logs:
-	docker-compose --env-file .env.nginx logs -f
+	docker-compose --env-file .env.nginx logs -f nginx
 
 nginx-terminal:
 	docker exec -it nginx bash
