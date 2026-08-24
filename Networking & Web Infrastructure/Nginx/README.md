@@ -41,3 +41,11 @@ Guide / Notes
 * /usr/share/nginx/html is the standard/default path for static HTML files in the official nginx Docker image.
 * the official nginx Docker image, the default "Welcome to nginx!" page lives at /usr/share/nginx/html/index.html
 
+#### Check default configs
+
+```bash
+docker exec nginx ls /etc/nginx/conf.d/
+docker exec nginx cat /etc/nginx/conf.d/default.conf
+```
+
+

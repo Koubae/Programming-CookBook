@@ -1,27 +1,33 @@
-# ping server
-PING
 
-SET user:1:name "John"
-GET user:1:name
+# jump into nginx container
+docker exec -it nginx bash
+# or use makefile
+make nginx-terminal
 
-# expiration
-SET user:2:name "Doe" EX 10
-GET user:2:name
-# Check remaining TTL
-TTL user:2:name
+# tests the nginx configuration file for syntax errors.
+nginx -t 
 
-# Atomic Counter
-SET page:views 0
-INCR page:views
-INCR page:views
-INCR page:views
-GET page:views
 
-# Hashes — objects | Map | Dict
-HSET user:1 name "John" username "Doe" email "john.doe@example.com" age 99
-HGET user:1 name
-# whole hash
-HGETALL user:1
-# update
-HSET user:1 age 35
-HGET user:1 age
+# reload nginx configuration
+nginx -s reload
+# -s stands for "signal" - it sends a signal to the nginx master process.
+# reload - gracefully reload configuration
+nginx -s reload
+# stop - shut down quickly
+nginx -s stop
+# quit - shut down gracefully
+nginx -s quit
+# reopen - reopen log files
+nginx -s reopen
+
+
+# -------------------------
+# Configs
+# -------------------------
+nginx -T
+
+# -------------------------
+# Logs
+# -------------------------
+docker exec nginx tail -10 /var/log/nginx/access.log
+nginx tail -10 /var/log/nginx/access.log
