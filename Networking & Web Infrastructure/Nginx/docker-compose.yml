@@ -6,8 +6,10 @@ services:
     container_name: nginx
     ports:
       - "8080:80"
+      - "9999:9999"
     volumes:
-      - ${NGINX_CONF_PATH:-./nginx/nginx.conf}:/etc/nginx/nginx.conf:ro
+      # - ${NGINX_CONF_PATH:-./nginx/nginx.conf}:/etc/nginx/nginx.conf:ro
+      - ${NGINX_CONF_PATH}:/etc/nginx/nginx.conf:ro
       - ./nginx/html:/usr/share/nginx/html:ro
     restart: unless-stopped
     healthcheck:

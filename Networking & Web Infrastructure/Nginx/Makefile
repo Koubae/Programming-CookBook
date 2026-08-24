@@ -21,5 +21,8 @@ nginx-restart:
 nginx-terminal:
 	docker exec -it nginx bash
 
+nginx-recreate:
+	docker-compose --env-file .env.nginx up -d --force-recreate nginx
+
 nginx-logs:
 	docker-compose logs -f nginx

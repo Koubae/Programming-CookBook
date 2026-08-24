@@ -1,7 +1,7 @@
 Nginx
 =====
 
-
+Change `NGINX_CONF_PATH` env variable in [.env.nginx](./.env.nginx) file to point to your custom nginx configuration file.
 
 QuickStart
 ----------
