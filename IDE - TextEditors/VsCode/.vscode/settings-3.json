@@ -101,6 +101,7 @@
     // 
     // https://marketplace.visualstudio.com/items?itemName=Anan.jetbrains-darcula-theme&ssr=false#overview
     "editor.tokenColorCustomizations": {
+        "comments": "#15ff00",
         "[JetBrains Darcula Theme]": {
             // "textMateRules": [
             //     {
@@ -139,7 +140,7 @@
                         "foreground": "#A9B7C6"
                     }
                 },
-                  {
+                {
                     "scope": [
                         "constant.language.python"
                     ],
@@ -162,6 +163,14 @@
     // "files.associations": {
     //     "*.sql": "vscode-postgres"
     // },
+    "files.associations": {
+        // "*.sql": "vscode-postgres"
+        "*.j2": "jinja2",
+        ".j2": "nginx"
+    },
+    "[nginx]": {
+        "editor.defaultFormatter": "lch.nginx-beautifier"
+    },
     // ----------------------------------------------------------------------------
     //                            GO
     // ----------------------------------------------------------------------------
@@ -238,5 +247,52 @@
     "workbench.editor.limit.value": 20,
     "diffEditor.renderSideBySide": false,
     "basedpyright.analysis.typeCheckingMode": "standard",
-    "claudeCode.preferredLocation": "panel"
+    "claudeCode.preferredLocation": "panel",
+    // ----------------------------------------------------------------------------
+    //                            Git lens
+    // ----------------------------------------------------------------------------
+    // Git lens
+    // https://help.gitkraken.com/gitlens/gitlens-settings/#remote-provider-integration-settings
+    "gitlens.integrations.enabled": true,
+    "gitlens.remotes": [
+        {
+            "regex": "git@([^:]+):\\d+/(.+)\\.git",
+            "type": "BitbucketServer"
+        }
+    ],
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "windsurf.allowCascadeAccessGitignoreFiles": true,
+    "makefile.configureOnOpen": false,
+    "remote.autoForwardPortsSource": "hybrid",
+    "terminal.integrated.showCommandHint": false,
+    "material-icon-theme.folders.theme": "specific",
+    "workbench.editor.limit.value": 60,
+    "diffEditor.renderSideBySide": false,
+    "claudeCode.preferredLocation": "panel",
+    "devin.allowCascadeAccessGitignoreFiles": true,
+    "workbench.editor.wrapTabs": true,
+    // basedpyright
+    "basedpyright.analysis.typeCheckingMode": "standard",
+    "basedpyright.analysis.inlayHints.callArgumentNames": false,
+    "git.blame.editorDecoration.enabled": true,
+    "[markdown]": {
+        "editor.wordWrap": "off"
+    },
+    "[sql]": {
+        "editor.formatOnSave": false
+    },
+    "devin.acp.agentPreferences": {
+        "devin-cli": {
+            "model": "claude-opus-4-6-thinking",
+            "mode": "autonomous"
+        }
+    },
+    "go.toolsManagement.autoUpdate": true,
+    "devin.autoContinue": 0,
+    "redhat.telemetry.enabled": false,
+    "helm-ls.valuesFiles": {
+        "mainValuesFile": "values.yaml",
+        "lintOverlayValuesFile": "values.lint.yaml",
+        "additionalValuesFilesGlobPattern": "values*.yaml"
+    }
 }
