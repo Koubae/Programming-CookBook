@@ -428,6 +428,9 @@ echo "58447627+Koubae@users.noreply.github.com $(cat ~/.ssh/id_ed25519_koubae.pu
 
 cat  ~/.ssh/allowed_signers
 
+# check how to add this too 
+includeif.gitdir:~/my_projects/.path=~/.gitconfig-personal
+
 
 # Step 6: Clone your first repo
 cd ~/my_projects;
